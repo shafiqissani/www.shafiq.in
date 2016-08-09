@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://www.shafiq.in/categories/book-cover/</link>
+    <link>http://www.shafiq.in/categories/book-cover/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Book Cover for Udbhav 2009 Souvenir</title>
-          <link>https://www.shafiq.in/2009/03/22/book-cover-for-udbhav-2009-souvenir/</link>
+          <link>http://www.shafiq.in/2009/03/22/book-cover-for-udbhav-2009-souvenir/</link>
           <pubDate>Sun, 22 Mar 2009 11:22:52 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2009/03/22/book-cover-for-udbhav-2009-souvenir/</guid>
+          <guid>http://www.shafiq.in/2009/03/22/book-cover-for-udbhav-2009-souvenir/</guid>
           <description>&lt;p&gt;&lt;img class=&#34;alignnone size-full wp-image-129&#34; title=&#34;udbhav_souvenir_book_cover10029&#34; src=&#34;{{ site.baseurl }}/assets/udbhav_souvenir_book_cover10029.jpg&#34; alt=&#34;udbhav_souvenir_book_cover10029&#34; width=&#34;480&#34; height=&#34;605&#34; /&gt;&lt;/p&gt;
 </description>
         </item>

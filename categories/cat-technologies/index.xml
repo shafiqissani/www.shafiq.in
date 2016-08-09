@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://www.shafiq.in/categories/cat-technologies/</link>
+    <link>http://www.shafiq.in/categories/cat-technologies/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>9 skills developers will need in the next five years</title>
-          <link>https://www.shafiq.in/2009/07/12/9-skills-developers-will-need-in-the-next-five-years/</link>
+          <link>http://www.shafiq.in/2009/07/12/9-skills-developers-will-need-in-the-next-five-years/</link>
           <pubDate>Sun, 12 Jul 2009 07:40:57 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2009/07/12/9-skills-developers-will-need-in-the-next-five-years/</guid>
+          <guid>http://www.shafiq.in/2009/07/12/9-skills-developers-will-need-in-the-next-five-years/</guid>
           <description>&lt;p&gt;With the recent changes in the economy, a lot of developers are focused on their short-term job prospects. At the same time, it’s important to make sure that you get the most bang for your buck when it comes to taking the time and energy to learn new skills. Here is a  list of 10 skills you should be learning right now to make sure that your resume is relevant for the next five years. The list is hardly exhaustive, and there are huge swaths of the industry it won’t cover (mainframe developers, for example). Nonetheless, for average mainstream development, you can’t go wrong learning at least seven of these skills — not only to the point where you can talk convincingly about them at a job interview, but actually use them on the job.&lt;/p&gt;
 &lt;p&gt;1: One of the “Big Three” (.NET, Java, PHP)&lt;br /&gt;
 Unless there is a radical shift in the development world, most developers will need to know at least one of the Big Three development systems — .NET (VB.NET or C#), Java, or PHP — for the near future. It’s not enough to know the core languages, either. As projects encompass more and more disparate functionality, you’ll need to know the associated frameworks and libraries more deeply.&lt;/p&gt;

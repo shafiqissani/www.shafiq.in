@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://www.shafiq.in/tags/copy/</link>
+    <link>http://www.shafiq.in/tags/copy/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Preserve File Permissions While Copying Files in Linux</title>
-          <link>https://www.shafiq.in/2010/06/14/preserve-file-permissions-while-copying-files-in-linux/</link>
+          <link>http://www.shafiq.in/2010/06/14/preserve-file-permissions-while-copying-files-in-linux/</link>
           <pubDate>Mon, 14 Jun 2010 15:05:12 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2010/06/14/preserve-file-permissions-while-copying-files-in-linux/</guid>
+          <guid>http://www.shafiq.in/2010/06/14/preserve-file-permissions-while-copying-files-in-linux/</guid>
           <description>&lt;p&gt;Following is the command :&lt;/p&gt;
 &lt;p&gt;&amp;gt; cp -p /aaa/bbb /ccc/ddd&lt;/p&gt;
 </description>

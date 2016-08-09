@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://www.shafiq.in/</link>
+    <link>http://www.shafiq.in/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Welcome to Jekyll!</title>
-          <link>https://www.shafiq.in/2016/08/09/welcome-to-jekyll/</link>
+          <link>http://www.shafiq.in/2016/08/09/welcome-to-jekyll/</link>
           <pubDate>Tue, 09 Aug 2016 21:55:35 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2016/08/09/welcome-to-jekyll/</guid>
+          <guid>http://www.shafiq.in/2016/08/09/welcome-to-jekyll/</guid>
           <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
@@ -38,10 +38,10 @@
       
         <item>
           <title></title>
-          <link>https://www.shafiq.in/2016/03/06/2089/</link>
+          <link>http://www.shafiq.in/2016/03/06/2089/</link>
           <pubDate>Sun, 06 Mar 2016 12:08:06 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2016/03/06/2089/</guid>
+          <guid>http://www.shafiq.in/2016/03/06/2089/</guid>
           <description>&lt;p&gt;Enterprise Architecture is the structure and the operational blueprint of a company.&lt;/p&gt;
 </description>
         </item>
@@ -50,10 +50,10 @@
       
         <item>
           <title>Archimate</title>
-          <link>https://www.shafiq.in/2015/07/20/archimate/</link>
+          <link>http://www.shafiq.in/2015/07/20/archimate/</link>
           <pubDate>Mon, 20 Jul 2015 11:42:59 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2015/07/20/archimate/</guid>
+          <guid>http://www.shafiq.in/2015/07/20/archimate/</guid>
           <description>&lt;p&gt;Archimate enables the creation of fully integrated models of an organizations enterprise architecture, the motivation behind it, and the programs, projects and migration paths to implement it.&lt;/p&gt;
 </description>
         </item>
@@ -62,10 +62,10 @@
       
         <item>
           <title>Project Initiation Documentation RACI Chart</title>
-          <link>https://www.shafiq.in/2014/12/30/project-initiation-documentation-raci-chart/</link>
+          <link>http://www.shafiq.in/2014/12/30/project-initiation-documentation-raci-chart/</link>
           <pubDate>Tue, 30 Dec 2014 15:56:13 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2014/12/30/project-initiation-documentation-raci-chart/</guid>
+          <guid>http://www.shafiq.in/2014/12/30/project-initiation-documentation-raci-chart/</guid>
           <description>&lt;p&gt;&lt;img class=&#34;aligncenter size-full wp-image-1691&#34; src=&#34;{{ site.baseurl }}/assets/9781118510582-tb1003.png&#34; alt=&#34;&#34; width=&#34;506&#34; height=&#34;367&#34; /&gt;&lt;/p&gt;
 </description>
         </item>
@@ -74,10 +74,10 @@
       
         <item>
           <title>Stakeholder RACI Matrix Spreadsheet</title>
-          <link>https://www.shafiq.in/2014/12/28/stakeholder-raci-matrix-spreadsheet/</link>
+          <link>http://www.shafiq.in/2014/12/28/stakeholder-raci-matrix-spreadsheet/</link>
           <pubDate>Sun, 28 Dec 2014 10:53:53 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2014/12/28/stakeholder-raci-matrix-spreadsheet/</guid>
+          <guid>http://www.shafiq.in/2014/12/28/stakeholder-raci-matrix-spreadsheet/</guid>
           <description>&lt;h1 style=&#34;text-align:center;&#34;&gt;&lt;a href=&#34;https://shafiqissani.files.wordpress.com/2014/12/stakeholder-raci-matrix.xls&#34;&gt;Download Stakeholder RACI Matrix&lt;/a&gt;&lt;/h1&gt;
 </description>
         </item>
@@ -86,10 +86,10 @@
       
         <item>
           <title>Break stakeholders into smaller groups according to roles or goals [doc]</title>
-          <link>https://www.shafiq.in/2014/12/15/break-stakeholders-into-smaller-groups-according-to-roles-or-goals-doc/</link>
+          <link>http://www.shafiq.in/2014/12/15/break-stakeholders-into-smaller-groups-according-to-roles-or-goals-doc/</link>
           <pubDate>Mon, 15 Dec 2014 14:06:04 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2014/12/15/break-stakeholders-into-smaller-groups-according-to-roles-or-goals-doc/</guid>
+          <guid>http://www.shafiq.in/2014/12/15/break-stakeholders-into-smaller-groups-according-to-roles-or-goals-doc/</guid>
           <description>&lt;h1 style=&#34;text-align:center;&#34;&gt;&lt;a href=&#34;https://shafiqissani.files.wordpress.com/2014/12/stakeholder-roles-groups.docx&#34;&gt;Download Stakeholder Roles Groups Document&lt;/a&gt;&lt;/h1&gt;
 </description>
         </item>
@@ -98,10 +98,10 @@
       
         <item>
           <title>Stakeholder List Document</title>
-          <link>https://www.shafiq.in/2014/12/08/stakeholder-list-document/</link>
+          <link>http://www.shafiq.in/2014/12/08/stakeholder-list-document/</link>
           <pubDate>Mon, 08 Dec 2014 10:19:56 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2014/12/08/stakeholder-list-document/</guid>
+          <guid>http://www.shafiq.in/2014/12/08/stakeholder-list-document/</guid>
           <description>&lt;p&gt;Download -&amp;gt; &lt;a href=&#34;https://shafiqissani.files.wordpress.com/2014/12/stakeholder-list.docx&#34;&gt;Stakeholder List Document&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
@@ -110,10 +110,10 @@
       
         <item>
           <title>&#34;a priori&#34; thinking</title>
-          <link>https://www.shafiq.in/2014/12/07/a-priori-thinking/</link>
+          <link>http://www.shafiq.in/2014/12/07/a-priori-thinking/</link>
           <pubDate>Sun, 07 Dec 2014 13:25:16 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2014/12/07/a-priori-thinking/</guid>
+          <guid>http://www.shafiq.in/2014/12/07/a-priori-thinking/</guid>
           <description>&lt;p&gt;Nobel prize–winner and game theory pioneer Reinhard Selten observed that people work diligently to be rational ex post. That is, we commonly look back at how a situation played out to try and understand how a better outcome might have been achieved. This contrasts with a game theory approach in which the goal is to develop a strategy that will lead to that better outcome a priori.&lt;/p&gt;
 </description>
         </item>
@@ -122,10 +122,10 @@
       
         <item>
           <title>Some notes on people skills and emotional intelligence - 1</title>
-          <link>https://www.shafiq.in/2014/12/07/some-notes-on-people-skills-and-emotional-intelligence-1/</link>
+          <link>http://www.shafiq.in/2014/12/07/some-notes-on-people-skills-and-emotional-intelligence-1/</link>
           <pubDate>Sun, 07 Dec 2014 12:01:02 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2014/12/07/some-notes-on-people-skills-and-emotional-intelligence-1/</guid>
+          <guid>http://www.shafiq.in/2014/12/07/some-notes-on-people-skills-and-emotional-intelligence-1/</guid>
           <description>&lt;ul&gt;
 &lt;li&gt;Five essential people skills:
 &lt;ul&gt;
@@ -148,10 +148,10 @@
       
         <item>
           <title>Writings of an Anglican bishop</title>
-          <link>https://www.shafiq.in/2014/12/06/writings-of-an-anglican-bishop/</link>
+          <link>http://www.shafiq.in/2014/12/06/writings-of-an-anglican-bishop/</link>
           <pubDate>Sat, 06 Dec 2014 14:25:02 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2014/12/06/writings-of-an-anglican-bishop/</guid>
+          <guid>http://www.shafiq.in/2014/12/06/writings-of-an-anglican-bishop/</guid>
           <description>&lt;p&gt;I am reminded of the writings of an Anglican bishop:&lt;/p&gt;
 &lt;p class=&#34;image&#34;&gt;
 &lt;p class=&#34;image&#34;&gt;&lt;em class=&#34;calibre23&#34;&gt;When I was young and free and my&lt;/em&gt;&lt;/p&gt;
@@ -167,10 +167,10 @@
       
         <item>
           <title>Political Intelligence requires a thorough understanding of the dynamics of leverage, which simply means your ability to get others to do what you want.</title>
-          <link>https://www.shafiq.in/2014/09/03/political-intelligence-requires-a-thorough-understanding-of-the-dynamics-of-leverage-which-simply-means-your-ability-to-get-others-to-do-what-you-want/</link>
+          <link>http://www.shafiq.in/2014/09/03/political-intelligence-requires-a-thorough-understanding-of-the-dynamics-of-leverage-which-simply-means-your-ability-to-get-others-to-do-what-you-want/</link>
           <pubDate>Wed, 03 Sep 2014 15:02:56 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2014/09/03/political-intelligence-requires-a-thorough-understanding-of-the-dynamics-of-leverage-which-simply-means-your-ability-to-get-others-to-do-what-you-want/</guid>
+          <guid>http://www.shafiq.in/2014/09/03/political-intelligence-requires-a-thorough-understanding-of-the-dynamics-of-leverage-which-simply-means-your-ability-to-get-others-to-do-what-you-want/</guid>
           <description>&lt;p&gt;Political Intelligence requires a thorough understanding of the dynamics of leverage, which simply means your ability to get others to do wh&lt;em&gt;at you want.&lt;/em&gt;&lt;/p&gt;
 </description>
         </item>
@@ -179,10 +179,10 @@
       
         <item>
           <title>How to develop your political IQ</title>
-          <link>https://www.shafiq.in/2014/09/03/how-to-develop-your-political-iq/</link>
+          <link>http://www.shafiq.in/2014/09/03/how-to-develop-your-political-iq/</link>
           <pubDate>Wed, 03 Sep 2014 14:39:09 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2014/09/03/how-to-develop-your-political-iq/</guid>
+          <guid>http://www.shafiq.in/2014/09/03/how-to-develop-your-political-iq/</guid>
           <description>&lt;p&gt;• Clearly define the steps that will lead to your goals&lt;/p&gt;
 &lt;p&gt;• Recognize the power relationships in any group&lt;/p&gt;
 &lt;p&gt;• Capitalize on opportunities to increase your personal power and influence&lt;/p&gt;
@@ -195,10 +195,10 @@
       
         <item>
           <title>Some notes for digital content strategy</title>
-          <link>https://www.shafiq.in/2014/09/03/some-notes-for-digital-content-strategy/</link>
+          <link>http://www.shafiq.in/2014/09/03/some-notes-for-digital-content-strategy/</link>
           <pubDate>Wed, 03 Sep 2014 13:02:22 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2014/09/03/some-notes-for-digital-content-strategy/</guid>
+          <guid>http://www.shafiq.in/2014/09/03/some-notes-for-digital-content-strategy/</guid>
           <description>&lt;ul&gt;
 &lt;li&gt;QR code&lt;/li&gt;
 &lt;li&gt;semi-automated information architecture
@@ -231,10 +231,10 @@
       
         <item>
           <title>Music &amp; Melodies of the Persian Ismaili qasideh --- Institute of Ismaili studies UK</title>
-          <link>https://www.shafiq.in/2014/08/18/music-melodies-of-the-persian-ismaili-qasideh-institute-of-ismaili-studies-uk/</link>
+          <link>http://www.shafiq.in/2014/08/18/music-melodies-of-the-persian-ismaili-qasideh-institute-of-ismaili-studies-uk/</link>
           <pubDate>Mon, 18 Aug 2014 12:39:06 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2014/08/18/music-melodies-of-the-persian-ismaili-qasideh-institute-of-ismaili-studies-uk/</guid>
+          <guid>http://www.shafiq.in/2014/08/18/music-melodies-of-the-persian-ismaili-qasideh-institute-of-ismaili-studies-uk/</guid>
           <description></description>
         </item>
       
@@ -242,10 +242,10 @@
       
         <item>
           <title>2013 blogs in review</title>
-          <link>https://www.shafiq.in/2014/01/09/2013-blogs-in-review/</link>
+          <link>http://www.shafiq.in/2014/01/09/2013-blogs-in-review/</link>
           <pubDate>Thu, 09 Jan 2014 09:18:10 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2014/01/09/2013-blogs-in-review/</guid>
+          <guid>http://www.shafiq.in/2014/01/09/2013-blogs-in-review/</guid>
           <description>&lt;p&gt;The WordPress.com stats helper monkeys prepared a 2013 annual report for this blog.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://shafiqissani.wordpress.com/2013/annual-report/&#34;&gt;&lt;img src=&#34;{{ site.baseurl }}/assets/2012-emailteaser.png&#34; alt=&#34;&#34; width=&#34;100%&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Here&#39;s an excerpt:&lt;/p&gt;
@@ -258,10 +258,10 @@
       
         <item>
           <title>Big data life cycle</title>
-          <link>https://www.shafiq.in/2013/12/29/big-data-life-cycle/</link>
+          <link>http://www.shafiq.in/2013/12/29/big-data-life-cycle/</link>
           <pubDate>Sun, 29 Dec 2013 12:27:51 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2013/12/29/big-data-life-cycle/</guid>
+          <guid>http://www.shafiq.in/2013/12/29/big-data-life-cycle/</guid>
           <description>&lt;p&gt;The challenges include capture, curation, storage, search, sharing, transfer, analysis, and visualization.&lt;/p&gt;
 </description>
         </item>
@@ -270,10 +270,10 @@
       
         <item>
           <title>New year&#39;s resolution 2014</title>
-          <link>https://www.shafiq.in/2013/12/28/new-years-resolution-2014/</link>
+          <link>http://www.shafiq.in/2013/12/28/new-years-resolution-2014/</link>
           <pubDate>Sat, 28 Dec 2013 22:53:04 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2013/12/28/new-years-resolution-2014/</guid>
+          <guid>http://www.shafiq.in/2013/12/28/new-years-resolution-2014/</guid>
           <description>&lt;h4&gt;My new year&#39;s resolution for 2014:&lt;/h4&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -292,10 +292,10 @@ Blog tagline:
       
         <item>
           <title>Applicable values for AddItemRequest.Item.Country</title>
-          <link>https://www.shafiq.in/2013/10/26/applicable-values-for-additemrequest-item-country/</link>
+          <link>http://www.shafiq.in/2013/10/26/applicable-values-for-additemrequest-item-country/</link>
           <pubDate>Sat, 26 Oct 2013 17:59:12 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2013/10/26/applicable-values-for-additemrequest-item-country/</guid>
+          <guid>http://www.shafiq.in/2013/10/26/applicable-values-for-additemrequest-item-country/</guid>
           <description>&lt;h1&gt;Applicable values for AddItemRequest.Item.Country&lt;/h1&gt;
 &lt;table&gt;
 &lt;tbody&gt;
@@ -806,10 +806,10 @@ Blog tagline:
       
         <item>
           <title>First look &amp; Theartical Trailer of the film &#34;KICHIDI&#34; directed by Saahith Mothkuri</title>
-          <link>https://www.shafiq.in/2013/09/21/first-look-theartical-trailer-of-the-film-kichidi-directed-by-saahith-mothkuri/</link>
+          <link>http://www.shafiq.in/2013/09/21/first-look-theartical-trailer-of-the-film-kichidi-directed-by-saahith-mothkuri/</link>
           <pubDate>Sat, 21 Sep 2013 18:53:10 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2013/09/21/first-look-theartical-trailer-of-the-film-kichidi-directed-by-saahith-mothkuri/</guid>
+          <guid>http://www.shafiq.in/2013/09/21/first-look-theartical-trailer-of-the-film-kichidi-directed-by-saahith-mothkuri/</guid>
           <description>&lt;p&gt;&lt;img class=&#34;aligncenter&#34; alt=&#34;&#34; src=&#34;{{ site.baseurl }}/assets/1235402_10153239143685389_975641153_n.jpg&#34; width=&#34;720&#34; height=&#34;432&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;http://www.youtube.com/watch?v=VC1vc5mbnKg&lt;/p&gt;
 </description>
@@ -819,10 +819,10 @@ Blog tagline:
       
         <item>
           <title>dump the contents of the node’s field as an array</title>
-          <link>https://www.shafiq.in/2013/09/11/dump-the-contents-of-the-nodes-field-as-an-array/</link>
+          <link>http://www.shafiq.in/2013/09/11/dump-the-contents-of-the-nodes-field-as-an-array/</link>
           <pubDate>Wed, 11 Sep 2013 10:32:05 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2013/09/11/dump-the-contents-of-the-nodes-field-as-an-array/</guid>
+          <guid>http://www.shafiq.in/2013/09/11/dump-the-contents-of-the-nodes-field-as-an-array/</guid>
           <description>&lt;h1&gt;[DRUPAL 6] dump the contents of the node’s field as an array:&lt;/h1&gt;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 &lt;div&gt;&lt;strong&gt;&lt;code&gt;var_export(content_fields(&#39;field_name_of_the_field&#39;, &#39;name_of_the_content_type&#39;));&lt;/code&gt;&lt;/strong&gt;&lt;/div&gt;
@@ -833,10 +833,10 @@ Blog tagline:
       
         <item>
           <title>Drupal Solr search &amp; auto-complete as you type</title>
-          <link>https://www.shafiq.in/2013/09/05/drupal-solr-search-auto-complete-as-you-type/</link>
+          <link>http://www.shafiq.in/2013/09/05/drupal-solr-search-auto-complete-as-you-type/</link>
           <pubDate>Thu, 05 Sep 2013 11:51:55 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2013/09/05/drupal-solr-search-auto-complete-as-you-type/</guid>
+          <guid>http://www.shafiq.in/2013/09/05/drupal-solr-search-auto-complete-as-you-type/</guid>
           <description>&lt;p&gt;http://www.youtube.com/watch?v=7zilOofPU8c&lt;/p&gt;
 </description>
         </item>
@@ -845,10 +845,10 @@ Blog tagline:
       
         <item>
           <title>Drupal 7 theme - Mobile boilerplate</title>
-          <link>https://www.shafiq.in/2013/09/05/drupal-7-theme-mobile-boilerplate/</link>
+          <link>http://www.shafiq.in/2013/09/05/drupal-7-theme-mobile-boilerplate/</link>
           <pubDate>Thu, 05 Sep 2013 09:47:24 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2013/09/05/drupal-7-theme-mobile-boilerplate/</guid>
+          <guid>http://www.shafiq.in/2013/09/05/drupal-7-theme-mobile-boilerplate/</guid>
           <description>&lt;p&gt;&lt;strong&gt;Mobile Boilerplate is a professional front-end template that helps you build fast and robust mobile web applications. Spend more time developing and less time reinventing the wheel.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Features&lt;/p&gt;
 &lt;p&gt;Mobile browser optimizations.&lt;br /&gt;
@@ -883,10 +883,10 @@ Cross-domain Ajax.&lt;br /&gt;
       
         <item>
           <title>Online Temperature Monitoring System</title>
-          <link>https://www.shafiq.in/2013/06/07/online-temperature-monitoring-system/</link>
+          <link>http://www.shafiq.in/2013/06/07/online-temperature-monitoring-system/</link>
           <pubDate>Fri, 07 Jun 2013 10:52:57 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2013/06/07/online-temperature-monitoring-system/</guid>
+          <guid>http://www.shafiq.in/2013/06/07/online-temperature-monitoring-system/</guid>
           <description>&lt;h1&gt;Download : &lt;a href=&#34;http://shafiqissani.files.wordpress.com/2013/06/proj_format_.doc&#34;&gt;PROJ_FORMAT_&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;Contents Page number&lt;/p&gt;
 &lt;p&gt;1. Introduction&lt;br /&gt;
@@ -1154,10 +1154,10 @@ The 89c52 contains serial data transmission / reception circuitry that can be pr
       
         <item>
           <title>jquery datatables hide column without removing it from DOM</title>
-          <link>https://www.shafiq.in/2013/04/23/jquery-datatables-hide-column-without-removing-it-from-dom/</link>
+          <link>http://www.shafiq.in/2013/04/23/jquery-datatables-hide-column-without-removing-it-from-dom/</link>
           <pubDate>Tue, 23 Apr 2013 11:11:33 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2013/04/23/jquery-datatables-hide-column-without-removing-it-from-dom/</guid>
+          <guid>http://www.shafiq.in/2013/04/23/jquery-datatables-hide-column-without-removing-it-from-dom/</guid>
           <description>&lt;pre&gt;&lt;a href=&#34;none; }  that should make that column hidden...&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;http://stackoverflow.com/questions/14372655/jquery-datatables-hide-column-without-removing-it-from-dom
 
 &lt;/strong&gt;&lt;/a&gt;
@@ -1174,10 +1174,10 @@ The 89c52 contains serial data transmission / reception circuitry that can be pr
       
         <item>
           <title>List of Ebay shipping services in UK</title>
-          <link>https://www.shafiq.in/2013/04/14/list-of-ebay-shipping-services-in-uk/</link>
+          <link>http://www.shafiq.in/2013/04/14/list-of-ebay-shipping-services-in-uk/</link>
           <pubDate>Sun, 14 Apr 2013 09:36:44 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2013/04/14/list-of-ebay-shipping-services-in-uk/</guid>
+          <guid>http://www.shafiq.in/2013/04/14/list-of-ebay-shipping-services-in-uk/</guid>
           <description>&lt;p&gt;&amp;lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&amp;gt;&lt;br /&gt;
 &amp;lt;GeteBayDetailsResponse xmlns=&#34;urn:ebay:apis:eBLBaseComponents&#34;&amp;gt;&lt;br /&gt;
 &amp;lt;Timestamp&amp;gt;2013-04-13T07:54:20.770Z&amp;lt;/Timestamp&amp;gt;&lt;br /&gt;
@@ -1839,10 +1839,10 @@ The 89c52 contains serial data transmission / reception circuitry that can be pr
       
         <item>
           <title>shafiqissani/BottomToolbar · GitHub</title>
-          <link>https://www.shafiq.in/2013/04/06/shafiqissanibottomtoolbar-%C2%B7-github/</link>
+          <link>http://www.shafiq.in/2013/04/06/shafiqissanibottomtoolbar-%C2%B7-github/</link>
           <pubDate>Sat, 06 Apr 2013 18:52:57 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2013/04/06/shafiqissanibottomtoolbar-%C2%B7-github/</guid>
+          <guid>http://www.shafiq.in/2013/04/06/shafiqissanibottomtoolbar-%C2%B7-github/</guid>
           <description>&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/shafiqissani/BottomToolbar#.UV7pQO0iXX8.wordpress&#34;&gt;shafiqissani/BottomToolbar · GitHub&lt;/a&gt;.&lt;/strong&gt;&lt;/p&gt;
 &lt;p class=&#34;western&#34; lang=&#34;en-US&#34; style=&#34;margin-bottom:0;&#34;&gt;&lt;span style=&#34;font-family:Calibri, sans-serif;&#34;&gt;&lt;span style=&#34;text-decoration:underline;&#34;&gt;&lt;b&gt;Project overview:&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;
@@ -1972,10 +1972,10 @@ The 89c52 contains serial data transmission / reception circuitry that can be pr
       
         <item>
           <title>shafiqissani/Puppet-Manifests · GitHub</title>
-          <link>https://www.shafiq.in/2013/04/05/shafiqissanipuppet-manifests-%C2%B7-github/</link>
+          <link>http://www.shafiq.in/2013/04/05/shafiqissanipuppet-manifests-%C2%B7-github/</link>
           <pubDate>Fri, 05 Apr 2013 16:07:11 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2013/04/05/shafiqissanipuppet-manifests-%C2%B7-github/</guid>
+          <guid>http://www.shafiq.in/2013/04/05/shafiqissanipuppet-manifests-%C2%B7-github/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;https://github.com/shafiqissani/Puppet-Manifests#.UV7nqQPjLxg.wordpress&#34;&gt;shafiqissani/Puppet-Manifests · GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;div class=&#34;repository-description&#34; id=&#34;repository_description&#34;&gt;
 &lt;p&gt;Puppet manifests I used for a Solaris project. Demonstrates environments, classes, definitions, groups, users, etc. Includes sudo and nagios modules. &lt;span id=&#34;read_more&#34;&gt;— &lt;a href=&#34;https://github.com/shafiqissani/Puppet-Manifests#readme&#34;&gt;Read more&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
@@ -1989,10 +1989,10 @@ The 89c52 contains serial data transmission / reception circuitry that can be pr
       
         <item>
           <title>Generic Hardening</title>
-          <link>https://www.shafiq.in/2013/01/12/generic-hardening/</link>
+          <link>http://www.shafiq.in/2013/01/12/generic-hardening/</link>
           <pubDate>Sat, 12 Jan 2013 11:38:09 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2013/01/12/generic-hardening/</guid>
+          <guid>http://www.shafiq.in/2013/01/12/generic-hardening/</guid>
           <description>&lt;h1&gt;Download document-&amp;gt; &lt;a href=&#34;http://shafiqissani.files.wordpress.com/2013/01/generic-hardening-doc.docx&#34;&gt;Generic Hardening doc&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;b&gt;Hardening: &lt;/b&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;Hardening is the process of securely deploying systems with the practice of ‘least privilege’. Hardening includes:&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
@@ -2089,10 +2089,10 @@ The 89c52 contains serial data transmission / reception circuitry that can be pr
       
         <item>
           <title>Foreigner regional registration office in Goa yet to start OCI facility despite getting powers - Think India Foundation</title>
-          <link>https://www.shafiq.in/2012/12/26/foreigner-regional-registration-office-in-goa-yet-to-start-oci-facility-despite-getting-powers-think-india-foundation/</link>
+          <link>http://www.shafiq.in/2012/12/26/foreigner-regional-registration-office-in-goa-yet-to-start-oci-facility-despite-getting-powers-think-india-foundation/</link>
           <pubDate>Wed, 26 Dec 2012 17:11:48 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2012/12/26/foreigner-regional-registration-office-in-goa-yet-to-start-oci-facility-despite-getting-powers-think-india-foundation/</guid>
+          <guid>http://www.shafiq.in/2012/12/26/foreigner-regional-registration-office-in-goa-yet-to-start-oci-facility-despite-getting-powers-think-india-foundation/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://www.thinkindia.net.in/2012/12/foreigner-regional-registration-office-in-goa-yet-to-start-oci-facility-despite-getting-powers.html&#34;&gt;Foreigner regional registration office in Goa yet to start OCI facility despite getting powers - Think India Foundation&lt;/a&gt;.&lt;/p&gt;
 </description>
         </item>
@@ -2101,10 +2101,10 @@ The 89c52 contains serial data transmission / reception circuitry that can be pr
       
         <item>
           <title>A passage to Goa: a generation and more later...</title>
-          <link>https://www.shafiq.in/2012/12/05/a-passage-to-goa-a-generation-and-more-later/</link>
+          <link>http://www.shafiq.in/2012/12/05/a-passage-to-goa-a-generation-and-more-later/</link>
           <pubDate>Wed, 05 Dec 2012 13:02:02 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2012/12/05/a-passage-to-goa-a-generation-and-more-later/</guid>
+          <guid>http://www.shafiq.in/2012/12/05/a-passage-to-goa-a-generation-and-more-later/</guid>
           <description>&lt;pre&gt;&lt;em&gt;Source : http://permalink.gmane.org/gmane.culture.region.india.goa/82375&lt;/em&gt;
 
 This is a translation of an article
@@ -3265,10 +3265,10 @@ unfamiliar to the translator. Any corrections are welcome.&lt;/pre&gt;
       
         <item>
           <title>Juniper Hardening Procedure</title>
-          <link>https://www.shafiq.in/2012/12/03/juniper-hardening-procedure/</link>
+          <link>http://www.shafiq.in/2012/12/03/juniper-hardening-procedure/</link>
           <pubDate>Mon, 03 Dec 2012 13:53:05 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2012/12/03/juniper-hardening-procedure/</guid>
+          <guid>http://www.shafiq.in/2012/12/03/juniper-hardening-procedure/</guid>
           <description>&lt;h1 class=&#34;western&#34; style=&#34;margin-left:.95cm;text-indent:-.95cm;margin-top:.21cm;margin-bottom:0;page-break-before:auto;page-break-after:auto;&#34;&gt;&lt;/h1&gt;
 &lt;h1 class=&#34;western&#34; style=&#34;margin-left:.95cm;text-indent:-.95cm;margin-top:.21cm;margin-bottom:0;page-break-before:auto;page-break-after:auto;&#34;&gt;&lt;a href=&#34;http://shafiqissani.files.wordpress.com/2012/12/juniper-device-hardening-1.pdf&#34;&gt;DOWNLOAD - Juniper device hardening&lt;/a&gt;&lt;/h1&gt;
 &lt;h1 class=&#34;western&#34; style=&#34;margin-left:.95cm;text-indent:-.95cm;margin-top:.21cm;margin-bottom:0;page-break-before:auto;page-break-after:auto;&#34;&gt;&lt;/h1&gt;
@@ -4372,10 +4372,10 @@ Page 21 of&lt;/p&gt;
       
         <item>
           <title>Hardening Procedure for Solaris Systems</title>
-          <link>https://www.shafiq.in/2012/12/01/hardening-procedure-for-solaris-systems/</link>
+          <link>http://www.shafiq.in/2012/12/01/hardening-procedure-for-solaris-systems/</link>
           <pubDate>Sat, 01 Dec 2012 21:57:52 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2012/12/01/hardening-procedure-for-solaris-systems/</guid>
+          <guid>http://www.shafiq.in/2012/12/01/hardening-procedure-for-solaris-systems/</guid>
           <description>&lt;br /&gt;
 &lt;h1 class=&#34;western&#34;&gt;&lt;a href=&#34;http://shafiqissani.wordpress.com/2012/12/01/hardening-procedure-for-solaris-systems/hardening-procedure-for-solaris-systems/&#34; rel=&#34;attachment wp-att-1460&#34;&gt;DOWNLOAD - Hardening Procedure for Solaris Systems&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;
@@ -5574,10 +5574,10 @@ Page 21 of&lt;/p&gt;
       
         <item>
           <title>Third party assessment document</title>
-          <link>https://www.shafiq.in/2012/12/01/third-party-assessment-document/</link>
+          <link>http://www.shafiq.in/2012/12/01/third-party-assessment-document/</link>
           <pubDate>Sat, 01 Dec 2012 21:43:45 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2012/12/01/third-party-assessment-document/</guid>
+          <guid>http://www.shafiq.in/2012/12/01/third-party-assessment-document/</guid>
           <description>&lt;h1&gt;&lt;a href=&#34;http://shafiqissani.wordpress.com/2012/12/01/third-party-assessment-document/blank-third-party-assessment-v1-9_soc1/&#34; rel=&#34;attachment wp-att-1454&#34;&gt;Download Blank Third Party Assessment&lt;/a&gt;&lt;/h1&gt;
 &lt;table border=&#34;0&#34; cellspacing=&#34;0&#34; cellpadding=&#34;0&#34;&gt;
 &lt;tbody&gt;
@@ -15529,10 +15529,10 @@ Page 21 of&lt;/p&gt;
       
         <item>
           <title>Running Firefox os apps in Ubuntu linux</title>
-          <link>https://www.shafiq.in/2012/11/24/running-firefox-os-apps-in-ubuntu-linux/</link>
+          <link>http://www.shafiq.in/2012/11/24/running-firefox-os-apps-in-ubuntu-linux/</link>
           <pubDate>Sat, 24 Nov 2012 17:32:39 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2012/11/24/running-firefox-os-apps-in-ubuntu-linux/</guid>
+          <guid>http://www.shafiq.in/2012/11/24/running-firefox-os-apps-in-ubuntu-linux/</guid>
           <description>&lt;p&gt;&amp;nbsp;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://shafiqissani.files.wordpress.com/2012/11/2012-11-24-172842_1366x768_scrot.png&#34;&gt;&lt;img class=&#34;aligncenter size-full wp-image-1449&#34; title=&#34;2012-11-24-172842_1366x768_scrot&#34; alt=&#34;&#34; src=&#34;{{ site.baseurl }}/assets/2012-11-24-172842_1366x768_scrot.png&#34; height=&#34;339&#34; width=&#34;604&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -15542,10 +15542,10 @@ Page 21 of&lt;/p&gt;
       
         <item>
           <title>iOS Feel - Wordpress theme</title>
-          <link>https://www.shafiq.in/2012/10/31/ios-feel-wordpress-theme/</link>
+          <link>http://www.shafiq.in/2012/10/31/ios-feel-wordpress-theme/</link>
           <pubDate>Wed, 31 Oct 2012 19:56:45 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2012/10/31/ios-feel-wordpress-theme/</guid>
+          <guid>http://www.shafiq.in/2012/10/31/ios-feel-wordpress-theme/</guid>
           <description>&lt;h2&gt;&lt;strong&gt;Simple iOS look-a-like wordpress theme&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;http://shafiqissani.files.wordpress.com/2012/10/screenshot_3.png&#34;&gt;&lt;img class=&#34;aligncenter size-full wp-image-1421&#34; title=&#34;Screenshot_3&#34; alt=&#34;&#34; src=&#34;{{ site.baseurl }}/assets/screenshot_3.png&#34; height=&#34;422&#34; width=&#34;362&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;&lt;strong&gt;Sales page&lt;/strong&gt; -&amp;gt; &lt;a href=&#34;http://cloud.issani.in/simple-ios-look-wordpress-theme/&#34;&gt;http://cloud.issani.in/simple-ios-look-wordpress-theme/&lt;/a&gt;&lt;/h3&gt;
@@ -15557,10 +15557,10 @@ Page 21 of&lt;/p&gt;
       
         <item>
           <title>Releng - The Plan</title>
-          <link>https://www.shafiq.in/2012/08/30/releng-the-plan/</link>
+          <link>http://www.shafiq.in/2012/08/30/releng-the-plan/</link>
           <pubDate>Thu, 30 Aug 2012 22:44:59 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2012/08/30/releng-the-plan/</guid>
+          <guid>http://www.shafiq.in/2012/08/30/releng-the-plan/</guid>
           <description>&lt;p&gt;The plan&lt;/p&gt;
 &lt;p&gt;Everyone loves it when a plan comes together so here’s the general approach to setting up the system:&lt;/p&gt;
 &lt;p&gt;All the configuration files and Puppet Manifests are stored in a git repository&lt;br /&gt;
@@ -15576,10 +15576,10 @@ A puppet run is forced across all servers using MCollective&lt;/p&gt;
       
         <item>
           <title></title>
-          <link>https://www.shafiq.in/2012/08/28/1399/</link>
+          <link>http://www.shafiq.in/2012/08/28/1399/</link>
           <pubDate>Tue, 28 Aug 2012 14:51:34 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2012/08/28/1399/</guid>
+          <guid>http://www.shafiq.in/2012/08/28/1399/</guid>
           <description></description>
         </item>
       
@@ -15587,10 +15587,10 @@ A puppet run is forced across all servers using MCollective&lt;/p&gt;
       
         <item>
           <title>Risk Assessment Checklist</title>
-          <link>https://www.shafiq.in/2012/04/10/risk-assessment-checklist/</link>
+          <link>http://www.shafiq.in/2012/04/10/risk-assessment-checklist/</link>
           <pubDate>Tue, 10 Apr 2012 13:21:08 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2012/04/10/risk-assessment-checklist/</guid>
+          <guid>http://www.shafiq.in/2012/04/10/risk-assessment-checklist/</guid>
           <description>&lt;pre&gt;Download link : &lt;a href=&#34;http://shafiqissani.files.wordpress.com/2012/04/risk-assessment-checklist.doc&#34;&gt;Risk Assessment Checklist&lt;/a&gt;&lt;/pre&gt;
 &lt;p align=&#34;center&#34;&gt;&lt;strong&gt;&lt;span style=&#34;text-decoration:underline;&#34;&gt;Risk Assessment Checklist&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;table border=&#34;1&#34; cellspacing=&#34;0&#34; cellpadding=&#34;0&#34;&gt;
@@ -17440,10 +17440,10 @@ A puppet run is forced across all servers using MCollective&lt;/p&gt;
       
         <item>
           <title>Perl Expect bindings - Simple example</title>
-          <link>https://www.shafiq.in/2012/02/21/perl-expect-bindings-simple-example/</link>
+          <link>http://www.shafiq.in/2012/02/21/perl-expect-bindings-simple-example/</link>
           <pubDate>Tue, 21 Feb 2012 12:48:05 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2012/02/21/perl-expect-bindings-simple-example/</guid>
+          <guid>http://www.shafiq.in/2012/02/21/perl-expect-bindings-simple-example/</guid>
           <description>&lt;p&gt;Hello World file (hello.pl)&lt;/p&gt;
 &lt;pre&gt;#!/usr/bin/perl
 use strict;
@@ -17471,10 +17471,10 @@ $exp-&amp;gt;expect($timeout);
       
         <item>
           <title>Some of my favorite cell phones</title>
-          <link>https://www.shafiq.in/2012/01/23/some-of-my-favorite-cell-phones/</link>
+          <link>http://www.shafiq.in/2012/01/23/some-of-my-favorite-cell-phones/</link>
           <pubDate>Mon, 23 Jan 2012 14:36:52 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2012/01/23/some-of-my-favorite-cell-phones/</guid>
+          <guid>http://www.shafiq.in/2012/01/23/some-of-my-favorite-cell-phones/</guid>
           <description>&lt;p&gt;Nokia 8800 Sirocco&lt;br /&gt;
 Nokia 8600 Luna&lt;br /&gt;
 LG KE850 Prada&lt;br /&gt;
@@ -17497,10 +17497,10 @@ Samsung M7500 Emporio Armani&lt;/p&gt;
       
         <item>
           <title>My email to Datawind... the company that supplies Aakash Ubislate tablets</title>
-          <link>https://www.shafiq.in/2012/01/22/my-email-to-datawind-the-company-that-supplies-aakash-ubislate-tablets/</link>
+          <link>http://www.shafiq.in/2012/01/22/my-email-to-datawind-the-company-that-supplies-aakash-ubislate-tablets/</link>
           <pubDate>Sun, 22 Jan 2012 13:42:58 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2012/01/22/my-email-to-datawind-the-company-that-supplies-aakash-ubislate-tablets/</guid>
+          <guid>http://www.shafiq.in/2012/01/22/my-email-to-datawind-the-company-that-supplies-aakash-ubislate-tablets/</guid>
           <description>&lt;p&gt;Dear Shafiq,&lt;/p&gt;
 &lt;p&gt;Your Booking ID is : xxxxxxxxx&lt;/p&gt;
 &lt;p&gt;Someone from our sales team would get in touch with you and provide you with&lt;br /&gt;
@@ -17547,10 +17547,10 @@ Datawind Innovations Pvt.Ltd.&lt;/p&gt;
       
         <item>
           <title>Continuous Delivery : A Mini Hurdle</title>
-          <link>https://www.shafiq.in/2012/01/02/continuous-delivery-a-mini-hurdle/</link>
+          <link>http://www.shafiq.in/2012/01/02/continuous-delivery-a-mini-hurdle/</link>
           <pubDate>Mon, 02 Jan 2012 23:01:13 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2012/01/02/continuous-delivery-a-mini-hurdle/</guid>
+          <guid>http://www.shafiq.in/2012/01/02/continuous-delivery-a-mini-hurdle/</guid>
           <description>&lt;p&gt;The first hurdle to overcome with Continuous Delivery I think is not getting your product’s code onto the machine itself, but managing the actual machine and it’s software... and in talking to people. It is the subtle nuances between machines due to people tweaking things on the fly that lead to the worst [most annoying] bugs to troubleshoot.&lt;br /&gt;
 The end-goal of managing your machines is that no one ever logs into the machine directly.&lt;/p&gt;
 </description>
@@ -17560,10 +17560,10 @@ The end-goal of managing your machines is that no one ever logs into the machine
       
         <item>
           <title>Continuous Delivery</title>
-          <link>https://www.shafiq.in/2012/01/02/continuous-delivery/</link>
+          <link>http://www.shafiq.in/2012/01/02/continuous-delivery/</link>
           <pubDate>Mon, 02 Jan 2012 22:53:29 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2012/01/02/continuous-delivery/</guid>
+          <guid>http://www.shafiq.in/2012/01/02/continuous-delivery/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://www.infoq.com/resource/articles/QCon-San-Francisco-2010/en/resources/Continuous_Delivery_Notes.png&#34; target=&#34;_blank&#34;&gt;&lt;img class=&#34;alignnone&#34; src=&#34;{{ site.baseurl }}/assets/Continuous_Delivery_Notes.png&#34; alt=&#34;&#34; width=&#34;536&#34; height=&#34;240&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>
@@ -17572,10 +17572,10 @@ The end-goal of managing your machines is that no one ever logs into the machine
       
         <item>
           <title>One liner: To get available virtual memory</title>
-          <link>https://www.shafiq.in/2011/12/10/one-liner-to-get-available-virtual-memory/</link>
+          <link>http://www.shafiq.in/2011/12/10/one-liner-to-get-available-virtual-memory/</link>
           <pubDate>Sat, 10 Dec 2011 18:13:02 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2011/12/10/one-liner-to-get-available-virtual-memory/</guid>
+          <guid>http://www.shafiq.in/2011/12/10/one-liner-to-get-available-virtual-memory/</guid>
           <description>&lt;pre&gt;vmstat -s -SM | grep &#34;free memory&#34; | awk -F&#34; &#34; &#39;{print$1}&#39;&lt;/pre&gt;
 </description>
         </item>
@@ -17584,10 +17584,10 @@ The end-goal of managing your machines is that no one ever logs into the machine
       
         <item>
           <title>Effective human-computer interaction through cognitive biometrics</title>
-          <link>https://www.shafiq.in/2011/11/11/effective-human-computer-interaction-through-cognitive-biometrics/</link>
+          <link>http://www.shafiq.in/2011/11/11/effective-human-computer-interaction-through-cognitive-biometrics/</link>
           <pubDate>Fri, 11 Nov 2011 11:28:31 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2011/11/11/effective-human-computer-interaction-through-cognitive-biometrics/</guid>
+          <guid>http://www.shafiq.in/2011/11/11/effective-human-computer-interaction-through-cognitive-biometrics/</guid>
           <description>&lt;p&gt;Abstract&lt;br /&gt;
 Use of screen &lt;a class=&#34;zem_slink&#34; title=&#34;Design&#34; href=&#34;http://en.wikipedia.org/wiki/Design&#34; rel=&#34;wikipedia&#34;&gt;design&lt;/a&gt;, and a system, is affected by many factors. These include: how much information is presented on a screen, how a screen is organized, the language used on the screen, the distinctiveness of the screen’s components. In this paper I have presented some principles of the screen design and making human computer interaction more effective through cognitive biometric and neural technology.&lt;br /&gt;
 1. Introduction&lt;br /&gt;
@@ -17664,10 +17664,10 @@ Human-computer interaction has been playing very important role in the computer 
       
         <item>
           <title>Applications of Neural Networks</title>
-          <link>https://www.shafiq.in/2011/11/11/applications-of-neural-networks/</link>
+          <link>http://www.shafiq.in/2011/11/11/applications-of-neural-networks/</link>
           <pubDate>Fri, 11 Nov 2011 11:18:11 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2011/11/11/applications-of-neural-networks/</guid>
+          <guid>http://www.shafiq.in/2011/11/11/applications-of-neural-networks/</guid>
           <description>&lt;p align=&#34;CENTER&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;strong&gt;Download Link : &lt;a href=&#34;http://shafiqissani.files.wordpress.com/2011/11/2-appliations.doc&#34;&gt;Appliations&lt;/a&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Chapter 1. Introduction&lt;/p&gt;
 &lt;ol&gt;
@@ -18253,10 +18253,10 @@ Creatures&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
       
         <item>
           <title>OTC Flow</title>
-          <link>https://www.shafiq.in/2011/11/11/otc-flow/</link>
+          <link>http://www.shafiq.in/2011/11/11/otc-flow/</link>
           <pubDate>Fri, 11 Nov 2011 10:51:23 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2011/11/11/otc-flow/</guid>
+          <guid>http://www.shafiq.in/2011/11/11/otc-flow/</guid>
           <description>&lt;p&gt;Download Link : &lt;a href=&#34;http://shafiqissani.files.wordpress.com/2011/11/otc-flow.doc&#34;&gt;OTC Flow&lt;/a&gt;&lt;/p&gt;
 &lt;p align=&#34;CENTER&#34;&gt;&lt;span style=&#34;font-family:Verdana, sans-serif;&#34;&gt;&lt;span style=&#34;font-size:medium;&#34;&gt;&lt;strong&gt;OTC Flow&lt;/strong&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;ol&gt;
@@ -18321,10 +18321,10 @@ Creatures&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
       
         <item>
           <title>Order To Cash (OTC)</title>
-          <link>https://www.shafiq.in/2011/11/11/order-to-cash-otc/</link>
+          <link>http://www.shafiq.in/2011/11/11/order-to-cash-otc/</link>
           <pubDate>Fri, 11 Nov 2011 10:45:24 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2011/11/11/order-to-cash-otc/</guid>
+          <guid>http://www.shafiq.in/2011/11/11/order-to-cash-otc/</guid>
           <description>&lt;pre&gt;Download Link : &lt;a href=&#34;http://shafiqissani.files.wordpress.com/2011/11/12order-to-cash.pdf&#34;&gt;order to cash&lt;/a&gt;
 Order To Cash (OTC)
 Order to cash normally refers to the enterprise resource planning (ERP) process in which taking
@@ -18513,10 +18513,10 @@ Refer the Screen Shot:&lt;/pre&gt;
       
         <item>
           <title>Status Quo : Review Of Some Testing Practices</title>
-          <link>https://www.shafiq.in/2011/11/11/status-quo-review-of-some-testing-practices/</link>
+          <link>http://www.shafiq.in/2011/11/11/status-quo-review-of-some-testing-practices/</link>
           <pubDate>Fri, 11 Nov 2011 10:40:14 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2011/11/11/status-quo-review-of-some-testing-practices/</guid>
+          <guid>http://www.shafiq.in/2011/11/11/status-quo-review-of-some-testing-practices/</guid>
           <description>&lt;pre&gt;Download link : &lt;a href=&#34;http://shafiqissani.files.wordpress.com/2011/11/9status-quo-review-of-existing-testing-practices.pdf&#34;&gt;Status Quo Review of Existing Testing Practices&lt;/a&gt;
 
 Status Quo Review Of Existing &lt;a class=&#34;zem_slink&#34; title=&#34;Software testing&#34; href=&#34;http://en.wikipedia.org/wiki/Software_testing&#34; rel=&#34;wikipedia&#34;&gt;Testing&lt;/a&gt; Practices
@@ -18633,10 +18633,10 @@ merely implies that doing so may be somewhat more difficult.&lt;/pre&gt;
       
         <item>
           <title>Descriptive programming in QTP</title>
-          <link>https://www.shafiq.in/2011/11/11/descriptive-programming-in-qtp/</link>
+          <link>http://www.shafiq.in/2011/11/11/descriptive-programming-in-qtp/</link>
           <pubDate>Fri, 11 Nov 2011 10:30:05 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2011/11/11/descriptive-programming-in-qtp/</guid>
+          <guid>http://www.shafiq.in/2011/11/11/descriptive-programming-in-qtp/</guid>
           <description>&lt;pre&gt;Download link : &lt;a href=&#34;http://shafiqissani.files.wordpress.com/2011/11/6010dae508eb401983bcc812c77ecb17.doc&#34;&gt;6010dae508eb401983bcc812c77ecb17&lt;/a&gt;&lt;/pre&gt;
 &lt;h2&gt;&lt;span style=&#34;font-family:Times, &#39;Times New Roman&#39;, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;br /&gt;
 Introduction:&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;

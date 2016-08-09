@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://www.shafiq.in/tags/ebay/</link>
+    <link>http://www.shafiq.in/tags/ebay/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Applicable values for AddItemRequest.Item.Country</title>
-          <link>https://www.shafiq.in/2013/10/26/applicable-values-for-additemrequest-item-country/</link>
+          <link>http://www.shafiq.in/2013/10/26/applicable-values-for-additemrequest-item-country/</link>
           <pubDate>Sat, 26 Oct 2013 17:59:12 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2013/10/26/applicable-values-for-additemrequest-item-country/</guid>
+          <guid>http://www.shafiq.in/2013/10/26/applicable-values-for-additemrequest-item-country/</guid>
           <description>&lt;h1&gt;Applicable values for AddItemRequest.Item.Country&lt;/h1&gt;
 &lt;table&gt;
 &lt;tbody&gt;
@@ -526,10 +526,10 @@
       
         <item>
           <title>List of Ebay shipping services in UK</title>
-          <link>https://www.shafiq.in/2013/04/14/list-of-ebay-shipping-services-in-uk/</link>
+          <link>http://www.shafiq.in/2013/04/14/list-of-ebay-shipping-services-in-uk/</link>
           <pubDate>Sun, 14 Apr 2013 09:36:44 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2013/04/14/list-of-ebay-shipping-services-in-uk/</guid>
+          <guid>http://www.shafiq.in/2013/04/14/list-of-ebay-shipping-services-in-uk/</guid>
           <description>&lt;p&gt;&amp;lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&amp;gt;&lt;br /&gt;
 &amp;lt;GeteBayDetailsResponse xmlns=&#34;urn:ebay:apis:eBLBaseComponents&#34;&amp;gt;&lt;br /&gt;
 &amp;lt;Timestamp&amp;gt;2013-04-13T07:54:20.770Z&amp;lt;/Timestamp&amp;gt;&lt;br /&gt;

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://www.shafiq.in/tags/css/</link>
+    <link>http://www.shafiq.in/tags/css/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Drupal 7 theme - Mobile boilerplate</title>
-          <link>https://www.shafiq.in/2013/09/05/drupal-7-theme-mobile-boilerplate/</link>
+          <link>http://www.shafiq.in/2013/09/05/drupal-7-theme-mobile-boilerplate/</link>
           <pubDate>Thu, 05 Sep 2013 09:47:24 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2013/09/05/drupal-7-theme-mobile-boilerplate/</guid>
+          <guid>http://www.shafiq.in/2013/09/05/drupal-7-theme-mobile-boilerplate/</guid>
           <description>&lt;p&gt;&lt;strong&gt;Mobile Boilerplate is a professional front-end template that helps you build fast and robust mobile web applications. Spend more time developing and less time reinventing the wheel.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Features&lt;/p&gt;
 &lt;p&gt;Mobile browser optimizations.&lt;br /&gt;
@@ -50,10 +50,10 @@ Cross-domain Ajax.&lt;br /&gt;
       
         <item>
           <title>jquery datatables hide column without removing it from DOM</title>
-          <link>https://www.shafiq.in/2013/04/23/jquery-datatables-hide-column-without-removing-it-from-dom/</link>
+          <link>http://www.shafiq.in/2013/04/23/jquery-datatables-hide-column-without-removing-it-from-dom/</link>
           <pubDate>Tue, 23 Apr 2013 11:11:33 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2013/04/23/jquery-datatables-hide-column-without-removing-it-from-dom/</guid>
+          <guid>http://www.shafiq.in/2013/04/23/jquery-datatables-hide-column-without-removing-it-from-dom/</guid>
           <description>&lt;pre&gt;&lt;a href=&#34;none; }  that should make that column hidden...&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;http://stackoverflow.com/questions/14372655/jquery-datatables-hide-column-without-removing-it-from-dom
 
 &lt;/strong&gt;&lt;/a&gt;
@@ -70,10 +70,10 @@ Cross-domain Ajax.&lt;br /&gt;
       
         <item>
           <title>CSS Browser Compatibility Improvement Tip</title>
-          <link>https://www.shafiq.in/2009/06/06/css-browser-compatibility-improvement-tip/</link>
+          <link>http://www.shafiq.in/2009/06/06/css-browser-compatibility-improvement-tip/</link>
           <pubDate>Sat, 06 Jun 2009 10:09:09 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2009/06/06/css-browser-compatibility-improvement-tip/</guid>
+          <guid>http://www.shafiq.in/2009/06/06/css-browser-compatibility-improvement-tip/</guid>
           <description>&lt;p&gt;Always use the following CSS code when not explicitly mentioning padding and margin.&lt;br /&gt;
 Not all browsers take zero padding and margin by default.&lt;/p&gt;
 &lt;p&gt;html {&lt;br /&gt;

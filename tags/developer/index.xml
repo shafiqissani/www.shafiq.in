@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://www.shafiq.in/tags/developer/</link>
+    <link>http://www.shafiq.in/tags/developer/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>The line that separates a developer from an administrator</title>
-          <link>https://www.shafiq.in/2011/04/04/the-line-that-separates-a-developer-from-an-administrator/</link>
+          <link>http://www.shafiq.in/2011/04/04/the-line-that-separates-a-developer-from-an-administrator/</link>
           <pubDate>Mon, 04 Apr 2011 10:06:59 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2011/04/04/the-line-that-separates-a-developer-from-an-administrator/</guid>
+          <guid>http://www.shafiq.in/2011/04/04/the-line-that-separates-a-developer-from-an-administrator/</guid>
           <description>&lt;p&gt;Experience is the ultimate weapon. I am a big fan of learning from one&#39;s own  mistakes. I have countless stories of stupid decisions, and  although documenting them in a book would be amusing to some, it would serve  little purpose. Truly learning from one&#39;s mistakes requires making them, and the  ramifications of those mistakes ensure that you don&#39;t forget.&lt;/p&gt;
 &lt;p&gt;In my experience, developers have no qualms about pushing code  live to satisfy urgent business needs without regard to the fact that it may  capsize an entire production environment at the most inopportune time. This  happens repeatedly. My assumption is that a developer feels that refusing to  meet a demand from the business side is more likely to result in termination  than the huge finger-pointing that will ensue post-launch, making it evidently clear... the line that separates a developer from an administrator.&lt;/p&gt;
 </description>

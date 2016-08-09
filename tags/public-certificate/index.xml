@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://www.shafiq.in/tags/public-certificate/</link>
+    <link>http://www.shafiq.in/tags/public-certificate/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>OpenSSL - Public Certificate and Private key</title>
-          <link>https://www.shafiq.in/2010/06/10/openssl-public-certificate-and-private-key/</link>
+          <link>http://www.shafiq.in/2010/06/10/openssl-public-certificate-and-private-key/</link>
           <pubDate>Thu, 10 Jun 2010 17:49:12 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2010/06/10/openssl-public-certificate-and-private-key/</guid>
+          <guid>http://www.shafiq.in/2010/06/10/openssl-public-certificate-and-private-key/</guid>
           <description>&lt;p&gt;privatekey -&amp;gt; openssl  genrsa [-out filename] [-passout arg] [-des] [-des3] [-idea] [-f4] [-3] [-rand file(s)] [numbits]&lt;/p&gt;
 &lt;p&gt;public certificate -&amp;gt; $ openssl req -new -x509 -nodes -sha1 -days 365 -key host.key &amp;gt; host.cert&lt;/p&gt;
 </description>

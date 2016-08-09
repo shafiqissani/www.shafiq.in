@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://www.shafiq.in/categories/seo/</link>
+    <link>http://www.shafiq.in/categories/seo/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Choose your titles wisely for better URLs</title>
-          <link>https://www.shafiq.in/2009/06/20/choose-your-titles-wisely-for-better-urls/</link>
+          <link>http://www.shafiq.in/2009/06/20/choose-your-titles-wisely-for-better-urls/</link>
           <pubDate>Sat, 20 Jun 2009 05:47:06 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2009/06/20/choose-your-titles-wisely-for-better-urls/</guid>
+          <guid>http://www.shafiq.in/2009/06/20/choose-your-titles-wisely-for-better-urls/</guid>
           <description>&lt;p&gt;&lt;span&gt;R&lt;/span&gt;emember to always use the hyphen character (-) in your weblinks if it contains more than one word. That way, you&#39;ll get more value from your URL keywords. Google treats hyphen (-) like a space, while it treats underscore as a non-breaking space.&lt;/p&gt;
 &lt;p&gt;The slash character / is also treated as a space, by the way. I wouldn&#39;t use that in a URL, but you are safe using it to separate two keywords in your texts.&lt;/p&gt;
 </description>

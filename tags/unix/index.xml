@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://www.shafiq.in/tags/unix/</link>
+    <link>http://www.shafiq.in/tags/unix/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>[HowTo] Replace ip address using sed</title>
-          <link>https://www.shafiq.in/2011/06/20/howto-replace-ip-address-using-sed/</link>
+          <link>http://www.shafiq.in/2011/06/20/howto-replace-ip-address-using-sed/</link>
           <pubDate>Mon, 20 Jun 2011 17:08:01 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2011/06/20/howto-replace-ip-address-using-sed/</guid>
+          <guid>http://www.shafiq.in/2011/06/20/howto-replace-ip-address-using-sed/</guid>
           <description>&lt;p&gt;Following one-liner will search for a ip address pattern in the specified file and replace it with the one provided :&lt;/p&gt;
 &lt;pre&gt; sed &#39;s/[0-9]\{1,3\}.[0-9]\{1,3\}.[0-9]\{1,3\}.[0-9]\{1,3\}/&lt;strong&gt;IPADDRESS-COMES-HERE&lt;/strong&gt;/g&#39; /SourceFilename &amp;gt; /DestinationFilename&lt;/pre&gt;
 </description>
@@ -25,10 +25,10 @@
       
         <item>
           <title>Disable services in Solaris 10</title>
-          <link>https://www.shafiq.in/2011/05/23/disable-services-in-solaris-10/</link>
+          <link>http://www.shafiq.in/2011/05/23/disable-services-in-solaris-10/</link>
           <pubDate>Mon, 23 May 2011 22:27:14 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2011/05/23/disable-services-in-solaris-10/</guid>
+          <guid>http://www.shafiq.in/2011/05/23/disable-services-in-solaris-10/</guid>
           <description>&lt;p&gt;To disable a service you have to be root or have a sudo, for example, i want to disable puppet:&lt;/p&gt;
 &lt;pre&gt;# svcs | &lt;a class=&#34;zem_slink&#34; title=&#34;Grep&#34; href=&#34;http://en.wikipedia.org/wiki/Grep&#34; rel=&#34;wikipedia&#34;&gt;grep&lt;/a&gt; puppet
 online          9:51:57 svc:/network/cswpuppetd:default&lt;/pre&gt;
@@ -41,10 +41,10 @@ online          9:51:57 svc:/network/cswpuppetd:default&lt;/pre&gt;
       
         <item>
           <title>Puppet logs in solaris 10</title>
-          <link>https://www.shafiq.in/2011/05/19/puppet-logs-in-solaris-10/</link>
+          <link>http://www.shafiq.in/2011/05/19/puppet-logs-in-solaris-10/</link>
           <pubDate>Thu, 19 May 2011 22:24:58 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2011/05/19/puppet-logs-in-solaris-10/</guid>
+          <guid>http://www.shafiq.in/2011/05/19/puppet-logs-in-solaris-10/</guid>
           <description>&lt;p&gt;/var/svc/log/network-cswpuppetd:default.log&lt;br /&gt;
 /var/svc/log/network-cswpuppetmasterd:default.log&lt;/p&gt;
 &lt;p&gt;p.s. use `tail -f &amp;lt;log file name&amp;gt;`&lt;/p&gt;
@@ -55,10 +55,10 @@ online          9:51:57 svc:/network/cswpuppetd:default&lt;/pre&gt;
       
         <item>
           <title>Release Engineering 101 - Build Script</title>
-          <link>https://www.shafiq.in/2011/05/08/release-engineering-101-build-script/</link>
+          <link>http://www.shafiq.in/2011/05/08/release-engineering-101-build-script/</link>
           <pubDate>Sun, 08 May 2011 02:07:16 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2011/05/08/release-engineering-101-build-script/</guid>
+          <guid>http://www.shafiq.in/2011/05/08/release-engineering-101-build-script/</guid>
           <description>&lt;p&gt;Each &lt;a class=&#34;zem_slink&#34; title=&#34;Computing platform&#34; href=&#34;http://en.wikipedia.org/wiki/Computing_platform&#34; rel=&#34;wikipedia&#34;&gt;software platform&lt;/a&gt; will provide a way to write a script and invoke a sequence of &lt;a class=&#34;zem_slink&#34; title=&#34;Software build&#34; href=&#34;http://en.wikipedia.org/wiki/Software_build&#34; rel=&#34;wikipedia&#34;&gt;build&lt;/a&gt; steps &lt;a class=&#34;zem_slink&#34; title=&#34;Unix&#34; href=&#34;http://www.unix.org&#34; rel=&#34;homepage&#34;&gt;Unix&lt;/a&gt; &lt;a class=&#34;zem_slink&#34; title=&#34;Shell script&#34; href=&#34;http://en.wikipedia.org/wiki/Shell_script&#34; rel=&#34;wikipedia&#34;&gt;shell scripts&lt;/a&gt;, make files, windows &lt;a class=&#34;zem_slink&#34; title=&#34;Batch file&#34; href=&#34;http://en.wikipedia.org/wiki/Batch_file&#34; rel=&#34;wikipedia&#34;&gt;batch files&lt;/a&gt; etc can be used to define a build script.&lt;/p&gt;
 &lt;p&gt;A framework / tool like &lt;a class=&#34;zem_slink&#34; title=&#34;Apache Ant&#34; href=&#34;http://ant.apache.org&#34; rel=&#34;homepage&#34;&gt;ANT&lt;/a&gt;, helps in abstracting the script from a platform dependency and use simple &lt;a class=&#34;zem_slink&#34; title=&#34;XML&#34; href=&#34;http://en.wikipedia.org/wiki/XML&#34; rel=&#34;wikipedia&#34;&gt;XML&lt;/a&gt; file to define the build script.&lt;br /&gt;
 Interestingly ANT itself is only a XML notation, that defines the sequence of steps. The steps themselves rely on the code base, framework binaries, &lt;a class=&#34;zem_slink&#34; title=&#34;Software development kit&#34; href=&#34;http://en.wikipedia.org/wiki/Software_development_kit&#34; rel=&#34;wikipedia&#34;&gt;SDK&lt;/a&gt; binaries etc.&lt;br /&gt;
@@ -70,10 +70,10 @@ In summary using any suitable syntax a build script should be defined. The scri
       
         <item>
           <title>How To Get The Current Epoch Time (Unix Timestamp)</title>
-          <link>https://www.shafiq.in/2010/09/30/how-to-get-the-current-epoch-time-unix-timestamp/</link>
+          <link>http://www.shafiq.in/2010/09/30/how-to-get-the-current-epoch-time-unix-timestamp/</link>
           <pubDate>Thu, 30 Sep 2010 10:26:45 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2010/09/30/how-to-get-the-current-epoch-time-unix-timestamp/</guid>
+          <guid>http://www.shafiq.in/2010/09/30/how-to-get-the-current-epoch-time-unix-timestamp/</guid>
           <description>&lt;h2&gt;&lt;span style=&#34;font-weight:normal;font-size:13px;&#34;&gt; &lt;/span&gt;&lt;/h2&gt;
 &lt;table border=&#34;0&#34; cellspacing=&#34;0&#34; cellpadding=&#34;2&#34;&gt;
 &lt;tbody&gt;

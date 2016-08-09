@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://www.shafiq.in/tags/mobile-boilerplate/</link>
+    <link>http://www.shafiq.in/tags/mobile-boilerplate/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Drupal 7 theme - Mobile boilerplate</title>
-          <link>https://www.shafiq.in/2013/09/05/drupal-7-theme-mobile-boilerplate/</link>
+          <link>http://www.shafiq.in/2013/09/05/drupal-7-theme-mobile-boilerplate/</link>
           <pubDate>Thu, 05 Sep 2013 09:47:24 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2013/09/05/drupal-7-theme-mobile-boilerplate/</guid>
+          <guid>http://www.shafiq.in/2013/09/05/drupal-7-theme-mobile-boilerplate/</guid>
           <description>&lt;p&gt;&lt;strong&gt;Mobile Boilerplate is a professional front-end template that helps you build fast and robust mobile web applications. Spend more time developing and less time reinventing the wheel.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Features&lt;/p&gt;
 &lt;p&gt;Mobile browser optimizations.&lt;br /&gt;

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://www.shafiq.in/categories/letterhead/</link>
+    <link>http://www.shafiq.in/categories/letterhead/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Letterhead for C.S.E Association</title>
-          <link>https://www.shafiq.in/2009/03/22/letterhead-for-cse-association/</link>
+          <link>http://www.shafiq.in/2009/03/22/letterhead-for-cse-association/</link>
           <pubDate>Sun, 22 Mar 2009 11:12:04 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2009/03/22/letterhead-for-cse-association/</guid>
+          <guid>http://www.shafiq.in/2009/03/22/letterhead-for-cse-association/</guid>
           <description>&lt;p&gt;&lt;img class=&#34;alignnone size-full wp-image-110&#34; title=&#34;letterhead1100151&#34; src=&#34;{{ site.baseurl }}/assets/letterhead1100151.jpg&#34; alt=&#34;letterhead1100151&#34; width=&#34;452&#34; height=&#34;640&#34; /&gt;&lt;/p&gt;
 </description>
         </item>

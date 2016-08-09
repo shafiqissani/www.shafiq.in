@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://www.shafiq.in/categories/svn/</link>
+    <link>http://www.shafiq.in/categories/svn/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>SVN - revision control - slides - pdf</title>
-          <link>https://www.shafiq.in/2010/03/22/svn-revision-control-slides-pdf/</link>
+          <link>http://www.shafiq.in/2010/03/22/svn-revision-control-slides-pdf/</link>
           <pubDate>Mon, 22 Mar 2010 06:54:55 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2010/03/22/svn-revision-control-slides-pdf/</guid>
+          <guid>http://www.shafiq.in/2010/03/22/svn-revision-control-slides-pdf/</guid>
           <description>&lt;h3&gt;SVN - revision control&lt;/h3&gt;
 &lt;pre&gt;Download pdf : &lt;a href=&#34;http://docs.issani.in/dump/svn-tuts-100217-v2.pdf&#34;&gt;&lt;span style=&#34;color:#000000;&#34;&gt;http://docs.issani.in/dump/svn-tuts-100217-v2.pdf&lt;/span&gt;&lt;/a&gt;&lt;/pre&gt;
 &lt;div id=&#34;_mcePaste&#34;&gt;Coordinating projects&lt;/div&gt;

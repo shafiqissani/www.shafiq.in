@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://www.shafiq.in/tags/ip-address/</link>
+    <link>http://www.shafiq.in/tags/ip-address/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>[HowTo] Replace ip address using sed</title>
-          <link>https://www.shafiq.in/2011/06/20/howto-replace-ip-address-using-sed/</link>
+          <link>http://www.shafiq.in/2011/06/20/howto-replace-ip-address-using-sed/</link>
           <pubDate>Mon, 20 Jun 2011 17:08:01 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2011/06/20/howto-replace-ip-address-using-sed/</guid>
+          <guid>http://www.shafiq.in/2011/06/20/howto-replace-ip-address-using-sed/</guid>
           <description>&lt;p&gt;Following one-liner will search for a ip address pattern in the specified file and replace it with the one provided :&lt;/p&gt;
 &lt;pre&gt; sed &#39;s/[0-9]\{1,3\}.[0-9]\{1,3\}.[0-9]\{1,3\}.[0-9]\{1,3\}/&lt;strong&gt;IPADDRESS-COMES-HERE&lt;/strong&gt;/g&#39; /SourceFilename &amp;gt; /DestinationFilename&lt;/pre&gt;
 </description>

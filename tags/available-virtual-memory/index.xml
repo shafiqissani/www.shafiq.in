@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://www.shafiq.in/tags/available-virtual-memory/</link>
+    <link>http://www.shafiq.in/tags/available-virtual-memory/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>One liner: To get available virtual memory</title>
-          <link>https://www.shafiq.in/2011/12/10/one-liner-to-get-available-virtual-memory/</link>
+          <link>http://www.shafiq.in/2011/12/10/one-liner-to-get-available-virtual-memory/</link>
           <pubDate>Sat, 10 Dec 2011 18:13:02 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2011/12/10/one-liner-to-get-available-virtual-memory/</guid>
+          <guid>http://www.shafiq.in/2011/12/10/one-liner-to-get-available-virtual-memory/</guid>
           <description>&lt;pre&gt;vmstat -s -SM | grep &#34;free memory&#34; | awk -F&#34; &#34; &#39;{print$1}&#39;&lt;/pre&gt;
 </description>
         </item>

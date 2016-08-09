@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://www.shafiq.in/tags/error-message/</link>
+    <link>http://www.shafiq.in/tags/error-message/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Puppet Error - Could not file class in namespace - [solved]</title>
-          <link>https://www.shafiq.in/2011/01/18/puppet-error-could-not-file-class-in-namespace-solved/</link>
+          <link>http://www.shafiq.in/2011/01/18/puppet-error-could-not-file-class-in-namespace-solved/</link>
           <pubDate>Tue, 18 Jan 2011 12:33:39 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2011/01/18/puppet-error-could-not-file-class-in-namespace-solved/</guid>
+          <guid>http://www.shafiq.in/2011/01/18/puppet-error-could-not-file-class-in-namespace-solved/</guid>
           <description>&lt;p&gt;Yet another silly &lt;a class=&#34;zem_slink&#34; title=&#34;Error message&#34; rel=&#34;wikipedia&#34; href=&#34;http://en.wikipedia.org/wiki/Error_message&#34;&gt;error message&lt;/a&gt;... that is nowhere near accurate. So if you get the following error one of the possible mistakes would be a missing curly bracket. Yea, I wasted an hour on this one. ppsshh&lt;/p&gt;
 &lt;pre&gt;err: Could not retrieve catalog: Could not find class php in namespaces standardbuild at /etc/puppet/manifests/templates.pp:15 on domain.internal.com&lt;/pre&gt;
 </description>

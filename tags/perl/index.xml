@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://www.shafiq.in/tags/perl/</link>
+    <link>http://www.shafiq.in/tags/perl/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Perl Expect bindings - Simple example</title>
-          <link>https://www.shafiq.in/2012/02/21/perl-expect-bindings-simple-example/</link>
+          <link>http://www.shafiq.in/2012/02/21/perl-expect-bindings-simple-example/</link>
           <pubDate>Tue, 21 Feb 2012 12:48:05 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2012/02/21/perl-expect-bindings-simple-example/</guid>
+          <guid>http://www.shafiq.in/2012/02/21/perl-expect-bindings-simple-example/</guid>
           <description>&lt;p&gt;Hello World file (hello.pl)&lt;/p&gt;
 &lt;pre&gt;#!/usr/bin/perl
 use strict;
@@ -43,10 +43,10 @@ $exp-&amp;gt;expect($timeout);
       
         <item>
           <title>Perl - system load</title>
-          <link>https://www.shafiq.in/2010/09/07/perl-system-load/</link>
+          <link>http://www.shafiq.in/2010/09/07/perl-system-load/</link>
           <pubDate>Tue, 07 Sep 2010 14:15:06 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2010/09/07/perl-system-load/</guid>
+          <guid>http://www.shafiq.in/2010/09/07/perl-system-load/</guid>
           <description>&lt;p&gt;To find the system load use the following perl snippet :&lt;/p&gt;
 &lt;p&gt;1) &lt;a class=&#34;zem_slink&#34; title=&#34;Load (computing)&#34; rel=&#34;wikipedia&#34; href=&#34;http://en.wikipedia.org/wiki/Load_%28computing%29&#34;&gt;System load&lt;/a&gt; of last one minute :&lt;/p&gt;
 &lt;pre&gt;&lt;del&gt;&lt;span style=&#34;font-family:Georgia, &#39;Bitstream Charter&#39;, serif;color:#444444;&#34;&gt;my $system_load = exec(&#39;&lt;a class=&#34;zem_slink&#34; title=&#34;Uptime&#34; rel=&#34;wikipedia&#34; href=&#34;http://en.wikipedia.org/wiki/Uptime&#34;&gt;uptime&lt;/a&gt; | &lt;a class=&#34;zem_slink&#34; title=&#34;AWK&#34; rel=&#34;homepage&#34; href=&#34;http://cm.bell-labs.com/cm/cs/awkbook/index.html&#34;&gt;awk&lt;/a&gt; -F &#34;load average: &#34; 
@@ -37192,10 +37192,10 @@ $exp-&amp;gt;expect($timeout);
       
         <item>
           <title>Gearman - Can&#39;t call method &#34;syswrite&#34; on an undefined value at /usr/local/share/perl/5.10.1/Gearman/Taskset.pm line 202.</title>
-          <link>https://www.shafiq.in/2010/08/31/gearman-cant-call-method-syswrite-on-an-undefined-value-at-usrlocalshareperl5-10-1gearmantaskset-pm-line-202/</link>
+          <link>http://www.shafiq.in/2010/08/31/gearman-cant-call-method-syswrite-on-an-undefined-value-at-usrlocalshareperl5-10-1gearmantaskset-pm-line-202/</link>
           <pubDate>Tue, 31 Aug 2010 15:07:09 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2010/08/31/gearman-cant-call-method-syswrite-on-an-undefined-value-at-usrlocalshareperl5-10-1gearmantaskset-pm-line-202/</guid>
+          <guid>http://www.shafiq.in/2010/08/31/gearman-cant-call-method-syswrite-on-an-undefined-value-at-usrlocalshareperl5-10-1gearmantaskset-pm-line-202/</guid>
           <description>&lt;p&gt;If you get the following error while running the client code :&lt;/p&gt;
 &lt;p&gt;Can&#39;t call method &#34;syswrite&#34; on an undefined value at /usr/local/share/perl/5.10.1/Gearman/Taskset.pm line 202.&lt;/p&gt;
 &lt;p&gt;... then change this&lt;/p&gt;
@@ -37211,10 +37211,10 @@ $exp-&amp;gt;expect($timeout);
       
         <item>
           <title>Gearman and Perl</title>
-          <link>https://www.shafiq.in/2010/08/31/gearman-and-perl/</link>
+          <link>http://www.shafiq.in/2010/08/31/gearman-and-perl/</link>
           <pubDate>Tue, 31 Aug 2010 14:50:17 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2010/08/31/gearman-and-perl/</guid>
+          <guid>http://www.shafiq.in/2010/08/31/gearman-and-perl/</guid>
           <description>&lt;p&gt;[slideshare id=3028682&amp;amp;doc=gearman-100130043018-phpapp02]&lt;/p&gt;
 </description>
         </item>

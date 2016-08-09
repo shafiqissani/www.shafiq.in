@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://www.shafiq.in/tags/javaserver-pages/</link>
+    <link>http://www.shafiq.in/tags/javaserver-pages/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Notes on build script</title>
-          <link>https://www.shafiq.in/2011/05/10/notes-on-build-script/</link>
+          <link>http://www.shafiq.in/2011/05/10/notes-on-build-script/</link>
           <pubDate>Tue, 10 May 2011 00:01:40 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2011/05/10/notes-on-build-script/</guid>
+          <guid>http://www.shafiq.in/2011/05/10/notes-on-build-script/</guid>
           <description>&lt;ul&gt;
 &lt;li&gt;Choose a language that can be used in &lt;a class=&#34;zem_slink&#34; title=&#34;Cross-platform&#34; href=&#34;http://en.wikipedia.org/wiki/Cross-platform&#34; rel=&#34;wikipedia&#34;&gt;multiple platforms&lt;/a&gt; (very important for a &lt;a class=&#34;zem_slink&#34; title=&#34;Java (programming language)&#34; href=&#34;http://www.oracle.com/technetwork/java/&#34; rel=&#34;homepage&#34;&gt;Java&lt;/a&gt; project)&lt;/li&gt;
 &lt;li&gt;Ensure that as many steps are automated. Begin with a full clean up and allow full &lt;a class=&#34;zem_slink&#34; title=&#34;Software build&#34; href=&#34;http://en.wikipedia.org/wiki/Software_build&#34; rel=&#34;wikipedia&#34;&gt;build&lt;/a&gt; and deployment to the server&lt;/li&gt;

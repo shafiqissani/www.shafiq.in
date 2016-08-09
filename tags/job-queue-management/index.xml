@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://www.shafiq.in/tags/job-queue-management/</link>
+    <link>http://www.shafiq.in/tags/job-queue-management/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Gearman and Perl</title>
-          <link>https://www.shafiq.in/2010/08/31/gearman-and-perl/</link>
+          <link>http://www.shafiq.in/2010/08/31/gearman-and-perl/</link>
           <pubDate>Tue, 31 Aug 2010 14:50:17 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2010/08/31/gearman-and-perl/</guid>
+          <guid>http://www.shafiq.in/2010/08/31/gearman-and-perl/</guid>
           <description>&lt;p&gt;[slideshare id=3028682&amp;amp;doc=gearman-100130043018-phpapp02]&lt;/p&gt;
 </description>
         </item>

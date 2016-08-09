@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://www.shafiq.in/tags/bash/</link>
+    <link>http://www.shafiq.in/tags/bash/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Disable services in Solaris 10</title>
-          <link>https://www.shafiq.in/2011/05/23/disable-services-in-solaris-10/</link>
+          <link>http://www.shafiq.in/2011/05/23/disable-services-in-solaris-10/</link>
           <pubDate>Mon, 23 May 2011 22:27:14 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2011/05/23/disable-services-in-solaris-10/</guid>
+          <guid>http://www.shafiq.in/2011/05/23/disable-services-in-solaris-10/</guid>
           <description>&lt;p&gt;To disable a service you have to be root or have a sudo, for example, i want to disable puppet:&lt;/p&gt;
 &lt;pre&gt;# svcs | &lt;a class=&#34;zem_slink&#34; title=&#34;Grep&#34; href=&#34;http://en.wikipedia.org/wiki/Grep&#34; rel=&#34;wikipedia&#34;&gt;grep&lt;/a&gt; puppet
 online          9:51:57 svc:/network/cswpuppetd:default&lt;/pre&gt;

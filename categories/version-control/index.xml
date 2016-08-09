@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://www.shafiq.in/categories/version-control/</link>
+    <link>http://www.shafiq.in/categories/version-control/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Continuous Delivery : A Mini Hurdle</title>
-          <link>https://www.shafiq.in/2012/01/02/continuous-delivery-a-mini-hurdle/</link>
+          <link>http://www.shafiq.in/2012/01/02/continuous-delivery-a-mini-hurdle/</link>
           <pubDate>Mon, 02 Jan 2012 23:01:13 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2012/01/02/continuous-delivery-a-mini-hurdle/</guid>
+          <guid>http://www.shafiq.in/2012/01/02/continuous-delivery-a-mini-hurdle/</guid>
           <description>&lt;p&gt;The first hurdle to overcome with Continuous Delivery I think is not getting your product’s code onto the machine itself, but managing the actual machine and it’s software... and in talking to people. It is the subtle nuances between machines due to people tweaking things on the fly that lead to the worst [most annoying] bugs to troubleshoot.&lt;br /&gt;
 The end-goal of managing your machines is that no one ever logs into the machine directly.&lt;/p&gt;
 </description>
@@ -25,10 +25,10 @@ The end-goal of managing your machines is that no one ever logs into the machine
       
         <item>
           <title>Continuous Deployment</title>
-          <link>https://www.shafiq.in/2010/10/19/continuous-deployment/</link>
+          <link>http://www.shafiq.in/2010/10/19/continuous-deployment/</link>
           <pubDate>Tue, 19 Oct 2010 14:37:45 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2010/10/19/continuous-deployment/</guid>
+          <guid>http://www.shafiq.in/2010/10/19/continuous-deployment/</guid>
           <description>&lt;p&gt;[slideshare id=5345889&amp;amp;doc=continuousdeployment-101003140021-phpapp01]&lt;/p&gt;
 </description>
         </item>
@@ -37,10 +37,10 @@ The end-goal of managing your machines is that no one ever logs into the machine
       
         <item>
           <title>Ajax Tabbed Google Search - A Typo3 Extension</title>
-          <link>https://www.shafiq.in/2010/04/13/ajax-tabbed-google-search-a-typo3-extension/</link>
+          <link>http://www.shafiq.in/2010/04/13/ajax-tabbed-google-search-a-typo3-extension/</link>
           <pubDate>Tue, 13 Apr 2010 16:11:54 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2010/04/13/ajax-tabbed-google-search-a-typo3-extension/</guid>
+          <guid>http://www.shafiq.in/2010/04/13/ajax-tabbed-google-search-a-typo3-extension/</guid>
           <description>&lt;p&gt;Following is the link to *my first* typo3 extension.&lt;/p&gt;
 &lt;p&gt;It’s a&lt;strong&gt; &lt;/strong&gt;front end plugin used to display a modified google search engine.  The search engine is ajax based and has tabs feature. There is absolutely no page loading.&lt;/p&gt;
 &lt;pre&gt;&lt;em&gt;&lt;strong&gt;Download Link :  &lt;/strong&gt;&lt;/em&gt;&lt;em&gt;&lt;a href=&#34;http://projects.issani.in/typo3/ajax_google_search/T3X_ajax_google_search-0_0_1-z-201004131450.t3x&#34;&gt;&lt;strong&gt;http://projects.issani.in/typo3/ajax_google_search/T3X_ajax_google_search-0_0_1-z-201004131450.t3x&lt;/strong&gt;&lt;/a&gt;&lt;/em&gt;&lt;/pre&gt;
@@ -61,10 +61,10 @@ The end-goal of managing your machines is that no one ever logs into the machine
       
         <item>
           <title>SVN - revision control - slides - pdf</title>
-          <link>https://www.shafiq.in/2010/03/22/svn-revision-control-slides-pdf/</link>
+          <link>http://www.shafiq.in/2010/03/22/svn-revision-control-slides-pdf/</link>
           <pubDate>Mon, 22 Mar 2010 06:54:55 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2010/03/22/svn-revision-control-slides-pdf/</guid>
+          <guid>http://www.shafiq.in/2010/03/22/svn-revision-control-slides-pdf/</guid>
           <description>&lt;h3&gt;SVN - revision control&lt;/h3&gt;
 &lt;pre&gt;Download pdf : &lt;a href=&#34;http://docs.issani.in/dump/svn-tuts-100217-v2.pdf&#34;&gt;&lt;span style=&#34;color:#000000;&#34;&gt;http://docs.issani.in/dump/svn-tuts-100217-v2.pdf&lt;/span&gt;&lt;/a&gt;&lt;/pre&gt;
 &lt;div id=&#34;_mcePaste&#34;&gt;Coordinating projects&lt;/div&gt;

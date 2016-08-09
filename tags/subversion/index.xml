@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://www.shafiq.in/tags/subversion/</link>
+    <link>http://www.shafiq.in/tags/subversion/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Release Engineering 101 - Using Version Control System (Subversion)</title>
-          <link>https://www.shafiq.in/2011/05/11/release-engineering-101-using-version-control-system-subversion/</link>
+          <link>http://www.shafiq.in/2011/05/11/release-engineering-101-using-version-control-system-subversion/</link>
           <pubDate>Wed, 11 May 2011 22:08:57 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2011/05/11/release-engineering-101-using-version-control-system-subversion/</guid>
+          <guid>http://www.shafiq.in/2011/05/11/release-engineering-101-using-version-control-system-subversion/</guid>
           <description>&lt;p&gt;&lt;a class=&#34;zem_slink&#34; title=&#34;Apache Subversion&#34; href=&#34;http://subversion.apache.org/&#34; rel=&#34;homepage&#34;&gt;Subversion&lt;/a&gt; has a few interesting ways of managing releases. The obvious one is the &lt;a class=&#34;zem_slink&#34; title=&#34;Revision control&#34; href=&#34;http://en.wikipedia.org/wiki/Revision_control&#34; rel=&#34;wikipedia&#34;&gt;revision number&lt;/a&gt; - you committed revision 1234 to Subversion from your local workstation, then you &#34;&lt;a class=&#34;zem_slink&#34; title=&#34;Export&#34; href=&#34;http://en.wikipedia.org/wiki/Export&#34; rel=&#34;wikipedia&#34;&gt;exported&lt;/a&gt;&#34; revision 1234 to Dev, tested, signed off, and as a final step (once you&#39;re happy with your testing) you export revision 1234 to the &lt;a class=&#34;zem_slink&#34; title=&#34;Quality assurance&#34; href=&#34;http://en.wikipedia.org/wiki/Quality_assurance&#34; rel=&#34;wikipedia&#34;&gt;QA&lt;/a&gt; machine. (The process then repeats, but with different testers/QA people, and with UA -&amp;gt; Production instead of Dev -&amp;gt; UA).&lt;/p&gt;
 &lt;p&gt;A more robust approach, however, would be for you to create &#34;tags&#34; (tags are simply copies) - you committed revision 1234 to Subversion, but 1234 is a but of a mouthful. It&#39;d be nicer if there was an easier, clearer way to refer to the code you&#39;re interesting in testing. What you&#39;d do is copy your existing code tree to a new directory, e.g. from /trunk/ to /tags/tag-2010-01-11_1500. Since tags (all copies, in fact) are in Subversion you may find you create tags frequently - /tags/build-2010-01-11_1600, /tags/releases-v1.2.3. Tags can be exported to Dev, QA and Production machines just as easily (if not more easily) than revisions.&lt;/p&gt;
 </description>

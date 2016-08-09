@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://www.shafiq.in/tags/open-source/</link>
+    <link>http://www.shafiq.in/tags/open-source/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>shafiqissani/Puppet-Manifests · GitHub</title>
-          <link>https://www.shafiq.in/2013/04/05/shafiqissanipuppet-manifests-%C2%B7-github/</link>
+          <link>http://www.shafiq.in/2013/04/05/shafiqissanipuppet-manifests-%C2%B7-github/</link>
           <pubDate>Fri, 05 Apr 2013 16:07:11 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2013/04/05/shafiqissanipuppet-manifests-%C2%B7-github/</guid>
+          <guid>http://www.shafiq.in/2013/04/05/shafiqissanipuppet-manifests-%C2%B7-github/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;https://github.com/shafiqissani/Puppet-Manifests#.UV7nqQPjLxg.wordpress&#34;&gt;shafiqissani/Puppet-Manifests · GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;div class=&#34;repository-description&#34; id=&#34;repository_description&#34;&gt;
 &lt;p&gt;Puppet manifests I used for a Solaris project. Demonstrates environments, classes, definitions, groups, users, etc. Includes sudo and nagios modules. &lt;span id=&#34;read_more&#34;&gt;— &lt;a href=&#34;https://github.com/shafiqissani/Puppet-Manifests#readme&#34;&gt;Read more&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://www.shafiq.in/tags/expect/</link>
+    <link>http://www.shafiq.in/tags/expect/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Perl Expect bindings - Simple example</title>
-          <link>https://www.shafiq.in/2012/02/21/perl-expect-bindings-simple-example/</link>
+          <link>http://www.shafiq.in/2012/02/21/perl-expect-bindings-simple-example/</link>
           <pubDate>Tue, 21 Feb 2012 12:48:05 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2012/02/21/perl-expect-bindings-simple-example/</guid>
+          <guid>http://www.shafiq.in/2012/02/21/perl-expect-bindings-simple-example/</guid>
           <description>&lt;p&gt;Hello World file (hello.pl)&lt;/p&gt;
 &lt;pre&gt;#!/usr/bin/perl
 use strict;

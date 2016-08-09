@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://www.shafiq.in/tags/requirements-gathering/</link>
+    <link>http://www.shafiq.in/tags/requirements-gathering/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Requirements Gathering</title>
-          <link>https://www.shafiq.in/2010/07/31/requirements-gathering/</link>
+          <link>http://www.shafiq.in/2010/07/31/requirements-gathering/</link>
           <pubDate>Sat, 31 Jul 2010 16:32:19 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2010/07/31/requirements-gathering/</guid>
+          <guid>http://www.shafiq.in/2010/07/31/requirements-gathering/</guid>
           <description>&lt;p&gt;Just as there is no one right programming language for every application, there is no one right way to develop the more detailed specifications. Different environments call for different techniques, and the requirements managers and requirements writers will probably need to develop a mix of skills suited to various circumstances.&lt;/p&gt;
 </description>
         </item>
@@ -24,10 +24,10 @@
       
         <item>
           <title>Why can we not allow for a process that creates detailed requirements and design information for each feature so that we can create more meaningful estimates?</title>
-          <link>https://www.shafiq.in/2010/07/19/why-can-we-not-allow-for-a-process-that-creates-detailed-requirements-and-design-information-for-each-feature-so-that-we-can-create-more-meaningful-estimates/</link>
+          <link>http://www.shafiq.in/2010/07/19/why-can-we-not-allow-for-a-process-that-creates-detailed-requirements-and-design-information-for-each-feature-so-that-we-can-create-more-meaningful-estimates/</link>
           <pubDate>Mon, 19 Jul 2010 14:56:59 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2010/07/19/why-can-we-not-allow-for-a-process-that-creates-detailed-requirements-and-design-information-for-each-feature-so-that-we-can-create-more-meaningful-estimates/</guid>
+          <guid>http://www.shafiq.in/2010/07/19/why-can-we-not-allow-for-a-process-that-creates-detailed-requirements-and-design-information-for-each-feature-so-that-we-can-create-more-meaningful-estimates/</guid>
           <description>&lt;p&gt;Why can we not allow for a process that creates detailed requirements and design information for each feature so that we can create more meaningful estimates? Isn&#39;t that the professional way to approach the problem? If the schedule provides time for more detailed estimating at this time, by all means do it! However, we believe that it is crucial to be able to make some quick decisions about the scope of the activity without a more detailed estimate. Why? Because to do otherwise invests resources in what will later be determined to be &#34;wasted inventory,&#34;&lt;/p&gt;
 </description>
         </item>

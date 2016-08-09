@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://www.shafiq.in/tags/browser-compatibility-improvement-tip/</link>
+    <link>http://www.shafiq.in/tags/browser-compatibility-improvement-tip/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>CSS Browser Compatibility Improvement Tip</title>
-          <link>https://www.shafiq.in/2009/06/06/css-browser-compatibility-improvement-tip/</link>
+          <link>http://www.shafiq.in/2009/06/06/css-browser-compatibility-improvement-tip/</link>
           <pubDate>Sat, 06 Jun 2009 10:09:09 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2009/06/06/css-browser-compatibility-improvement-tip/</guid>
+          <guid>http://www.shafiq.in/2009/06/06/css-browser-compatibility-improvement-tip/</guid>
           <description>&lt;p&gt;Always use the following CSS code when not explicitly mentioning padding and margin.&lt;br /&gt;
 Not all browsers take zero padding and margin by default.&lt;/p&gt;
 &lt;p&gt;html {&lt;br /&gt;

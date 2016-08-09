@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://www.shafiq.in/tags/programming/</link>
+    <link>http://www.shafiq.in/tags/programming/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Online Temperature Monitoring System</title>
-          <link>https://www.shafiq.in/2013/06/07/online-temperature-monitoring-system/</link>
+          <link>http://www.shafiq.in/2013/06/07/online-temperature-monitoring-system/</link>
           <pubDate>Fri, 07 Jun 2013 10:52:57 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2013/06/07/online-temperature-monitoring-system/</guid>
+          <guid>http://www.shafiq.in/2013/06/07/online-temperature-monitoring-system/</guid>
           <description>&lt;h1&gt;Download : &lt;a href=&#34;http://shafiqissani.files.wordpress.com/2013/06/proj_format_.doc&#34;&gt;PROJ_FORMAT_&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;Contents Page number&lt;/p&gt;
 &lt;p&gt;1. Introduction&lt;br /&gt;
@@ -283,10 +283,10 @@ The 89c52 contains serial data transmission / reception circuitry that can be pr
       
         <item>
           <title>One liner: To get available virtual memory</title>
-          <link>https://www.shafiq.in/2011/12/10/one-liner-to-get-available-virtual-memory/</link>
+          <link>http://www.shafiq.in/2011/12/10/one-liner-to-get-available-virtual-memory/</link>
           <pubDate>Sat, 10 Dec 2011 18:13:02 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2011/12/10/one-liner-to-get-available-virtual-memory/</guid>
+          <guid>http://www.shafiq.in/2011/12/10/one-liner-to-get-available-virtual-memory/</guid>
           <description>&lt;pre&gt;vmstat -s -SM | grep &#34;free memory&#34; | awk -F&#34; &#34; &#39;{print$1}&#39;&lt;/pre&gt;
 </description>
         </item>
@@ -295,10 +295,10 @@ The 89c52 contains serial data transmission / reception circuitry that can be pr
       
         <item>
           <title>Descriptive programming in QTP</title>
-          <link>https://www.shafiq.in/2011/11/11/descriptive-programming-in-qtp/</link>
+          <link>http://www.shafiq.in/2011/11/11/descriptive-programming-in-qtp/</link>
           <pubDate>Fri, 11 Nov 2011 10:30:05 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2011/11/11/descriptive-programming-in-qtp/</guid>
+          <guid>http://www.shafiq.in/2011/11/11/descriptive-programming-in-qtp/</guid>
           <description>&lt;pre&gt;Download link : &lt;a href=&#34;http://shafiqissani.files.wordpress.com/2011/11/6010dae508eb401983bcc812c77ecb17.doc&#34;&gt;6010dae508eb401983bcc812c77ecb17&lt;/a&gt;&lt;/pre&gt;
 &lt;h2&gt;&lt;span style=&#34;font-family:Times, &#39;Times New Roman&#39;, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;br /&gt;
 Introduction:&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
@@ -449,10 +449,10 @@ Introduction:&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
       
         <item>
           <title>College Website - My first project !</title>
-          <link>https://www.shafiq.in/2011/06/15/college-website-my-first-project/</link>
+          <link>http://www.shafiq.in/2011/06/15/college-website-my-first-project/</link>
           <pubDate>Wed, 15 Jun 2011 03:43:37 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2011/06/15/college-website-my-first-project/</guid>
+          <guid>http://www.shafiq.in/2011/06/15/college-website-my-first-project/</guid>
           <description>&lt;p&gt;I had mentioned earlier on twitter that I will be uploading some recovered data from my broken hard drive. So here is the first one.&lt;/p&gt;
 &lt;p&gt;Following is the link to a self extracting archive of the first project I ever did. The college website! ...with help of the Subhash Dasyam.&lt;/p&gt;
 &lt;pre&gt;&lt;a href=&#34;https://github.com/shafiqissani/ASTRA-College-Website&#34;&gt;https://github.com/shafiqissani/ASTRA-College-Website&lt;/a&gt;&lt;/pre&gt;
@@ -467,10 +467,10 @@ Introduction:&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
       
         <item>
           <title>Notes on build script</title>
-          <link>https://www.shafiq.in/2011/05/10/notes-on-build-script/</link>
+          <link>http://www.shafiq.in/2011/05/10/notes-on-build-script/</link>
           <pubDate>Tue, 10 May 2011 00:01:40 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2011/05/10/notes-on-build-script/</guid>
+          <guid>http://www.shafiq.in/2011/05/10/notes-on-build-script/</guid>
           <description>&lt;ul&gt;
 &lt;li&gt;Choose a language that can be used in &lt;a class=&#34;zem_slink&#34; title=&#34;Cross-platform&#34; href=&#34;http://en.wikipedia.org/wiki/Cross-platform&#34; rel=&#34;wikipedia&#34;&gt;multiple platforms&lt;/a&gt; (very important for a &lt;a class=&#34;zem_slink&#34; title=&#34;Java (programming language)&#34; href=&#34;http://www.oracle.com/technetwork/java/&#34; rel=&#34;homepage&#34;&gt;Java&lt;/a&gt; project)&lt;/li&gt;
 &lt;li&gt;Ensure that as many steps are automated. Begin with a full clean up and allow full &lt;a class=&#34;zem_slink&#34; title=&#34;Software build&#34; href=&#34;http://en.wikipedia.org/wiki/Software_build&#34; rel=&#34;wikipedia&#34;&gt;build&lt;/a&gt; and deployment to the server&lt;/li&gt;
@@ -495,10 +495,10 @@ Introduction:&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
       
         <item>
           <title>Puppet Error - Could not file class in namespace - [solved]</title>
-          <link>https://www.shafiq.in/2011/01/18/puppet-error-could-not-file-class-in-namespace-solved/</link>
+          <link>http://www.shafiq.in/2011/01/18/puppet-error-could-not-file-class-in-namespace-solved/</link>
           <pubDate>Tue, 18 Jan 2011 12:33:39 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2011/01/18/puppet-error-could-not-file-class-in-namespace-solved/</guid>
+          <guid>http://www.shafiq.in/2011/01/18/puppet-error-could-not-file-class-in-namespace-solved/</guid>
           <description>&lt;p&gt;Yet another silly &lt;a class=&#34;zem_slink&#34; title=&#34;Error message&#34; rel=&#34;wikipedia&#34; href=&#34;http://en.wikipedia.org/wiki/Error_message&#34;&gt;error message&lt;/a&gt;... that is nowhere near accurate. So if you get the following error one of the possible mistakes would be a missing curly bracket. Yea, I wasted an hour on this one. ppsshh&lt;/p&gt;
 &lt;pre&gt;err: Could not retrieve catalog: Could not find class php in namespaces standardbuild at /etc/puppet/manifests/templates.pp:15 on domain.internal.com&lt;/pre&gt;
 </description>
@@ -508,10 +508,10 @@ Introduction:&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
       
         <item>
           <title>ERROR: `phpize&#39; failed [solved]</title>
-          <link>https://www.shafiq.in/2011/01/17/error-phpize-failed-solved/</link>
+          <link>http://www.shafiq.in/2011/01/17/error-phpize-failed-solved/</link>
           <pubDate>Mon, 17 Jan 2011 12:21:05 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2011/01/17/error-phpize-failed-solved/</guid>
+          <guid>http://www.shafiq.in/2011/01/17/error-phpize-failed-solved/</guid>
           <description>&lt;p&gt;If you get the following error install the development files of &lt;a class=&#34;zem_slink&#34; title=&#34;PHP&#34; rel=&#34;homepage&#34; href=&#34;http://www.php.net/&#34;&gt;PHP&lt;/a&gt;.&lt;/p&gt;
 &lt;pre&gt;running: &lt;a class=&#34;zem_slink&#34; title=&#34;PHPize&#34; rel=&#34;homepage&#34; href=&#34;http://www.phpize.com&#34;&gt;phpize&lt;/a&gt;
 sh: phpize: not found
@@ -526,10 +526,10 @@ ERROR: `phpize&#39; failed&lt;/pre&gt;
       
         <item>
           <title>Perl - system load</title>
-          <link>https://www.shafiq.in/2010/09/07/perl-system-load/</link>
+          <link>http://www.shafiq.in/2010/09/07/perl-system-load/</link>
           <pubDate>Tue, 07 Sep 2010 14:15:06 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2010/09/07/perl-system-load/</guid>
+          <guid>http://www.shafiq.in/2010/09/07/perl-system-load/</guid>
           <description>&lt;p&gt;To find the system load use the following perl snippet :&lt;/p&gt;
 &lt;p&gt;1) &lt;a class=&#34;zem_slink&#34; title=&#34;Load (computing)&#34; rel=&#34;wikipedia&#34; href=&#34;http://en.wikipedia.org/wiki/Load_%28computing%29&#34;&gt;System load&lt;/a&gt; of last one minute :&lt;/p&gt;
 &lt;pre&gt;&lt;del&gt;&lt;span style=&#34;font-family:Georgia, &#39;Bitstream Charter&#39;, serif;color:#444444;&#34;&gt;my $system_load = exec(&#39;&lt;a class=&#34;zem_slink&#34; title=&#34;Uptime&#34; rel=&#34;wikipedia&#34; href=&#34;http://en.wikipedia.org/wiki/Uptime&#34;&gt;uptime&lt;/a&gt; | &lt;a class=&#34;zem_slink&#34; title=&#34;AWK&#34; rel=&#34;homepage&#34; href=&#34;http://cm.bell-labs.com/cm/cs/awkbook/index.html&#34;&gt;awk&lt;/a&gt; -F &#34;load average: &#34; 
@@ -37675,10 +37675,10 @@ ERROR: `phpize&#39; failed&lt;/pre&gt;
       
         <item>
           <title>Gearman - Can&#39;t call method &#34;syswrite&#34; on an undefined value at /usr/local/share/perl/5.10.1/Gearman/Taskset.pm line 202.</title>
-          <link>https://www.shafiq.in/2010/08/31/gearman-cant-call-method-syswrite-on-an-undefined-value-at-usrlocalshareperl5-10-1gearmantaskset-pm-line-202/</link>
+          <link>http://www.shafiq.in/2010/08/31/gearman-cant-call-method-syswrite-on-an-undefined-value-at-usrlocalshareperl5-10-1gearmantaskset-pm-line-202/</link>
           <pubDate>Tue, 31 Aug 2010 15:07:09 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2010/08/31/gearman-cant-call-method-syswrite-on-an-undefined-value-at-usrlocalshareperl5-10-1gearmantaskset-pm-line-202/</guid>
+          <guid>http://www.shafiq.in/2010/08/31/gearman-cant-call-method-syswrite-on-an-undefined-value-at-usrlocalshareperl5-10-1gearmantaskset-pm-line-202/</guid>
           <description>&lt;p&gt;If you get the following error while running the client code :&lt;/p&gt;
 &lt;p&gt;Can&#39;t call method &#34;syswrite&#34; on an undefined value at /usr/local/share/perl/5.10.1/Gearman/Taskset.pm line 202.&lt;/p&gt;
 &lt;p&gt;... then change this&lt;/p&gt;

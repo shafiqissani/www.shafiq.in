@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://www.shafiq.in/tags/shared-database/</link>
+    <link>http://www.shafiq.in/tags/shared-database/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Never use a shared database server for development work.</title>
-          <link>https://www.shafiq.in/2010/09/15/never-use-a-shared-database-server-for-development-work/</link>
+          <link>http://www.shafiq.in/2010/09/15/never-use-a-shared-database-server-for-development-work/</link>
           <pubDate>Wed, 15 Sep 2010 14:09:58 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2010/09/15/never-use-a-shared-database-server-for-development-work/</guid>
+          <guid>http://www.shafiq.in/2010/09/15/never-use-a-shared-database-server-for-development-work/</guid>
           <description>&lt;p&gt;Like many conveniences in software development, a shared database is a tar pit waiting to fossilize a project. Developers overwrite each other&#39;s changes. The changes I make on the server break the code on your development machine. Remote development is slow and difficult. Avoid using a shared database at all costs, as they ultimately waste time and help produce bugs.&lt;/p&gt;
 </description>
         </item>

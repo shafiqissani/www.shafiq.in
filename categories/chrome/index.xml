@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://www.shafiq.in/categories/chrome/</link>
+    <link>http://www.shafiq.in/categories/chrome/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>How To Disable Google Analytics</title>
-          <link>https://www.shafiq.in/2010/09/30/how-to-disable-google-analytics/</link>
+          <link>http://www.shafiq.in/2010/09/30/how-to-disable-google-analytics/</link>
           <pubDate>Thu, 30 Sep 2010 11:57:57 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2010/09/30/how-to-disable-google-analytics/</guid>
+          <guid>http://www.shafiq.in/2010/09/30/how-to-disable-google-analytics/</guid>
           <description>&lt;h3&gt;&lt;span style=&#34;font-weight:normal;font-size:13px;&#34;&gt;You don´t like Google Analytics?&lt;/span&gt;&lt;/h3&gt;
 &lt;p&gt;Go to &lt;a href=&#34;http://tools.google.com/dlpage/gaoptout&#34; target=&#34;_blank&#34;&gt;http://tools.google.com/dlpage/gaoptout&lt;/a&gt; and install a browser plugin to disable Google Analytics.&lt;/p&gt;
 </description>
@@ -25,10 +25,10 @@
       
         <item>
           <title>Typo3 Reference Manuals - A Google Chrome Extension</title>
-          <link>https://www.shafiq.in/2010/03/27/typo3-reference-manuals-a-google-chrome-extension/</link>
+          <link>http://www.shafiq.in/2010/03/27/typo3-reference-manuals-a-google-chrome-extension/</link>
           <pubDate>Sat, 27 Mar 2010 07:43:04 UTC</pubDate>
           <author></author>
-          <guid>https://www.shafiq.in/2010/03/27/typo3-reference-manuals-a-google-chrome-extension/</guid>
+          <guid>http://www.shafiq.in/2010/03/27/typo3-reference-manuals-a-google-chrome-extension/</guid>
           <description>&lt;p&gt;Following is the link to *my first* google extension.&lt;/p&gt;
 &lt;p&gt;It&#39;s a &lt;strong&gt;collections of Typo3 reference manuals&lt;/strong&gt; taken straight from typo3.org website.&lt;/p&gt;
 &lt;p&gt;It&#39;s not nearly what I&#39;d call a cool extension, but hey it helps. :)&lt;/p&gt;

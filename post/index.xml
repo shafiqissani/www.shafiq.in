@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site </title>
-    <link>http://replace-this-with-your-hugo-site.com/post/</link>
+    <title>Shafiq Alibhai </title>
+    <link>https://shafiqissani.github.io/www.shafiq.in/post/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>test123</title>
-          <link>http://replace-this-with-your-hugo-site.com/post/test123/</link>
+          <link>https://shafiqissani.github.io/www.shafiq.in/post/test123/</link>
           <pubDate>Tue, 09 Aug 2016 20:38:35 BST</pubDate>
           <author></author>
-          <guid>http://replace-this-with-your-hugo-site.com/post/test123/</guid>
+          <guid>https://shafiqissani.github.io/www.shafiq.in/post/test123/</guid>
           <description></description>
         </item>
       

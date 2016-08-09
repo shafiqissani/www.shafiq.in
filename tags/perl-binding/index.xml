@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shafiq Alibhai </title>
+    <link>https://shafiqissani.github.io/www.shafiq.in/tags/perl-binding/</link>
+    <language>en-us</language>
+    <author></author>
+    <rights>(C) 2016</rights>
+    <updated>2012-02-21 12:48:05 &#43;0000 UTC</updated>
+
+    
+      
+        <item>
+          <title>Perl Expect bindings - Simple example</title>
+          <link>https://shafiqissani.github.io/www.shafiq.in/2012/02/21/perl-expect-bindings-simple-example/</link>
+          <pubDate>Tue, 21 Feb 2012 12:48:05 UTC</pubDate>
+          <author></author>
+          <guid>https://shafiqissani.github.io/www.shafiq.in/2012/02/21/perl-expect-bindings-simple-example/</guid>
+          <description>&lt;p&gt;Hello World file (hello.pl)&lt;/p&gt;
+&lt;pre&gt;#!/usr/bin/perl
+use strict;
+use warnings;
+use diagnostics; print &#34;-----------\n&#34;,
+ &#34;Hello World\n&#34;,
+ &#34;-----------\n&#34;;&lt;/pre&gt;
+&lt;p&gt;Test Perl file with expect bindings (test.pl)&lt;/p&gt;
+&lt;pre&gt;#!/usr/bin/perl
+use strict;
+ use warnings;
+ use diagnostics;
+use Expect;
+my $timeout=5;
+foreach my $i (1..20)
+ {
+ my $exp = Expect-&amp;gt;spawn(&#34;./hello.pl&#34;)
+ or die &#34;Unexpected error : $!\n&#34;;
+$exp-&amp;gt;expect($timeout);
+ }&lt;/pre&gt;
+</description>
+        </item>
+      
+    
+
+  </channel>
+</rss>

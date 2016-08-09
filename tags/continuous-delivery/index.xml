@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shafiq Alibhai </title>
+    <link>https://shafiqissani.github.io/www.shafiq.in/tags/continuous-delivery/</link>
+    <language>en-us</language>
+    <author></author>
+    <rights>(C) 2016</rights>
+    <updated>2012-01-02 23:01:13 &#43;0000 UTC</updated>
+
+    
+      
+        <item>
+          <title>Continuous Delivery : A Mini Hurdle</title>
+          <link>https://shafiqissani.github.io/www.shafiq.in/2012/01/02/continuous-delivery-a-mini-hurdle/</link>
+          <pubDate>Mon, 02 Jan 2012 23:01:13 UTC</pubDate>
+          <author></author>
+          <guid>https://shafiqissani.github.io/www.shafiq.in/2012/01/02/continuous-delivery-a-mini-hurdle/</guid>
+          <description>&lt;p&gt;The first hurdle to overcome with Continuous Delivery I think is not getting your product’s code onto the machine itself, but managing the actual machine and it’s software... and in talking to people. It is the subtle nuances between machines due to people tweaking things on the fly that lead to the worst [most annoying] bugs to troubleshoot.&lt;br /&gt;
+The end-goal of managing your machines is that no one ever logs into the machine directly.&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Continuous Delivery</title>
+          <link>https://shafiqissani.github.io/www.shafiq.in/2012/01/02/continuous-delivery/</link>
+          <pubDate>Mon, 02 Jan 2012 22:53:29 UTC</pubDate>
+          <author></author>
+          <guid>https://shafiqissani.github.io/www.shafiq.in/2012/01/02/continuous-delivery/</guid>
+          <description>&lt;p&gt;&lt;a href=&#34;http://www.infoq.com/resource/articles/QCon-San-Francisco-2010/en/resources/Continuous_Delivery_Notes.png&#34; target=&#34;_blank&#34;&gt;&lt;img class=&#34;alignnone&#34; src=&#34;{{ site.baseurl }}/assets/Continuous_Delivery_Notes.png&#34; alt=&#34;&#34; width=&#34;536&#34; height=&#34;240&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+      
+    
+
+  </channel>
+</rss>

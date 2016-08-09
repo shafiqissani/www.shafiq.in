@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shafiq Alibhai </title>
+    <link>https://shafiqissani.github.io/www.shafiq.in/tags/css-fail/</link>
+    <language>en-us</language>
+    <author></author>
+    <rights>(C) 2016</rights>
+    <updated>2009-05-11 16:21:14 &#43;0000 UTC</updated>
+
+    
+      
+        <item>
+          <title>css fail</title>
+          <link>https://shafiqissani.github.io/www.shafiq.in/2009/05/11/css-fail/</link>
+          <pubDate>Mon, 11 May 2009 16:21:14 UTC</pubDate>
+          <author></author>
+          <guid>https://shafiqissani.github.io/www.shafiq.in/2009/05/11/css-fail/</guid>
+          <description>&lt;p&gt;never use&lt;br /&gt;
+.&lt;br /&gt;
+position:absolute;&lt;br /&gt;
+left:99px;&lt;br /&gt;
+.&lt;/p&gt;
+&lt;p&gt;its a handy little quick fix to position an element but it doesn&#39;t ever work.&lt;/p&gt;
+</description>
+        </item>
+      
+    
+
+  </channel>
+</rss>

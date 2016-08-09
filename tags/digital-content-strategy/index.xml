@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shafiq Alibhai </title>
+    <link>https://shafiqissani.github.io/www.shafiq.in/tags/digital-content-strategy/</link>
+    <language>en-us</language>
+    <author></author>
+    <rights>(C) 2016</rights>
+    <updated>2014-09-03 13:02:22 &#43;0000 UTC</updated>
+
+    
+      
+        <item>
+          <title>Some notes for digital content strategy</title>
+          <link>https://shafiqissani.github.io/www.shafiq.in/2014/09/03/some-notes-for-digital-content-strategy/</link>
+          <pubDate>Wed, 03 Sep 2014 13:02:22 UTC</pubDate>
+          <author></author>
+          <guid>https://shafiqissani.github.io/www.shafiq.in/2014/09/03/some-notes-for-digital-content-strategy/</guid>
+          <description>&lt;ul&gt;
+&lt;li&gt;QR code&lt;/li&gt;
+&lt;li&gt;semi-automated information architecture
+&lt;ul&gt;
+&lt;li&gt;auto tagging and internal linking&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;mobile friendly e-commerce platform platform&lt;/li&gt;
+&lt;li&gt;adaptive content&lt;/li&gt;
+&lt;li&gt;tailor your content for the user’s context—location, time of day, personal preferences. Based on what you know about the user, you can dynamically personalize the experience so it adapts to meet her needs.&lt;/li&gt;
+&lt;li&gt;facebook login feature to capture user information&lt;/li&gt;
+&lt;li&gt;first-order problem is to develop processes and infrastructure to get your content into a format that your user can view on whichever platform they choose.&lt;/li&gt;
+&lt;li&gt;the challenge for most organizations in the long run won’t be figuring out a development approach for cross-platform code—because these techniques will evolve and standardize. The challenge will be supporting a multi-channel editorial workflow, particularly if they want to prioritize content differently across platforms. Any arguments about whether to deliver less content or different content to the mobile users need to consider the effort required to manage and maintain that content. If you’re going around suggesting that you want to provide a different experience for mobile users, or you want to cut content from the mobile website, be aware that this approach may doom you to content maintenance and governance headaches. Paying attention to this is the very essence of content strategy.&lt;/li&gt;
+&lt;li&gt;the root of the problem is in internal processes, workflow, and tools. To avoid the problem of content forking we need a new approach to publishing content to multiple devices. We need adaptive content.&lt;/li&gt;
+&lt;li&gt;adaptive content is composed of these five elements: different platforms. Presentation-independent content that hasn’t been styled and formatted for a single display. Metadata that will allow platforms to “query” the content and display the content elements best suited to a particular display. A CMS user interface that encourages writers to create content elements and variations within a package, instead of tying content to specific pages.&lt;/li&gt;
+&lt;li&gt;interactive content of 3 types e.g. theguardian approach
+&lt;ul&gt;
+&lt;li&gt;static&lt;/li&gt;
+&lt;li&gt;minimally interactive&lt;/li&gt;
+&lt;li&gt;full fledged interactive galleries&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;write multiple teasers. A short version and a long version gives extra flexibility, allowing each platform to decide how much space to devote to the summary.&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+      
+    
+
+  </channel>
+</rss>

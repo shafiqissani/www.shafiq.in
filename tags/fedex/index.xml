@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shafiq Alibhai </title>
+    <link>https://shafiqissani.github.io/www.shafiq.in/tags/fedex/</link>
+    <language>en-us</language>
+    <author></author>
+    <rights>(C) 2016</rights>
+    <updated>2011-11-11 10:45:24 &#43;0000 UTC</updated>
+
+    
+      
+        <item>
+          <title>Order To Cash (OTC)</title>
+          <link>https://shafiqissani.github.io/www.shafiq.in/2011/11/11/order-to-cash-otc/</link>
+          <pubDate>Fri, 11 Nov 2011 10:45:24 UTC</pubDate>
+          <author></author>
+          <guid>https://shafiqissani.github.io/www.shafiq.in/2011/11/11/order-to-cash-otc/</guid>
+          <description>&lt;pre&gt;Download Link : &lt;a href=&#34;http://shafiqissani.files.wordpress.com/2011/11/12order-to-cash.pdf&#34;&gt;order to cash&lt;/a&gt;
+Order To Cash (OTC)
+Order to cash normally refers to the enterprise resource planning (ERP) process in which taking
+customer sales (direct from the customer &amp;amp; retail) orders via different sales channels, such as email,
+internet, sales person, fax or by some other means like EDI, and then fulfilling the order, shipping,
+logistic and then generating an invoice and collecting payment for that invoice and then receipt.
+If we consider the entire flow, this can be further categorized into the following seven sub-
+processes:
+• Customer presence
+• Order entry (creation of order/booking of order )
+• Order fulfillment (physical &amp;amp; digital fulfillment)
+• Distribution
+• Invoicing
+• Customer payments/collection
+• Receipt
+Purpose
+The SAP Best Practices scenario for Order to Cash supports the entire process chain for a typical
+sales process with a customer. The business process encompasses all steps from creating an order,
+and optionally, based on a quotation, creation of a delivery, to the billing procedure. During the
+sales order generation a credit check for the customer is executed and subsequent handling of
+blocked sales documents is demonstrated. An availability check is done followed by product
+allocation. Product allocations represent an ordered allocation of production for certain periods, so
+that a partial quantity can be delivered if not enough stock is available for further orders.
+Additionally, Service Charges are entered manually in the sales order, depending on the quantity of
+goods ordered. In delivery processing the delivery is created, the goods are picked, kitted, packed,
+shipped and the goods issue is posted. In the billing process that follows, an invoice is created and
+released to financial accounting. To complete the process, the customer payment is posted to clear
+the accounts receivable.
+This scenario also includes additional presales support activities in addition to sales order
+processing, delivery, billing and payment. The process begins with a sales inquiry captured in a
+sales activity document in sales support. The inquiry results in a sale and the process shows how the
+initial sales activity can be linked to a sales document that is created in the subsequent order
+processing. At the time of order creation, dynamic product proposals, material substitutions, free
+goods and material exclusions are demonstrated. At delivery processing the delivery is created, then
+picked, and goods issue is posted. In the billing process that follows, an invoice is created and
+released to financial accounting. Incoming payments are documented in payment processing and
+then posted in financials.
+Process Flow
+ Sales Quotation
+ Standard Order
+ Shipping
+ Delivery
+ Picking
+ Posting Goods Issue
+ Warehouse Picking Execution
+ Packing
+ Posting Goods Issue
+ Billing
+ Payment of Customer
+This process flow encapsulates a variety of smaller business processes from order entry to cash
+receipt. It pulls resources from many different company departments.
+Improving the order-to-cash process is a strategic priority for many companies. Typical
+improvement objectives include fulfillment performance (order accuracy, shipment accuracy, and
+on-time shipping), financial performance (reduction of receivables, collection management costs,
+and Days of Sales Outstanding, or DSOs).
+The multi-step order-to-cash process originates with a customer order and terminates once the
+customer pays for the goods or services received and the company applies the cash.
+Five areas are affected by the order-to-cash cycle:
+1. Customer,
+2. Order entry,
+3. Order fulfillment,
+4. Distribution, and
+5. Finance and accounting.
+Since most companies are functionally managed, the order-to-cash process usually touches multiple
+departments, companies, and back-end enterprise applications. Therefore, it is important for each
+department to complete its part of the overall process error-free and transfer correct information
+across functional boundaries.
+Automated Sales Order Processing for Order-to-Cash Performance with ERP Systems
+Overview
+Business performance depends on how well a company manages its internal processes. Companies
+with effective business process management in place are able to analyze key performance indicators
+to monitor efficiency of day-to-day activities and employees against operational targets.
+Order-to-cash is a generic term used to encompass the business cycle that starts with reception of a
+customer sales order and ends with collection of accounts receivable generated in the sale of the
+final product. There are several sub-processes within the order-to-cash cycle, including: receiving
+orders, entering sales orders, approving sales orders, fulfilling orders, billing for the orders and
+collecting payment.
+Many companies have implemented enterprise resource planning (ERP) applications to standardize
+enterprise operations and support business process management strategies. ERP solutions empower
+companies to automate many business processes formerly done by hand. But to achieve full return
+on investment in ERP solutions, businesses need to automate the documents that drive business
+processes.
+Order-to-Cash Service Platforms
+Businesses are investing significantly in software that integrates various applications and processes
+onto a single service platform. This way every participant in the composite process has the same
+view of every action and event.
+Companies that implement the order-to-cash process internally often break the process down into
+smaller pieces (order-to-ship, ship-to-delivery, delivery-to-invoice, and invoice-to-payment).
+UPS, FedEx, and others are increasingly offering order-to-cash service platforms to small and
+midsize businesses. The shippers handle all parts of the end-to-end process: order flow, fulfillment,
+and payment.
+Technical Capabilities of Order-to-Cash Service Platforms
+Every robust order-to-cash service platform provides the comprehensive process management
+capabilities needed to automate the underlying order-to-cash business processes. The combination
+of robust business process management, componentization of processes and systems, and native
+support of Web Services standards is at the core of the service platform. Some of the capabilities
+include:
+• Unified process automation and human workflow,
+• Automated, intelligent management of data, process exceptions, and errors,
+• State management to track, store, and intelligently act on complete status of each step (or
+state) of a multi-step transaction,
+• Transaction rollbacks and compensating transactions,
+• Time-based exception management, and
+• Adaptable business agents that monitor real-time metrics and adjust themselves
+automatically according to predefined rules.
+Hypothetical test scenario: Order-to-close scenario
+Total time to execute manually including recording test results: 25 hours.
+Frequency: Executed five times during the year to support major system releases.
+Stability: Process is subject to few minor modifications per year (two minor modifications). Fairly
+static.
+Preparation: On average, 15 hours are spent manually rehearsing the test scenario before it is fully
+executed.
+Number of assigned testers: Three testers (having expertise in project systems [PS] module, finance
+[FI], and sales and distribution [SD] module).
+Given these metrics, it is possible to estimate with some margin of error that between preparation
+and execution of the manual test case (including manually recording test results) approximately 200
+man-hours per year are spent executing the order-to-cash scenario.
+This is not including time needed to manually modify the documentation for the test case when the
+order-to-cash scenario is subject to configuration changes, or the time needed to coordinate the
+multiple resources that are necessary for executing the test scenario. With an automated framework
+in place, one can review the following statistics and metrics needed to automate the order-to-cash
+scenario and whether doing so is cost effective:
+Total hours needed to automate test case (including functional support): 80 hours.
+Time needed to execute process with automated test tool (including automatic test results [logs]
+generated by automated test tools): Two hours.
+Number of resources needed to execute automated test case: One at most, since automated test case
+can be scheduled to run unattended.
+Preparation time needed to execute automated test case: Five.
+Under the hypothetical scenario for automating from scratch and executing the automated test case
+for order-to-cash, it is estimated that for the first year it would take 115 man-hours to execute the
+automated test case. For subsequent years it would take 35 man hours to execute the automated test
+since the automated test case has already been constructed, whereas executing the process manually
+is a fixed number of man-hours: 200 man-hours per year, subject to the availability of the testing
+resources and level of expertise. This analysis points objectively and based on certain assumption to
+a case in favor of automation. With a similar analysis, projects can employ an objective approach
+for automating scenarios.
+OTC Flow
+1. SALES ORDER
+Company Code: 4700
+Sales Document type: ZOR
+Sales Area: 4700/10/10
+Screen Shot 1:
+Click Enter
+Step 2:
+Header Level:
+ Enter Sold to party: 1000991
+ Enter Ship to party: 1000991
+ Enter PO Number: Test
+ Enter Payment term: 0001
+Item Level:
+ Enter Materials in Item Level: 1000309
+ Enter order Qty: 1
+ Enter Plant: 4702
+ Click Enter:
+Refer Screen Shot:
+Go to Item Billing
+Enter the INCO Terms in the Item Levels: CFR (COST AND FREIGHT)
+Click Save
+2. DELIVERY
+Delivery Document type: ZLF
+T – Code VL01N
+ Enter Shipping Point: 4702
+ Enter Sales document number:
+ Note: Enter Delivery date: (Delivery date should be taken from Schedule lines in Sales
+order) Refer Screen Shot below:
+Click Enter
+Enter Picking Qty &amp;amp; Storage Location:
+Click on Post Goods Issue:
+3. BILLING
+Billing Document type: F2
+T – Code – VF01
+Enter Delivery Document number:
+Refer Screen Shot Below:
+Click Enter
+Refer Screen Shot below:
+Click Save
+Billing Document should be created (Refer Screen Shot below)
+Display the Billing document: T – Code – VF03
+Enter the Billing Document number from the above Screen shot:
+Click on Accounting Document tab:
+Refer the Screen Shot:&lt;/pre&gt;
+</description>
+        </item>
+      
+    
+
+  </channel>
+</rss>

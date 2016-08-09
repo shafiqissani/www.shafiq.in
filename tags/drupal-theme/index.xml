@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shafiq Alibhai </title>
+    <link>https://shafiqissani.github.io/www.shafiq.in/tags/drupal-theme/</link>
+    <language>en-us</language>
+    <author></author>
+    <rights>(C) 2016</rights>
+    <updated>2013-09-05 09:47:24 &#43;0000 UTC</updated>
+
+    
+      
+        <item>
+          <title>Drupal 7 theme - Mobile boilerplate</title>
+          <link>https://shafiqissani.github.io/www.shafiq.in/2013/09/05/drupal-7-theme-mobile-boilerplate/</link>
+          <pubDate>Thu, 05 Sep 2013 09:47:24 UTC</pubDate>
+          <author></author>
+          <guid>https://shafiqissani.github.io/www.shafiq.in/2013/09/05/drupal-7-theme-mobile-boilerplate/</guid>
+          <description>&lt;p&gt;&lt;strong&gt;Mobile Boilerplate is a professional front-end template that helps you build fast and robust mobile web applications. Spend more time developing and less time reinventing the wheel.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Features&lt;/p&gt;
+&lt;p&gt;Mobile browser optimizations.&lt;br /&gt;
+CSS normalizations and common bug fixes.&lt;br /&gt;
+A custom Modernizr build for feature detection and a polyfill for CSS Media Queries.&lt;br /&gt;
+Home page icon for Android, iOS, Nokia.&lt;br /&gt;
+Cross-browser viewport optimization for Android, iOS, Mobile IE, Nokia, and Blackberry.&lt;br /&gt;
+Mobile IE conditional switch.&lt;br /&gt;
+Better font rendering in Mobile IE.&lt;br /&gt;
+iPhone web app meta.&lt;br /&gt;
+INSTANT button click event.&lt;br /&gt;
+Textarea autogrow plugin.&lt;br /&gt;
+Hide URL bar method.&lt;br /&gt;
+Prevent form zoom onfocus method.&lt;br /&gt;
+Mobile site redirection.&lt;br /&gt;
+User Agent Detection.&lt;br /&gt;
+Apache server caching, compression, and other configuration defaults for Grade-A performance.&lt;br /&gt;
+Cross-domain Ajax.&lt;br /&gt;
+&#34;Delete-key friendly.&#34; Easy to strip out parts you don&#39;t need.&lt;/p&gt;
+&lt;h1&gt;&lt;a href=&#34;https://drupal.org/sandbox/shafiqissani/2078519&#34;&gt;https://drupal.org/sandbox/shafiqissani/2078519&lt;/a&gt;&lt;/h1&gt;
+&lt;h1&gt;&lt;/h1&gt;
+&lt;h3&gt;Setting up repository for the first time&lt;/h3&gt;
+&lt;div&gt;&lt;code&gt;git clone --branch 7.x-1.x shafiqissani@git.drupal.org:sandbox/shafiqissani/2078519.git mobile_boilerplate&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;cd mobile_boilerplate&lt;/code&gt;&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;&lt;/div&gt;
+&lt;div&gt;&lt;em&gt;p.s. status: work in progress&lt;/em&gt;&lt;/div&gt;
+</description>
+        </item>
+      
+    
+
+  </channel>
+</rss>

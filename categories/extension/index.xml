@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shafiq Alibhai </title>
+    <link>https://shafiqissani.github.io/www.shafiq.in/categories/extension/</link>
+    <language>en-us</language>
+    <author></author>
+    <rights>(C) 2016</rights>
+    <updated>2010-09-30 11:57:57 &#43;0000 UTC</updated>
+
+    
+      
+        <item>
+          <title>How To Disable Google Analytics</title>
+          <link>https://shafiqissani.github.io/www.shafiq.in/2010/09/30/how-to-disable-google-analytics/</link>
+          <pubDate>Thu, 30 Sep 2010 11:57:57 UTC</pubDate>
+          <author></author>
+          <guid>https://shafiqissani.github.io/www.shafiq.in/2010/09/30/how-to-disable-google-analytics/</guid>
+          <description>&lt;h3&gt;&lt;span style=&#34;font-weight:normal;font-size:13px;&#34;&gt;You don´t like Google Analytics?&lt;/span&gt;&lt;/h3&gt;
+&lt;p&gt;Go to &lt;a href=&#34;http://tools.google.com/dlpage/gaoptout&#34; target=&#34;_blank&#34;&gt;http://tools.google.com/dlpage/gaoptout&lt;/a&gt; and install a browser plugin to disable Google Analytics.&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Ajax Tabbed Google Search - A Typo3 Extension</title>
+          <link>https://shafiqissani.github.io/www.shafiq.in/2010/04/13/ajax-tabbed-google-search-a-typo3-extension/</link>
+          <pubDate>Tue, 13 Apr 2010 16:11:54 UTC</pubDate>
+          <author></author>
+          <guid>https://shafiqissani.github.io/www.shafiq.in/2010/04/13/ajax-tabbed-google-search-a-typo3-extension/</guid>
+          <description>&lt;p&gt;Following is the link to *my first* typo3 extension.&lt;/p&gt;
+&lt;p&gt;It’s a&lt;strong&gt; &lt;/strong&gt;front end plugin used to display a modified google search engine.  The search engine is ajax based and has tabs feature. There is absolutely no page loading.&lt;/p&gt;
+&lt;pre&gt;&lt;em&gt;&lt;strong&gt;Download Link :  &lt;/strong&gt;&lt;/em&gt;&lt;em&gt;&lt;a href=&#34;http://projects.issani.in/typo3/ajax_google_search/T3X_ajax_google_search-0_0_1-z-201004131450.t3x&#34;&gt;&lt;strong&gt;http://projects.issani.in/typo3/ajax_google_search/T3X_ajax_google_search-0_0_1-z-201004131450.t3x&lt;/strong&gt;&lt;/a&gt;&lt;/em&gt;&lt;/pre&gt;
+&lt;p&gt;The project is setup of typo3 forge. Following is the link to svn repository. You are welcome to check out the code and update it. :)&lt;/p&gt;
+&lt;pre&gt;&lt;em&gt;&lt;strong&gt;
+&lt;pre&gt;&lt;em&gt;&lt;strong&gt;SVN Repository Link : &lt;/strong&gt;&lt;/em&gt;&lt;em&gt;&lt;a href=&#34;https://svn.typo3.org/TYPO3v4/Extensions/ajax_google_search&#34;&gt;&lt;strong&gt;https://svn.typo3.org/TYPO3v4/Extensions/ajax_google_search&lt;/strong&gt;&lt;/a&gt;&lt;/em&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;em&gt;&lt;strong&gt;Here is the project link on typo3 forge : &lt;/strong&gt;&lt;/em&gt;&lt;em&gt;&lt;a href=&#34;http://forge.typo3.org/projects/show/extension-ajax_google_search&#34;&gt;&lt;strong&gt;http://forge.typo3.org/projects/show/extension-ajax_google_search&lt;/strong&gt;&lt;/a&gt;&lt;/em&gt;&lt;strong&gt;
+&lt;/strong&gt;&lt;em&gt;
+&lt;/em&gt;
+&lt;em&gt;&lt;strong&gt;Demo : &lt;/strong&gt;&lt;a href=&#34;http://typo3.issani.in/4/&#34;&gt;&lt;strong&gt;typo3.issani.in/4/&lt;/strong&gt;&lt;/a&gt;&lt;/em&gt;&lt;strong&gt;
+&lt;/strong&gt;
+&lt;em&gt;&lt;a href=&#34;http://shafiqissani.files.wordpress.com/2010/04/screenshot.png&#34;&gt;&lt;img class=&#34;alignnone size-full wp-image-608&#34; title=&#34;Ajax Google Search&#34; src=&#34;{{ site.baseurl }}/assets/screenshot.png&#34; alt=&#34;&#34; width=&#34;406&#34; height=&#34;228&#34; /&gt;&lt;/a&gt;&lt;/em&gt;&lt;/pre&gt;
+</description>
+        </item>
+      
+    
+
+  </channel>
+</rss>

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.16" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Noticia+Text:400,700|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="https://shafiqissani.github.io/www.shafiq.in/css/styles.css">
+    <link rel="stylesheet" href="https://shafiqissani.github.io/www.shafiq.in/css/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="https://shafiqissani.github.io/www.shafiq.in/index.xml">
+
+    
+    <title>Descriptive programming in QTP - Shafiq Alibhai</title>
+    <meta property='og:title' content="Descriptive programming in QTP - Shafiq Alibhai">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="https://shafiqissani.github.io/www.shafiq.in/2011/11/11/descriptive-programming-in-qtp/">
+    
+    
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage":{
+      "@type":"WebPage",
+      "@id":"https:\/\/shafiqissani.github.io\/www.shafiq.in\/"
+    },
+    "headline": "Descriptive programming in QTP |  ",
+    "image": {
+      "@type": "ImageObject",
+      "url": "",
+      "height": 700,
+      "width": 700
+    },
+    "datePublished": "2011-11-11T10:30:05JST",
+    "dateModified": "2011-11-11T10:30:05JST",
+    "author": {
+      "@type": "Person",
+      "name": "",
+      "image": "https:\/\/shafiqissani.github.io\/www.shafiq.in\/images/logo.png"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https:\/\/shafiqissani.github.io\/www.shafiq.in\/images/logo.png",
+        "height": 60,
+        "width": 60
+      }
+    },
+    "description": ""
+  }
+</script>
+</head>
+
+<body>
+
+  <header class="l-header">
+    <div class="p-logo">
+      <a href="https://shafiqissani.github.io/www.shafiq.in/">Shafiq Alibhai</a>
+    </div>
+  </header>
+
+
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-9">
+
+      <article class="single">
+        <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+        <div class="body">
+          <h1>Descriptive programming in QTP</h1>
+          <pre>Download link : <a href="http://shafiqissani.files.wordpress.com/2011/11/6010dae508eb401983bcc812c77ecb17.doc">6010dae508eb401983bcc812c77ecb17</a></pre>
+<h2><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;"><br />
+Introduction:</span></span></h2>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">This document demonstrates the usage of Descriptive programming in QTP 8.20. It also discusses situations where Descriptive programming can be used. Using Descriptive Programming automation scripts can be created even if the application has not been developed.</span></span></p>
+<h2><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Descriptive Programming:</span></span></h2>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Whenever QTP records any action on any object of an application, it adds some description on how to recognize that object to a repository of objects called object repository. QTP cannot take action on an object until unless its object description is in the Object Repository. But descriptive programming provides a way to perform action on objects which are not in Object repository</span></span></p>
+<p><span style="color:#000066;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Object Identification:</span></span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">To identify an object during the play back of the scripts QTP stores some properties which helps QTP to uniquely identify the object on a page. Below screen shots shows an example Object repository:</span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Now to recognize a radio button on a page QTP had added 2 properties the name of the radio button and the html tag for it. The name the left tree view is the logical name given by QTP for the object. This can be changed as per the convenience of the person writing the test case. QTP only allows UNIQUE logical name under same level of hierarchy. As we see in the snapshot the two objects in Browser-&gt;Page node are “WebTable” and “testPath”, they cannot have the same logical name. But an object under some other node can have the same name. Now with the current repository that we have, we can only write operation on objects which are in the repository. Some of the example operations are given below</span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Browser("Browser").Page("Page").WebRadioGroup ("testPath").Select "2"</span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">cellData = Browser("Browser").Page("Page").WebTable ("WebTable").GetCellData (1,1)</span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Browser("Example2").Page("Page").WebEdit("testPath").Set "Test text"</span></span></p>
+<p><span style="color:#000066;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">When and Why to use Descriptive programming?</span></span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Below are some of the situations when Descriptive Programming can be considered useful: </span></span></p>
+<ol>
+<li><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">The objects in the application are dynamic in nature and need special handling to identify the object. The best example would be of clicking a link which changes according to the user of the application, Ex. “Logout &lt;&gt;”.</span></span></li>
+<li><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">When object repository is getting huge due to the no. of objects being added. If the size of Object repository increases too much then it decreases the performance of QTP while recognizing a object.</span></span></li>
+<li><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">When you don’t want to use object repository at all. Well the first question would be why not Object repository? Consider the following scenario which would help understand why not Object repository</span></span></li>
+</ol>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Scenario 1: Suppose we have a web application that has not been developed yet. Now QTP for recording the script and adding the objects to repository needs the application to be up, that would mean waiting for the application to be deployed before we can start of with making QTP scripts. But if we know the descriptions of the objects that will be created then we can still start off with the script writing for testing</span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Scenario 2: Suppose an application has 3 navigation buttons on each and every page. Let the buttons be “Cancel”, “Back” and “Next”. Now recording action on these buttons would add 3 objects per page in the repository. For a 10 page flow this would mean 30 objects which could have been represented just by using 3 objects. So instead of adding these 30 objects to the repository we can just write 3 descriptions for the object and use it on any page.</span></span></p>
+<ol start="4">
+<li><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Modification to a test case is needed but the Object repository for the same is Read only or in shared mode i.e. changes may affect other scripts as well. </span></span></li>
+<li><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">When you want to take action on similar type of object i.e. suppose we have 20 textboxes on the page and there names are in the form txt_1, txt_2, txt_3 and so on. Now adding all 20 the Object repository would not be a good programming approach.</span></span></li>
+</ol>
+<p><span style="color:#000066;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">How to use Descriptive programming?</span></span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">There are two ways in which descriptive programming can be used</span></span></p>
+<ol>
+<li><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">By creating properties collection object for the description.</span></span></li>
+<li><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">By giving the description in form of the string arguments.</span></span></li>
+</ol>
+<ol>
+<li><span style="color:#000066;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">By creating properties collection object for the description.</span></span></span></li>
+</ol>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">To use this method you need first to create an empty description</span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Dim</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">obj_Desc</span></span></span><span style="color:#339966;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;"> ‘</span></span></span><span style="color:#339966;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Not</span></span></span><span style="color:#339966;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">necessary</span></span></span><span style="color:#339966;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">to</span></span></span><span style="color:#339966;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">declare</span></span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Set obj_Desc = Description.Create</span></span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Now we have a blank description in “obj_Desc”. Each description has 3 properties “Name”, “Value” and “Regular Expression”.</span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">obj_Desc(“html tag”).value= “INPUT”</span></span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">When you use a property name for the first time the property is added to the collection and when you use it again the property is modified. By default each property that is defined is a regular expression. Suppose if we have the following description</span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">obj_Desc(“html tag”).value= “INPUT”</span></span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">obj_Desc(“name”).value= “txt.*”</span></span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">This would mean an object with html tag as INPUT and name starting with txt. Now actually that “.*” was considered as regular expression. So, if you want the property “name” not to be recognized as a regular expression then you need to set the “regularexpression” property as FALSE</span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">obj_Desc(“html tag”).value= “INPUT”</span></span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">obj_Desc(“name”).value= “txt.*”</span></span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">obj_Desc(“name”).regularexpression= “txt.*”</span></span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">This is how of we create a description. Now below is the way we can use it</span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Browser(“Browser”).Page(“Page”).WebEdit(obj_Desc).set “Test”</span></span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">When we say .WebEdit(obj_Desc) we define one more property for our description that was not earlier defined that is it’s a text box (because QTPs WebEdit boxes map to text boxes in a web page).</span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">If we know that we have more than 1 element with same description on the page then we must define “index” property for the that description</span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Consider the HTML code given below</span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">&lt;INPUT type=”textbox” name=”txt_Name”&gt;</span></span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">&lt;INPUT type=”textbox” name=”txt_Name”&gt;</span></span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Now the html code has two objects with same description. So distinguish between these 2 objects we will use the “index” property. Here is the description for both the object</span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">For</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">1</span></span><sup><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">st</span></span></sup><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">textbox:</span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">obj_Desc(</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">“</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">html</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">tag</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">”</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">).value=</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;"> “</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">INPUT</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">”</span></span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">obj_Desc(“name”).value= “txt_Name”</span></span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">obj_Desc(“index”).value= “0”</span></span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">For</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">2</span></span><sup><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">nd</span></span></sup><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">textbox:</span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">obj_Desc(</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">“</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">html</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">tag</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">”</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">).value=</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;"> “</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">INPUT</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">”</span></span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">obj_Desc(“name”).value= “txt_Name”</span></span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">obj_Desc(“index”).value= “1”</span></span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Consider the HTML Code given below:</span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">&lt;INPUT type=”textbox” name=”txt_Name”&gt;</span></span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">&lt;INPUT type=”radio” name=”txt_Name”&gt;</span></span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">We can use the same description for both the objects and still distinguish between both of them</span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">obj_Desc(“html tag”).value= “INPUT”</span></span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">obj_Desc(“name”).value= “txt_Name”</span></span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">When I want to refer to the textbox then I will use the inside a WebEdit object and to refer to the radio button I will use the description object with the WebRadioGroup object.</span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Browser(</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">“</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Browser</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">”</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">).Page(</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">“</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Page</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">”</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">).WebEdit(obj_Desc).set</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;"> “</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Test</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">” </span></span></span><span style="color:#008000;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">‘</span></span></span><span style="color:#008000;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Refers</span></span></span><span style="color:#008000;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">to</span></span></span><span style="color:#008000;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">the</span></span></span><span style="color:#008000;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">text</span></span></span><span style="color:#008000;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">box</span></span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Browser(</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">“</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Browser</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">”</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">).Page(</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">“</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Page</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">”</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">).WebRadioGroup(obj_Desc).set</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;"> “</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Test</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">” </span></span></span><span style="color:#008000;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">‘</span></span></span><span style="color:#008000;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Refers</span></span></span><span style="color:#008000;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">to</span></span></span><span style="color:#008000;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">the</span></span></span><span style="color:#008000;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">radio</span></span></span><span style="color:#008000;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">button</span></span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">But if we use WebElement object for the description then we must define the “index” property because for a webelement the current description would return two objects.</span></span></p>
+<p><span style="color:#000066;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Hierarchy of test description:</span></span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">When using programmatic descriptions from a specific point within a test object hierarchy, you must continue to use programmatic descriptions</span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">from that point onward within the same statement. If you specify a test object by its object repository name after other objects in the hierarchy have</span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">been described using programmatic descriptions, QuickTest cannot identify the object.</span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">For example, you can use Browser(Desc1).Page(Desc1).Link(desc3), since it uses programmatic descriptions throughout the entire test object hierarchy.</span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">You can also use Browser("Index").Page(Desc1).Link(desc3), since it uses programmatic descriptions from a certain point in the description (starting</span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">from the Page object description).</span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">However, you cannot use Browser(Desc1).Page(Desc1).Link("Example1"), since it uses programmatic descriptions for the Browser and Page objects but</span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">then attempts to use an object repository name for the Link test object (QuickTest tries to locate the Link object based on its name, but cannot</span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">locate it in the repository because the parent objects were specified using programmatic descriptions).</span></span></p>
+<p><span style="color:#000066;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Getting Child Object:</span></span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">We can use description object to get all the objects on the page that matches that specific description. Suppose we have to check all the checkboxes present on a web page. So we will first create an object description for a checkboxe and then get all the checkboxes from the page</span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Dim obj_ChkDesc</span></span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Set obj_ChkDesc=Description.Create</span></span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">obj_ChkDesc(“html tag”).value = “INPUT”</span></span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">obj_ChkDesc(“type”).value = “checkbox”</span></span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Dim allCheckboxes, singleCheckBox</span></span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Set allCheckboxes = Browse(“Browser”).Page(“Page”).ChildObjects(obj_ChkDesc)</span></span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">For each singleCheckBox in allCheckboxes</span></span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;"> singleCheckBox.Set “ON”</span></span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Next</span></span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">The above code will check all the check boxes present on the page. To get all the child objects we need to specify an object description i.e. we can’t use the string arguments that will be discussed later in the 2nd way of using the programming description.</span></span></p>
+<p><span style="color:#000066;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Possible Operation on Description Object</span></span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Consider the below code for all the solutions</span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Dim obj_ChkDesc</span></span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Set obj_ChkDesc=Description.Create</span></span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">obj_ChkDesc(“html tag”).value = “INPUT”</span></span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">obj_ChkDesc(“type”).value = “checkbox”</span></span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Q: How to get the no. of description defined in a collection</span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">A:</span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">obj_ChkDesc.Count</span></span></span><span style="color:#008000;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">‘</span></span></span><span style="color:#008000;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Will</span></span></span><span style="color:#008000;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">return</span></span></span><span style="color:#008000;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">2</span></span></span><span style="color:#008000;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">in</span></span></span><span style="color:#008000;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">our</span></span></span><span style="color:#008000;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">case</span></span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Q: How to remove a description from the collection</span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">A:</span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">obj_ChkDesc.remove</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;"> “</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">html</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">tag</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">”</span></span></span><span style="color:#008000;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">‘</span></span></span><span style="color:#008000;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">would</span></span></span><span style="color:#008000;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">delete</span></span></span><span style="color:#008000;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">the</span></span></span><span style="color:#008000;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">html</span></span></span><span style="color:#008000;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">tag</span></span></span><span style="color:#008000;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">property</span></span></span><span style="color:#008000;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">from</span></span></span><span style="color:#008000;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">the</span></span></span><span style="color:#008000;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">collection</span></span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Q: How do I check if property exists or not in the collection?</span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">A: The answer is that it’s not possible. Because whenever we try to access a property which is not defined its automatically added to the collection. The only way to determine is to check its value that is use a if statement “if obj_ChkDesc(“html tag”).value = empty then”.</span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Q: How to browse through all the properties of a properties collection?</span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">A: Two ways</span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;"> 1</span></span><sup><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">st</span></span></sup><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">:</span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">For</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">each</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">desc</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">in</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">obj_ChkDesc</span></span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;"> Name=desc.Name</span></span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;"> Value=desc.Value</span></span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;"> RE = desc.regularexpression</span></span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;"> Next</span></span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;"> 2</span></span><sup><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">nd</span></span></sup><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">:</span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">For</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">i=0</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">to</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">obj_ChkDesc.count</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">-</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">1</span></span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;"> Name= obj_ChkDesc(i).Name</span></span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;"> Value= obj_ChkDesc(i).Value</span></span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;"> RE = obj_ChkDesc(i).regularexpression</span></span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;"> Next</span></span></span></p>
+<ol start="2">
+<li><span style="color:#000066;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">By giving the description in form of the string arguments.</span></span></span></li>
+</ol>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">You</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">can</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">describe</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">an</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">object</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">directly</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">in</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">a</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">statement</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">by</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">specifying</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;"><em>property:=value</em></span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">pairs</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">describing</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">the</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">object</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">instead</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">of</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">specifying</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">an</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">object</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">’</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">s</span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">name. The general syntax is:</span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">TestObject("PropertyName1:=PropertyValue1", "..." , "PropertyNameX:=PropertyValueX")</span></span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">TestObject—the test object class could be WebEdit, WebRadioGroup etc….</span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">PropertyName:=PropertyValue</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">—</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">the</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">test</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">object</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">property</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">and</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">its</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">value.</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Each</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;"><em>property:=value</em></span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">pair</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">should</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">be</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">separated</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">by</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">commas</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">and</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">quotation</span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">marks. Note that you can enter a variable name as the property value if you want to find an object based on property values you retrieve during a run session.</span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Consider the HTML Code given below:</span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">&lt;INPUT type=”textbox” name=”txt_Name”&gt;</span></span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">&lt;INPUT type=”radio” name=”txt_Name”&gt;</span></span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Now to refer to the textbox the statement would be as given below</span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Browser(“Browser”).Page(“Page”).WebEdit(“Name:=txt_Name”,”html tag:=INPUT”).set “Test”</span></span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">And to refer to the radio button the statement would be as given below</span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Browser(“Browser”).Page(“Page”).WebRadioGroup(“Name:=txt_Name”,”html tag:=INPUT”).set “Test”</span></span></span></p>
+<p><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">If we refer to them as a web element then we will have to distinguish between the 2 using the index property</span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Browser(</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">“</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Browser</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">”</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">).Page(</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">“</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Page</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">”</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">).WebElement(</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">“</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Name:=txt_Name</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">”</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">,</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">”</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">html</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">tag:=INPUT</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">”</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">,</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">”</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Index:=0</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">”</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">).set</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;"> “</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Test</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">” </span></span></span><span style="color:#008000;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">‘ </span></span></span><span style="color:#008000;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Refers</span></span></span><span style="color:#008000;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">to</span></span></span><span style="color:#008000;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">the</span></span></span><span style="color:#008000;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">textbox</span></span></span></p>
+<p><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Browser(</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">“</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Browser</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">”</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">).Page(</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">“</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Page</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">”</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">).WebElement(</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">“</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Name:=txt_Name</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">”</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">,</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">”</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">html</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">tag:=INPUT</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">”</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">,</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">”</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Index:=1</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">”</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">).set</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;"> “</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Test</span></span></span><span style="color:#0000ff;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">” </span></span></span><span style="color:#008000;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">‘ </span></span></span><span style="color:#008000;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Refers</span></span></span><span style="color:#008000;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">to</span></span></span><span style="color:#008000;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">the</span></span></span><span style="color:#008000;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">radio</span></span></span><span style="color:#008000;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">button</span></span></span></p>
+<p><span style="color:#000066;"><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Reference:</span></span></span></p>
+<ol>
+<li>“<span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Mercury</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">QuickTest</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Professional,</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">User</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">’</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">s</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Guide,</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">Version</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">8.0.1</span></span><span style="font-family:Times, 'Times New Roman', serif;"><span style="font-size:small;">”</span></span></li>
+</ol>
+
+        </div>
+
+        <aside>
+          <section>
+            <div>
+              <div class="p-share">
+                <a href="http://www.facebook.com/sharer.php?src=bm&u=https%3a%2f%2fshafiqissani.github.io%2fwww.shafiq.in%2f2011%2f11%2f11%2fdescriptive-programming-in-qtp%2f&t=Descriptive%20programming%20in%20QTP" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+                <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fshafiqissani.github.io%2fwww.shafiq.in%2f2011%2f11%2f11%2fdescriptive-programming-in-qtp%2f&text=Descriptive%20programming%20in%20QTP&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+                <a href="https://plus.google.com/share?url=https%3a%2f%2fshafiqissani.github.io%2fwww.shafiq.in%2f2011%2f11%2f11%2fdescriptive-programming-in-qtp%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+                <a href="http://getpocket.com/edit?url=https%3a%2f%2fshafiqissani.github.io%2fwww.shafiq.in%2f2011%2f11%2f11%2fdescriptive-programming-in-qtp%2f&title=Descriptive%20programming%20in%20QTP" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+              </div>
+            </div>
+          </section>
+
+          
+          
+          
+        </aside>
+
+      </article>
+
+    </div>
+    <div class="col-md-3">
+      <aside class="site">
+
+  
+  <section>
+    <header>Table Of Contents</header>
+    <div></div>
+  </section>
+  
+
+  
+
+  <section>
+    <header>LatestPosts</header>
+    <div>
+      
+      <article class="li">
+  <a href="https://shafiqissani.github.io/www.shafiq.in/2016/08/09/welcome-to-jekyll/" class="clearfix">
+    <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Tue, Aug 9, 2016</time>
+      </div>
+      <h2 class="title">Welcome to Jekyll!</h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://shafiqissani.github.io/www.shafiq.in/2016/03/06/2089/" class="clearfix">
+    <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Sun, Mar 6, 2016</time>
+      </div>
+      <h2 class="title"></h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://shafiqissani.github.io/www.shafiq.in/2015/07/20/archimate/" class="clearfix">
+    <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Mon, Jul 20, 2015</time>
+      </div>
+      <h2 class="title">Archimate</h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://shafiqissani.github.io/www.shafiq.in/2014/12/30/project-initiation-documentation-raci-chart/" class="clearfix">
+    <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Tue, Dec 30, 2014</time>
+      </div>
+      <h2 class="title">Project Initiation Documentation RACI Chart</h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://shafiqissani.github.io/www.shafiq.in/2014/12/28/stakeholder-raci-matrix-spreadsheet/" class="clearfix">
+    <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Sun, Dec 28, 2014</time>
+      </div>
+      <h2 class="title">Stakeholder RACI Matrix Spreadsheet</h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://shafiqissani.github.io/www.shafiq.in/2014/12/15/break-stakeholders-into-smaller-groups-according-to-roles-or-goals-doc/" class="clearfix">
+    <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Mon, Dec 15, 2014</time>
+      </div>
+      <h2 class="title">Break stakeholders into smaller groups according to roles or goals [doc]</h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://shafiqissani.github.io/www.shafiq.in/2014/12/08/stakeholder-list-document/" class="clearfix">
+    <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Mon, Dec 8, 2014</time>
+      </div>
+      <h2 class="title">Stakeholder List Document</h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://shafiqissani.github.io/www.shafiq.in/2014/12/07/a-priori-thinking/" class="clearfix">
+    <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Sun, Dec 7, 2014</time>
+      </div>
+      <h2 class="title">&#34;a priori&#34; thinking</h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://shafiqissani.github.io/www.shafiq.in/2014/12/07/some-notes-on-people-skills-and-emotional-intelligence-1/" class="clearfix">
+    <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Sun, Dec 7, 2014</time>
+      </div>
+      <h2 class="title">Some notes on people skills and emotional intelligence - 1</h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://shafiqissani.github.io/www.shafiq.in/2014/12/06/writings-of-an-anglican-bishop/" class="clearfix">
+    <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Sat, Dec 6, 2014</time>
+      </div>
+      <h2 class="title">Writings of an Anglican bishop</h2>
+    </footer>
+  </a>
+</article>
+
+      
+    </div>
+  </section>
+
+  
+  <section>
+    <header>category</header>
+    <div>
+      <ul>
+        <li><a href="https://shafiqissani.github.io/www.shafiq.in/categories/design">design</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/categories/software-development">software-development</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/categories/project-management">project-management</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/categories/technology">technology</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/categories/documents">documents</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/categories/open-source">open-source</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/categories/linux">linux</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/categories/website-template">website-template</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/categories/business-analysis">business-analysis</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/categories/continuous-deployment">continuous-deployment</a></li>
+      </ul>
+    </div>
+  </section>
+  
+  <section>
+    <header>tag</header>
+    <div>
+      <ul>
+        <li><a href="https://shafiqissani.github.io/www.shafiq.in/tags/programming">programming</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/tags/linux">linux</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/tags/project-management">project-management</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/tags/unix">unix</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/tags/operating-system">operating-system</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/tags/perl">perl</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/tags/business">business</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/tags/business-analysis">business-analysis</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/tags/continuous-deployment">continuous-deployment</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/tags/css">css</a></li>
+      </ul>
+    </div>
+  </section>
+  
+
+</aside>
+
+    </div>
+  </div>
+</div>
+
+
+<footer class="l-footer">
+  <p>&copy; 2016 Shafiq Alibhai</p>
+  <p>Powered by <a href="http://gohugo.io" target="_blank" rel="nofollow">Hugo</a>, Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank" rel="nofollow">robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank" rel="nofollow">Daisuke Tsuji</a></p>
+</footer>
+
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+  </body>
+</html>
+

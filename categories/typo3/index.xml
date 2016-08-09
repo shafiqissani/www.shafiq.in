@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shafiq Alibhai </title>
+    <link>https://shafiqissani.github.io/www.shafiq.in/categories/typo3/</link>
+    <language>en-us</language>
+    <author></author>
+    <rights>(C) 2016</rights>
+    <updated>2010-04-13 16:11:54 &#43;0000 UTC</updated>
+
+    
+      
+        <item>
+          <title>Ajax Tabbed Google Search - A Typo3 Extension</title>
+          <link>https://shafiqissani.github.io/www.shafiq.in/2010/04/13/ajax-tabbed-google-search-a-typo3-extension/</link>
+          <pubDate>Tue, 13 Apr 2010 16:11:54 UTC</pubDate>
+          <author></author>
+          <guid>https://shafiqissani.github.io/www.shafiq.in/2010/04/13/ajax-tabbed-google-search-a-typo3-extension/</guid>
+          <description>&lt;p&gt;Following is the link to *my first* typo3 extension.&lt;/p&gt;
+&lt;p&gt;It’s a&lt;strong&gt; &lt;/strong&gt;front end plugin used to display a modified google search engine.  The search engine is ajax based and has tabs feature. There is absolutely no page loading.&lt;/p&gt;
+&lt;pre&gt;&lt;em&gt;&lt;strong&gt;Download Link :  &lt;/strong&gt;&lt;/em&gt;&lt;em&gt;&lt;a href=&#34;http://projects.issani.in/typo3/ajax_google_search/T3X_ajax_google_search-0_0_1-z-201004131450.t3x&#34;&gt;&lt;strong&gt;http://projects.issani.in/typo3/ajax_google_search/T3X_ajax_google_search-0_0_1-z-201004131450.t3x&lt;/strong&gt;&lt;/a&gt;&lt;/em&gt;&lt;/pre&gt;
+&lt;p&gt;The project is setup of typo3 forge. Following is the link to svn repository. You are welcome to check out the code and update it. :)&lt;/p&gt;
+&lt;pre&gt;&lt;em&gt;&lt;strong&gt;
+&lt;pre&gt;&lt;em&gt;&lt;strong&gt;SVN Repository Link : &lt;/strong&gt;&lt;/em&gt;&lt;em&gt;&lt;a href=&#34;https://svn.typo3.org/TYPO3v4/Extensions/ajax_google_search&#34;&gt;&lt;strong&gt;https://svn.typo3.org/TYPO3v4/Extensions/ajax_google_search&lt;/strong&gt;&lt;/a&gt;&lt;/em&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;em&gt;&lt;strong&gt;Here is the project link on typo3 forge : &lt;/strong&gt;&lt;/em&gt;&lt;em&gt;&lt;a href=&#34;http://forge.typo3.org/projects/show/extension-ajax_google_search&#34;&gt;&lt;strong&gt;http://forge.typo3.org/projects/show/extension-ajax_google_search&lt;/strong&gt;&lt;/a&gt;&lt;/em&gt;&lt;strong&gt;
+&lt;/strong&gt;&lt;em&gt;
+&lt;/em&gt;
+&lt;em&gt;&lt;strong&gt;Demo : &lt;/strong&gt;&lt;a href=&#34;http://typo3.issani.in/4/&#34;&gt;&lt;strong&gt;typo3.issani.in/4/&lt;/strong&gt;&lt;/a&gt;&lt;/em&gt;&lt;strong&gt;
+&lt;/strong&gt;
+&lt;em&gt;&lt;a href=&#34;http://shafiqissani.files.wordpress.com/2010/04/screenshot.png&#34;&gt;&lt;img class=&#34;alignnone size-full wp-image-608&#34; title=&#34;Ajax Google Search&#34; src=&#34;{{ site.baseurl }}/assets/screenshot.png&#34; alt=&#34;&#34; width=&#34;406&#34; height=&#34;228&#34; /&gt;&lt;/a&gt;&lt;/em&gt;&lt;/pre&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Typo3 Reference Manuals - A Google Chrome Extension</title>
+          <link>https://shafiqissani.github.io/www.shafiq.in/2010/03/27/typo3-reference-manuals-a-google-chrome-extension/</link>
+          <pubDate>Sat, 27 Mar 2010 07:43:04 UTC</pubDate>
+          <author></author>
+          <guid>https://shafiqissani.github.io/www.shafiq.in/2010/03/27/typo3-reference-manuals-a-google-chrome-extension/</guid>
+          <description>&lt;p&gt;Following is the link to *my first* google extension.&lt;/p&gt;
+&lt;p&gt;It&#39;s a &lt;strong&gt;collections of Typo3 reference manuals&lt;/strong&gt; taken straight from typo3.org website.&lt;/p&gt;
+&lt;p&gt;It&#39;s not nearly what I&#39;d call a cool extension, but hey it helps. :)&lt;/p&gt;
+&lt;p&gt;Anyway, this google chrome extension is for :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Those who don&#39;t have good internet connection. Link in India.&lt;/li&gt;
+&lt;li&gt;And those who don&#39;t like to go away from the browser to read or search something in the typo3 swx reference manuals.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;em&gt;Ok, so heres the link :  &lt;/em&gt;&lt;a href=&#34;http://projects.issani.in/chrome/ext/t3refmans.crx&#34;&gt;&lt;strong&gt;&lt;em&gt;http://projects.issani.in/chrome/ext/t3refmans.crx&lt;/em&gt;&lt;/strong&gt;&lt;/a&gt;&lt;/pre&gt;
+&lt;p&gt;If you&#39;re wondering why I didn&#39;t put this on Google Chrome Extension Directory, its b&#39;coz I couldn&#39;t. The &lt;strong&gt;file size is 19.86MB&lt;/strong&gt;. And Google has set the extension size limit to 10MB. But if you got any solution let me know.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tip&lt;/strong&gt;: use ctrl+F or F3 to search.&lt;/p&gt;
+</description>
+        </item>
+      
+    
+
+  </channel>
+</rss>

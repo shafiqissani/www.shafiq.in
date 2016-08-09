@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shafiq Alibhai </title>
+    <link>https://shafiqissani.github.io/www.shafiq.in/tags/oracle/</link>
+    <language>en-us</language>
+    <author></author>
+    <rights>(C) 2016</rights>
+    <updated>2010-09-30 10:26:45 &#43;0000 UTC</updated>
+
+    
+      
+        <item>
+          <title>How To Get The Current Epoch Time (Unix Timestamp)</title>
+          <link>https://shafiqissani.github.io/www.shafiq.in/2010/09/30/how-to-get-the-current-epoch-time-unix-timestamp/</link>
+          <pubDate>Thu, 30 Sep 2010 10:26:45 UTC</pubDate>
+          <author></author>
+          <guid>https://shafiqissani.github.io/www.shafiq.in/2010/09/30/how-to-get-the-current-epoch-time-unix-timestamp/</guid>
+          <description>&lt;h2&gt;&lt;span style=&#34;font-weight:normal;font-size:13px;&#34;&gt; &lt;/span&gt;&lt;/h2&gt;
+&lt;table border=&#34;0&#34; cellspacing=&#34;0&#34; cellpadding=&#34;2&#34;&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Perl&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;time&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;PHP&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;time()&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Ruby&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Time.now&lt;/code&gt; (or &lt;code&gt;Time.new&lt;/code&gt;). To display the epoch: &lt;code&gt;Time.now.to_i&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Python&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;import time first, then int(time.time())&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Java&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;long epoch = System.currentTimeMillis()/1000;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Microsoft .NET C#&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;epoch = (DateTime.Now.ToUniversalTime().Ticks - 621355968000000000) / 10000000;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;VBScript/ASP&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;DateDiff(&#34;s&#34;, &#34;01/01/1970 00:00:00&#34;, Now())&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Erlang&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;calendar:datetime_to_gregorian_seconds(calendar:now_to_universal_time( now()))-719528*24*3600.&lt;/code&gt;&lt;br /&gt;
+OR&lt;br /&gt;
+&lt;code&gt;element(1, now()) * 10000 + element(2, now()).&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;MySQL&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;SELECT unix_timestamp(now())&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;PostgreSQL&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;SELECT extract(epoch FROM now());&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Oracle PL/SQL&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;SELECT (SYSDATE - TO_DATE(&#39;01-01-1970 00:00:00&#39;, &#39;DD-MM-YYYY HH24:MI:SS&#39;)) *&lt;br /&gt;
+24 * 60 * 60 FROM DUAL&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;SQL Server&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;SELECT DATEDIFF(s, &#39;1970-01-01 00:00:00&#39;, GETUTCDATE())&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;JavaScript&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Math.round(new Date().getTime()/1000.0)&lt;/code&gt; getTime() returns time in milliseconds.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Unix/Linux Shell&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;date +%s&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;PowerShell&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Get-Date -UFormat &#34;%s&#34;&lt;/code&gt; Produces: 1279152364.63599&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Actionscript&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;(new Date()).time&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Other OS&#39;s&lt;/td&gt;
+&lt;td&gt;Command line: &lt;code&gt;perl -e &#34;print time&#34;&lt;/code&gt; (If Perl is installed on your system)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ColdFusion (CFML) MX 6.1+&lt;/td&gt;
+&lt;td&gt;#int( getTickCount() / 1000 )#&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Bash&lt;/td&gt;
+&lt;td&gt;Command Line: date +%s&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        </item>
+      
+    
+
+  </channel>
+</rss>

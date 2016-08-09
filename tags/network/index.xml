@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shafiq Alibhai </title>
+    <link>https://shafiqissani.github.io/www.shafiq.in/tags/network/</link>
+    <language>en-us</language>
+    <author></author>
+    <rights>(C) 2016</rights>
+    <updated>2013-01-12 11:38:09 &#43;0000 UTC</updated>
+
+    
+      
+        <item>
+          <title>Generic Hardening</title>
+          <link>https://shafiqissani.github.io/www.shafiq.in/2013/01/12/generic-hardening/</link>
+          <pubDate>Sat, 12 Jan 2013 11:38:09 UTC</pubDate>
+          <author></author>
+          <guid>https://shafiqissani.github.io/www.shafiq.in/2013/01/12/generic-hardening/</guid>
+          <description>&lt;h1&gt;Download document-&amp;gt; &lt;a href=&#34;http://shafiqissani.files.wordpress.com/2013/01/generic-hardening-doc.docx&#34;&gt;Generic Hardening doc&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;b&gt;Hardening: &lt;/b&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;Hardening is the process of securely deploying systems with the practice of ‘least privilege’. Hardening includes:&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;Understanding what you actually need to run on the system &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;Documentation (Policy, Standards &amp;amp; Guidelines)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;Operating systems&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;Virtual servers&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;Coding&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;Application settings&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;Database setup &amp;amp; configuration&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;Network devices&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;Portable device&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:medium;&#34;&gt;&lt;b&gt;Platform hardening:&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;Platforms are depended upon to deliver data in a secure, reliable fashion. There must be assurance that data integrity, confidentiality and availability are maintained. One of the required steps to attain this assurance is to ensure that the platforms are installed and maintained in a way that prevents unauthorized access, unauthorized use, and disruptions in service&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;DEFINITIONS&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;Hardened System&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;(H) Is the final state we are trying to achieve&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;Baseline OS Hardening&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;(Bos) Is the Baseline Operating System hardening&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;Application / System Function Hardening&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;(Af) Is any hardening of applications that may reside on top of the operating system, such as Apache, IIS, Oracle or specific functions, such as File/Print, DNS/DHCP, etc&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;Base Hardening&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;Base hardening = Baseline Operating System Hardening + Application or System Function hardening &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;(B) = (Bos) + (Af)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;Custom Hardening&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;(C)Is any additional hardening applied to the system, such as’ Specialized Security Limited Functionality’ settings, DMZ settings, addition system service settings (KIOSK, Bastion Host, etc), custom OS specific security controls(TCPWrappers, Bastille, etc.)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;Virtual System (Needs Host OS)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;(C)Is the Virtual Machine hardening&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;Is the Virtual Machine hardening&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;(VOS) Is the Virtual Server hardening - VM Ware ESXi&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:medium;&#34;&gt;&lt;b&gt;Hardening Formula&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;Putting System Hardening into a mathematical formula:&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;H = Hardened System&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;B = Base Hardening&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;C = Custom Hardening&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;So…&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;H = B+C&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;Hardened System or Secure Deployment&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&#34;CENTER&#34;&gt;Custom Hardening&lt;/p&gt;
+&lt;p align=&#34;CENTER&#34;&gt;Application / Function Hardening&lt;/p&gt;
+&lt;p align=&#34;CENTER&#34;&gt;Baseline OS Hardening&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;In the layered security &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;Hardened System or Secure Deployment&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&#34;CENTER&#34;&gt;Baseline OS Hardening&lt;/p&gt;
+&lt;p align=&#34;CENTER&#34;&gt;Application / Function Hardening&lt;/p&gt;
+&lt;p align=&#34;CENTER&#34;&gt;Custom Hardening&lt;/p&gt;
+&lt;p align=&#34;CENTER&#34;&gt;Baseline OS Hardening&lt;/p&gt;
+&lt;p align=&#34;CENTER&#34;&gt;Virtual Server Hardening&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;b&gt;Hardening Virtual Systems&lt;/b&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;For Virtual Operating System:&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;H = Hardened System&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;Vos = Virtual OS Hardening&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;B = Base Hardening&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;C = Custom Hardening&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;So…&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;H = Vos+B+C&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;Also stated as layered security:&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;Hardened System or Secure Deployment&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&#34;CENTER&#34;&gt;Virtual OS Hardening&lt;/p&gt;
+&lt;p align=&#34;CENTER&#34;&gt;Custom Hardening&lt;/p&gt;
+&lt;p align=&#34;CENTER&#34;&gt;Application / Function Hardening&lt;/p&gt;
+&lt;p align=&#34;CENTER&#34;&gt;Baseline OS Hardening&lt;/p&gt;
+</description>
+        </item>
+      
+    
+
+  </channel>
+</rss>

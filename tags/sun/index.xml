@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shafiq Alibhai </title>
+    <link>https://shafiqissani.github.io/www.shafiq.in/tags/sun/</link>
+    <language>en-us</language>
+    <author></author>
+    <rights>(C) 2016</rights>
+    <updated>2011-05-19 22:24:58 &#43;0000 UTC</updated>
+
+    
+      
+        <item>
+          <title>Puppet logs in solaris 10</title>
+          <link>https://shafiqissani.github.io/www.shafiq.in/2011/05/19/puppet-logs-in-solaris-10/</link>
+          <pubDate>Thu, 19 May 2011 22:24:58 UTC</pubDate>
+          <author></author>
+          <guid>https://shafiqissani.github.io/www.shafiq.in/2011/05/19/puppet-logs-in-solaris-10/</guid>
+          <description>&lt;p&gt;/var/svc/log/network-cswpuppetd:default.log&lt;br /&gt;
+/var/svc/log/network-cswpuppetmasterd:default.log&lt;/p&gt;
+&lt;p&gt;p.s. use `tail -f &amp;lt;log file name&amp;gt;`&lt;/p&gt;
+</description>
+        </item>
+      
+    
+
+  </channel>
+</rss>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shafiq Alibhai </title>
+    <link>https://shafiqissani.github.io/www.shafiq.in/tags/agile-development/</link>
+    <language>en-us</language>
+    <author></author>
+    <rights>(C) 2016</rights>
+    <updated>2010-03-22 06:52:15 &#43;0000 UTC</updated>
+
+    
+      
+        <item>
+          <title>Scrum Development Model  - steps</title>
+          <link>https://shafiqissani.github.io/www.shafiq.in/2010/03/22/scrum-development-model-steps/</link>
+          <pubDate>Mon, 22 Mar 2010 06:52:15 UTC</pubDate>
+          <author></author>
+          <guid>https://shafiqissani.github.io/www.shafiq.in/2010/03/22/scrum-development-model-steps/</guid>
+          <description>&lt;h3&gt;Scrum Development Model&lt;/h3&gt;
+&lt;pre&gt;Download pdf : &lt;a href=&#34;http://docs.issani.in/dump/scrum-tuts-100219-v2.1.pdf&#34;&gt;&lt;span style=&#34;color:#000000;&#34;&gt;http://docs.issani.in/dump/scrum-tuts-100219-v2.1.pdf&lt;/span&gt;&lt;/a&gt;&lt;/pre&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;a class=&#34;zem_slink&#34; title=&#34;Requirement&#34; href=&#34;http://en.wikipedia.org/wiki/Requirement&#34; rel=&#34;wikipedia&#34;&gt;Required&lt;/a&gt; Steps&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;1) Get your backlog in order&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;1. Involve stakeholders&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;2. Create list of product actions&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;3. Prioritize this list&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;4. Get list confirmed with product owner&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;5. Discuss list with team&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;2) As a team, &lt;a class=&#34;zem_slink&#34; title=&#34;Estimation&#34; href=&#34;http://en.wikipedia.org/wiki/Estimation&#34; rel=&#34;wikipedia&#34;&gt;estimate&lt;/a&gt; your Product backlog&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;1. Provide a high-level guess/estimate&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;2. Product owner reviews priorities&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;3) As a team, plan &lt;a class=&#34;zem_slink&#34; title=&#34;Sprint (scrum)&#34; href=&#34;http://en.wikipedia.org/wiki/Sprint_%28scrum%29&#34; rel=&#34;wikipedia&#34;&gt;Sprint&lt;/a&gt; requirements&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;1. Call a sprint planning &lt;a class=&#34;zem_slink&#34; title=&#34;Meeting&#34; href=&#34;http://en.wikipedia.org/wiki/Meeting&#34; rel=&#34;wikipedia&#34;&gt;meeting&lt;/a&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;2. Ensure that whole team attends&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;3. Decide sprint duration (weekly/monthly)&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;4. Select target backlog items for sprint&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;1. Choose high priority items first&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;5. Clarify sprint requirements&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;1. Methodically go through each item at a time&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;2. Ask product owner to present each item from functional perspective&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;3. Discuss the items in detail&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;5. Write requirements by feature&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;4) As a team, plan Sprint tasks&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;1. Break requirements into tasks&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;1. Go through each backlog item&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;2. Break these tasks down further&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;3. Include all items to make the Product backlog item 100% complete&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;2. Estimate tasks in hours&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;3. Commit to the Sprint backlog&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;1. remove lower items (according) if exceeding sprint capacity&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;4. Identify stretch/delayable tasks&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;5) Create an effective &lt;a class=&#34;zem_slink&#34; title=&#34;Collaborative workspace&#34; href=&#34;http://en.wikipedia.org/wiki/Collaborative_workspace&#34; rel=&#34;wikipedia&#34;&gt;collaborative workspace&lt;/a&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;1. use some &lt;a class=&#34;zem_slink&#34; title=&#34;Computer software&#34; href=&#34;http://en.wikipedia.org/wiki/Computer_software&#34; rel=&#34;wikipedia&#34;&gt;software tool&lt;/a&gt; or the traditional whiteboard&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Required Steps (contd.)&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;6) &#39;Sprint&#39; to achieve the Sprint goal&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;1. Understand that the sprint duration is fixed&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;2. If you finish early, include more scope&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;3. If you&#39;re behind reduce scope&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;4. Ensure that you complete one feature at a time to 100% (that includes&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;testing)&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;7) Optimize &lt;a class=&#34;zem_slink&#34; title=&#34;Stand-up meeting&#34; href=&#34;http://en.wikipedia.org/wiki/Stand-up_meeting&#34; rel=&#34;wikipedia&#34;&gt;Stand up&lt;/a&gt; meetings (Scrums)&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;1. &lt;a class=&#34;zem_slink&#34; title=&#34;Scrum (development)&#34; href=&#34;http://en.wikipedia.org/wiki/Scrum_%28development%29&#34; rel=&#34;wikipedia&#34;&gt;Scrum master&lt;/a&gt; should ensure that impedances are removed&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;2. Keep meetings to 15 minutes maximum&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;3. Ensure everyone answers 3 questions&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;1. what u did since last scrum&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;2. what you&#39;re planning to finish by next scrum&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;3. Any blocks or impediments that are in their way&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;4. Note that the Daily Scrum is not a status meeting to report to a manager&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;8) Track progress with a Daily burndown &lt;a class=&#34;zem_slink&#34; title=&#34;Record chart&#34; href=&#34;http://en.wikipedia.org/wiki/Record_chart&#34; rel=&#34;wikipedia&#34;&gt;chart&lt;/a&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;1. Update estimated time to complete (ETC) daily&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;2. Ensure individuals update their own ETC before daily scrum&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;3. Plot progress visually on graph (burndown chart)&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;9) Finish on schedule&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;10) &lt;a class=&#34;zem_slink&#34; title=&#34;Software review&#34; href=&#34;http://en.wikipedia.org/wiki/Software_review&#34; rel=&#34;wikipedia&#34;&gt;Review&lt;/a&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;1. At the end of the sprint, hold a sprint review meeting&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;2. Team members demo the software&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;3. Review the burndown chart&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;4. Discuss what went well&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;5. Discuss what could be improved and improvements for the next sprint&lt;/div&gt;
+&lt;p&gt;Scrum DevelopmentModel        email@shafiq.in Required Steps1) Get your backlog in order  1. Involve stakeholders  2. Create list of product actions  3. Prioritize this list  4. Get list confirmed with product owner  5. Discuss list with team2) As a team, estimate your Product backlog  1. Provide a high-level guess/estimate  2. Product owner reviews priorities3) As a team, plan Sprint requirements  1. Call a sprint planning meeting  2. Ensure that whole team attends  3. Decide sprint duration (weekly/monthly)  4. Select target backlog items for sprint     1. Choose high priority items first  5. Clarify sprint requirements     1. Methodically go through each item at a time     2. Ask product owner to present each item from functional perspective     3. Discuss the items in detail     5. Write requirements by feature4) As a team, plan Sprint tasks  1. Break requirements into tasks     1. Go through each backlog item     2. Break these tasks down further     3. Include all items to make the Product backlog item 100% complete  2. Estimate tasks in hours  3. Commit to the Sprint backlog     1. remove lower items (according) if exceeding sprint capacity  4. Identify stretch/delayable tasks5) Create an effective collaborative workspace  1. use some software tool or the traditional whiteboard Required Steps (contd.)6) &#39;Sprint&#39; to achieve the Sprint goal  1. Understand that the sprint duration is fixed  2. If you finish early, include more scope  3. If you&#39;re behind reduce scope  4. Ensure that you complete one feature at a time to 100% (that includestesting)7) Optimize Stand up meetings (Scrums)  1. Scrum master should ensure that impedances are removed  2. Keep meetings to 15 minutes maximum  3. Ensure everyone answers 3 questions     1. what u did since last scrum     2. what you&#39;re planning to finish by next scrum     3. Any blocks or impediments that are in their way  4. Note that the Daily Scrum is not a status meeting to report to a manager8) Track progress with a Daily burndown chart  1. Update estimated time to complete (ETC) daily  2. Ensure individuals update their own ETC before daily scrum  3. Plot progress visually on graph (burndown chart)9) Finish on schedule10) Review   1. At the end of the sprint, hold a sprint review meeting   2. Team members demo the software   3. Review the burndown chart   4. Discuss what went well   5. Discuss what could be improved and improvements for the next sprint&lt;/p&gt;
+</description>
+        </item>
+      
+    
+
+  </channel>
+</rss>

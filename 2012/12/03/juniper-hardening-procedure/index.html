@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.16" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Noticia+Text:400,700|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="https://shafiqissani.github.io/www.shafiq.in/css/styles.css">
+    <link rel="stylesheet" href="https://shafiqissani.github.io/www.shafiq.in/css/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="https://shafiqissani.github.io/www.shafiq.in/index.xml">
+
+    
+    <title>Juniper Hardening Procedure - Shafiq Alibhai</title>
+    <meta property='og:title' content="Juniper Hardening Procedure - Shafiq Alibhai">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="https://shafiqissani.github.io/www.shafiq.in/2012/12/03/juniper-hardening-procedure/">
+    
+    
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage":{
+      "@type":"WebPage",
+      "@id":"https:\/\/shafiqissani.github.io\/www.shafiq.in\/"
+    },
+    "headline": "Juniper Hardening Procedure |  ",
+    "image": {
+      "@type": "ImageObject",
+      "url": "",
+      "height": 700,
+      "width": 700
+    },
+    "datePublished": "2012-12-03T13:53:05JST",
+    "dateModified": "2012-12-03T13:53:05JST",
+    "author": {
+      "@type": "Person",
+      "name": "",
+      "image": "https:\/\/shafiqissani.github.io\/www.shafiq.in\/images/logo.png"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https:\/\/shafiqissani.github.io\/www.shafiq.in\/images/logo.png",
+        "height": 60,
+        "width": 60
+      }
+    },
+    "description": ""
+  }
+</script>
+</head>
+
+<body>
+
+  <header class="l-header">
+    <div class="p-logo">
+      <a href="https://shafiqissani.github.io/www.shafiq.in/">Shafiq Alibhai</a>
+    </div>
+  </header>
+
+
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-9">
+
+      <article class="single">
+        <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+        <div class="body">
+          <h1>Juniper Hardening Procedure</h1>
+          <h1 class="western" style="margin-left:.95cm;text-indent:-.95cm;margin-top:.21cm;margin-bottom:0;page-break-before:auto;page-break-after:auto;"></h1>
+<h1 class="western" style="margin-left:.95cm;text-indent:-.95cm;margin-top:.21cm;margin-bottom:0;page-break-before:auto;page-break-after:auto;"><a href="http://shafiqissani.files.wordpress.com/2012/12/juniper-device-hardening-1.pdf">DOWNLOAD - Juniper device hardening</a></h1>
+<h1 class="western" style="margin-left:.95cm;text-indent:-.95cm;margin-top:.21cm;margin-bottom:0;page-break-before:auto;page-break-after:auto;"></h1>
+<h1 class="western" style="margin-left:.95cm;text-indent:-.95cm;margin-top:.21cm;margin-bottom:0;page-break-before:auto;page-break-after:auto;"><span style="color:#17365d;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:large;">Introduction</span></span></span></h1>
+<h2 class="western" style="margin-left:1.4cm;text-indent:-1.4cm;margin-top:.21cm;line-height:100%;page-break-inside:auto;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Rationale</span></span></h2>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">An out-of-box firewall implementation is not fully secure and needs to be hardened. This document details the various aspects of Juniper firewall security and standards implemented for securing Juniper firewalls.</span></span></p>
+<h2 class="western" style="margin-left:1.4cm;text-indent:-1.4cm;margin-top:.21cm;line-height:100%;page-break-inside:auto;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Purpose</span></span></h2>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">This document is to define a baseline security standard for the Juniper Firewall implementations by firewall administrators.</span></span></p>
+<h2 class="western" style="margin-left:1.4cm;text-indent:-1.4cm;margin-top:.21cm;line-height:100%;page-break-inside:auto;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Scope</span></span></h2>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">These security standards cover the Juniper Firewall Screen OS implementation. </span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">However, for some setups, this minimum requirement and some features of these standards may not be practical for implementation. For exceptions, the system administrators must document the reasons for not complying fully with these standards and request an exemption from the Security department.</span></span></p>
+<h2 class="western" style="margin-left:1.4cm;text-indent:-1.4cm;margin-top:.21cm;line-height:100%;page-break-inside:auto;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Audience</span></span></h2>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Firewall administrators bear the primary responsibility of implementing these standards. During their reviews and inspections, auditors must use this document to verify standards compliance. </span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Business managers can read the rationale behind each of the points in the standards to gain an understanding of the importance of applying it to their environments.</span></span></p>
+<h2 class="western" style="margin-left:1.4cm;text-indent:-1.4cm;margin-top:.21cm;line-height:100%;page-break-inside:auto;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Implementation</span></span></h2>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">The Juniper Firewall administrators must use these standards to build the installation and operational procedures.</span></span></p>
+<h2 class="western" style="margin-left:1.4cm;text-indent:-1.4cm;margin-top:.21cm;line-height:100%;page-break-inside:auto;page-break-before:always;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Juniper Firewall Security Overview</span></span></h2>
+<p style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">This section gives a very brief overview of various aspects of Juniper Firewall security. The hardening details for each aspect are present in the subsequent sections of the document. </span></span></p>
+<p style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">The Juniper Firewall operating security environment consists of various aspects:</span></span></p>
+<ul>
+<li>
+<p style="margin-top:.21cm;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Device &amp; ScreenOS initial setup</span></span></p>
+</li>
+<li>
+<p style="margin-top:.21cm;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Device Configuration</span></span></p>
+</li>
+<li>
+<p style="margin-top:.21cm;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Device Management</span></span></p>
+</li>
+<li>
+<p style="margin-top:.21cm;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">User management </span></span></p>
+</li>
+<li>
+<p style="margin-top:.21cm;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Services</span></span></p>
+</li>
+<li>
+<p style="margin-top:.21cm;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">System access</span></span></p>
+</li>
+<li>
+<p style="margin-top:.21cm;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">System logging and monitoring</span></span></p>
+</li>
+<li>
+<p style="margin-top:.21cm;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Policy logging and monitoring</span></span></p>
+</li>
+</ul>
+<h1 class="western" style="margin-left:.95cm;text-indent:-.95cm;margin-top:.21cm;margin-bottom:0;page-break-before:auto;page-break-after:auto;"><span style="color:#17365d;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:large;">Device and ScreenOS Setup</span></span></span></h1>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">The security of a Juniper firewall Screen OS starts with a secure setup. The factors that influence this include using the correct Screen OS version.</span></span></p>
+<h2 class="western" style="margin-left:1.4cm;text-indent:-1.4cm;margin-top:.21cm;line-height:150%;page-break-inside:auto;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Properly Identify Device for Physical Tampering</span></span></h2>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">The outside packaging cannot show damage, or evidence that unauthorized persons have opened it. If the cardboard shows damage that would allow the device to be unpacked or exchanged, this may be evidence of tampering.</span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Each packed box arrives with custom tape to indicate that Juniper or an authorized manufacturer packaged the device. The tape is unique; with the word, “Juniper” printed repeatedly throughout the tape. If the tape is not present, this may be evidence of tampering.</span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">The internal packaging cannot show damage or evidence of tampering. The plastic bag should not have a large hole and the label that seals the plastic bag should not be detached or missing. Any damage to the bag or the seal may be evidence of tampering.</span></span></p>
+<h2 class="western" style="margin-left:1.4cm;text-indent:-1.4cm;margin-top:.21cm;line-height:150%;page-break-inside:auto;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Verify correct version of hardware and software</span></span></h2>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">To verify that the product received is the correct version of hardware and software, run the following command from the CLI:</span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><i><b>get system</b></i></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">The output of this command includes two key items, hardware version and software version. The hardware and software versions must match the common criteria security target to be in full compliance with the common criteria evaluated configuration.</span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">The firewalls come with pre-installed Screen OS software. However, the Screen OS software versions installed on the devices might vary depending on the manufacturing time of the security appliances.</span></span></p>
+<h2 class="western" style="margin-left:1.4cm;text-indent:-1.4cm;margin-top:.21cm;line-height:150%;page-break-inside:auto;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Upgrading a Juniper Firewall</span></span></h2>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">The correct Screen OS software image needs to be loaded on to the security appliance.</span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Before the Screen OS software image can be loaded, configure the manage interface though which the images can be downloaded from the FTP server to the security appliances. The following commands will configure the zone and IP address for the manage interface.</span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set interface </b><i>interface-name </i><b>zone </b><i>trust</i></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set interface </b><i>interface-name </i><b>ip </b><i>ip-address</i></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><i>Note: Interface-name should the name of the actual interface connected to the PC serving as FTP firewall; through this interface, the security appliances can communicate with the FTP firewall. For the 5-series devices, interface <b>trust – </b>bound to the security zone <b>trust </b>by default – can be used. For devices Juniper NetScreen-204 and 208, you can use interface <b>ethernet1</b>. For Juniper NetScreen-500, interface ethernet1/1in the security zone <b>trust </b>can be in place of interface-name. On high-level security, appliances including Juniper NetScreen-ISG2000 and ISG1000 interface can use ethernet1/1. Juniper NetScreen-5200 and NetScreen 5400 can use Interface ethernet2/1. </i></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">The <i>ip-address</i> should be a valid IP address, which can be in the same or different subnet with the TFTP firewall. </span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Once configured, use the following commands to download the Screen OS image from the FTP firewall to the security appliance:</span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>save software from tftp </b><i>tftp-firewall-ip Screen OS-image </i><b>to flash</b></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">where, <i>tftp-firewall-ip </i>is IP address for PC serving as the TFTP firewall where the Screen OS software images reside and, <i>Screen OS-image </i>is relative path to the Screen OS software image file and the name of the file itself.</span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">For example, if the Screen OS image for the device Juniper NetScreen-5GT is “ns5gt.5.4.0r4.0” and resides on FTP firewall (with IP address 10.155.95.253), under the directory /tftpboot/screen OS-image/5.4/, the command should be as the following:</span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>save software from tftp </b><i>10.155.95.253 /tftpboot/screen OS-image/5.4/ns5gt.5.4.0r4.0 </i><b>to flash</b></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">The downloading process will take a few minutes. After the downloading process is completed, the security appliance will return to the CLI prompt and requires a reboot. Issue the command <b>reset </b>and provide answers for the questions below to completely load the image to the security appliance and restore the default manufacture configurations.</span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>reset</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Configuration modified, save? [y]/n n</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>System reset, are you sure? y/[n] y</b></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">The security appliance will return to the login prompt. At this time, the security appliance has been completely loaded with the proper Screen OS software version.</span></span></p>
+<h2 class="western" style="margin-left:1.4cm;text-indent:-1.4cm;margin-top:.21cm;line-height:150%;page-break-inside:auto;"><span style="color:#548dd4;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Screen OS Upgrades</span></span></span></h2>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Update the firewalls’ Screen OS with the vendor recommended updates as part of quarterly. </span></span></p>
+<h1 class="western" style="margin-left:.95cm;text-indent:-.95cm;margin-top:.21cm;margin-bottom:0;page-break-before:auto;page-break-after:auto;"><span style="color:#17365d;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:large;">Device Configuration</span></span></span></h1>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="color:#548dd4;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Restore default settings </b></span></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Restore the firewall to the default manufacturing operation mode and configurations before putting the appliance in a different operation modes including Transparent Authenticated mode (a.k.a. Transparent VPN mode) or NAT/Route Authenticated mode (a.k.a. NAT/Route VPN mode) or before performing any configurations for any specific testing. </span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Use the commands <b>unset all </b>and <b>reset </b>along with the following answers to restored the default operation mode and configurations for the appliance.</span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>unset all</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Erase all system config, are you sure y/ [n]? Y</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>reset</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Configuration modified, save? [y]/n n</b></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>System reset, are you sure? y/[n] y</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Set accurate date and time</b></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Enable the following command to ensure that the date and time stamps used on audit messages are accurate:</span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set clock mm/dd/yyyy hh:mm</b></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="color:#548dd4;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Setting the Operation Mode</b></span></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">To determine which operation mode the juniper firewall is, use the following command.</span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>get system</b></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;">“<span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">System in NAT/Route mode” indicates it is operating in NAT/Route mode</span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;">“<span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">System in transparent mode” indicates it is operating in transparent mode.</span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">All security appliances are, by default, configured in NAT/Route mode without VPN.</span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><span style="text-decoration:underline;">To ensure that a security appliance is in a mode compliant with the Common Criteria EAL4 evaluated configuration, follow one of the following three sets of steps depending on the desired configuration: </span></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Unauthenticated NAT/Route Mode</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Authenticated NAT/Route Mode</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b> Route-Based VPN</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b> Policy-Based VPN</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Authenticated Transparent Mode</b></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="color:#548dd4;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Authenticated NAT/Route Mode</b></span></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Configure the firewall in authenticated NAT/Route Mode using either a Route-based VPN or Policy-based VPN. You can configure both Route-based VPN and Policy-based VPN in authenticated NAT/Route mode.</span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Only Manual Key is supported in the Evaluated Configuration, i.e. AutoKey cannot be used. Take care in selecting Manual Key values such that they follow the same rules as administrative passwords. Distribute the manual keys using a secure method to ensure that they are not publicly accessible.</span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="color:#548dd4;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Route-Based VPN</b></span></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Configure the respective security appliance with a Route-based VPN in authenticated NAT/Route mode. </span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="color:#548dd4;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Policy-Based VPN </b></span></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Configure the respective security appliance with a Policy-based VPN in authenticated NAT/Route mode. </span></span></p>
+<h2 class="western" style="margin-top:.21cm;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Firewall Naming Convention</span></span></h2>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Branch Firewalls: (Naming convention not set)</span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Data Center Firewalls: (Naming convention not set)</span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="color:#548dd4;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Configuring Screen Options</b></span></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Security appliances must prevent all types of Denial of Service (DoS) and attack signatures on every security zone to prevent these types of attacks from occurring on the network. </span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">To view the default screening options for a particular security zone, issue the following command.</span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>get zone </b><i>zone-name </i><b>screen</b></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">By default, the screening options enabled for the <b>Untrust/V1-Untrust </b>security zone (and the interfaces in <b>Untrust/V1-Untrust </b>zone) in Screen OS 5.0:</span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Tear-drop Attack Protection on</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>SYN Flood Protection (200) on</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Alarm Threshold: <i>alarm-threshold</i></b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Queue Size: <i>Q-size</i></b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Timeout Value: 20</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Source Threshold: <i>src-threshold</i></b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Destination Threshold: <i>dst-threshold</i></b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Drop unknown MAC (transparent mode only): off</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Ping-of-Death Protection on</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Source Route IP Option Filter on</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Land Attack Protection on</b></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:115%;page-break-before:always;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><i><b>Alarm-threshold, Q-size, src-threshold, </b></i>and <i><b>dst-threshold </b></i>are platform dependent as specified in the table below.</span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">For the <b>Trust/V1-Trust </b>and <b>DMZ/V1-DMZ </b>zones (and the interfaces in <b>Trust </b>and <b>DMZ </b>zone), no screen options are enabled by default.</span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Screen function only generate alarm without dropping packet: OFF</b></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">To disable all the default screening option for zone <b>Untrust/V1-Untrust, </b>the following commands are used:</span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>unset zone untrust screen tear-drop</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>unset zone untrust screen syn-flood</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>unset zone untrust screen ping-death</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>unset zone untrust screen ip-filter-src</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>unset zone untrust screen land</b></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">The following displays when the security zone has no screening options enabled:</span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:115%;">“<span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Screen function only generate alarm without dropping packet: OFF”</b></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">The following CLI command enables all screens on a per-zone basis (and is applied to all interfaces within that zone):</span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set zone </b><i>zone-name </i><b>screen block-frag</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set zone </b><i>zone-name </i><b>screen component-block</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set zone </b><i>zone-name </i><b>screen fin-no-ack</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set zone </b><i>zone-name </i><b>screen icmp-flood</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set zone </b><i>zone-name </i><b>screen icmp-fragment</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set zone </b><i>zone-name </i><b>screen icmp-large</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set zone </b><i>zone-name </i><b>screen ip-bad-option</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set zone </b><i>zone-name </i><b>screen ip-filter-src</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set zone </b><i>zone-name </i><b>screen ip-loose-src-route</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set zone </b><i>zone-name </i><b>screen ip-record-route</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set zone </b><i>zone-name </i><b>screen ip-security-opt</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set zone </b><i>zone-name </i><b>screen ip-spoofing</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set zone </b><i>zone-name </i><b>screen ip-stream-opt</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set zone </b><i>zone-name </i><b>screen ip-strict-src-route</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set zone </b><i>zone-name </i><b>screen ip-sweep</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set zone </b><i>zone-name </i><b>screen ip-timestamp-opt</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set zone </b><i>zone-name </i><b>screen land</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set zone </b><i>zone-name </i><b>screen limit-session</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set zone </b><i>zone-name </i><b>screen mal-url code-red</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set zone </b><i>zone-name </i><b>screen ping-death</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set zone </b><i>zone-name </i><b>screen port-scan</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set zone </b><i>zone-name </i><b>screen syn-ack-ack-proxy</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set zone </b><i>zone-name </i><b>screen syn-fin</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set zone </b><i>zone-name </i><b>screen syn-flood</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set zone </b><i>zone-name </i><b>screen syn-frag</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set zone </b><i>zone-name </i><b>screen tcp-no-flag</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set zone </b><i>zone-name </i><b>screen tear-drop</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set zone </b><i>zone-name </i><b>screen udp-flood</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set zone </b><i>zone-name </i><b>screen unknown-protocol</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set zone </b><i>zone-name </i><b>screen winnuke</b></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">The above commands must run for both the internal and external zones (i.e. Trust and Untrust) to protect the internal and external networks. When security appliance runs in NAT/Route mode, run the above commands for security zones <b>Trust </b>and <b>Untrust.</b></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">When the security appliance runs in “Transparent” mode, (including Transparent Authenticated mode), run the above commands for security zones <b>V1-Trust </b>and <b>V1-Untrust.</b></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">You must run the same commands (as above) for each additional security zone.</span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">When the security appliance operates in NAT/Route mode, (including NAT/Route Unauthenticated and Nat/Route Authenticated mode) enable dropping packets that have no source IP address, or that have a non-routable source IP address by using the following command.</span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set zone </b><i>zone-name </i><b>screen ip-spoofing drop-no-rpf-route</b></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:115%;">“<span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><i>zone-name” </i>is the name of the security zone such as <b>Trust </b>or <b>Untrust</b>.</span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">For instance, when the security in NAT/Route mode, to turn on dropping packets capability for the security zone <b>trust </b>and <b>untrust</b>, issue the following commands.</span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set zone trust screen ip-spoofing drop-no-rpf-route</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set zone untrust screen ip-spoofing drop-no-rpf-route</b></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Ensure to execute the same command (as above) for any Layer-3 security zones that are used. When changing the HTTP blocking option the changes will only apply to the sessions newly created after this blocking option is set.</span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="color:#548dd4;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Configuring IP Spoofing Protection </b></span></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Configure IP spoofing protection by the screen option “ip-spoofing” as indicated above in the section, “Configuring Screen Options”. This includes <b>Intrazone </b>configurations where VPN traffic is on the same zone as the decrypted traffic. However depending on the configuration implemented (especially <b>Interzone</b>) the following additional steps are required to be adequately protected against IP spoofing attacks.</span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">The following guidance for Authenticated NAT/Route mode and Authenticated Transparent mode should supplement the guidance provided in the previous section “Setting a Policy to Permit Traffic”.</span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">"IP-Spoofing" Screen is bypassed - a set of addresses and policies need to be defined to allow only traffic permitted, excluding spoofed IP addresses.</span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">When operating in Authenticated NAT/Route mode or Authenticated Transparent mode, the “IP-spoofing” screen option is “bypassed”. Therefore, define a set of addresses and policies to allow traffic, excluding spoofed IP addresses.</span></span></p>
+<h1 class="western" style="margin-left:.95cm;text-indent:-.95cm;margin-top:.21cm;margin-bottom:0;page-break-before:auto;page-break-after:auto;"><span style="color:#17365d;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:large;">Device Management</span></span></span></h1>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">This sections provides details on securing the firewall device’s management aspects</span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="color:#548dd4;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Securing Administrator Traffic On Device</b></span></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Four steps are required to secure the device administrator traffic:</span></span></p>
+<ol>
+<li>
+<p style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Define permitted IP address for client administrator Manager-IP address</span></span></p>
+</li>
+<li>
+<p style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Define interface-specific options</span></span></p>
+<ol>
+<li>
+<p style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Define Manage IP address for interfaces</span></span></p>
+</li>
+<li>
+<p style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Turn off unnecessary management services</span></span></p>
+</li>
+</ol>
+</li>
+<li>
+<p style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Change port numbers for administrator services</span></span></p>
+</li>
+</ol>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="color:#548dd4;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Disable Internal Commands</b></span></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">The firewall administrator must disable internal commands. The usage of internal commands applies only for troubleshooting and debugging purposes.</span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">To disable internal commands, you must run the following command:</span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set common-criteria no-internal-commands</b></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">To use internal commands (i.e. ‘<b>debug flow basic</b>’ and ‘<b>get dbuf stream</b>’, ‘debug ids sat’) for troubleshooting and debugging purposes, use the following command:</span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>unset common-criteria no-internal-commands</b></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><i>Note: Use the internal commands ‘debug ids sat’ is for ISG-1000, ISG-2000, NS-5200 and NS-5400 </i></span></span></p>
+<h1 class="western" style="margin-top:.21cm;margin-bottom:0;font-variant:normal;line-height:150%;"><span style="color:#548dd4;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Disable Telnet for Device Management</span></span></span></h1>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">The use of telnet is discouraged on the Juniper firewalls. Use SSH, 2.0 for managing the Juniper firewall:</span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">To do this:</span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Disable telnet on the management interface</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Enable ssh</b></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="color:#548dd4;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Control Unauthorized Hardware Resets</b></span></span></span></p>
+<p style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">To disable recovery via login, use the following command:</span></span></p>
+<p style="margin-left:.64cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>unset admin device-reset</b></span></span></p>
+<p style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">To disable recovery via pinhole, use the following command:</span></span></p>
+<p style="margin-left:.64cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>unset admin hw-reset</b></span></span></p>
+<p style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">When disabled, a firewall administrator needs to enable the respective reset in order to perform any activity, which requires rebooting the firewall. </span></span></p>
+<h1 class="western" style="margin-top:.21cm;margin-bottom:0;font-variant:normal;line-height:150%;"><span style="color:#548dd4;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Restricting Remote Access</span></span></span></h1>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Management access must be limited to the locally connected console port as opposed to the factory default settings.</span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">To limit management access to the console port, the interface that is by default in the <b>V1-Trust </b>or <b>Trust </b>security zone needs to have management access turned off. </span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">All other interfaces have management access turned off by default.</span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">To disable management to the interface, issue the following CLI command:</span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>unset interface </b><i>interface-name </i><b>manage</b> </span></span></p>
+<h1 class="western" style="margin-left:.95cm;text-indent:-.95cm;margin-top:.21cm;margin-bottom:0;page-break-before:auto;page-break-after:auto;"><span style="color:#17365d;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:large;">User Management</span></span></span></h1>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Security appliance administrators must choose login-names and passwords that not only have the length of at least eight characters and employ as many types of characters as possible. Mixing lower case and upper case is required to ensure proper protection. In addition, easily guessable usernames and passwords are not secure.</span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Security appliances ship with a default username and password of “netscreen”. Change the default as soon as possible to prevent unauthorized access. </span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">The recommended time between password changes is no longer than 30 days to mitigate the effects of a compromised administrator identity.</span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="color:#548dd4;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Setting/Changing Password Length Restrictions</b></span></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">To ensure that passwords of eight characters or more are always used, you must first set the following command:</span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set admin password restrict length </b><i>password-length</i></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">where, <i>password-length </i>is a decimal value equal to or greater than 8 and less than or equal to 31. It should also follow password policy.</span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="color:#548dd4;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Setting/Changing Administrator Name and Password</b></span></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">The following CLI commands, in order, are required to set a new administrator name and password:</span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set admin name </b><i>name-string</i></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set admin password </b><i>password-string</i></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">where, <i>name-string </i>and <i>password-string </i>should be replaced with actual login name and password of administrator.</span></span></p>
+<h1 class="western" style="margin-left:.95cm;text-indent:-.95cm;margin-top:.21cm;margin-bottom:0;page-break-before:auto;page-break-after:auto;"><span style="color:#17365d;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:large;">Policy Management</span></span></span></h1>
+<p style="margin-top:.21cm;line-height:150%;"><span style="color:#548dd4;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Remove Permissive Default Policy</b></span></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">The firewall might have a default policy that allows traffic to traverse the device from the interface in the <b>Trust </b>zone to the interface in the <b>Untrust </b>zone. Delete this default policy to avoid inadvertently allowing information to traverse the device. Use the CLI command: </span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>unset policy id 1</b></span></span></p>
+<p style="margin-top:.21cm;line-height:150%;"><span style="color:#548dd4;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Log Denied Traffic</b></span></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">By default, security appliance will drop any traffic that does not match any “permit” policy. Therefore, add a policy to the end of the policy list to log denied traffic, which matches no policy:</span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set policy id </b><i>pol-id </i><b>from </b><i>scr-zone </i><b>to </b><i>dst-zone </i><b>any any any deny log</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>count</b></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;">…<span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">where, <i>pol-id </i>is policy ID, <i>scr-zone </i>and <i>dst-zone </i>are, respectively, source zone from which the traffic comes and destination zone to which the traffic arrives. </span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">For every security zone that has a network interface assigned to it, add the above policies to the end of the policy tables to ensure that dropped traffic logging.</span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set policy id </b><i>pol-id </i><b>from trust to untrust any any any deny log count</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set policy id </b><i>pol-id </i><b>from untrust to trust any any any deny log count</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set policy id </b><i>pol-id </i><b>from trust to dmz any any any deny log count</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set policy id </b><i>pol-id </i><b>from dmz to trust any any any deny log count</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;">…</p>
+<h1 class="western" style="margin-top:.21cm;margin-bottom:0;font-variant:normal;line-height:150%;"><span style="color:#548dd4;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Setting a Policy To Permit Traffic</span></span></span></h1>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Two important steps to take when creating a security policy:</span></span></p>
+<ul>
+<li>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Enable counting and logging to maintain audit log information for traffic passing through the device.</span></span></p>
+</li>
+<li>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Must be specific to ensure traffic permitted is intentional and not part of a generic policy.</span></span></p>
+</li>
+</ul>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Use specific source IP address (<i>src-addr)</i>, destination IP address (<i>dst-addr)</i>, source zone (<i>src-zone)</i>, destination zone (<i>dst-zone)</i>, protocol, and service (<i>servicename)</i> if feasible. One example where it may not make sense to be specific is for traffic destined for an external network for general web access. </span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">After creating and configuring the source and destination addresses, configure the policy with counting and logging using the following command:</span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set policy id </b><i>id-num </i><b>from </b><i>src-zone </i><b>to </b><i>dst-zone src-addr dst-addr servicename</i></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><i>action </i><b>log count</b></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;">…<span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">where, <i>“id-num”</i>: is the decimal number presenting the policy ID number &amp; <i> “action</i>” can be <b>permit </b>to allow specific service to pass from source address across the security appliance to the destination address; or <b>deny </b>to block service from passing though the security appliance</span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="color:#548dd4;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Ordering Policies</b></span></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">The order of policies is important, as policies match in order beginning with the first one in the policy list and moving through the list. The first matching policy applies to network traffic to determine the action taken. By default, a newly created policy appears at the bottom of a policy list.</span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">There is an option that allows you to position a policy at the top of the list instead. In the CLI, add the key word <b>top </b>to the <b>set policy </b>command:</span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">For example,</span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set policy id </b><i>6 </i><b>top from trust to untrust </b><i>trust-HostA untr-NetworkB </i><b>http</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>permit log</b></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">The newly created policy can also be positioned at any location in the policy list by using the keyword option <b>before </b>to the <b>set policy </b>CLI command.</span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">For example:</span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set policy id </b><i>4 </i><b>before </b>98 <b>from untrust to trust </b><i>untr-NetworkB trust-HostA </i><b>ftp permit log</b></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">If global policies are used then replace the above policy, which executes prior to any Global policy. A Global deny policy can be used which must be added at the end of the Global policy list</span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set policy global id <i>pol-id </i>any any any deny log count</b></span></span></p>
+<h1 class="western" style="margin-left:.95cm;text-indent:-.95cm;margin-top:.21cm;margin-bottom:0;page-break-before:auto;page-break-after:auto;"><span style="color:#17365d;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:large;">System Logging and Monitoring</span></span></span></h1>
+<h2 class="western" style="margin-top:.21cm;line-height:150%;"><span style="color:#548dd4;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Configuring Syslog</span></span></span></h2>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">You should configure a Syslog firewall as a backup for security audit information and for long-term audit log storage. This will help prevent a loss in security audit information. </span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">The specific commands required to set up a Syslog firewall are:</span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set syslog config </b><i>ip-address </i><b>facilities local0 local0</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set syslog config </b><i>ip-address </i><b>port 514</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set syslog config </b><i>ip-address </i><b>log traffic</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set syslog enable</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set log module system level </b><i>level-name </i><b>destination syslog</b></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">where <i>ip-address </i>is the actual IP address of the Syslog firewall and <i>level-name </i>is the severity level of the log</span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><i>Note: You must enter the set log command once for each message level.</i></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><i>The options for <b>level-name </b>are listed below:</i></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>emergency</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>alert</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>critical</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>error</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>warning</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>notification</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>information</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>debugging</b></span></span></p>
+<h2 class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Events to be Logged</span></span></h2>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">The system logs contain historic firewall events and usage information, used for debugging system malfunctions and forensic investigations. Hence, log all critical information. Configure syslog to log the following on each firewall:</span></span></p>
+<ul>
+<li>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Each login and logoff</span></span></p>
+</li>
+<li>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Firewall start-up and shutdown</span></span></p>
+</li>
+<li>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Complete session </span></span></p>
+</li>
+<li>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">User and group account administration</span></span></p>
+</li>
+<li>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Hardware failures</span></span></p>
+</li>
+</ul>
+<h2 class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Log Retention and Archival</span></span></h2>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Many a times it is required to get a complete audit trail of a process for security investigation or troubleshooting purpose. Hence, locally retain the firewall logs for a defined number of days. There should be enough storage space allotted to handle this. In addition, there must be very strict access control implemented on the stored logs.</span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">The log files must be archived offline. Appropriately protect the archived logs so that unauthorized users do not access them.</span></span></p>
+<h2 class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Protection of Log Files</span></span></h2>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">If a malicious user manages to modify the log files and remove traces of attack, no investigation can be conclusive. In addition, the log extended periods for audit trail. Hence, protect log files against tampering and stored securely.</span></span></p>
+<h2 class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Session Activity Logs for Privileged Users</span></span></h2>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Privileged users have total control over the firewall. Log every activity performed on the firewall by these users.</span></span></p>
+<h2 class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Periodic Monitoring</span></span></h2>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">For maintaining the security levels on the Juniper firewalls, monitor the firewalls on a regular basis. Perform these monitoring tasks on periodic basis. </span></span></p>
+<h1 class="western" style="margin-left:.95cm;text-indent:-.95cm;margin-top:.21cm;margin-bottom:0;page-break-before:auto;page-break-after:auto;"><span style="color:#17365d;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:large;">Configuring Audit Loss Mitigation</span></span></span></h1>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">There are cases where more auditable events can occur than the security appliance is able to write to a syslog firewall. The security appliance must stop further auditable events from occurring until the audit trail is able to handle more traffic. An authorized administrator must enable the following command:</span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:150%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set log audit-loss-mitigation</b></span></span></p>
+<p style="margin-top:.21cm;"><span style="color:#548dd4;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Logging Permitted Packets</b></span></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">To log permitted packets passing through the device enable logging option on all authenticated and/or unauthenticated traffic policies.</span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">In this document, all permitted policies include the keyword <b>log</b>, to create traffic log entries for permitted traffic.</span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Upon completion of the application session permitted traffic logs are created<span style="color:#ff0000;">.</span></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">You can use the following command to view the overall traffic logs, or specific policy’s traffic log:</span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>get log traffic</b></span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>get log traffic policy </b><i>id</i></span></span></p>
+<p style="margin-top:.21cm;"><span style="color:#548dd4;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Logging Dropped Packets</b></span></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">To log dropped packets set to terminate on any of the device interfaces, you must enable the following command:</span></span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set firewall log-self</b></span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">To log authenticated dropped packets; you must add the <b>log </b>keyword to the first policy associated with a VPN tunnel. Packets that do not match any of the policies associated with the tunnel are “dropped”. The log entries for these dropped packets linked with the highest priority policy (first in the ‘<b>get policy all</b>’ list) associated with the tunnel and the traffic flow direction.</span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:115%;page-break-before:always;"><span style="color:#17365d;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:medium;"><b>Firewall Management Idle Timeout</b></span></span></span></p>
+<p style="margin-top:.21cm;"><span style="color:#548dd4;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Command Line Interface</b></span></span></span></p>
+<p style="margin-left:.64cm;margin-top:.21cm;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Protect Management from the console port by setting an idle timeout. By default, console and Telnet sessions time out after 10 minutes of inactivity. Recommend never to set the timeout value to zero.</span></span></p>
+<p style="margin-left:.64cm;margin-top:.21cm;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">To verify execute the command:</span></span></p>
+<p style="margin-left:1.27cm;margin-top:.21cm;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><i><b>get console</b></i></span></span></p>
+<p style="margin-top:.21cm;"><span style="color:#548dd4;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Web User Interface (WebUI)</b></span></span></span></p>
+<p style="margin-left:.64cm;margin-top:.21cm;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">The WebUI timeout, like the console timeout, defaults to 10 minutes. When changing the WebUI timeout, specify a number of minutes (between 1 and 999) of idle time before closing the browser. Enable the option “Enable Web Management Idle Timeout” check box. Do not disable it.</span></span></p>
+<p style="margin-left:.64cm;margin-top:.21cm;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Security Manager</span></span></p>
+<p style="margin-left:.95cm;margin-top:.21cm;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Edit Device &gt; Device Admin &gt; Web Management</span></span></p>
+<p style="margin-top:.21cm;"><span style="color:#548dd4;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Permitted IP Addresses</b></span></span></span></p>
+<p style="margin-left:.64cm;margin-top:.21cm;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Configure Juniper Networks devices to accept management requests only from trusted sources. Define a list of permitted IP addresses. Permitted IP addresses include a mask parameter specified as dotted-decimal value. Permitted IP addresses can be a hosts / subnets. NOTE: You are limited to six entries.</span></span></p>
+<p style="margin-left:.64cm;margin-top:.21cm;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">CLI</span></span></p>
+<p style="margin-left:1.27cm;margin-top:.21cm;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>set admin manager-ip <span style="text-decoration:underline;">address </span>[mask]</b></span></span></p>
+<p style="margin-top:.21cm;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">WebUI</span></span></p>
+<p style="margin-left:1.27cm;margin-top:.21cm;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Configuration &gt;Admin &gt; Permitted IPs</span></span></p>
+<p style="margin-left:.64cm;margin-top:.21cm;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Security Manager</span></span></p>
+<p style="margin-left:1.27cm;margin-top:.21cm;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Edit Device &gt; Device Admin &gt; Permitted IPs &gt; Add</span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:115%;page-break-before:always;"><span style="color:#548dd4;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Daily Monitoring Tasks</b></span></span></span></p>
+<ul>
+<li>
+<p class="western" style="margin-top:.21cm;line-height:100%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Three or more consecutive failed login attempts</span></span></p>
+</li>
+<li>
+<p class="western" style="margin-top:.21cm;line-height:100%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Syslog events with levels – critical, alert or emergency</span></span></p>
+</li>
+<li>
+<p class="western" style="margin-top:.21cm;line-height:100%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Unauthorized addition and deletion to user accounts and groups</span></span></p>
+</li>
+<li>
+<p class="western" style="margin-top:.21cm;line-height:100%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Changes / Unauthorized changes made </span></span></p>
+</li>
+<li>
+<p class="western" style="margin-top:.21cm;line-height:100%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Unauthorized access attempts</span></span></p>
+</li>
+</ul>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="color:#548dd4;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Weekly Monitoring Tasks</b></span></span></span></p>
+<ul>
+<li>
+<p class="western" style="margin-top:.21cm;line-height:100%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Correct operation of syslog daemon</span></span></p>
+</li>
+<li>
+<p class="western" style="margin-top:.21cm;line-height:100%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">All resource (CPU, memory) usage exceeding pre-defined thresholds (based on capacity planning figures)</span></span></p>
+</li>
+</ul>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="color:#548dd4;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Monthly Monitoring Tasks</b></span></span></span></p>
+<ul>
+<li>
+<p class="western" style="margin-top:.21cm;line-height:100%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Firewall patch levels</span></span></p>
+</li>
+<li>
+<p class="western" style="margin-top:.21cm;line-height:100%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Firewall reboots</span></span></p>
+</li>
+<li>
+<p class="western" style="margin-top:.21cm;line-height:100%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Disk space usage</span></span></p>
+</li>
+<li>
+<p class="western" style="margin-top:.21cm;line-height:100%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Account group membership changes</span></span></p>
+</li>
+<li>
+<p class="western" style="margin-top:.21cm;line-height:100%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Verification of backups </span></span></p>
+</li>
+</ul>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="color:#548dd4;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;"><b>Bi Yearly Monitoring Tasks</b></span></span></span></p>
+<ul>
+<li>
+<p class="western" style="margin-top:.21cm;line-height:100%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Perform Physical audit</span></span></p>
+</li>
+</ul>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">The Juniper Firewall administrators must perform these monitoring tasks. Notify any discrepancy observed from normal operation to the appropriate department.</span></span></p>
+<h1 class="western" style="margin-left:.95cm;text-indent:-.95cm;margin-top:.21cm;margin-bottom:0;page-break-before:auto;page-break-after:auto;"><span style="color:#17365d;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:large;">Firewall Protection</span></span></span></h1>
+<h2 class="western" style="margin-left:1.4cm;text-indent:-1.4cm;margin-top:.21cm;line-height:100%;page-break-inside:auto;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Disaster Recovery Plan (DRP)</span></span></h2>
+<p style="margin-top:.21cm;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">In order to provide protection against system failures, there has to be a tested and approved DRP. This should include the backup policy and contingency arrangements.</span></span></p>
+<p style="margin-top:.21cm;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">The DRP for each Juniper Firewall must be ready at the time the firewall is in production environment.</span></span></p>
+<p style="margin-top:.21cm;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">There must be a planned and bi-yearly Disaster Recovery Drill to ensure that the DRP is maintained and updated.</span></span></p>
+<h2 class="western" style="margin-left:1.4cm;text-indent:-1.4cm;margin-top:.21cm;line-height:100%;page-break-inside:auto;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Physical Security of Juniper Firewall installation</span></span></h2>
+<p style="margin-top:.21cm;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Physical security deals with all the security aspects of the installation premises of the actual firewalls </span></span></p>
+<ul>
+<li>
+<p style="margin-top:.21cm;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Secure the physical location of the Juniper firewalls to guarantee operational continuity, protection against natural and fabricated disasters, and prevent loss of Information Assets. </span></span></p>
+</li>
+<li>
+<p class="western" style="margin-top:.21cm;line-height:100%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">The Juniper firewalls must have uninterrupted and clean power supply, and operating conditions as recommended by the hardware vendors. </span></span></p>
+</li>
+</ul>
+<h2 class="western" style="margin-left:1.4cm;text-indent:-1.4cm;margin-top:.21cm;line-height:100%;page-break-inside:auto;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Fault Tolerance</span></span></h2>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">To ensure that failure of one firewall does not halt operations, each Juniper Firewall must use NSRP / HA for redundancy.</span></span></p>
+<h2 class="western" style="margin-left:1.4cm;text-indent:-1.4cm;margin-top:.21cm;line-height:100%;page-break-inside:auto;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Backup</span></span></h2>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Ensure that in case of data failure, manipulation or data loss; restore the system operations to previous working state at the earliest.</span></span></p>
+<ul>
+<li>
+<p class="western" style="margin-top:.21cm;line-height:100%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Backup the data on each firewall using the standard operations procedures, to ensure that in case of failure, data recovery must conform to the SLA with the Business. </span></span></p>
+</li>
+<li>
+<p class="western" style="margin-top:.21cm;line-height:100%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Proper media labeling and protection should be implemented to ensure that media is not accidentally or deliberately overwritten. </span></span></p>
+</li>
+<li>
+<p class="western" style="margin-top:.21cm;line-height:100%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Verify the backup regularly by doing random restoration checks.</span></span></p>
+</li>
+<li>
+<p class="western" style="margin-top:.21cm;line-height:100%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">The storage and retention of the computer media must be as per the manufacturer’s recommendations.</span></span></p>
+</li>
+<li>
+<p class="western" style="margin-top:.21cm;line-height:100%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">On expiry, the media should be disposed securely, ensuring no data extraction is possible</span></span></p>
+</li>
+</ul>
+<h2 class="western" style="margin-left:1.4cm;text-indent:-1.4cm;margin-top:.21cm;line-height:100%;page-break-inside:auto;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Separation of test and Production environment</span></span></h2>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">The test and development environment is usually set up with loose security controls. In order to avoid this, separate the Juniper Production firewalls from the test and development setup.</span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Irrespective of the settings and controls applied on test and development firewalls, the production firewalls must be hardened as per the Juniper Firewall security standards.</span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Do not create test user accounts on the Production firewalls.</span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">There should be secure connection from test to Production firewalls.</span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Do not use data passing from production to the test environment without desensitizing it.</span></span></p>
+<h2 class="western" style="margin-left:1.4cm;text-indent:-1.4cm;margin-top:.21cm;line-height:100%;page-break-inside:auto;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Change Management</span></span></h2>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">The Juniper firewalls must also adhere to this CM policy. The system administrators must ensure that every change goes through the appropriate CM process.</span></span></p>
+<h2 class="western" style="margin-left:1.4cm;text-indent:-1.4cm;margin-top:.21cm;line-height:100%;page-break-inside:auto;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Service Level Agreements for Screen OS and hardware support</span></span></h2>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">For continuity of operation, protect the firewalls from extended downtimes due to Screen OS malfunctioning or hardware failure. </span></span></p>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Each Juniper Firewall must have an SLA for Screen OS support (patches, troubleshooting etc) from an authorized Juniper Firewall vendor. Ensure that the firewalls are also be supported by an SLA with respective product vendors. </span></span></p>
+<h2 class="western" style="margin-left:1.4cm;text-indent:-1.4cm;margin-top:.21cm;line-height:100%;page-break-inside:auto;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Protection of firewalls not kept in the Data <span style="color:#548dd4;">Center</span></span></span></h2>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Not all Juniper firewalls are located at the Data Center. Many of them are deployed in remote sites are housed in other locations with lesser protection – like the Lab \ Outstations. Hence, the respective teams must ensure that such firewalls have adequate access control and physical protection implemented.</span></span></p>
+<h2 class="western" style="margin-left:1.4cm;text-indent:-1.4cm;margin-top:.21cm;line-height:100%;page-break-inside:auto;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Documentation</span></span></h2>
+<p class="western" style="margin-top:.21cm;line-height:115%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">The system administration and operations team must have complete documentation of the Juniper Firewall setup. This must include (but not limited to):</span></span></p>
+<ul>
+<li>
+<p class="western" style="margin-top:.21cm;line-height:100%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Installation procedure</span></span></p>
+</li>
+<li>
+<p class="western" style="margin-top:.21cm;line-height:100%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Security settings</span></span></p>
+</li>
+<li>
+<p class="western" style="margin-top:.21cm;line-height:100%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Operating procedures</span></span></p>
+</li>
+<li>
+<p class="western" style="margin-top:.21cm;line-height:100%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Firewall configurations for each firewall</span></span></p>
+</li>
+<li>
+<p class="western" style="margin-top:.21cm;line-height:100%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Details of users for each firewall, with access rights</span></span></p>
+</li>
+<li>
+<p class="western" style="margin-top:.21cm;line-height:100%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Disaster Recovery Procedures for each firewall</span></span></p>
+</li>
+<li>
+<p class="western" style="margin-top:.21cm;line-height:100%;"><span style="font-family:Verdana, sans-serif;"><span style="font-size:small;">Regularly update the documentation.</span></span></p>
+</li>
+</ul>
+<p>INTRODUCTION<br />
+Rationale<br />
+An out-of-box firewall implementation is not fully secure and needs to be hardened. This<br />
+document details the various aspects of Juniper firewall security and standards implemented<br />
+for securing Juniper firewalls.<br />
+Purpose<br />
+This document is to define a baseline security standard for the Juniper Firewall<br />
+implementations by firewall administrators.<br />
+Scope<br />
+These security standards cover the Juniper Firewall Screen OS implementation.<br />
+However, for some setups, this minimum requirement and some features of these standards<br />
+may not be practical for implementation. For exceptions, the system administrators must<br />
+document the reasons for not complying fully with these standards and request an<br />
+exemption from the Security department.<br />
+Audience<br />
+Firewall administrators bear the primary responsibility of implementing these standards.<br />
+During their reviews and inspections, auditors must use this document to verify standards<br />
+compliance.<br />
+Business managers can read the rationale behind each of the points in the standards to gain<br />
+an understanding of the importance of applying it to their environments.<br />
+Implementation<br />
+The Juniper Firewall administrators must use these standards to build the installation and<br />
+operational procedures.<br />
+Physical and Environmental Security – Juniper Hardening Procedure<br />
+Page 1 of 21Juniper Firewall Security Overview<br />
+This section gives a very brief overview of various aspects of Juniper Firewall security. The<br />
+hardening details for each aspect are present in the subsequent sections of the document.<br />
+The Juniper Firewall operating security environment consists of various aspects:<br />
+• Device &amp; ScreenOS initial setup<br />
+• Device Configuration<br />
+• Device Management<br />
+• User management<br />
+• Services<br />
+• System access<br />
+• System logging and monitoring<br />
+• Policy logging and monitoring<br />
+DEVICE<br />
+AND<br />
+SCREENOS SETUP<br />
+The security of a Juniper firewall Screen OS starts with a secure setup. The factors that<br />
+influence this include using the correct Screen OS version.<br />
+Properly Identify Device for Physical Tampering<br />
+The outside packaging cannot show damage, or evidence that unauthorized persons have<br />
+opened it. If the cardboard shows damage that would allow the device to be unpacked or<br />
+exchanged, this may be evidence of tampering.<br />
+Each packed box arrives with custom tape to indicate that Juniper or an authorized<br />
+manufacturer packaged the device. The tape is unique; with the word, “Juniper” printed<br />
+repeatedly throughout the tape. If the tape is not present, this may be evidence of<br />
+tampering.<br />
+The internal packaging cannot show damage or evidence of tampering. The plastic bag<br />
+should not have a large hole and the label that seals the plastic bag should not be detached<br />
+or missing. Any damage to the bag or the seal may be evidence of tampering.<br />
+Verify correct version of hardware and software<br />
+To verify that the product received is the correct version of hardware and software, run the<br />
+following command from the CLI:<br />
+get system<br />
+Physical and Environmental Security – Juniper Hardening Procedure<br />
+Page 2 of 21The output of this command includes two key items, hardware version and software version.<br />
+The hardware and software versions must match the common criteria security target to be<br />
+in full compliance with the common criteria evaluated configuration.<br />
+The firewalls come with pre-installed Screen OS software. However, the Screen OS software<br />
+versions installed on the devices might vary depending on the manufacturing time of the<br />
+security appliances.<br />
+Upgrading a Juniper Firewall<br />
+The correct Screen OS software image needs to be loaded on to the security appliance.<br />
+Before the Screen OS software image can be loaded, configure the manage interface though<br />
+which the images can be downloaded from the FTP server to the security appliances. The<br />
+following commands will configure the zone and IP address for the manage interface.<br />
+set interface interface-name zone trust<br />
+set interface interface-name ip ip-address<br />
+Note: Interface-name should the name of the actual interface connected to the PC serving<br />
+as FTP firewall; through this interface, the security appliances can communicate with the<br />
+FTP firewall. For the 5-series devices, interface trust – bound to the security zone trust by<br />
+default – can be used. For devices Juniper NetScreen-204 and 208, you can use interface<br />
+ethernet1. For Juniper NetScreen-500, interface ethernet1/1 in the security zone trust can<br />
+be in place of interface-name. On high-level security, appliances including Juniper<br />
+NetScreen-ISG2000 and ISG1000 interface can use ethernet1/1. Juniper NetScreen-5200 and<br />
+NetScreen 5400 can use Interface ethernet2/1.<br />
+The ip-address should be a valid IP address, which can be in the same or different subnet<br />
+with the TFTP firewall.<br />
+Once configured, use the following commands to download the Screen OS image from the<br />
+FTP firewall to the security appliance:<br />
+save software from tftp tftp-firewall-ip Screen OS-image to flash<br />
+where, tftp-firewall-ip is IP address for PC serving as the TFTP firewall where the Screen OS<br />
+software images reside and, Screen OS-image is relative path to the Screen OS software<br />
+image file and the name of the file itself.<br />
+For<br />
+example,<br />
+if<br />
+the<br />
+Screen<br />
+OS<br />
+image<br />
+for<br />
+the<br />
+device<br />
+Juniper<br />
+NetScreen-5GT<br />
+is<br />
+“ns5gt.5.4.0r4.0” and resides on FTP firewall (with IP address 10.155.95.253), under the<br />
+directory /tftpboot/screen OS-image/5.4/, the command should be as the following:<br />
+Physical and Environmental Security – Juniper Hardening Procedure<br />
+Page 3 of 21save<br />
+software<br />
+from<br />
+tftp<br />
+10.155.95.253<br />
+/tftpboot/screen<br />
+OS-image/5.4/ns5gt.5.4.0r4.0 to flash<br />
+The downloading process will take a few minutes. After the downloading process is<br />
+completed, the security appliance will return to the CLI prompt and requires a reboot. Issue<br />
+the command reset and provide answers for the questions below to completely load the<br />
+image to the security appliance and restore the default manufacture configurations.<br />
+reset<br />
+Configuration modified, save? [y]/n n<br />
+System reset, are you sure? y/[n] y<br />
+The security appliance will return to the login prompt. At this time, the security appliance<br />
+has been completely loaded with the proper Screen OS software version.<br />
+Screen OS Upgrades<br />
+Update the firewalls’ Screen OS with the vendor recommended updates as part of quarterly.<br />
+DEVICE CONFIGURATION<br />
+Restore default settings<br />
+Restore the firewall to the default manufacturing operation mode and configurations before<br />
+putting the appliance in a different operation modes including Transparent Authenticated<br />
+mode (a.k.a. Transparent VPN mode) or NAT/Route Authenticated mode (a.k.a. NAT/Route<br />
+VPN mode) or before performing any configurations for any specific testing.<br />
+Use the commands unset all and reset along with the following answers to restored the<br />
+default operation mode and configurations for the appliance.<br />
+unset all<br />
+Erase all system config, are you sure y/ [n]? Y<br />
+reset<br />
+Configuration modified, save? [y]/n n<br />
+Physical and Environmental Security – Juniper Hardening Procedure<br />
+Page 4 of 21System reset, are you sure? y/[n] y<br />
+Set accurate date and time<br />
+Enable the following command to ensure that the date and time stamps used on audit<br />
+messages are accurate:<br />
+set clock mm/dd/yyyy hh:mm<br />
+Setting the Operation Mode<br />
+To determine which operation mode the juniper firewall is, use the following command.<br />
+get system<br />
+“System in NAT/Route mode” indicates it is operating in NAT/Route mode<br />
+“System in transparent mode” indicates it is operating in transparent mode.<br />
+All security appliances are, by default, configured in NAT/Route mode without VPN.<br />
+To ensure that a security appliance is in a mode compliant with the Common Criteria EAL4<br />
+evaluated configuration, follow one of the following three sets of steps depending on the<br />
+desired configuration:<br />
+Unauthenticated NAT/Route Mode<br />
+Authenticated NAT/Route Mode<br />
+Route-Based VPN<br />
+Policy-Based VPN<br />
+Authenticated Transparent Mode<br />
+Authenticated NAT/Route Mode<br />
+Configure the firewall in authenticated NAT/Route Mode using either a Route-based VPN or<br />
+Policy-based VPN. You can configure both Route-based VPN and Policy-based VPN in<br />
+authenticated NAT/Route mode.<br />
+Only Manual Key is supported in the Evaluated Configuration, i.e. AutoKey cannot be used.<br />
+Take care in selecting Manual Key values such that they follow the same rules as<br />
+administrative passwords. Distribute the manual keys using a secure method to ensure that<br />
+they are not publicly accessible.<br />
+Route-Based VPN<br />
+Configure the respective security appliance with a Route-based VPN in authenticated<br />
+NAT/Route mode.<br />
+Policy-Based VPN<br />
+Physical and Environmental Security – Juniper Hardening Procedure<br />
+Page 5 of 21Configure the respective security appliance with a Policy-based VPN in authenticated<br />
+NAT/Route mode.<br />
+Firewall Naming Convention<br />
+Branch Firewalls: (Naming convention not set)<br />
+Data Center Firewalls: (Naming convention not set)<br />
+Configuring Screen Options<br />
+Security appliances must prevent all types of Denial of Service (DoS) and attack signatures<br />
+on every security zone to prevent these types of attacks from occurring on the network.<br />
+To view the default screening options for a particular security zone, issue the following<br />
+command.<br />
+get zone zone-name screen<br />
+By default, the screening options enabled for the Untrust/V1-Untrust security zone (and<br />
+the interfaces in Untrust/V1-Untrust zone) in Screen OS 5.0:<br />
+Tear-drop Attack Protection on<br />
+SYN Flood Protection (200) on<br />
+Alarm Threshold: alarm-threshold<br />
+Queue Size: Q-size<br />
+Timeout Value: 20<br />
+Source Threshold: src-threshold<br />
+Destination Threshold: dst-threshold<br />
+Drop unknown MAC (transparent mode only): off<br />
+Ping-of-Death Protection on<br />
+Source Route IP Option Filter on<br />
+Land Attack Protection on<br />
+Physical and Environmental Security – Juniper Hardening Procedure<br />
+Page 6 of 21Alarm-threshold, Q-size, src-threshold, and dst-threshold are platform dependent as<br />
+specified in the table below.<br />
+For the Trust/V1-Trust and DMZ/V1-DMZ zones (and the interfaces in Trust and DMZ<br />
+zone), no screen options are enabled by default.<br />
+Screen function only generate alarm without dropping packet: OFF<br />
+To disable all the default screening option for zone Untrust/V1-Untrust, the following<br />
+commands are used:<br />
+unset zone untrust screen tear-drop<br />
+unset zone untrust screen syn-flood<br />
+unset zone untrust screen ping-death<br />
+unset zone untrust screen ip-filter-src<br />
+Physical and Environmental Security – Juniper Hardening Procedure<br />
+Page 7 of 21unset zone untrust screen land<br />
+The following displays when the security zone has no screening options enabled:<br />
+“Screen function only generate alarm without dropping packet: OFF”<br />
+The following CLI command enables all screens on a per-zone basis (and is applied to all<br />
+interfaces within that zone):<br />
+set zone zone-name screen block-frag<br />
+set zone zone-name screen component-block<br />
+set zone zone-name screen fin-no-ack<br />
+set zone zone-name screen icmp-flood<br />
+set zone zone-name screen icmp-fragment<br />
+set zone zone-name screen icmp-large<br />
+set zone zone-name screen ip-bad-option<br />
+set zone zone-name screen ip-filter-src<br />
+set zone zone-name screen ip-loose-src-route<br />
+set zone zone-name screen ip-record-route<br />
+set zone zone-name screen ip-security-opt<br />
+set zone zone-name screen ip-spoofing<br />
+set zone zone-name screen ip-stream-opt<br />
+set zone zone-name screen ip-strict-src-route<br />
+set zone zone-name screen ip-sweep<br />
+set zone zone-name screen ip-timestamp-opt<br />
+set zone zone-name screen land<br />
+set zone zone-name screen limit-session<br />
+set zone zone-name screen mal-url code-red<br />
+set zone zone-name screen ping-death<br />
+set zone zone-name screen port-scan<br />
+set zone zone-name screen syn-ack-ack-proxy<br />
+set zone zone-name screen syn-fin<br />
+set zone zone-name screen syn-flood<br />
+set zone zone-name screen syn-frag<br />
+set zone zone-name screen tcp-no-flag<br />
+set zone zone-name screen tear-drop<br />
+set zone zone-name screen udp-flood<br />
+set zone zone-name screen unknown-protocol<br />
+set zone zone-name screen winnuke<br />
+Physical and Environmental Security – Juniper Hardening Procedure<br />
+Page 8 of 21The above commands must run for both the internal and external zones (i.e. Trust and<br />
+Untrust) to protect the internal and external networks. When security appliance runs in<br />
+NAT/Route mode, run the above commands for security zones Trust and Untrust.<br />
+When the security appliance runs in “Transparent” mode, (including Transparent<br />
+Authenticated mode), run the above commands for security zones V1-Trust and<br />
+V1-Untrust.<br />
+You must run the same commands (as above) for each additional security zone.<br />
+When the security appliance operates in NAT/Route mode, (including NAT/Route<br />
+Unauthenticated and Nat/Route Authenticated mode) enable dropping packets that have no<br />
+source IP address, or that have a non-routable source IP address by using the following<br />
+command.<br />
+set zone zone-name screen ip-spoofing drop-no-rpf-route<br />
+“zone-name” is the name of the security zone such as Trust or Untrust.<br />
+For instance, when the security in NAT/Route mode, to turn on dropping packets capability<br />
+for the security zone trust and untrust, issue the following commands.<br />
+set zone trust screen ip-spoofing drop-no-rpf-route<br />
+set zone untrust screen ip-spoofing drop-no-rpf-route<br />
+Ensure to execute the same command (as above) for any Layer-3 security zones that are<br />
+used. When changing the HTTP blocking option the changes will only apply to the sessions<br />
+newly created after this blocking option is set.<br />
+Configuring IP Spoofing Protection<br />
+Configure IP spoofing protection by the screen option “ip-spoofing” as indicated above in the<br />
+section, “Configuring Screen Options”. This includes Intrazone configurations where VPN<br />
+traffic is on the same zone as the decrypted traffic. However depending on the configuration<br />
+implemented (especially Interzone) the following additional steps are required to be<br />
+adequately protected against IP spoofing attacks.<br />
+The following guidance for Authenticated NAT/Route mode and Authenticated Transparent<br />
+mode should supplement the guidance provided in the previous section “Setting a Policy to<br />
+Permit Traffic”.<br />
+"IP-Spoofing" Screen is bypassed - a set of addresses and policies need to be defined to<br />
+allow only traffic permitted, excluding spoofed IP addresses.<br />
+When operating in Authenticated NAT/Route mode or Authenticated Transparent mode, the<br />
+“IP-spoofing” screen option is “bypassed”. Therefore, define a set of addresses and policies<br />
+to allow traffic, excluding spoofed IP addresses.<br />
+DEVICE MANAGEMENT<br />
+This sections provides details on securing the firewall device’s management aspects<br />
+Physical and Environmental Security – Juniper Hardening Procedure<br />
+Page 9 of 21Securing Administrator Traffic On Device<br />
+Four steps are required to secure the device administrator traffic:<br />
+a) Define permitted IP address for client administrator Manager-IP address<br />
+b) Define interface-specific options<br />
+i)<br />
+Define Manage IP address for interfaces<br />
+ii) Turn off unnecessary management services<br />
+c) Change port numbers for administrator services<br />
+Disable Internal Commands<br />
+The firewall administrator must disable internal commands. The usage of internal commands<br />
+applies only for troubleshooting and debugging purposes.<br />
+To disable internal commands, you must run the following command:<br />
+set common-criteria no-internal-commands<br />
+To use internal commands (i.e. ‘debug flow basic’ and ‘get dbuf stream’, ‘debug ids sat’)<br />
+for troubleshooting and debugging purposes, use the following command:<br />
+unset common-criteria no-internal-commands<br />
+Note: Use the internal commands ‘debug ids sat’ is for ISG-1000, ISG-2000, NS-5200 and<br />
+NS-5400<br />
+Physical and Environmental Security – Juniper Hardening Procedure<br />
+21<br />
+Page 10 ofDisable Telnet for Device Management<br />
+The use of telnet is discouraged on the Juniper firewalls. Use SSH, 2.0 for managing the<br />
+Juniper firewall:<br />
+To do this:<br />
+Disable telnet on the management interface<br />
+Enable ssh<br />
+Control Unauthorized Hardware Resets<br />
+To disable recovery via login, use the following command:<br />
+unset admin device-reset<br />
+To disable recovery via pinhole, use the following command:<br />
+unset admin hw-reset<br />
+When disabled, a firewall administrator needs to enable the respective reset in order to<br />
+perform any activity, which requires rebooting the firewall.<br />
+Physical and Environmental Security – Juniper Hardening Procedure<br />
+21<br />
+Page 11 ofRestricting Remote Access<br />
+Management access must be limited to the locally connected console port as opposed to the<br />
+factory default settings.<br />
+To limit management access to the console port, the interface that is by default in the<br />
+V1-Trust or Trust security zone needs to have management access turned off.<br />
+All other interfaces have management access turned off by default.<br />
+To disable management to the interface, issue the following CLI command:<br />
+unset interface interface-name manage<br />
+USER MANAGEMENT<br />
+Security appliance administrators must choose login-names and passwords that not only<br />
+have the length of at least eight characters and employ as many types of characters as<br />
+possible. Mixing lower case and upper case is required to ensure proper protection. In<br />
+addition, easily guessable usernames and passwords are not secure.<br />
+Security appliances ship with a default username and password of “netscreen”. Change the<br />
+default as soon as possible to prevent unauthorized access.<br />
+The recommended time between password changes is no longer than 30 days to mitigate<br />
+the effects of a compromised administrator identity.<br />
+Setting/Changing Password Length Restrictions<br />
+To ensure that passwords of eight characters or more are always used, you must first set the<br />
+following command:<br />
+set admin password restrict length password-length<br />
+where, password-length is a decimal value equal to or greater than 8 and less than or equal<br />
+to 31. It should also follow password policy.<br />
+Setting/Changing Administrator Name and Password<br />
+The following CLI commands, in order, are required to set a new administrator name and<br />
+password:<br />
+set admin name name-string<br />
+set admin password password-string<br />
+where, name-string and password-string should be replaced with actual login name and<br />
+password of administrator.<br />
+Physical and Environmental Security – Juniper Hardening Procedure<br />
+21<br />
+Page 12 ofPOLICY MANAGEMENT<br />
+Remove Permissive Default Policy<br />
+The firewall might have a default policy that allows traffic to traverse the device from the<br />
+interface in the Trust zone to the interface in the Untrust zone. Delete this default policy to<br />
+avoid inadvertently allowing information to traverse the device. Use the CLI command:<br />
+unset policy id 1<br />
+Log Denied Traffic<br />
+By default, security appliance will drop any traffic that does not match any “permit” policy.<br />
+Therefore, add a policy to the end of the policy list to log denied traffic, which matches no<br />
+policy:<br />
+set policy id pol-id from scr-zone to dst-zone any any any deny log<br />
+count<br />
+...where, pol-id is policy ID, scr-zone and dst-zone are, respectively, source zone from which<br />
+the traffic comes and destination zone to which the traffic arrives.<br />
+For every security zone that has a network interface assigned to it, add the above policies to<br />
+the end of the policy tables to ensure that dropped traffic logging.<br />
+set policy id pol-id from trust to untrust any any any deny log count<br />
+set policy id pol-id from untrust to trust any any any deny log count<br />
+set policy id pol-id from trust to dmz any any any deny log count<br />
+set policy id pol-id from dmz to trust any any any deny log count<br />
+...<br />
+Physical and Environmental Security – Juniper Hardening Procedure<br />
+21<br />
+Page 13 ofSetting a Policy To Permit Traffic<br />
+Two important steps to take when creating a security policy:<br />
+•<br />
+Enable counting and logging to maintain audit log information for traffic passing<br />
+through the device.<br />
+•<br />
+Must be specific to ensure traffic permitted is intentional and not part of a generic<br />
+policy.<br />
+Use specific source IP address (src-addr), destination IP address (dst-addr), source zone<br />
+(src-zone), destination zone (dst-zone), protocol, and service (servicename) if feasible. One<br />
+example where it may not make sense to be specific is for traffic destined for an external<br />
+network for general web access.<br />
+After creating and configuring the source and destination addresses, configure the policy<br />
+with counting and logging using the following command:<br />
+set policy id id-num from src-zone to dst-zone src-addr dst-addr servicename<br />
+action log count<br />
+...where, “id-num”: is the decimal number presenting the policy ID number &amp; “action” can<br />
+be permit to allow specific service to pass from source address across the security<br />
+appliance to the destination address; or deny to block service from passing though the<br />
+security appliance<br />
+Ordering Policies<br />
+The order of policies is important, as policies match in order beginning with the first one in<br />
+the policy list and moving through the list. The first matching policy applies to network<br />
+traffic to determine the action taken. By default, a newly created policy appears at the<br />
+bottom of a policy list.<br />
+There is an option that allows you to position a policy at the top of the list instead. In the CLI,<br />
+add the key word top to the set policy command:<br />
+For example,<br />
+set policy id 6 top from trust to untrust trust-HostA untr-NetworkB http<br />
+permit log<br />
+The newly created policy can also be positioned at any location in the policy list by using the<br />
+keyword option before to the set policy CLI command.<br />
+For example:<br />
+Physical and Environmental Security – Juniper Hardening Procedure<br />
+21<br />
+Page 14 ofset policy id 4 before 98 from untrust to trust untr-NetworkB trust-HostA ftp<br />
+permit log<br />
+If global policies are used then replace the above policy, which executes prior to any Global<br />
+policy. A Global deny policy can be used which must be added at the end of the Global<br />
+policy list<br />
+set policy global id pol-id any any any deny log count<br />
+SYSTEM LOGGING<br />
+AND<br />
+MONITORING<br />
+Configuring Syslog<br />
+You should configure a Syslog firewall as a backup for security audit information and for<br />
+long-term audit log storage. This will help prevent a loss in security audit information.<br />
+The specific commands required to set up a Syslog firewall are:<br />
+set syslog config ip-address facilities local0 local0<br />
+set syslog config ip-address port 514<br />
+set syslog config ip-address log traffic<br />
+set syslog enable<br />
+set log module system level level-name destination syslog<br />
+where ip-address is the actual IP address of the Syslog firewall and level-name is the<br />
+severity level of the log<br />
+Note: You must enter the set log command once for each message level.<br />
+The options for level-name are listed below:<br />
+emergency<br />
+alert<br />
+critical<br />
+error<br />
+warning<br />
+notification<br />
+Physical and Environmental Security – Juniper Hardening Procedure<br />
+21<br />
+Page 15 ofinformation<br />
+debugging<br />
+Events to be Logged<br />
+The system logs contain historic firewall events and usage information, used for debugging<br />
+system malfunctions and forensic investigations. Hence, log all critical information.<br />
+Configure syslog to log the following on each firewall:<br />
+• Each login and logoff<br />
+• Firewall start-up and shutdown<br />
+• Complete session<br />
+• User and group account administration<br />
+• Hardware failures<br />
+Log Retention and Archival<br />
+Many a times it is required to get a complete audit trail of a process for security<br />
+investigation or troubleshooting purpose. Hence, locally retain the firewall logs for a defined<br />
+number of days. There should be enough storage space allotted to handle this. In addition,<br />
+there must be very strict access control implemented on the stored logs.<br />
+The log files must be archived offline. Appropriately protect the archived logs so that<br />
+unauthorized users do not access them.<br />
+Protection of Log Files<br />
+If a malicious user manages to modify the log files and remove traces of attack, no<br />
+investigation can be conclusive. In addition, the log extended periods for audit trail. Hence,<br />
+protect log files against tampering and stored securely.<br />
+Session Activity Logs for Privileged Users<br />
+Privileged users have total control over the firewall. Log every activity performed on the<br />
+firewall by these users.<br />
+Periodic Monitoring<br />
+For maintaining the security levels on the Juniper firewalls, monitor the firewalls on a regular<br />
+basis. Perform these monitoring tasks on periodic basis.<br />
+CONFIGURING AUDIT LOSS MITIGATION<br />
+There are cases where more auditable events can occur than the security appliance is able<br />
+to write to a syslog firewall. The security appliance must stop further auditable events from<br />
+Physical and Environmental Security – Juniper Hardening Procedure<br />
+21<br />
+Page 16 ofoccurring until the audit trail is able to handle more traffic. An authorized administrator must<br />
+enable the following command:<br />
+set log audit-loss-mitigation<br />
+Logging Permitted Packets<br />
+To log permitted packets passing through the device enable logging option on all<br />
+authenticated and/or unauthenticated traffic policies.<br />
+In this document, all permitted policies include the keyword log, to create traffic log entries<br />
+for permitted traffic.<br />
+Upon completion of the application session permitted traffic logs are created.<br />
+You can use the following command to view the overall traffic logs, or specific policy’s traffic<br />
+log:<br />
+get log traffic<br />
+get log traffic policy id<br />
+Logging Dropped Packets<br />
+To log dropped packets set to terminate on any of the device interfaces, you must enable<br />
+the following command:<br />
+set firewall log-self<br />
+To log authenticated dropped packets; you must add the log keyword to the first policy<br />
+associated with a VPN tunnel. Packets that do not match any of the policies associated with<br />
+the tunnel are “dropped”. The log entries for these dropped packets linked with the highest<br />
+priority policy (first in the ‘get policy all’ list) associated with the tunnel and the traffic flow<br />
+direction.<br />
+Physical and Environmental Security – Juniper Hardening Procedure<br />
+21<br />
+Page 17 ofFirewall Management Idle Timeout<br />
+Command Line Interface<br />
+Protect Management from the console port by setting an idle timeout. By default,<br />
+console and Telnet sessions time out after 10 minutes of inactivity. Recommend never to<br />
+set the timeout value to zero.<br />
+To verify execute the command:<br />
+get console<br />
+Web User Interface (WebUI)<br />
+The WebUI timeout, like the console timeout, defaults to 10 minutes. When changing the<br />
+WebUI timeout, specify a number of minutes (between 1 and 999) of idle time before<br />
+closing the browser. Enable the option “Enable Web Management Idle Timeout” check<br />
+box. Do not disable it.<br />
+Security Manager<br />
+Edit Device &gt; Device Admin &gt; Web Management<br />
+Permitted IP Addresses<br />
+Configure Juniper Networks devices to accept management requests only from trusted<br />
+sources. Define a list of permitted IP addresses. Permitted IP addresses include a mask<br />
+parameter specified as dotted-decimal value. Permitted IP addresses can be a hosts /<br />
+subnets. NOTE: You are limited to six entries.<br />
+CLI<br />
+set admin manager-ip address [mask]<br />
+WebUI<br />
+Configuration &gt;Admin &gt; Permitted IPs<br />
+Security Manager<br />
+Edit Device &gt; Device Admin &gt; Permitted IPs &gt; Add<br />
+Physical and Environmental Security – Juniper Hardening Procedure<br />
+21<br />
+Page 18 ofDaily Monitoring Tasks<br />
+• Three or more consecutive failed login attempts<br />
+• Syslog events with levels – critical, alert or emergency<br />
+• Unauthorized addition and deletion to user accounts and groups<br />
+• Changes / Unauthorized changes made<br />
+• Unauthorized access attempts<br />
+Weekly Monitoring Tasks<br />
+• Correct operation of syslog daemon<br />
+• All resource (CPU, memory) usage exceeding pre-defined thresholds (based on<br />
+capacity planning figures)<br />
+Monthly Monitoring Tasks<br />
+• Firewall patch levels<br />
+• Firewall reboots<br />
+• Disk space usage<br />
+• Account group membership changes<br />
+• Verification of backups<br />
+Bi Yearly Monitoring Tasks<br />
+•<br />
+Perform Physical audit<br />
+The Juniper Firewall administrators must perform these monitoring tasks. Notify any<br />
+discrepancy observed from normal operation to the appropriate department.<br />
+FIREWALL PROTECTION<br />
+Disaster Recovery Plan (DRP)<br />
+In order to provide protection against system failures, there has to be a tested and approved<br />
+DRP. This should include the backup policy and contingency arrangements.<br />
+The DRP for each Juniper Firewall must be ready at the time the firewall is in production<br />
+environment.<br />
+There must be a planned and bi-yearly Disaster Recovery Drill to ensure that the DRP is<br />
+maintained and updated.<br />
+Physical Security of Juniper Firewall installation<br />
+Physical security deals with all the security aspects of the installation premises of the actual<br />
+firewalls<br />
+•<br />
+Secure the physical location of the Juniper firewalls to guarantee operational continuity,<br />
+protection against natural and fabricated disasters, and prevent loss of Information<br />
+Assets.<br />
+Physical and Environmental Security – Juniper Hardening Procedure<br />
+21<br />
+Page 19 of•<br />
+The Juniper firewalls must have uninterrupted and clean power supply, and operating<br />
+conditions as recommended by the hardware vendors.<br />
+Fault Tolerance<br />
+To ensure that failure of one firewall does not halt operations, each Juniper Firewall must use<br />
+NSRP / HA for redundancy.<br />
+Backup<br />
+Ensure that in case of data failure, manipulation or data loss; restore the system operations<br />
+to previous working state at the earliest.<br />
+• Backup the data on each firewall using the standard operations procedures, to ensure<br />
+that in case of failure, data recovery must conform to the SLA with the Business.<br />
+• Proper media labeling and protection should be implemented to ensure that media is not<br />
+accidentally or deliberately overwritten.<br />
+• Verify the backup regularly by doing random restoration checks.<br />
+• The storage and retention of the computer media must be as per the manufacturer’s<br />
+recommendations.<br />
+• On expiry, the media should be disposed securely, ensuring no data extraction is<br />
+possible<br />
+Separation of test and Production environment<br />
+The test and development environment is usually set up with loose security controls. In<br />
+order to avoid this, separate the Juniper Production firewalls from the test and development<br />
+setup.<br />
+Irrespective of the settings and controls applied on test and development firewalls, the<br />
+production firewalls must be hardened as per the Juniper Firewall security standards.<br />
+Do not create test user accounts on the Production firewalls.<br />
+There should be secure connection from test to Production firewalls.<br />
+Do not use data passing from production to the test environment without desensitizing it.<br />
+Change Management<br />
+The Juniper firewalls must also adhere to this CM policy. The system administrators must<br />
+ensure that every change goes through the appropriate CM process.<br />
+Service Level Agreements for Screen OS and hardware support<br />
+For continuity of operation, protect the firewalls from extended downtimes due to Screen OS<br />
+malfunctioning or hardware failure.<br />
+Each Juniper Firewall must have an SLA for Screen OS support (patches, troubleshooting etc)<br />
+from an authorized Juniper Firewall vendor. Ensure that the firewalls are also be supported<br />
+by an SLA with respective product vendors.<br />
+Protection of firewalls not kept in the Data Center<br />
+Not all Juniper firewalls are located at the Data Center. Many of them are deployed in remote<br />
+sites are housed in other locations with lesser protection – like the Lab \ Outstations. Hence,<br />
+the respective teams must ensure that such firewalls have adequate access control and<br />
+physical protection implemented.<br />
+Physical and Environmental Security – Juniper Hardening Procedure<br />
+21<br />
+Page 20 ofDocumentation<br />
+The system administration and operations team must have complete documentation of the<br />
+Juniper Firewall setup. This must include (but not limited to):<br />
+• Installation procedure<br />
+• Security settings<br />
+• Operating procedures<br />
+• Firewall configurations for each firewall<br />
+• Details of users for each firewall, with access rights<br />
+• Disaster Recovery Procedures for each firewall<br />
+• Regularly update the documentation.<br />
+Physical and Environmental Security – Juniper Hardening Procedure<br />
+21<br />
+Page 21 of</p>
+
+        </div>
+
+        <aside>
+          <section>
+            <div>
+              <div class="p-share">
+                <a href="http://www.facebook.com/sharer.php?src=bm&u=https%3a%2f%2fshafiqissani.github.io%2fwww.shafiq.in%2f2012%2f12%2f03%2fjuniper-hardening-procedure%2f&t=Juniper%20Hardening%20Procedure" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+                <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fshafiqissani.github.io%2fwww.shafiq.in%2f2012%2f12%2f03%2fjuniper-hardening-procedure%2f&text=Juniper%20Hardening%20Procedure&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+                <a href="https://plus.google.com/share?url=https%3a%2f%2fshafiqissani.github.io%2fwww.shafiq.in%2f2012%2f12%2f03%2fjuniper-hardening-procedure%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+                <a href="http://getpocket.com/edit?url=https%3a%2f%2fshafiqissani.github.io%2fwww.shafiq.in%2f2012%2f12%2f03%2fjuniper-hardening-procedure%2f&title=Juniper%20Hardening%20Procedure" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+              </div>
+            </div>
+          </section>
+
+          
+          
+          
+        </aside>
+
+      </article>
+
+    </div>
+    <div class="col-md-3">
+      <aside class="site">
+
+  
+  <section>
+    <header>Table Of Contents</header>
+    <div></div>
+  </section>
+  
+
+  
+
+  <section>
+    <header>LatestPosts</header>
+    <div>
+      
+      <article class="li">
+  <a href="https://shafiqissani.github.io/www.shafiq.in/2016/08/09/welcome-to-jekyll/" class="clearfix">
+    <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Tue, Aug 9, 2016</time>
+      </div>
+      <h2 class="title">Welcome to Jekyll!</h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://shafiqissani.github.io/www.shafiq.in/2016/03/06/2089/" class="clearfix">
+    <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Sun, Mar 6, 2016</time>
+      </div>
+      <h2 class="title"></h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://shafiqissani.github.io/www.shafiq.in/2015/07/20/archimate/" class="clearfix">
+    <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Mon, Jul 20, 2015</time>
+      </div>
+      <h2 class="title">Archimate</h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://shafiqissani.github.io/www.shafiq.in/2014/12/30/project-initiation-documentation-raci-chart/" class="clearfix">
+    <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Tue, Dec 30, 2014</time>
+      </div>
+      <h2 class="title">Project Initiation Documentation RACI Chart</h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://shafiqissani.github.io/www.shafiq.in/2014/12/28/stakeholder-raci-matrix-spreadsheet/" class="clearfix">
+    <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Sun, Dec 28, 2014</time>
+      </div>
+      <h2 class="title">Stakeholder RACI Matrix Spreadsheet</h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://shafiqissani.github.io/www.shafiq.in/2014/12/15/break-stakeholders-into-smaller-groups-according-to-roles-or-goals-doc/" class="clearfix">
+    <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Mon, Dec 15, 2014</time>
+      </div>
+      <h2 class="title">Break stakeholders into smaller groups according to roles or goals [doc]</h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://shafiqissani.github.io/www.shafiq.in/2014/12/08/stakeholder-list-document/" class="clearfix">
+    <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Mon, Dec 8, 2014</time>
+      </div>
+      <h2 class="title">Stakeholder List Document</h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://shafiqissani.github.io/www.shafiq.in/2014/12/07/a-priori-thinking/" class="clearfix">
+    <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Sun, Dec 7, 2014</time>
+      </div>
+      <h2 class="title">&#34;a priori&#34; thinking</h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://shafiqissani.github.io/www.shafiq.in/2014/12/07/some-notes-on-people-skills-and-emotional-intelligence-1/" class="clearfix">
+    <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Sun, Dec 7, 2014</time>
+      </div>
+      <h2 class="title">Some notes on people skills and emotional intelligence - 1</h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://shafiqissani.github.io/www.shafiq.in/2014/12/06/writings-of-an-anglican-bishop/" class="clearfix">
+    <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Sat, Dec 6, 2014</time>
+      </div>
+      <h2 class="title">Writings of an Anglican bishop</h2>
+    </footer>
+  </a>
+</article>
+
+      
+    </div>
+  </section>
+
+  
+  <section>
+    <header>category</header>
+    <div>
+      <ul>
+        <li><a href="https://shafiqissani.github.io/www.shafiq.in/categories/design">design</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/categories/software-development">software-development</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/categories/project-management">project-management</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/categories/technology">technology</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/categories/documents">documents</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/categories/open-source">open-source</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/categories/linux">linux</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/categories/website-template">website-template</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/categories/business-analysis">business-analysis</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/categories/continuous-deployment">continuous-deployment</a></li>
+      </ul>
+    </div>
+  </section>
+  
+  <section>
+    <header>tag</header>
+    <div>
+      <ul>
+        <li><a href="https://shafiqissani.github.io/www.shafiq.in/tags/programming">programming</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/tags/linux">linux</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/tags/project-management">project-management</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/tags/unix">unix</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/tags/operating-system">operating-system</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/tags/perl">perl</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/tags/business">business</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/tags/business-analysis">business-analysis</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/tags/continuous-deployment">continuous-deployment</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/tags/css">css</a></li>
+      </ul>
+    </div>
+  </section>
+  
+
+</aside>
+
+    </div>
+  </div>
+</div>
+
+
+<footer class="l-footer">
+  <p>&copy; 2016 Shafiq Alibhai</p>
+  <p>Powered by <a href="http://gohugo.io" target="_blank" rel="nofollow">Hugo</a>, Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank" rel="nofollow">robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank" rel="nofollow">Daisuke Tsuji</a></p>
+</footer>
+
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+  </body>
+</html>
+

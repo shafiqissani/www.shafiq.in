@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shafiq Alibhai </title>
+    <link>https://shafiqissani.github.io/www.shafiq.in/categories/cat-technologies/</link>
+    <language>en-us</language>
+    <author></author>
+    <rights>(C) 2016</rights>
+    <updated>2009-07-12 07:40:57 &#43;0000 UTC</updated>
+
+    
+      
+        <item>
+          <title>9 skills developers will need in the next five years</title>
+          <link>https://shafiqissani.github.io/www.shafiq.in/2009/07/12/9-skills-developers-will-need-in-the-next-five-years/</link>
+          <pubDate>Sun, 12 Jul 2009 07:40:57 UTC</pubDate>
+          <author></author>
+          <guid>https://shafiqissani.github.io/www.shafiq.in/2009/07/12/9-skills-developers-will-need-in-the-next-five-years/</guid>
+          <description>&lt;p&gt;With the recent changes in the economy, a lot of developers are focused on their short-term job prospects. At the same time, it’s important to make sure that you get the most bang for your buck when it comes to taking the time and energy to learn new skills. Here is a  list of 10 skills you should be learning right now to make sure that your resume is relevant for the next five years. The list is hardly exhaustive, and there are huge swaths of the industry it won’t cover (mainframe developers, for example). Nonetheless, for average mainstream development, you can’t go wrong learning at least seven of these skills — not only to the point where you can talk convincingly about them at a job interview, but actually use them on the job.&lt;/p&gt;
+&lt;p&gt;1: One of the “Big Three” (.NET, Java, PHP)&lt;br /&gt;
+Unless there is a radical shift in the development world, most developers will need to know at least one of the Big Three development systems — .NET (VB.NET or C#), Java, or PHP — for the near future. It’s not enough to know the core languages, either. As projects encompass more and more disparate functionality, you’ll need to know the associated frameworks and libraries more deeply.&lt;/p&gt;
+&lt;p&gt;2: Rich Internet Applications (RIAs)&lt;br /&gt;
+Love it or hate it, in the last few years, Flash is suddenly being used for more than just animations of politicians singing goofy songs. Flash has also sprouted additional functionality in the form or Flex and AIR. Flash’s competitors, such as JavaFx and Silverlight, are also upping the ante on features and performance. To make things even more complicated, HTML 5 is incorporating all sorts of RIA functionality, including database connectivity, and putting the formal W3C stamp on AJAX. In the near future, being an RIA pro will be a key resume differentiator.&lt;/p&gt;
+&lt;p&gt;3: Web development&lt;br /&gt;
+Web development is not going away anytime soon. Many developers have been content to lay back and ignore the Web or to just stick to “the basics” their framework provides them with. But companies have been demanding more and more who really know how to work with the underlying technology at a “hand code” level. So bone up on JavaScript, CSS, and HTML to succeed over the next five years.&lt;/p&gt;
+&lt;p&gt;4: Web services&lt;br /&gt;
+REST or SOAP? JSON or XML? While the choices and the answers depend on the project, it’s getting increasingly difficult to be a developer (even one not writing Web applications) without consuming or creating a Web service. Even areas that used to be ODBC, COM, or RPC domains are now being transitioned to Web services of some variety. Developers who can’t work with Web services will find themselves relegated to legacy and maintenance roles.&lt;/p&gt;
+&lt;p&gt;5: Soft skills&lt;br /&gt;
+One trend that has been going for quite some time is the increasing visibility of IT within and outside the enterprise. Developers are being brought into more and more non-development meetings and processes to provide feedback. For example, the CFO can’t change the accounting rules without working with IT to update the systems. And an operations manager can’t change a call center process without IT updating the CRM workflow. Likewise, customers often need to work directly with the development teams to make sure that their needs are met.&lt;/p&gt;
+&lt;p&gt;6: One dynamic and/or functional programming language&lt;br /&gt;
+Languages like Ruby, Python, F#, and Groovy still aren’t quite mainstream –  but the ideas in them are. For example, the LINQ system in Microsoft’s .NET is a direct descendent of functional programming techniques. Both Ruby and Python are becoming hot in some sectors, thanks to the Rails framework and Silverlight, respectively. Learning one of these languages won’t just improve your resume, though; it will expand your horizons. Every top-flight developer recommends learning at least one dynamic or functional programming language to learn new ways of thinking.&lt;/p&gt;
+&lt;p&gt;7: Domain knowledge&lt;br /&gt;
+The  developers who understand the problem domain are able to contribute to the project in a highly visible, valuable way. A developer who can say, “From here, we can also add this functionality fairly easily, and it will get us a lot of value,” or “Gee, that requirement really doesn’t match the usage patterns our logs show” will excel. As much as many developers resist the idea of having to know anything about the problem domain at all, it is undeniable that increasing numbers of organizations prefer (if not require) developers to at least understand the basics.&lt;/p&gt;
+&lt;p&gt;8: Development “hygiene”&lt;br /&gt;
+A few years ago, many (if not most) shops did not have access to bug tracking systems, version control, and other such tools; it was just the developers and their IDE of choice. But thanks to the development of new, integrated stacks, like the Microsoft Visual Studio Team System, and the explosion in availability of high quality, open source environments, organizations without these tools are becoming much less common. Developers must know more than just how to check code in and out of source control or how to use the VM system to build test environments. They need to have a rigorous habit of hygiene in place to make sure that they are properly coordinating with their teams.&lt;/p&gt;
+&lt;p&gt;9: Mobile development&lt;br /&gt;
+The late 1990s saw Web development rise to mainstream acceptance and then begin to marginalize traditional desktop applications in many areas. In 2008, mobile development left the launch pad, and over the next five years, it will become increasingly important. There are, of course, different approaches to mobile development: Web applications designed to work on mobile devices, RIAs aimed at that market, and applications that run directly on the devices. Regardless of which of these paths you choose, adding mobile development to your skill set will ensure that you are in demand for the future.&lt;/p&gt;
+</description>
+        </item>
+      
+    
+
+  </channel>
+</rss>

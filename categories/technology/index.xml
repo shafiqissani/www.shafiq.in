@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shafiq Alibhai </title>
+    <link>https://shafiqissani.github.io/www.shafiq.in/categories/technology/</link>
+    <language>en-us</language>
+    <author></author>
+    <rights>(C) 2016</rights>
+    <updated>2012-11-24 17:32:39 &#43;0000 UTC</updated>
+
+    
+      
+        <item>
+          <title>Running Firefox os apps in Ubuntu linux</title>
+          <link>https://shafiqissani.github.io/www.shafiq.in/2012/11/24/running-firefox-os-apps-in-ubuntu-linux/</link>
+          <pubDate>Sat, 24 Nov 2012 17:32:39 UTC</pubDate>
+          <author></author>
+          <guid>https://shafiqissani.github.io/www.shafiq.in/2012/11/24/running-firefox-os-apps-in-ubuntu-linux/</guid>
+          <description>&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://shafiqissani.files.wordpress.com/2012/11/2012-11-24-172842_1366x768_scrot.png&#34;&gt;&lt;img class=&#34;aligncenter size-full wp-image-1449&#34; title=&#34;2012-11-24-172842_1366x768_scrot&#34; alt=&#34;&#34; src=&#34;{{ site.baseurl }}/assets/2012-11-24-172842_1366x768_scrot.png&#34; height=&#34;339&#34; width=&#34;604&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Perl Expect bindings - Simple example</title>
+          <link>https://shafiqissani.github.io/www.shafiq.in/2012/02/21/perl-expect-bindings-simple-example/</link>
+          <pubDate>Tue, 21 Feb 2012 12:48:05 UTC</pubDate>
+          <author></author>
+          <guid>https://shafiqissani.github.io/www.shafiq.in/2012/02/21/perl-expect-bindings-simple-example/</guid>
+          <description>&lt;p&gt;Hello World file (hello.pl)&lt;/p&gt;
+&lt;pre&gt;#!/usr/bin/perl
+use strict;
+use warnings;
+use diagnostics; print &#34;-----------\n&#34;,
+ &#34;Hello World\n&#34;,
+ &#34;-----------\n&#34;;&lt;/pre&gt;
+&lt;p&gt;Test Perl file with expect bindings (test.pl)&lt;/p&gt;
+&lt;pre&gt;#!/usr/bin/perl
+use strict;
+ use warnings;
+ use diagnostics;
+use Expect;
+my $timeout=5;
+foreach my $i (1..20)
+ {
+ my $exp = Expect-&amp;gt;spawn(&#34;./hello.pl&#34;)
+ or die &#34;Unexpected error : $!\n&#34;;
+$exp-&amp;gt;expect($timeout);
+ }&lt;/pre&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Continuous Delivery : A Mini Hurdle</title>
+          <link>https://shafiqissani.github.io/www.shafiq.in/2012/01/02/continuous-delivery-a-mini-hurdle/</link>
+          <pubDate>Mon, 02 Jan 2012 23:01:13 UTC</pubDate>
+          <author></author>
+          <guid>https://shafiqissani.github.io/www.shafiq.in/2012/01/02/continuous-delivery-a-mini-hurdle/</guid>
+          <description>&lt;p&gt;The first hurdle to overcome with Continuous Delivery I think is not getting your product’s code onto the machine itself, but managing the actual machine and it’s software... and in talking to people. It is the subtle nuances between machines due to people tweaking things on the fly that lead to the worst [most annoying] bugs to troubleshoot.&lt;br /&gt;
+The end-goal of managing your machines is that no one ever logs into the machine directly.&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Status Quo : Review Of Some Testing Practices</title>
+          <link>https://shafiqissani.github.io/www.shafiq.in/2011/11/11/status-quo-review-of-some-testing-practices/</link>
+          <pubDate>Fri, 11 Nov 2011 10:40:14 UTC</pubDate>
+          <author></author>
+          <guid>https://shafiqissani.github.io/www.shafiq.in/2011/11/11/status-quo-review-of-some-testing-practices/</guid>
+          <description>&lt;pre&gt;Download link : &lt;a href=&#34;http://shafiqissani.files.wordpress.com/2011/11/9status-quo-review-of-existing-testing-practices.pdf&#34;&gt;Status Quo Review of Existing Testing Practices&lt;/a&gt;
+
+Status Quo Review Of Existing &lt;a class=&#34;zem_slink&#34; title=&#34;Software testing&#34; href=&#34;http://en.wikipedia.org/wiki/Software_testing&#34; rel=&#34;wikipedia&#34;&gt;Testing&lt;/a&gt; Practices
+Existing Methodology 
+When reviewing the status quo, companies implementing &lt;a class=&#34;zem_slink&#34; title=&#34;NYSE: SAP&#34; href=&#34;http://www.google.com/finance?q=NYSE:SAP&#34; rel=&#34;googlefinance&#34;&gt;SAP&lt;/a&gt; need to assess what software
+methodology or approach guides the work products and deliverables of the SAP resources,
+including the SAP testing team.
+Large SAP system integrators such as &lt;a class=&#34;zem_slink&#34; title=&#34;Deloitte&#34; href=&#34;http://www.deloitte.com/view/en_GX/global/index.htm&#34; rel=&#34;homepage&#34;&gt;Deloitte Consulting&lt;/a&gt; and &lt;a class=&#34;zem_slink&#34; title=&#34;LSE: IBM&#34; href=&#34;http://www.google.com/finance?q=LON:IBM&#34; rel=&#34;googlefinance&#34;&gt;IBM&lt;/a&gt; offer methodologies and
+implementation guides such as Thread Manager and AscendantTM for either upgrading or initial
+installations of SAP. SAP itself offers the SAP Roadmap methodology embedded within the
+Solution Manager platform. Recognized bodies such as IEEE, SEI, and the &lt;a class=&#34;zem_slink&#34; title=&#34;United States Department of Defense&#34; href=&#34;http://maps.google.com/maps?ll=38.8709888889,-77.0559611111&amp;amp;spn=0.01,0.01&amp;amp;q=38.8709888889,-77.0559611111 (United%20States%20Department%20of%20Defense)&amp;amp;t=h&#34; rel=&#34;geolocation&#34;&gt;U.S. Department of Defense (DoD)&lt;/a&gt; 5000 series directives for life-cycle management and acquisition, to name a few,
+also provide software methodologies for implementing an ERP/Customer Relationship
+Management (CRM) solution such as SAP R/3.
+Corporations that are missing a recognized methodology for implementing SAP can rely on
+software approaches that conform to the waterfall, spiral, and evolutionary models. These models
+offer different approaches for implementing software that include prototyping, dealing with
+programs that have a large scope, or unstable requirements. Depending on the size of the
+corporation implementing SAP, it is possible that the corporation already has other large software
+initiatives and a successful life cycle for doing so that can be leveraged for implementing SAP.
+A successful software methodology, whether created in-house or adopted from another body, needs
+to have templates, accelerators, and white papers for testing ERP applications. Methodologies
+specifically designed for building software from scratch or from the ground up may not be suitable
+for implementing an out-of-the-box solution such as SAP and thus not offer any relevant guidance
+for testing SAP.
+The project and &lt;a class=&#34;zem_slink&#34; title=&#34;Test execution engine&#34; href=&#34;http://en.wikipedia.org/wiki/Test_execution_engine&#34; rel=&#34;wikipedia&#34;&gt;test manager&lt;/a&gt; must provide special attention to the project’s methodologies and how
+existing testing activities and tasks conform and align to the project’s methodologies. If no formal
+methodology exists within the project, then efforts must be taken to ensure that the testing approach
+and &lt;a class=&#34;zem_slink&#34; title=&#34;Test plan&#34; href=&#34;http://en.wikipedia.org/wiki/Test_plan&#34; rel=&#34;wikipedia&#34;&gt;test plans&lt;/a&gt; are adequate for the project to help fulfill testing criteria.
+Fig. Various ways to test a software
+Drawbacks to &lt;a class=&#34;zem_slink&#34; title=&#34;Manual testing&#34; href=&#34;http://en.wikipedia.org/wiki/Manual_testing&#34; rel=&#34;wikipedia&#34;&gt;manual testing&lt;/a&gt;
+While manual testing may be the best option for a high percentage of projects, it is not without its
+shortcomings.
+For example:
+•Manual tests can simply take too long—testers must tediously document each step of a test case
+and manually execute each test, reproduce defects, and so on.
+• The dramatic increase in complexity of today’s computing environments is amplifying &lt;a class=&#34;zem_slink&#34; title=&#34;Fault coverage&#34; href=&#34;http://en.wikipedia.org/wiki/Fault_coverage&#34; rel=&#34;wikipedia&#34;&gt;test coverage&lt;/a&gt; requirements, creating more pressure to move to &lt;a class=&#34;zem_slink&#34; title=&#34;Test automation&#34; href=&#34;http://en.wikipedia.org/wiki/Test_automation&#34; rel=&#34;wikipedia&#34;&gt;automated testing&lt;/a&gt;.
+•Corporate globalization and geographically dispersed teams create a need for standardized
+testing processes, which manual testing does not readily facilitate.
+•When there is no automated process for testing, there is typically no automated way to keep
+documentation synchronized with the testing process; each element of the test plan is a separate
+entity and every change must be managed and maintained individually.
+•Manual tests are subject to higher risk of mistakes and oversights than automated tests.
+The disadvantages of record and playback only become apparent as you begin to use the tool over
+time. Capture replay always looks very impressive when first demonstrated, but is not a good basis
+for a productive long-term test automation regime. The script, as recorded, may not be very
+readable to someone picking it up afterwards. The only value of an automated test is in its reuse. A
+raw recorded script explains nothing about what is being tested or what the purpose of the test is.
+Such commentary has to be inserted by the tester, either as the recording is made (not all tools allow
+this) or by editing the script after recording has finished. Without this information any maintenance
+task is likely to be difficult at best.
+A raw recorded script is also tied very tightly to the specifics of what was recorded. Depending on
+the tool, it may be bound to objects on the screen, specific character strings, or even screen bitmap
+positions. If the software changes - correction: when the software changes - the original script will
+no longer work correctly if anything to which it is tightly bound has changed. Often the effort
+involved in updating the script itself is much greater than re-recording the script while running the
+test manually again. This usually does not give any test automation benefit. For example, the
+values of the inputs recorded are the exact and detailed values as entered, but these are now &#39;hard-
+coded&#39; into the script. The recording is simply of actions and test inputs. But usually the
+reason for running a test is to look at the test outcome to see whether the application does the right
+thing.
+Simply recording test inputs does not include any verification of the results. Verification must be
+added in to any recorded script in order to make it a test. Depending on the tool, it may be possible
+to do this additional work during recording (but it takes additional time and effort) or during the
+first replay, otherwise it will be necessary to edit the recorded script.
+Manual tests are often labor intensive, time consuming, inconsistent, boring, and lengthy, and
+comparison of test results is tedious and error prone. At first glance, these problems look ideal for
+test automation, and indeed that may be true. However, it is not necessarily the only solution to
+these problems.
+The first question to ask is whether these manual tests actually give value for money. If they are too
+lengthy, weeding out ineffective or redundant tests could shorten them. This may enable them to be
+run manually within a shorter time frame. If the tests take too much elapsed time to run manually,
+perhaps recruiting more testers would help. If the tests are very labor intensive, perhaps they could
+be redesigned to require less effort per test, so the manual testing would be more productive. For
+example, a test may require testers to sit at different machines in different rooms. If all of the test
+machines were moved into one room, one tester may be able to oversee two or more machines at
+the same time.
+If the test input or comparison of results is error prone, perhaps the test procedures are unclear.
+Have the testers been trained in how to input, execute, and analyze the tests correctly? Are they
+aware of the importance of the correctness of test results?
+Comparison of test results is probably one of the best uses of a computer. Most test execution tools
+include some comparison facilities. However, most operating systems also have comparison utilities
+that can be used to good effect, whether or not you have a comparison tool.
+If executing the current tests is boring, this probably does indicate a need for tool support of some
+kind. Things which people find boring are often done better by a computer.
+Setting up test data or test cases is repetitive and &#39;mechanical&#39;; the testers find it boring and make
+too many &#39;simple&#39; errors. This problem is a good candidate for a test execution tool. On the other
+hand, why are test cases and test data being set up in this way? It may be better to organize the test
+data into pre-packaged sets which could be called upon when needed, rather than setting them up
+every time, particularly if this is an error-prone process.
+Test documentation serves different purposes. Test plans contain management information about
+the testing process as it should be carried out. &lt;a class=&#34;zem_slink&#34; title=&#34;Test script&#34; href=&#34;http://en.wikipedia.org/wiki/Test_script&#34; rel=&#34;wikipedia&#34;&gt;Test scripts&lt;/a&gt; contain information about the detail of
+tests to be run, such as what the inputs and test data arc. Test reports contain information about the
+progress of tests that have been run. An area where test execution tools can help overcome
+documentation problems is where inadequate records are kept of what tests have been executed. If
+careful records are not kept, tests may be repeated or omitted, or you will not know whether or not
+tests have been run. The test log does provide an audit trail (although it may not necessarily be easy
+to find the information you want from the raw logs produced by the tool).
+An automated solution often &#39;looks better&#39; and may be easier to authorize expenditure for than
+addressing the more fundamental problems of the testing process itself. It is important to realize that
+the tool will not correct a poor process without additional attention being paid to it. It is possible to
+improve testing practices alongside implementing the tool, but it does require conscious effort.
+The right time is:
+when there are no major organizational upheavals or panics in progress;
+when one person has responsibility for choosing and implementing the tool(s);
+when people are dissatisfied with the current state of testing practice;
+when there is commitment from top management to authorize and support the tooling-up effort.
+If one or more of these conditions do not apply to your organization it does
+not mean that you should not attempt to introduce test automation. It
+merely implies that doing so may be somewhat more difficult.&lt;/pre&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>How To Disable Google Analytics</title>
+          <link>https://shafiqissani.github.io/www.shafiq.in/2010/09/30/how-to-disable-google-analytics/</link>
+          <pubDate>Thu, 30 Sep 2010 11:57:57 UTC</pubDate>
+          <author></author>
+          <guid>https://shafiqissani.github.io/www.shafiq.in/2010/09/30/how-to-disable-google-analytics/</guid>
+          <description>&lt;h3&gt;&lt;span style=&#34;font-weight:normal;font-size:13px;&#34;&gt;You don´t like Google Analytics?&lt;/span&gt;&lt;/h3&gt;
+&lt;p&gt;Go to &lt;a href=&#34;http://tools.google.com/dlpage/gaoptout&#34; target=&#34;_blank&#34;&gt;http://tools.google.com/dlpage/gaoptout&lt;/a&gt; and install a browser plugin to disable Google Analytics.&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Ipad is a ... ?</title>
+          <link>https://shafiqissani.github.io/www.shafiq.in/2010/07/10/ipad-is-a/</link>
+          <pubDate>Sat, 10 Jul 2010 14:26:20 UTC</pubDate>
+          <author></author>
+          <guid>https://shafiqissani.github.io/www.shafiq.in/2010/07/10/ipad-is-a/</guid>
+          <description>&lt;p style=&#34;text-align:center;&#34;&gt;
+&lt;p&gt;[caption id=&#34;attachment_704&#34; align=&#34;aligncenter&#34; width=&#34;446&#34; caption=&#34;Ipad is a ... ?&#34;]&lt;a href=&#34;http://shafiqissani.files.wordpress.com/2010/07/www-google-com-screen-capture-2010-7-10-14-17-311.png&#34;&gt;&lt;img class=&#34;size-full wp-image-704   &#34; title=&#34;www.google.com screen capture 2010-7-10-14-17-31&#34; src=&#34;{{ site.baseurl }}/assets/www-google-com-screen-capture-2010-7-10-14-17-311.png&#34; alt=&#34;Ipad is a ... ?&#34; width=&#34;446&#34; height=&#34;338&#34; /&gt;&lt;/a&gt;[/caption]&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>OpenSSL - Public Certificate and Private key</title>
+          <link>https://shafiqissani.github.io/www.shafiq.in/2010/06/10/openssl-public-certificate-and-private-key/</link>
+          <pubDate>Thu, 10 Jun 2010 17:49:12 UTC</pubDate>
+          <author></author>
+          <guid>https://shafiqissani.github.io/www.shafiq.in/2010/06/10/openssl-public-certificate-and-private-key/</guid>
+          <description>&lt;p&gt;privatekey -&amp;gt; openssl  genrsa [-out filename] [-passout arg] [-des] [-des3] [-idea] [-f4] [-3] [-rand file(s)] [numbits]&lt;/p&gt;
+&lt;p&gt;public certificate -&amp;gt; $ openssl req -new -x509 -nodes -sha1 -days 365 -key host.key &amp;gt; host.cert&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>SVN - revision control - slides - pdf</title>
+          <link>https://shafiqissani.github.io/www.shafiq.in/2010/03/22/svn-revision-control-slides-pdf/</link>
+          <pubDate>Mon, 22 Mar 2010 06:54:55 UTC</pubDate>
+          <author></author>
+          <guid>https://shafiqissani.github.io/www.shafiq.in/2010/03/22/svn-revision-control-slides-pdf/</guid>
+          <description>&lt;h3&gt;SVN - revision control&lt;/h3&gt;
+&lt;pre&gt;Download pdf : &lt;a href=&#34;http://docs.issani.in/dump/svn-tuts-100217-v2.pdf&#34;&gt;&lt;span style=&#34;color:#000000;&#34;&gt;http://docs.issani.in/dump/svn-tuts-100217-v2.pdf&lt;/span&gt;&lt;/a&gt;&lt;/pre&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Coordinating projects&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;●&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Problem: How to coordinate and synchronize code&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;between multiple developers on a project?&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;– Work on the same computer, take turns coding&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Nah...&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;– Send files by e-mail or put them online. Lots of&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;manual work.&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;– Put files on a shared disk. Files get overwritten or&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;deleted. Lots of direct coordination.&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;– In short: Error prone and inefficient.&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;What is a version control system?&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;A repository of files with monitored&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;access to keep track of who and what&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;changes were made to files&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Version tracking&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Collaboration and sharing files&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Historical information&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Retrieve past versions&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Manage branches&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Why use it?&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;In code development, a version control&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;system is, at this point, almost mandatory&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;With multiple developers impossible to keep&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;track of versions with out it&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Must be able to roll back a version if a test&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;suite fails&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Must be able to tag software releases&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Coordinating projects (solution)&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Solution: A source code management (scm) tool.&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;– Repository: Code stored on a central server.&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;– Working copy: The developer checks out a copy&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;of the code in the repository to his/her computer.&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;– Revision history: Every change to every file is&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;logged in a database. Can be rollbacked.&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;– Conflict handling: What happens when two&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;developers change the same file? The same line?&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Basic Work Cycle&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Checkout a working copy&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Update a working copy&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Make changes&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Examine your changes&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Commit your changes&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Some Commands&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Subversion commands communicating with the server:&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;svn checkout ...&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;svn commit&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Offline Subversion commands:&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;svn add&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;svn delete&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;svn status     (high level compare)&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;svn diff    (low level compare)&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;svn rename&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;svn move&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;...&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;More information:&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;svn help [cmd]&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Create Repository&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Creating a repository:&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;/home/shafiqissani&amp;gt; svnadmin create assignment1&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;...results in a repository directory:&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;/home/shafiqissani/assignment1&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;What&#39;s inside the repository?&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;/conf/...&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;/dav/...&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;/db/...&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;/format&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;/hooks/...&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;/locks/...&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;/README.txt&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Basic commands&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;svn checkout &amp;lt;source&amp;gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;$ svn checkout http://url/repos/projectA&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;A projectA/file1&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;A projectA/file2&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;A projectA/file3&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Checked out revision 28.&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;$&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;svn status&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;$ svn status&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;M projectA/file1&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;?    projectA/file4&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;$&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Basic commands&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;svn add/delete/copy/move &amp;lt;filename&amp;gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;$ svn add file4&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;A file4&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;$&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;svn commit &amp;lt;message&amp;gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;$ svn commit –m “fix another bugs”&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Sending         file1&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Adding          file4&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Transmitting file data.&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Committed revision 29.&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;$&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Basic commands&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;svn log&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;$ svn log&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;--------------------------------------------------------------------------------&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;r29 | shafiq | Tue, 26 Dec 2006 18:03:46 +0900 | 1 line&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;fix another bugs&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;--------------------------------------------------------------------------------&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;r28 | shafiq | Mon, 25 Dec 2006 13:01:24 +0900 | 1 line&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Fixed some bugs.&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;--------------------------------------------------------------------------------&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;r27 | jissani | Mon, 25 Dec 2006 12:58:24 +0900 | 1 line&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Some works.&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Basic Commands&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;svn update&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;$ svn update&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;U file1&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;A file4&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Updated to revision 29&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;$ svn update –r28&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;U file1&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;D file4&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Updated to revision 28&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;$&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Trunk, Branches, Tags&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;SVN project directories are structured by convention with three top-level&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;directories:&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;trunk/&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Represents the &#39;main line&#39; of development with an entire copy of the&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;project.&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;branches/&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Contains subdirectories, each holding an entire copy of the project&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Each branch constitutes a significant enhancement to the project that&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;can be worked on independently.&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;tags/&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Contains subdirectories, each containing one snapshot of the project.&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Each snapshot represents a &#34;public release&#34; or other archival&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;configuration of the project.&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Trunk vs. Branch&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Trunk represents the stable version of the&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;system. It should always work, without errors&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;ofcourse.&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Branches represent temporary development&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;streams to implement significant new features.&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;This allows commits to repository without breaking&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;the trunk (stable) version.&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Branches may contain error/warnings etc.&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Queries / Feedback&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;email@shafiq.in&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;p&gt;SVN - revision control             email@shafiq.in  Coordinating projects●   Problem: How to coordinate and synchronize code    between multiple developers on a project?   – Work on the same computer, take turns coding    Nah...     – Send files by e-mail or put them online. Lots of    manual work.    – Put files on a shared disk. Files get overwritten or    deleted. Lots of direct coordination.   – In short: Error prone and inefficient. What is a version control system?  A repository of files with monitored  access to keep track of who and what  changes were made to files     Version tracking        Collaboration and sharing files        Historical information        Retrieve past versions        Manage branches   Why use it?  In code development, a version control  system is, at this point, almost mandatory     With multiple developers impossible to keep        track of versions with out it     Must be able to roll back a version if a test        suite fails     Must be able to tag software releases    Coordinating projects (solution)  Solution: A source code management (scm) tool.     – Repository: Code stored on a central server.        – Working copy: The developer checks out a copy        of the code in the repository to his/her computer.     – Revision history: Every change to every file is        logged in a database. Can be rollbacked.     – Conflict handling: What happens when two        developers change the same file? The same line? Basic Work Cycle  Checkout a working copy  Update a working copy  Make changes  Examine your changes  Commit your changesSome Commands  Subversion commands communicating with the server:       svn checkout ...          svn commit     Offline Subversion commands:       svn add          svn delete          svn status     (high level compare)          svn diff    (low level compare)          svn rename          svn move           ...     More information:       svn help [cmd]   Create Repository  Creating a repository:     /home/shafiqissani&amp;gt; svnadmin create assignment1        ...results in a repository directory:     /home/shafiqissani/assignment1  What&#39;s inside the repository?     /conf/...        /dav/...        /db/...        /format        /hooks/...        /locks/...        /README.txt   Basic commandssvn checkout &amp;lt;source&amp;gt;       $ svn checkout http://url/repos/projectA       A projectA/file1       A projectA/file2       A projectA/file3       Checked out revision 28.       $svn status       $ svn status       M projectA/file1       ?    projectA/file4       $Basic commandssvn add/delete/copy/move &amp;lt;filename&amp;gt;      $ svn add file4      A file4      $svn commit &amp;lt;message&amp;gt;      $ svn commit –m “fix another bugs”      Sending         file1      Adding          file4      Transmitting file data.      Committed revision 29.      $Basic commandssvn log       $ svn log       --------------------------------------------------------------------------------       r29 | shafiq | Tue, 26 Dec 2006 18:03:46 +0900 | 1 line       fix another bugs       --------------------------------------------------------------------------------       r28 | shafiq | Mon, 25 Dec 2006 13:01:24 +0900 | 1 line       Fixed some bugs.       --------------------------------------------------------------------------------       r27 | jissani | Mon, 25 Dec 2006 12:58:24 +0900 | 1 line       Some works.Basic Commandssvn update      $ svn update      U file1      A file4      Updated to revision 29      $ svn update –r28      U file1      D file4      Updated to revision 28      $ Trunk, Branches, Tags  SVN project directories are structured by convention with three top-level  directories:  trunk/      Represents the &#39;main line&#39; of development with an entire copy of the          project.  branches/      Contains subdirectories, each holding an entire copy of the project          Each branch constitutes a significant enhancement to the project that          can be worked on independently.  tags/      Contains subdirectories, each containing one snapshot of the project.          Each snapshot represents a &#34;public release&#34; or other archival          configuration of the project.Trunk vs. Branch  Trunk represents the stable version of the  system. It should always work, without errors  ofcourse.  Branches represent temporary development  streams to implement significant new features.     This allows commits to repository without breaking        the trunk (stable) version.     Branches may contain error/warnings etc.   Queries / Feedback  email@shafiq.in&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Scrum Development Model  - steps</title>
+          <link>https://shafiqissani.github.io/www.shafiq.in/2010/03/22/scrum-development-model-steps/</link>
+          <pubDate>Mon, 22 Mar 2010 06:52:15 UTC</pubDate>
+          <author></author>
+          <guid>https://shafiqissani.github.io/www.shafiq.in/2010/03/22/scrum-development-model-steps/</guid>
+          <description>&lt;h3&gt;Scrum Development Model&lt;/h3&gt;
+&lt;pre&gt;Download pdf : &lt;a href=&#34;http://docs.issani.in/dump/scrum-tuts-100219-v2.1.pdf&#34;&gt;&lt;span style=&#34;color:#000000;&#34;&gt;http://docs.issani.in/dump/scrum-tuts-100219-v2.1.pdf&lt;/span&gt;&lt;/a&gt;&lt;/pre&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;a class=&#34;zem_slink&#34; title=&#34;Requirement&#34; href=&#34;http://en.wikipedia.org/wiki/Requirement&#34; rel=&#34;wikipedia&#34;&gt;Required&lt;/a&gt; Steps&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;1) Get your backlog in order&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;1. Involve stakeholders&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;2. Create list of product actions&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;3. Prioritize this list&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;4. Get list confirmed with product owner&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;5. Discuss list with team&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;2) As a team, &lt;a class=&#34;zem_slink&#34; title=&#34;Estimation&#34; href=&#34;http://en.wikipedia.org/wiki/Estimation&#34; rel=&#34;wikipedia&#34;&gt;estimate&lt;/a&gt; your Product backlog&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;1. Provide a high-level guess/estimate&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;2. Product owner reviews priorities&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;3) As a team, plan &lt;a class=&#34;zem_slink&#34; title=&#34;Sprint (scrum)&#34; href=&#34;http://en.wikipedia.org/wiki/Sprint_%28scrum%29&#34; rel=&#34;wikipedia&#34;&gt;Sprint&lt;/a&gt; requirements&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;1. Call a sprint planning &lt;a class=&#34;zem_slink&#34; title=&#34;Meeting&#34; href=&#34;http://en.wikipedia.org/wiki/Meeting&#34; rel=&#34;wikipedia&#34;&gt;meeting&lt;/a&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;2. Ensure that whole team attends&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;3. Decide sprint duration (weekly/monthly)&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;4. Select target backlog items for sprint&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;1. Choose high priority items first&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;5. Clarify sprint requirements&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;1. Methodically go through each item at a time&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;2. Ask product owner to present each item from functional perspective&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;3. Discuss the items in detail&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;5. Write requirements by feature&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;4) As a team, plan Sprint tasks&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;1. Break requirements into tasks&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;1. Go through each backlog item&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;2. Break these tasks down further&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;3. Include all items to make the Product backlog item 100% complete&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;2. Estimate tasks in hours&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;3. Commit to the Sprint backlog&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;1. remove lower items (according) if exceeding sprint capacity&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;4. Identify stretch/delayable tasks&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;5) Create an effective &lt;a class=&#34;zem_slink&#34; title=&#34;Collaborative workspace&#34; href=&#34;http://en.wikipedia.org/wiki/Collaborative_workspace&#34; rel=&#34;wikipedia&#34;&gt;collaborative workspace&lt;/a&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;1. use some &lt;a class=&#34;zem_slink&#34; title=&#34;Computer software&#34; href=&#34;http://en.wikipedia.org/wiki/Computer_software&#34; rel=&#34;wikipedia&#34;&gt;software tool&lt;/a&gt; or the traditional whiteboard&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Required Steps (contd.)&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;6) &#39;Sprint&#39; to achieve the Sprint goal&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;1. Understand that the sprint duration is fixed&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;2. If you finish early, include more scope&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;3. If you&#39;re behind reduce scope&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;4. Ensure that you complete one feature at a time to 100% (that includes&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;testing)&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;7) Optimize &lt;a class=&#34;zem_slink&#34; title=&#34;Stand-up meeting&#34; href=&#34;http://en.wikipedia.org/wiki/Stand-up_meeting&#34; rel=&#34;wikipedia&#34;&gt;Stand up&lt;/a&gt; meetings (Scrums)&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;1. &lt;a class=&#34;zem_slink&#34; title=&#34;Scrum (development)&#34; href=&#34;http://en.wikipedia.org/wiki/Scrum_%28development%29&#34; rel=&#34;wikipedia&#34;&gt;Scrum master&lt;/a&gt; should ensure that impedances are removed&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;2. Keep meetings to 15 minutes maximum&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;3. Ensure everyone answers 3 questions&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;1. what u did since last scrum&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;2. what you&#39;re planning to finish by next scrum&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;3. Any blocks or impediments that are in their way&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;4. Note that the Daily Scrum is not a status meeting to report to a manager&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;8) Track progress with a Daily burndown &lt;a class=&#34;zem_slink&#34; title=&#34;Record chart&#34; href=&#34;http://en.wikipedia.org/wiki/Record_chart&#34; rel=&#34;wikipedia&#34;&gt;chart&lt;/a&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;1. Update estimated time to complete (ETC) daily&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;2. Ensure individuals update their own ETC before daily scrum&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;3. Plot progress visually on graph (burndown chart)&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;9) Finish on schedule&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;10) &lt;a class=&#34;zem_slink&#34; title=&#34;Software review&#34; href=&#34;http://en.wikipedia.org/wiki/Software_review&#34; rel=&#34;wikipedia&#34;&gt;Review&lt;/a&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;1. At the end of the sprint, hold a sprint review meeting&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;2. Team members demo the software&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;3. Review the burndown chart&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;4. Discuss what went well&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;5. Discuss what could be improved and improvements for the next sprint&lt;/div&gt;
+&lt;p&gt;Scrum DevelopmentModel        email@shafiq.in Required Steps1) Get your backlog in order  1. Involve stakeholders  2. Create list of product actions  3. Prioritize this list  4. Get list confirmed with product owner  5. Discuss list with team2) As a team, estimate your Product backlog  1. Provide a high-level guess/estimate  2. Product owner reviews priorities3) As a team, plan Sprint requirements  1. Call a sprint planning meeting  2. Ensure that whole team attends  3. Decide sprint duration (weekly/monthly)  4. Select target backlog items for sprint     1. Choose high priority items first  5. Clarify sprint requirements     1. Methodically go through each item at a time     2. Ask product owner to present each item from functional perspective     3. Discuss the items in detail     5. Write requirements by feature4) As a team, plan Sprint tasks  1. Break requirements into tasks     1. Go through each backlog item     2. Break these tasks down further     3. Include all items to make the Product backlog item 100% complete  2. Estimate tasks in hours  3. Commit to the Sprint backlog     1. remove lower items (according) if exceeding sprint capacity  4. Identify stretch/delayable tasks5) Create an effective collaborative workspace  1. use some software tool or the traditional whiteboard Required Steps (contd.)6) &#39;Sprint&#39; to achieve the Sprint goal  1. Understand that the sprint duration is fixed  2. If you finish early, include more scope  3. If you&#39;re behind reduce scope  4. Ensure that you complete one feature at a time to 100% (that includestesting)7) Optimize Stand up meetings (Scrums)  1. Scrum master should ensure that impedances are removed  2. Keep meetings to 15 minutes maximum  3. Ensure everyone answers 3 questions     1. what u did since last scrum     2. what you&#39;re planning to finish by next scrum     3. Any blocks or impediments that are in their way  4. Note that the Daily Scrum is not a status meeting to report to a manager8) Track progress with a Daily burndown chart  1. Update estimated time to complete (ETC) daily  2. Ensure individuals update their own ETC before daily scrum  3. Plot progress visually on graph (burndown chart)9) Finish on schedule10) Review   1. At the end of the sprint, hold a sprint review meeting   2. Team members demo the software   3. Review the burndown chart   4. Discuss what went well   5. Discuss what could be improved and improvements for the next sprint&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Restarting a Project from Scratch !</title>
+          <link>https://shafiqissani.github.io/www.shafiq.in/2010/03/08/restarting-a-project-from-scratch/</link>
+          <pubDate>Mon, 08 Mar 2010 05:40:13 UTC</pubDate>
+          <author></author>
+          <guid>https://shafiqissani.github.io/www.shafiq.in/2010/03/08/restarting-a-project-from-scratch/</guid>
+          <description>&lt;p&gt;There&#39;s a subtle reason that programmers always want to throw away the code and start over. The reason is that they think the old code is a mess. And here is the interesting observation: &lt;em&gt;they are probably wrong.&lt;/em&gt; The reason that they think the old code is a mess is because of a cardinal, fundamental law of programming:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;It’s harder to read code than to write it.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This is why code reuse is so hard. This is why everybody on your team has a different function they like to use for splitting strings into arrays of strings. They write their own function because it&#39;s easier and more fun than figuring out how the old function works.&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Go Programming Language *sigh*</title>
+          <link>https://shafiqissani.github.io/www.shafiq.in/2009/11/13/go-programming-language/</link>
+          <pubDate>Fri, 13 Nov 2009 06:32:38 UTC</pubDate>
+          <author></author>
+          <guid>https://shafiqissani.github.io/www.shafiq.in/2009/11/13/go-programming-language/</guid>
+          <description>&lt;p&gt;Google makes ... or should I say &#34;invents&#34; a new programming language, which is super fast and god knows what ...&lt;/p&gt;
+&lt;p&gt;... yet another language to learn  *sigh*&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>The launch of Mandriva Linux 2010</title>
+          <link>https://shafiqissani.github.io/www.shafiq.in/2009/10/04/the-launch-of-mandriva-linux-2010/</link>
+          <pubDate>Sun, 04 Oct 2009 05:26:21 UTC</pubDate>
+          <author></author>
+          <guid>https://shafiqissani.github.io/www.shafiq.in/2009/10/04/the-launch-of-mandriva-linux-2010/</guid>
+          <description>&lt;p&gt;Scheduled for November 3rd, 2009, the new release of Mandriva Linux 2010 offers exceptional innovations. As simple to use as usual, you will find applications such as: KDE 4.3.1, GNOME 2.28, kernel 2.6.31.1, Xorg 1.6.4 RC 1 with the last driver for Intel graphical card. Moblin 2 can be tested on the new Mandriva&#39;s distribution.&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Final Year Project Abstract -- Test Automation in ERP Applications</title>
+          <link>https://shafiqissani.github.io/www.shafiq.in/2009/08/06/final-year-project-abstract-test-automation-in-erp-applications/</link>
+          <pubDate>Thu, 06 Aug 2009 06:09:53 UTC</pubDate>
+          <author></author>
+          <guid>https://shafiqissani.github.io/www.shafiq.in/2009/08/06/final-year-project-abstract-test-automation-in-erp-applications/</guid>
+          <description>&lt;p align=&#34;center&#34;&gt;&lt;strong&gt;Test Automation in ERP Applications&lt;/strong&gt;&lt;/p&gt;
+&lt;p style=&#34;text-align:center;&#34;&gt;&lt;strong&gt;Optimization and Enhancement&lt;/strong&gt;&lt;/p&gt;
+&lt;p style=&#34;text-align:center;&#34;&gt;Shafiq Issani&lt;/p&gt;
+&lt;p style=&#34;text-align:center;&#34;&gt;K. Nishant&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;Bachelor of Technology in Computer Science and Engineering&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;&lt;strong&gt;(2008-09)&lt;/strong&gt;&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;&lt;strong&gt;Test Automation in ERP Applications&lt;/strong&gt;&lt;/p&gt;
+&lt;p style=&#34;text-align:center;&#34;&gt;&lt;strong&gt;Optimization and Enhancement&lt;/strong&gt;&lt;/p&gt;
+&lt;p align=&#34;center&#34;&gt;
+&lt;p align=&#34;center&#34;&gt;&lt;strong&gt;Abstract&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Test Automation plays vital role in Enterprise applications implementation. Majority of the Enterprises run their businesses by using Packaged applications like SAP, Oracle, Peoplesoft, etc. These business processes are highly customized depending on the Organizations business and objectives.&lt;/p&gt;
+&lt;p&gt;As Development and Testing these implementations and deploying within in the budget and timeframes are crucial for an Organization business commitment drives IT departments at these Organizations to looks for accelerators of testing process. These accelerators are in the form of Test Automation tools available in market and also Frameworks to deploy these tools.&lt;/p&gt;
+&lt;p&gt;The problem is to identify the ways and means to enhance and improve such Test Automation Framework.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Project Scope: &lt;/strong&gt;Single script will be able to execute hundreds of test scenarios.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tools: &lt;/strong&gt;QuickTest Professional (test execution engine), Microsoft Debugger, Text Editor, ERP applications (SAP, Oracle, PeopleSoft, etc)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Development Platform: &lt;/strong&gt;Microsoft Windows XP professional&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Deployment Platform: &lt;/strong&gt;Microsoft Windows XP professional&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Languages / Technologies:&lt;/strong&gt; VBScript&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Reference Material: &lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Wrox VBScript Programmers Reference by Adrian, Kathie and Daniel&lt;/li&gt;
+&lt;li&gt;QuickTest Professional tutorial by Mercury&lt;/li&gt;
+&lt;li&gt;SAP for MIT – Basic Skills / Self Study by Massachusetts Institute of Technology&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Name of Students:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Shafiq Issani&lt;/li&gt;
+&lt;li&gt;K. Nishant&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;External Project Guide:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Mr. Ravi Kumar Addanki (Director Arsin Systems)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Internal Project Guide:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Prof. Balram (Head of Department CSE)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Project Work Centre: Arsin Systems Private Limited, Hyderabad - 034&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>9 skills developers will need in the next five years</title>
+          <link>https://shafiqissani.github.io/www.shafiq.in/2009/07/12/9-skills-developers-will-need-in-the-next-five-years/</link>
+          <pubDate>Sun, 12 Jul 2009 07:40:57 UTC</pubDate>
+          <author></author>
+          <guid>https://shafiqissani.github.io/www.shafiq.in/2009/07/12/9-skills-developers-will-need-in-the-next-five-years/</guid>
+          <description>&lt;p&gt;With the recent changes in the economy, a lot of developers are focused on their short-term job prospects. At the same time, it’s important to make sure that you get the most bang for your buck when it comes to taking the time and energy to learn new skills. Here is a  list of 10 skills you should be learning right now to make sure that your resume is relevant for the next five years. The list is hardly exhaustive, and there are huge swaths of the industry it won’t cover (mainframe developers, for example). Nonetheless, for average mainstream development, you can’t go wrong learning at least seven of these skills — not only to the point where you can talk convincingly about them at a job interview, but actually use them on the job.&lt;/p&gt;
+&lt;p&gt;1: One of the “Big Three” (.NET, Java, PHP)&lt;br /&gt;
+Unless there is a radical shift in the development world, most developers will need to know at least one of the Big Three development systems — .NET (VB.NET or C#), Java, or PHP — for the near future. It’s not enough to know the core languages, either. As projects encompass more and more disparate functionality, you’ll need to know the associated frameworks and libraries more deeply.&lt;/p&gt;
+&lt;p&gt;2: Rich Internet Applications (RIAs)&lt;br /&gt;
+Love it or hate it, in the last few years, Flash is suddenly being used for more than just animations of politicians singing goofy songs. Flash has also sprouted additional functionality in the form or Flex and AIR. Flash’s competitors, such as JavaFx and Silverlight, are also upping the ante on features and performance. To make things even more complicated, HTML 5 is incorporating all sorts of RIA functionality, including database connectivity, and putting the formal W3C stamp on AJAX. In the near future, being an RIA pro will be a key resume differentiator.&lt;/p&gt;
+&lt;p&gt;3: Web development&lt;br /&gt;
+Web development is not going away anytime soon. Many developers have been content to lay back and ignore the Web or to just stick to “the basics” their framework provides them with. But companies have been demanding more and more who really know how to work with the underlying technology at a “hand code” level. So bone up on JavaScript, CSS, and HTML to succeed over the next five years.&lt;/p&gt;
+&lt;p&gt;4: Web services&lt;br /&gt;
+REST or SOAP? JSON or XML? While the choices and the answers depend on the project, it’s getting increasingly difficult to be a developer (even one not writing Web applications) without consuming or creating a Web service. Even areas that used to be ODBC, COM, or RPC domains are now being transitioned to Web services of some variety. Developers who can’t work with Web services will find themselves relegated to legacy and maintenance roles.&lt;/p&gt;
+&lt;p&gt;5: Soft skills&lt;br /&gt;
+One trend that has been going for quite some time is the increasing visibility of IT within and outside the enterprise. Developers are being brought into more and more non-development meetings and processes to provide feedback. For example, the CFO can’t change the accounting rules without working with IT to update the systems. And an operations manager can’t change a call center process without IT updating the CRM workflow. Likewise, customers often need to work directly with the development teams to make sure that their needs are met.&lt;/p&gt;
+&lt;p&gt;6: One dynamic and/or functional programming language&lt;br /&gt;
+Languages like Ruby, Python, F#, and Groovy still aren’t quite mainstream –  but the ideas in them are. For example, the LINQ system in Microsoft’s .NET is a direct descendent of functional programming techniques. Both Ruby and Python are becoming hot in some sectors, thanks to the Rails framework and Silverlight, respectively. Learning one of these languages won’t just improve your resume, though; it will expand your horizons. Every top-flight developer recommends learning at least one dynamic or functional programming language to learn new ways of thinking.&lt;/p&gt;
+&lt;p&gt;7: Domain knowledge&lt;br /&gt;
+The  developers who understand the problem domain are able to contribute to the project in a highly visible, valuable way. A developer who can say, “From here, we can also add this functionality fairly easily, and it will get us a lot of value,” or “Gee, that requirement really doesn’t match the usage patterns our logs show” will excel. As much as many developers resist the idea of having to know anything about the problem domain at all, it is undeniable that increasing numbers of organizations prefer (if not require) developers to at least understand the basics.&lt;/p&gt;
+&lt;p&gt;8: Development “hygiene”&lt;br /&gt;
+A few years ago, many (if not most) shops did not have access to bug tracking systems, version control, and other such tools; it was just the developers and their IDE of choice. But thanks to the development of new, integrated stacks, like the Microsoft Visual Studio Team System, and the explosion in availability of high quality, open source environments, organizations without these tools are becoming much less common. Developers must know more than just how to check code in and out of source control or how to use the VM system to build test environments. They need to have a rigorous habit of hygiene in place to make sure that they are properly coordinating with their teams.&lt;/p&gt;
+&lt;p&gt;9: Mobile development&lt;br /&gt;
+The late 1990s saw Web development rise to mainstream acceptance and then begin to marginalize traditional desktop applications in many areas. In 2008, mobile development left the launch pad, and over the next five years, it will become increasingly important. There are, of course, different approaches to mobile development: Web applications designed to work on mobile devices, RIAs aimed at that market, and applications that run directly on the devices. Regardless of which of these paths you choose, adding mobile development to your skill set will ensure that you are in demand for the future.&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Flash z-order -- always on top?</title>
+          <link>https://shafiqissani.github.io/www.shafiq.in/2009/07/01/flash-z-order-always-on-top/</link>
+          <pubDate>Wed, 01 Jul 2009 07:41:55 UTC</pubDate>
+          <author></author>
+          <guid>https://shafiqissani.github.io/www.shafiq.in/2009/07/01/flash-z-order-always-on-top/</guid>
+          <description>&lt;p&gt;I was trying to use a javascript pull-down menu that was just above a flash movie. The pull down was always BEHIND the flash movie, no matter how I set the z-order. Here is how I fixed it:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Adding this parameter to the OBJECT tag: &amp;lt;param name=&#34;wmode&#34; value=&#34;transparent&#34;&amp;gt;&lt;/li&gt;
+&lt;li&gt;Adding this parameter to the EMBED tag: wmode=&#34;transparent&#34;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;With those added parameters, the menu now extended down over the flash portion properly.&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Choose your titles wisely for better URLs</title>
+          <link>https://shafiqissani.github.io/www.shafiq.in/2009/06/20/choose-your-titles-wisely-for-better-urls/</link>
+          <pubDate>Sat, 20 Jun 2009 05:47:06 UTC</pubDate>
+          <author></author>
+          <guid>https://shafiqissani.github.io/www.shafiq.in/2009/06/20/choose-your-titles-wisely-for-better-urls/</guid>
+          <description>&lt;p&gt;&lt;span&gt;R&lt;/span&gt;emember to always use the hyphen character (-) in your weblinks if it contains more than one word. That way, you&#39;ll get more value from your URL keywords. Google treats hyphen (-) like a space, while it treats underscore as a non-breaking space.&lt;/p&gt;
+&lt;p&gt;The slash character / is also treated as a space, by the way. I wouldn&#39;t use that in a URL, but you are safe using it to separate two keywords in your texts.&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>CSS Browser Compatibility Improvement Tip</title>
+          <link>https://shafiqissani.github.io/www.shafiq.in/2009/06/06/css-browser-compatibility-improvement-tip/</link>
+          <pubDate>Sat, 06 Jun 2009 10:09:09 UTC</pubDate>
+          <author></author>
+          <guid>https://shafiqissani.github.io/www.shafiq.in/2009/06/06/css-browser-compatibility-improvement-tip/</guid>
+          <description>&lt;p&gt;Always use the following CSS code when not explicitly mentioning padding and margin.&lt;br /&gt;
+Not all browsers take zero padding and margin by default.&lt;/p&gt;
+&lt;p&gt;html {&lt;br /&gt;
+padding: 0px;&lt;br /&gt;
+margin: 0px;&lt;br /&gt;
+}&lt;br /&gt;
+body {&lt;br /&gt;
+padding: 0px;&lt;br /&gt;
+margin: 0px;&lt;br /&gt;
+}&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>css fail</title>
+          <link>https://shafiqissani.github.io/www.shafiq.in/2009/05/11/css-fail/</link>
+          <pubDate>Mon, 11 May 2009 16:21:14 UTC</pubDate>
+          <author></author>
+          <guid>https://shafiqissani.github.io/www.shafiq.in/2009/05/11/css-fail/</guid>
+          <description>&lt;p&gt;never use&lt;br /&gt;
+.&lt;br /&gt;
+position:absolute;&lt;br /&gt;
+left:99px;&lt;br /&gt;
+.&lt;/p&gt;
+&lt;p&gt;its a handy little quick fix to position an element but it doesn&#39;t ever work.&lt;/p&gt;
+</description>
+        </item>
+      
+    
+
+  </channel>
+</rss>

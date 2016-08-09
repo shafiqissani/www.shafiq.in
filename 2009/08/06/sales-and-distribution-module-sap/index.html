@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.16" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Noticia+Text:400,700|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="https://shafiqissani.github.io/www.shafiq.in/css/styles.css">
+    <link rel="stylesheet" href="https://shafiqissani.github.io/www.shafiq.in/css/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="https://shafiqissani.github.io/www.shafiq.in/index.xml">
+
+    
+    <title>Sales and Distribution module (SAP) - Shafiq Alibhai</title>
+    <meta property='og:title' content="Sales and Distribution module (SAP) - Shafiq Alibhai">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="https://shafiqissani.github.io/www.shafiq.in/2009/08/06/sales-and-distribution-module-sap/">
+    
+    
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage":{
+      "@type":"WebPage",
+      "@id":"https:\/\/shafiqissani.github.io\/www.shafiq.in\/"
+    },
+    "headline": "Sales and Distribution module (SAP) |  ",
+    "image": {
+      "@type": "ImageObject",
+      "url": "",
+      "height": 700,
+      "width": 700
+    },
+    "datePublished": "2009-08-06T06:12:49JST",
+    "dateModified": "2009-08-06T06:12:49JST",
+    "author": {
+      "@type": "Person",
+      "name": "",
+      "image": "https:\/\/shafiqissani.github.io\/www.shafiq.in\/images/logo.png"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https:\/\/shafiqissani.github.io\/www.shafiq.in\/images/logo.png",
+        "height": 60,
+        "width": 60
+      }
+    },
+    "description": ""
+  }
+</script>
+</head>
+
+<body>
+
+  <header class="l-header">
+    <div class="p-logo">
+      <a href="https://shafiqissani.github.io/www.shafiq.in/">Shafiq Alibhai</a>
+    </div>
+  </header>
+
+
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-9">
+
+      <article class="single">
+        <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+        <div class="body">
+          <h1>Sales and Distribution module (SAP)</h1>
+          <p align="center">
+<p align="center"><strong> </strong></p>
+<p align="center"><strong> </strong></p>
+<p align="center"><strong> </strong></p>
+<p align="center"><strong> </strong></p>
+<p align="center"><strong> </strong></p>
+<p align="center"><strong> </strong></p>
+<p align="center"><strong>SALES &amp; DISTRIBUTION</strong></p>
+<p align="center"><strong> </strong></p>
+<p align="center"><strong> </strong></p>
+<p align="center"><strong>(SD)</strong></p>
+<p align="center"><strong> </strong></p>
+<p align="center">
+<p align="center">
+<p align="center">
+<p align="center">
+<p align="center">
+<p align="center">
+<p align="center">
+<p align="center">
+<p align="center">
+<p align="center">
+<p align="center">
+<p align="center">
+<p align="center">
+<p align="center">
+<p align="center">
+<p align="center">
+<p align="center"><strong>Table of Contents</strong></p>
+<p align="center">
+<p>1      Definition of Sales &amp; Distribution. 2</p>
+<p>2      Enterprise Structure. 3</p>
+<p>2.1       Client 5</p>
+<p>2.2       Company. 5</p>
+<p>2.3       Company Code. 6</p>
+<p>2.3.1    Create a Fiscal Year Variant 7</p>
+<p>2.3.2    Maintain Fiscal Year Variant 7</p>
+<p>2.3.3    Assign Company Code to Fiscal Year Variant 8</p>
+<p>2.3.4    Posting Periods. 9</p>
+<p>2.3.5    Define Variants for Open Posting Periods. 9</p>
+<p>2.3.6    Open and Close Posting Periods. 9</p>
+<p>2.3.7    Assign Variants to Company Code. 10</p>
+<p>2.3.8    Define Document Number Ranges. 10</p>
+<p>2.3.9    Define Document Types. 11</p>
+<p>2.3.10      Define Tolerance Groups for Employees. 12</p>
+<p>2.3.11      Assign User/Tolerance Group. 13</p>
+<p>2.4       Plant 13</p>
+<p>2.4.1    Assign plant to Company Code. 14</p>
+<p>2.5       Location. 14</p>
+<p>2.6       Division. 15</p>
+<p>2.7       Sales Organization. 15</p>
+<p>2.7.1    Assign Sales Organization to Company Code. 16</p>
+<p>2.8       Distribution Channel 16</p>
+<p>2.8.1    Assign Distribution Channel to Sales Organization. 17</p>
+<p>2.8.3    Set up Sales Area. 18</p>
+<p>2.8.4    Assign sales organization - distribution channel – plant 19</p>
+<p>2.9       Define Shipping Points. 20</p>
+<p>2.9.1    Assign Shipping point to plant 20</p>
+<p>2.9.2    Shipping point and goods receiving point determination: 21</p>
+<p>Assign Shipping Point 21</p>
+<p>3      Customer Master 21</p>
+<p>3.1   Creation of Customer Account Group. 22</p>
+<p>3.2   Create Number Ranges for Customer Accounts. 24</p>
+<p>3.3   Assign Number Ranges to Customer Account Groups. 25</p>
+<p>3.4   Define Incompleteness Procedures. 26</p>
+<p>3.5   Define Order Type. 27</p>
+<p>3.6   Define Item Category. 28</p>
+<p align="center">
+<p align="center">
+<p align="center">
+<p align="center">
+<p align="center">
+<p align="center">
+<h1>1           Definition of Sales &amp; Distribution</h1>
+<p>For the representation of your company structures in the SAP System, different organizational units are available for the areas of sales, shipping and billing. First analyze the structure and process organization in your company and then compare them with the SAP structures. In the standard version, different organizational elements are defined as examples. In general, these elements are not sufficient for individual demands. Extend the elements accordingly.</p>
+<p>During the clarification phase, work with the structures delivered by SAP. Change the names if necessary in order to achieve a high degree of identification and acceptance with project members and user departments from the beginning. After having defined the organizational units, allocate the elements to each other in the menu option "Allocation". Then check the defined organizational units in the menu option "Check". Only a limited number of users should be given authorization to maintain organizational elements. Determine the authorization profiles accordingly. As soon as the processing of the menu item is completed, access should be blocked so that no further changes can be made.</p>
+<p>The organizational units set up the framework of sales processing with the SD system. The master records of sales and distribution (for example, customer master records and pricing elements) as well as the documents used in processing (for example, orders and delivery documents) are entered in dependency with the organizational structures. The data in a master record is only valid within a certain part of the organization. The sales and distribution documents are entered in the respective sub area of the organization. The master data valid there is automatically included in the sales &amp; distribution documents. Different control criteria are specified for the management and processing of the master data depending on the organizational units. In order to simplify master record and document entry, the organizational units can be stored as user parameters in the user master record. It is not necessary to specify the organizational units since the values are proposed automatically.</p>
+<p><strong><br />
+</strong></p>
+<h1>2          Enterprise Structure</h1>
+<p>ü  This helps us to portray the specific organizational structure of your business in the R/3 System.</p>
+<p>ü  To portray your company structure, different Accounting, Logistics, and Human Resources organization units are provided.</p>
+<p>ü  In the SAP R/3 system, organizational levels are structures that represent the legal or organizational views of a company. Defining organizational levels is an essential step in the project and is vital for all subsequent activities.</p>
+<p>ü  First analyze the structures and procedures in your company, and then match them to the SAP structures. As soon as your organization units are ready, access should be locked.</p>
+<p>SD is integrated in the R/3 system in the following way:</p>
+<p>The following is the Organizational structure from SD perspective:</p>
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="138" height="42" bgcolor="white">
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<td>Shipping Point</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="138" height="42" bgcolor="white">
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<td>Plant</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="162" height="42" bgcolor="white">
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<td>Credit Control Area</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="162" height="42" bgcolor="white">
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<td>Controlling Area</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="66" height="54" bgcolor="white">
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<td>Sales Area</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="138" height="54" bgcolor="white">
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<td>Dist Channel</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="126" height="42" bgcolor="white">
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<td>Sales Org</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellspacing="0" cellpadding="0" align="left">
+<tbody>
+<tr>
+<td width="28" height="0"></td>
+<td width="316"></td>
+<td width="78"></td>
+<td width="150"></td>
+</tr>
+<tr>
+<td height="12"></td>
+<td rowspan="3" align="left" valign="top"></td>
+</tr>
+<tr>
+<td height="42"></td>
+<td></td>
+<td width="150" height="42" bgcolor="white">
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<td>Loading Point</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td height="20"></td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="138" height="42" bgcolor="white">
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+<tr>
+<td>Division</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<p>ü  One client can have ‘n’ number of company codes</p>
+<p>ü  One company code can have ‘n’ number of sales organizations</p>
+<p>ü  One sales organization is assigned to exactly one company code</p>
+<p>ü  A sales organization is assigned to one or more plants</p>
+<p>ü  Each sales organization has its own master data. Eg. Its own Customer and Material master data as well as condition records.</p>
+<p>ü  A sales organization can have ‘n’ number of distribution channels (you can vary master data relevant to sales such as customer master data, sales master data, prices, and surcharges/discounts for each sales organization/distribution channel.</p>
+<p>ü  Sales area is a combination of sales organization, distribution channel, and</p>
+<p>ü  division</p>
+<p>ü  Sales document, delivery document, and billing documents are always assigned to a sales area.</p>
+<p>ü  Every sales process always takes in a specific sales area.</p>
+<p>ü  A sales office can be assigned to more than one sales area</p>
+<p>ü  Sales groups are assigned to sales offices</p>
+<p>ü  A sales group consists of a certain number of sales persons</p>
+<p>ü  A sales person is assigned to a sales office and group in the sales employee master record</p>
+<p>ü  One sales organization can sell the goods from several plants.</p>
+<p>ü  A plant can be assigned to different sales organizations at any one-time all of which can sell from the plant.</p>
+<p>ü  A sales organization can also sell products supplied by a plant which is assigned to a different company code0inter-complany sales processing.</p>
+<p>ü  A broad product range can be divided into divisions.  In sap-system, you can also define a division-specific sales structure.</p>
+<p>ü  You can make customer-specific agreements for each division.</p>
+<p>Following organizational elements are required for the SD transactions:</p>
+<p>ü  Client</p>
+<p>ü  Company</p>
+<p>ü  Company Code</p>
+<p>ü  Plant</p>
+<p>ü  Location</p>
+<p>ü  Storage Location</p>
+<p>ü  Sales Organization</p>
+<p>ü  Distribution Channel</p>
+<p>ü  Division</p>
+<p>ü  Sales Area</p>
+<p>ü  Shipping Point</p>
+<h2>2.1        Client</h2>
+<p>The client is a commercial organizational unit within R/3 system, with its own data, master records, and set of tables. From the business perspective, the client forms a corporate group.</p>
+<h2>2.2        Company</h2>
+<p>ü  A <a href="company">company</a> is an organizational unit in Accounting which represents a <a href="GLOS.business_organization">business organization</a> according to the requirements of commercial law in a particular country.</p>
+<p>ü  You store basic data for each company in company definition</p>
+<p>ü  A company can consist of one or more company codes.</p>
+<p>ü  All company codes within a company must use the same transaction chart of accounts and the same fiscal year breakdown.</p>
+<p>ü  The company code currencies can be different.</p>
+<p>ü  A company has one local currency in which its transaction figures are recorded.</p>
+<p>IMG</p>
+<p>Definition</p>
+<p>Financial Accounting</p>
+<p>Define Company</p>
+<p>New Entries</p>
+<p>Company (Ex: 0002, Description – Test Company)</p>
+<h2>2.3        Company Code</h2>
+<p>ü  The company code is the smallest organizational unit for which you have an independent accounting department.</p>
+<p>ü  Balance sheets, profit and loss statements required by law are created at company code level<strong>.</strong></p>
+<p>Following is the path to define a company Code:</p>
+<p>IMG</p>
+<p>Enterprise Structure</p>
+<p>Definition</p>
+<p>Financial Accounting</p>
+<p>Edit, Copy, Delete, Check Company Code</p>
+<p>Click <strong>Edit, Copy, Delete, Check Company Code </strong>to enter new company code details.</p>
+<p><strong> </strong></p>
+<p><strong>Steps to create a new company code:</strong></p>
+<ol>
+<li>Copy Company Code</li>
+<li>Click  or F2</li>
+<li>Enter From (<em>Ex: US01</em>) &amp; To Company Code (<em>Ex: 9999</em>).</li>
+<li>Enter the currency.</li>
+<li>Save.</li>
+</ol>
+<h3>2.3.1         Fiscal Year Variant</h3>
+<p>ü  Fiscal year is a period of usually 12 months, for which the company produces financial statements and takes inventory.</p>
+<p>ü  A <a href="fiscal_year">fiscal year</a> consists of several posting periods and if necessary, <a href="special_period">special periods</a> that can be posted to after a temporary year-end closing.</p>
+<p>ü  You define how your fiscal year is set up in the SAP System by creating a fiscal year variant at client level. Each company code is assigned a fiscal year variant.</p>
+<p>ü  Several company codes can use the same fiscal year variant. Following is the path to maintain a Fiscal Year Variant:</p>
+<h3>2.3.2        Maintain Fiscal Year Variant</h3>
+<p>IMG</p>
+<p><strong> </strong>Financial Accounting</p>
+<p>Financial Accounting Global Settings</p>
+<p>Fiscal Year</p>
+<p>Maintain Fiscal Year Variant</p>
+<p>1. Click New Entries to create a new Fiscal Year Variant or Use the Existing Variant</p>
+<p>(<em>Ex: Z4</em>).</p>
+<p>2. Select Z4 and click period texts under dialog structure</p>
+<h3>2.3.3      Assign Company Code to Fiscal Year Variant</h3>
+<p>For every company code, you must specify which fiscal year variant is to be used.</p>
+<p>IMG</p>
+<p><strong> </strong>Financial Accounting</p>
+<p>Financial Accounting Global Settings</p>
+<p>Fiscal Year</p>
+<p>Assign Company Code to Fiscal Year Variant</p>
+<p>Steps to assign company code to a fiscal year variant:</p>
+<ol>
+<li>Enter fiscal year variant against company code</li>
+</ol>
+<ol>
+<li>Save</li>
+</ol>
+<h3>2.3.4        Posting Periods</h3>
+<p>It is possible to specify which company codes are open independent of a company code. Thus, as many company codes as required can use the same variants for open company codes. You make the necessary settings to be able to manage identical posting periods in several company codes. The following is the path to define, open, close and assign variants to posting periods:</p>
+<p>IMG</p>
+<p><strong> </strong>Financial Accounting</p>
+<p>Financial Accounting Global Settings</p>
+<p>Document</p>
+<p>Posting Periods</p>
+<h3>2.3.5        Define Variants for Open Posting Periods</h3>
+<p><strong>Steps to define variants for open posting periods:</strong></p>
+<ol>
+<li>New Entries</li>
+<li>Enter the Variant and Name (<em>Ex: 9999 - Fiscal Year Variant 9999</em>)</li>
+<li>Save.</li>
+</ol>
+<h3>2.3.6        Open and Close Posting Periods</h3>
+<p><strong>Steps to open and close posting periods:</strong></p>
+<ol>
+<li>Copy the existing periods by      selecting the required periods.</li>
+</ol>
+<ol>
+<li>Click  button to copy.</li>
+<li>Rename the Variant (<em>Ex: 9999</em>).</li>
+<li>Save.</li>
+</ol>
+<h3>2.3.7        Assign Variants to Company Code</h3>
+<p><strong>Steps to assign variants to company code:</strong></p>
+<ol>
+<li>Enter the Variant against the      Company Code (Ex: 9999 Variant to 9999 Company Code)</li>
+</ol>
+<p>2.   Save</p>
+<h3>2.3.8        Define Document Number Ranges</h3>
+<p>A number range is a range of numbers that you can assign to business objects (or their sub-objects) of the same type. The following is the path to define a number range:</p>
+<p>IMG</p>
+<p><strong> </strong>Financial Accounting</p>
+<p>Financial Accounting Global Settings</p>
+<p>Document</p>
+<p>Document Number  Ranges</p>
+<p>Define Document Number  Ranges</p>
+<p>Check whether the number ranges are transported to company code 9999</p>
+<h3>2.3.9        Define Document Types</h3>
+<p>A document type is a classification for documents that can be stored using SAP Archive Link.</p>
+<p>For example, incoming invoices can be of the following document types:</p>
+<p>Incoming invoice without invoice check (FIIINVOICE)</p>
+<p>Incoming credit memo without invoice check (FIICREDIT)</p>
+<p>IMG</p>
+<p><strong> </strong>Financial Accounting</p>
+<p>Financial Accounting Global Settings</p>
+<p>Document</p>
+<p>Document Header</p>
+<p>Define Document Types</p>
+<p><strong> </strong></p>
+<p><strong>Ex: </strong><em>Document Type - SA</em><strong> </strong></p>
+<p><strong> </strong></p>
+<h3>2.3.10     Define Tolerance Groups for Employees</h3>
+<p>Predefine various amount limits for your employees with which you determine:</p>
+<p>ü  the maximum document amount the employee is authorized to post</p>
+<p>ü  the maximum amount the employee can enter as a line item in a customer or vendor account</p>
+<p>ü  the maximum cash discount percentage the employee can grant in a line item</p>
+<p>ü  the maximum acceptable tolerance for payment differences for the employee.</p>
+<p>Payment differences are posted automatically within certain tolerance groups. This way the system can post the difference by correcting the cash discount or by posting to a separate expense or revenue account. Following is the path to define tolerance groups for employees.</p>
+<p>IMG</p>
+<p><strong> </strong>Financial Accounting</p>
+<p>Financial Accounting Global Settings</p>
+<p>Document</p>
+<p>Line Item</p>
+<p>Define Tolerance Groups for Employees</p>
+<p><strong>Steps to define Tolerance Group</strong></p>
+<p><strong> </strong></p>
+<p>1     Click New Entries.</p>
+<p>2     Give the Tolerance Group and Company Code.</p>
+<h3>2.3.11     Assign User/Tolerance Group</h3>
+<p>IMG</p>
+<p><strong> </strong>Financial Accounting</p>
+<p>Financial Accounting Global Settings</p>
+<p>Document</p>
+<p>Line Item</p>
+<p>Assign User/Tolerance Group</p>
+<p>Steps to assign user/tolerance groups</p>
+<ol>
+<li>Against user  enter tolerance group</li>
+</ol>
+<p>Ex: <em>User name – ABUSR01 and Tolerance Group – 9999.</em></p>
+<ol>
+<li>Save</li>
+</ol>
+<p align="center"><strong> </strong></p>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<h2>2.4        Plant</h2>
+<p>A plant is an operating area or branch within a company.  Following is the path to define a Plant</p>
+<p>IMG</p>
+<p>Enterprise Structure</p>
+<p>Definition</p>
+<p>Logistics general</p>
+<p>Define, Copy, Delete, Check plant</p>
+<p>Steps for defining a plant:</p>
+<p>1.     Click Define, copy, delete, check plant</p>
+<ol>
+<li>Click Define Plant</li>
+<li>New Entries</li>
+<li>Enter the data for plant</li>
+<li>Save</li>
+</ol>
+<h3>2.4.1         Assign plant to Company Code</h3>
+<p>IMG</p>
+<p>Enterprise Structure</p>
+<p>Assignment</p>
+<p>Logistics General</p>
+<p>Assign plant to company code</p>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p>Steps to assign Plant to Company Code:</p>
+<ol>
+<li>Delete the default assignments</li>
+<li>Select the company code (eg:9999)</li>
+<li>Click Assign</li>
+<li>Check plant</li>
+<li>Save</li>
+</ol>
+<h1>2.5             Location</h1>
+<p>A location allows a plant to be classified according to spatial or situation criteria. Following is the path to define a Location.</p>
+<p>IMG</p>
+<p>Enterprise Structure</p>
+<p>Definition</p>
+<p>Logistics General</p>
+<p>Define Location</p>
+<p>Steps to define a Location</p>
+<ol>
+<li>Click New Entries</li>
+<li>Enter Plant, Location, Name</li>
+<li>Save</li>
+</ol>
+<h1>2.6             Division</h1>
+<p>An organizational unit based on responsibility for sales or profits from saleable materials or services. A Division is a product group that can be defined for a wide-ranging spectrum of products. You can make customer-specific agreements for every division, such as partial deliveries, pricing, and terms of payment.  Within a division you can carry out statistical analyses or set up separate marketing.  Divisions are utilized in SD but they are defined and maintained under the following path.</p>
+<p align="center">
+<p>IMG</p>
+<p>Enterprise Structure</p>
+<p>Definition</p>
+<p>Logistics General</p>
+<p>Define, copy, delete, check division</p>
+<p>Steps to define Division:</p>
+<ol>
+<li>Click Define, copy, delete, check division</li>
+<li>Click on Define division</li>
+<li>New Entries</li>
+<li>Enter the values for Division and Name</li>
+<li>Save</li>
+</ol>
+<h1>2.7             Sales Organization</h1>
+<p>Sales Organization is an organizational unit in Logistics that structures the company according to its sales requirements.  A sales organization is responsible for selling materials &amp; services and to negotiate terms of sale. Following is the path to define a Sales Organization.</p>
+<p>IMG</p>
+<p>Enterprise Structure</p>
+<p>Definition</p>
+<p>Sales and Distribution</p>
+<p>Define, Copy, Delete, Check Sales Organization</p>
+<p>Steps to define a Sales Organization:</p>
+<ol>
+<li>Click Define Sales Organization</li>
+<li>Click New Entries</li>
+<li>Enter the values for Sales Organization, Name (eg: 9999, Sales      Organization 9999)</li>
+<li>Save</li>
+</ol>
+<h2>2.7.1      Assign Sales Organization to Company Code</h2>
+<p>IMG</p>
+<p><strong> </strong>Enterprise Structure</p>
+<p>Assignment</p>
+<p>Sales and Distribution</p>
+<p>Assign Sales Organization to Company Code</p>
+<p>Steps to assign sales organization to company code</p>
+<ol>
+<li>Select company code (eg:9999)</li>
+<li>Click Assign</li>
+<li>Check Sales Organization</li>
+<li>Save</li>
+</ol>
+<h1>2.8             Distribution Channel</h1>
+<p>A channel through which saleable materials or services reach customers.  Distribution channels include wholesale, retail, and direct sales. You can assign a distribution channel to one or more sales organizations.</p>
+<p align="center">
+<p>Following is the path to define a Distribution Channel.</p>
+<p>IMG</p>
+<p>Enterprise Structure</p>
+<p>Definition</p>
+<p>Sales and Distribution</p>
+<p>Define, Copy, Delete, Check Distribution Channel</p>
+<p>Steps to define a Distribution Channel</p>
+<ol>
+<li>Click      Define Distribution Channel</li>
+<li>New      Entries</li>
+<li>Enter      the data for Distribution channel and Name</li>
+<li>Save</li>
+</ol>
+<h2>2.8.1         Assign Distribution Channel to Sales Organization</h2>
+<p>IMG</p>
+<p><strong> </strong>Enterprise Structure</p>
+<p>Assignment</p>
+<p>Sales and Distribution</p>
+<p>Assign Distribution Channel to Sales Organization</p>
+<p>Steps to assign distribution channel to sales organization:</p>
+<ol>
+<li>Click      Assign distribution channel to sales organization</li>
+<li>Select      Sales organization</li>
+<li>Click      assign</li>
+<li>Check      Distribution Channel</li>
+<li>Save</li>
+</ol>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p><strong> </strong></p>
+<p><strong>2.8.2   Assign Division to Sales Organization</strong></p>
+<p>IMG</p>
+<p><strong> </strong>Enterprise Structure</p>
+<p>Assignment</p>
+<p>Sales and Distribution</p>
+<p>Assign division to sales organization</p>
+<p>Steps to assign division to sales organization:</p>
+<ol>
+<li>Select sales organization (eg:9999)</li>
+<li>Click assign</li>
+<li>Check division</li>
+<li>Save</li>
+</ol>
+<h2>2.8.3      Set up Sales Area</h2>
+<p>Sales Area is a combination of sales organization, distribution channel, and division.</p>
+<p align="center">
+<p>Following is the path to set up sales area</p>
+<p>IMG</p>
+<p>Enterprise Structure</p>
+<p>Assignment</p>
+<p>Sales and Distribution</p>
+<p>Set up sales area</p>
+<p>Steps to set up sales area:</p>
+<ol>
+<li>Select Sales Organization</li>
+<li>Click Assign</li>
+<li>Check Distribution Channel</li>
+<li>Select Distribution Channel</li>
+<li>Check Division</li>
+<li>Save</li>
+</ol>
+<h3>2.8.4      Assign sales organization - distribution channel – plant</h3>
+<p>IMG</p>
+<p>Enterprise Structure</p>
+<p>Assignment</p>
+<p>Sales and Distribution</p>
+<p>Assign sales organization - distribution channel – plant</p>
+<p>Steps to assign sales organization-distribution channel-plant:</p>
+<ol>
+<li>Select Sales Organization</li>
+<li>Click Assign</li>
+<li>Check Plant</li>
+<li>Save</li>
+</ol>
+<h2>2.9      Define Shipping Points</h2>
+<p>Shipping point is an organizational unit in Logistics that performs shipping processing.</p>
+<p>The shipping point is the part of the company responsible for the type of shipping, the necessary shipping materials and the means of transport. Deliveries are always initiated from exactly one shipping point. A shipping point is assigned one or more plants and can be subdividing into several loading points.</p>
+<p><strong>Example: </strong>Shipping points are a company mail depot or plant rail station.</p>
+<p>A loading point is a voluntary entry.  It is merely a subdivision of a shipping point.  A loading point is manually entered into the header data of the delivery.</p>
+<p>Following is the path to define shipping point.</p>
+<p>IMG</p>
+<p>Enterprise Structure</p>
+<p>Definition</p>
+<p>: Logistics Execution</p>
+<p>Define, copy, delete, check shipping point</p>
+<p>Steps to define shipping point:</p>
+<ol>
+<li>Click Define      shipping point</li>
+<li>Click New Entries</li>
+<li>Enter Shipping point, Description</li>
+<li>Save</li>
+</ol>
+<h3>2.9.1          Assign Shipping point to plant</h3>
+<p>IMG</p>
+<p>Enterprise Structure</p>
+<p>Assignment</p>
+<p>Logistics Execution</p>
+<p>Assign Shipping Point to plant</p>
+<p>Steps to assign shipping point to plant:</p>
+<ol>
+<li>Select the plant</li>
+<li>Click Assign</li>
+<li>Check Shipping point</li>
+<li>Save</li>
+</ol>
+<h3>2.9.2         Shipping point and goods receiving point determination:</h3>
+<h3>Assign Shipping Point</h3>
+<p>IMG</p>
+<p>Logistics Execution</p>
+<p>Shipping</p>
+<p>Basic Shipping functions</p>
+<p>Shipping point and goods receiving point determination</p>
+<p>Assign shipping points</p>
+<h1>3                    Master Data in Sales and Distribution</h1>
+<p>Customer Master</p>
+<p>Material Master</p>
+<p>Customer material Info Record</p>
+<p>Item Proposals</p>
+<p>BOM</p>
+<h2>Customer Master Record</h2>
+<p>Data record containing all the information necessary for any contact with a certain customer, in particular for carrying out business transactions.</p>
+<p>This information includes, for example, address data and bank data.</p>
+<p>The basic customer master records we create are</p>
+<p>ü  Sold-to party record</p>
+<p>ü  Ship-to party record</p>
+<p>ü  Bill-to party record</p>
+<p>ü  Payer record</p>
+<p>Other important Customers master records are inter-company customers, one-time customer</p>
+<p>Customer Master Data configuration includes:</p>
+<ol>
+<li>A/C groups</li>
+<li>Number ranges</li>
+<li>Assign number ranges</li>
+<li>Partner Determination</li>
+</ol>
+<h3>3.1.1   Creation of Customer Account Group</h3>
+<p>In this step, you determine the account groups for customers. You can also define reference account groups for one-time accounts. You can use these to control the fields of the one-time account screen so that, for example, certain fields are displayed as required fields or are hidden.</p>
+<p>When creating a customer account, you must specify an account group. You can specify a reference account group under "Control" in the "General data" part of a one-time account's master data. If you do not specify a reference account group, then, as previously, all fields of the one-time account screen are ready for input during document entry.</p>
+<p>You use the account group to determine:</p>
+<p>ü  the interval for the account numbers</p>
+<p>ü  whether the number is assigned internally by the system or externally by the user (type of number assignment)</p>
+<p>ü  whether it is a one-time account</p>
+<p>ü  which fields are ready for input or must be filled when creating and changing master records (field status)</p>
+<p>ü  fields can be turn on and off by using the assigned account group.</p>
+<p>You determine the account number interval and the type of number assignment using the number ranges.</p>
+<p>The Account group defines which fields are available in the customer master records.</p>
+<p>A sold-to party needs 3 views</p>
+<p>ü  General data view</p>
+<p>ü  Company Code data view</p>
+<p>ü  Sales data view</p>
+<p>A ship-to party needs 2 views</p>
+<p>ü  General data view</p>
+<p>ü  Sales data view</p>
+<p>A bill-to party needs 3 views</p>
+<p>ü  General data view</p>
+<p>ü  Company Code data view</p>
+<p>ü  Sales data view</p>
+<p>A payer needs 2 views</p>
+<p>ü  General data view</p>
+<p>ü  Company code data view</p>
+<p>The following is the path to create customer account group:</p>
+<p>IMG</p>
+<p>Financial Accounting</p>
+<p>Accounts receivable and accounts payable</p>
+<p>Customer Accounts</p>
+<p>Master Data</p>
+<p>Preparations for creating Customer Master Data</p>
+<p>Define Account Groups with Screen Layout</p>
+<p>Steps to create customer account group:</p>
+<ol>
+<li>Click New Entries</li>
+<li>Enter Account group number starting      with the letter Z (SAP uses prefix Z for all upgrades in order to ensure      it does not overwrite client-specific entries)</li>
+<li>Enter Name</li>
+</ol>
+<p>eg. Z100 – Sold-to party</p>
+<ol>
+<li>Set the field status of general      data, company code data, sales data</li>
+</ol>
+<p>Eg: Steps to set the field status</p>
+<p>1. Select General Data under Field Status</p>
+<p>2. Click Edit field status</p>
+<p>3. Select the field eg: Address under ‘select group’</p>
+<p>4. Click magnifying glass button</p>
+<p>5. Name 1 – You can make the filed ‘Name1’ Suppress or  Required entry or</p>
+<p>Optional entry or Display</p>
+<p>6. Save</p>
+<p>Like wise create account groups for ship-to party, bill-to party, payer and Turn the fields on/off as per the requirement</p>
+<p>Z200 – Ship-to party</p>
+<p>Z300 – Bill-to party</p>
+<p>Z400 – Payer</p>
+<h3>3.1.2         Create Number Ranges for Customer Accounts</h3>
+<p>To do this, specify the following under a two-character key (number range interval key)</p>
+<p>A number interval from which the account number for the customer accounts is to be selected</p>
+<p>ü  The type of number assignment (internal or external number assignment)</p>
+<p>ü  Allocate the number ranges to the account groups for customers.</p>
+<p>The type of number assignment is especially important. The following are possible:</p>
+<p>ü  Transferring the numbers of your customers/vendors from an existing system or a pre-system (external assignment: The system enables the user to specify the number in the number range he or she wishes to use).</p>
+<p>ü  Creating the master records under new numbers assigned by the SAP system (internal assignment: the system assigns a number when creating the master records).</p>
+<p>The following is the path to create number ranges for customer accounts:</p>
+<p>IMG</p>
+<p>Financial Accounting</p>
+<p>Accounts receivable and accounts payable</p>
+<p>Customer Accounts</p>
+<p>Master Data</p>
+<p>Preparations for creating Customer Master Data</p>
+<p>Create Number Ranges for Customer Accounts</p>
+<p>Steps to create number ranges for customer accounts:</p>
+<ol>
+<li>Click</li>
+</ol>
+<ol>
+<li>Click</li>
+</ol>
+<ol>
+<li>Enter the number range</li>
+</ol>
+<p align="center">
+<p align="center">
+<ol>
+<li>Save</li>
+</ol>
+<h3>3.1.3         Assign Number  Ranges to Customer Account Groups</h3>
+<p>Assign the number ranges created in the preceding step to the account groups for customers. You can use one number range for several account groups. Following is the path to assign number ranges to customer account groups.</p>
+<p>IMG</p>
+<p>Financial Accounting</p>
+<p>Accounts receivable and accounts payable</p>
+<p>Customer Accounts</p>
+<p>Master Data</p>
+<p>Preparations for creating Customer Master Data</p>
+<p>Assign Number  Ranges to Customer Account Groups</p>
+<p>Steps to assign number ranges to customer account groups:</p>
+<ol>
+<li>Click Assign       Number Ranges to Customer Account Groups</li>
+</ol>
+<ol>
+<li>Enter the number range key against group and save</li>
+</ol>
+<h3>3.1.4         Partner Determination</h3>
+<p>When creating a customer master record, the SAP System proposes the allowed <a href="partner_function">partner functions</a> to be maintained. According to the rules defined here, the partners are adopted from the customer master records of the sold-to parties into the <a href="sales_and_distribution_document">sales and distribution documents</a>.</p>
+<p>Partners such as the sold-to party, the bill-to party, and the payer are a necessary in the majority of document processing.  Automatic partner determination happens in the sales document, delivery and billing document, sales activities, and the customer master record.</p>
+<h3>Define Incompleteness Procedures</h3>
+<p>In an incompleteness procedure you group together the fields that are to be checked for completeness. If you have not entered data in one of the fields in the document, the <a href="document">document</a> is incomplete. Depending on the status group you can block certain subsequent activities for the document.</p>
+<p>For every field in the procedure you also have to define whether a warning message should be issued during processing if no data is entered in this field. This function does not exist in delivery processing. When you select the control field, it has no further consequences.</p>
+<p>Following is the path to define incompleteness procedures:</p>
+<p>IMG</p>
+<p>Sales &amp; Distribution</p>
+<p>Basic Functions</p>
+<p>Log of Incomplete Items</p>
+<p>Define Incompleteness Procedures</p>
+<p>Steps to Define incompleteness procedures:</p>
+<ol>
+<li>Select A – Sales Header</li>
+<li>Click Procedures</li>
+<li>Select 11</li>
+<li>Click Fields</li>
+</ol>
+<h2>Define Order Type</h2>
+<p>The <a href="sales_document_type">sales document types</a> represent the different business transactions in Sales and perform a central controlling function for the entire sales order process.  Following is the path to define sales document type:</p>
+<p>IMG</p>
+<p>Sales &amp; Distribution</p>
+<p>Sales</p>
+<p>Sales Documents</p>
+<p>Sales document Header</p>
+<p>Define Sales Document Types</p>
+<p>Steps to define sales document type:</p>
+<ol>
+<li>Click New Entries (or) copy the      existing std. order type (ex: select OR -std. order type, click copy as      icon, give a name to order type ex.: ZOR)</li>
+<li>Enter the data</li>
+<li>Save</li>
+</ol>
+<h3>Define Item Category</h3>
+<p>The item categories that are contained in the standard SAP R/3 System together with the sales document types represent the usual business transactions.</p>
+<p>You have the following options for defining your own item categories:</p>
+<ul>
+<li>Copy an existing item category and change it according to your requirements.</li>
+<li>Create a new item category.</li>
+</ul>
+<p>Following is the path to define item category:</p>
+<p>IMG</p>
+<p>Sales and Distribution</p>
+<p>Sales</p>
+<p>Sales document</p>
+<p>Sales document Item                                                                                                               Define item categories</p>
+<p>Steps to define item categories:</p>
+<ol>
+<li>Click New Entries</li>
+<li>Enter the data</li>
+<li>Save</li>
+</ol>
+
+        </div>
+
+        <aside>
+          <section>
+            <div>
+              <div class="p-share">
+                <a href="http://www.facebook.com/sharer.php?src=bm&u=https%3a%2f%2fshafiqissani.github.io%2fwww.shafiq.in%2f2009%2f08%2f06%2fsales-and-distribution-module-sap%2f&t=Sales%20and%20Distribution%20module%20%28SAP%29" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+                <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fshafiqissani.github.io%2fwww.shafiq.in%2f2009%2f08%2f06%2fsales-and-distribution-module-sap%2f&text=Sales%20and%20Distribution%20module%20%28SAP%29&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+                <a href="https://plus.google.com/share?url=https%3a%2f%2fshafiqissani.github.io%2fwww.shafiq.in%2f2009%2f08%2f06%2fsales-and-distribution-module-sap%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+                <a href="http://getpocket.com/edit?url=https%3a%2f%2fshafiqissani.github.io%2fwww.shafiq.in%2f2009%2f08%2f06%2fsales-and-distribution-module-sap%2f&title=Sales%20and%20Distribution%20module%20%28SAP%29" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+              </div>
+            </div>
+          </section>
+
+          
+          
+          
+        </aside>
+
+      </article>
+
+    </div>
+    <div class="col-md-3">
+      <aside class="site">
+
+  
+  <section>
+    <header>Table Of Contents</header>
+    <div></div>
+  </section>
+  
+
+  
+
+  <section>
+    <header>LatestPosts</header>
+    <div>
+      
+      <article class="li">
+  <a href="https://shafiqissani.github.io/www.shafiq.in/2016/08/09/welcome-to-jekyll/" class="clearfix">
+    <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Tue, Aug 9, 2016</time>
+      </div>
+      <h2 class="title">Welcome to Jekyll!</h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://shafiqissani.github.io/www.shafiq.in/2016/03/06/2089/" class="clearfix">
+    <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Sun, Mar 6, 2016</time>
+      </div>
+      <h2 class="title"></h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://shafiqissani.github.io/www.shafiq.in/2015/07/20/archimate/" class="clearfix">
+    <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Mon, Jul 20, 2015</time>
+      </div>
+      <h2 class="title">Archimate</h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://shafiqissani.github.io/www.shafiq.in/2014/12/30/project-initiation-documentation-raci-chart/" class="clearfix">
+    <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Tue, Dec 30, 2014</time>
+      </div>
+      <h2 class="title">Project Initiation Documentation RACI Chart</h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://shafiqissani.github.io/www.shafiq.in/2014/12/28/stakeholder-raci-matrix-spreadsheet/" class="clearfix">
+    <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Sun, Dec 28, 2014</time>
+      </div>
+      <h2 class="title">Stakeholder RACI Matrix Spreadsheet</h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://shafiqissani.github.io/www.shafiq.in/2014/12/15/break-stakeholders-into-smaller-groups-according-to-roles-or-goals-doc/" class="clearfix">
+    <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Mon, Dec 15, 2014</time>
+      </div>
+      <h2 class="title">Break stakeholders into smaller groups according to roles or goals [doc]</h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://shafiqissani.github.io/www.shafiq.in/2014/12/08/stakeholder-list-document/" class="clearfix">
+    <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Mon, Dec 8, 2014</time>
+      </div>
+      <h2 class="title">Stakeholder List Document</h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://shafiqissani.github.io/www.shafiq.in/2014/12/07/a-priori-thinking/" class="clearfix">
+    <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Sun, Dec 7, 2014</time>
+      </div>
+      <h2 class="title">&#34;a priori&#34; thinking</h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://shafiqissani.github.io/www.shafiq.in/2014/12/07/some-notes-on-people-skills-and-emotional-intelligence-1/" class="clearfix">
+    <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Sun, Dec 7, 2014</time>
+      </div>
+      <h2 class="title">Some notes on people skills and emotional intelligence - 1</h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://shafiqissani.github.io/www.shafiq.in/2014/12/06/writings-of-an-anglican-bishop/" class="clearfix">
+    <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Sat, Dec 6, 2014</time>
+      </div>
+      <h2 class="title">Writings of an Anglican bishop</h2>
+    </footer>
+  </a>
+</article>
+
+      
+    </div>
+  </section>
+
+  
+  <section>
+    <header>category</header>
+    <div>
+      <ul>
+        <li><a href="https://shafiqissani.github.io/www.shafiq.in/categories/design">design</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/categories/software-development">software-development</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/categories/project-management">project-management</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/categories/technology">technology</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/categories/documents">documents</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/categories/open-source">open-source</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/categories/linux">linux</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/categories/website-template">website-template</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/categories/business-analysis">business-analysis</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/categories/continuous-deployment">continuous-deployment</a></li>
+      </ul>
+    </div>
+  </section>
+  
+  <section>
+    <header>tag</header>
+    <div>
+      <ul>
+        <li><a href="https://shafiqissani.github.io/www.shafiq.in/tags/programming">programming</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/tags/linux">linux</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/tags/project-management">project-management</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/tags/unix">unix</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/tags/operating-system">operating-system</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/tags/perl">perl</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/tags/business">business</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/tags/business-analysis">business-analysis</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/tags/continuous-deployment">continuous-deployment</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/tags/css">css</a></li>
+      </ul>
+    </div>
+  </section>
+  
+
+</aside>
+
+    </div>
+  </div>
+</div>
+
+
+<footer class="l-footer">
+  <p>&copy; 2016 Shafiq Alibhai</p>
+  <p>Powered by <a href="http://gohugo.io" target="_blank" rel="nofollow">Hugo</a>, Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank" rel="nofollow">robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank" rel="nofollow">Daisuke Tsuji</a></p>
+</footer>
+
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+  </body>
+</html>
+

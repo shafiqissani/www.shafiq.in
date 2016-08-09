@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shafiq Alibhai </title>
+    <link>https://shafiqissani.github.io/www.shafiq.in/tags/build-management/</link>
+    <language>en-us</language>
+    <author></author>
+    <rights>(C) 2016</rights>
+    <updated>2011-05-10 00:01:40 &#43;0000 UTC</updated>
+
+    
+      
+        <item>
+          <title>Notes on build script</title>
+          <link>https://shafiqissani.github.io/www.shafiq.in/2011/05/10/notes-on-build-script/</link>
+          <pubDate>Tue, 10 May 2011 00:01:40 UTC</pubDate>
+          <author></author>
+          <guid>https://shafiqissani.github.io/www.shafiq.in/2011/05/10/notes-on-build-script/</guid>
+          <description>&lt;ul&gt;
+&lt;li&gt;Choose a language that can be used in &lt;a class=&#34;zem_slink&#34; title=&#34;Cross-platform&#34; href=&#34;http://en.wikipedia.org/wiki/Cross-platform&#34; rel=&#34;wikipedia&#34;&gt;multiple platforms&lt;/a&gt; (very important for a &lt;a class=&#34;zem_slink&#34; title=&#34;Java (programming language)&#34; href=&#34;http://www.oracle.com/technetwork/java/&#34; rel=&#34;homepage&#34;&gt;Java&lt;/a&gt; project)&lt;/li&gt;
+&lt;li&gt;Ensure that as many steps are automated. Begin with a full clean up and allow full &lt;a class=&#34;zem_slink&#34; title=&#34;Software build&#34; href=&#34;http://en.wikipedia.org/wiki/Software_build&#34; rel=&#34;wikipedia&#34;&gt;build&lt;/a&gt; and deployment to the server&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;zem_slink&#34; title=&#34;Automation&#34; href=&#34;http://en.wikipedia.org/wiki/Automation&#34; rel=&#34;wikipedia&#34;&gt;Automate&lt;/a&gt; even server restart to increase developer efficiency&lt;/li&gt;
+&lt;li&gt;Each build should ensure that it recompiles all classes and optionally fetches latest code from the repository&lt;/li&gt;
+&lt;li&gt;Stale references to others code is the most frequent offense among developers. So use the build script to enforce some discipline too&lt;/li&gt;
+&lt;li&gt;While writing a build script, one needs to take care of small short cuts that can help in a faster build and deployment&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;/ul&gt;
+&lt;ul&gt;
+&lt;li&gt;Deploy only &lt;a class=&#34;zem_slink&#34; title=&#34;HTML&#34; href=&#34;http://en.wikipedia.org/wiki/HTML&#34; rel=&#34;wikipedia&#34;&gt;HTML&lt;/a&gt; and &lt;a class=&#34;zem_slink&#34; title=&#34;JavaServer Pages&#34; href=&#34;http://en.wikipedia.org/wiki/JavaServer_Pages&#34; rel=&#34;wikipedia&#34;&gt;JSP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Deploy only compiled java classes&lt;/li&gt;
+&lt;li&gt;Do only a restart&lt;/li&gt;
+&lt;li&gt;Deploy only properties files&lt;/li&gt;
+&lt;/ul&gt;
+&lt;li&gt;This is not a default option and one should not spend time at this in the beginning. This is a step more relevant to iterative improvement of the build script&lt;/li&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Database Integration - some points to keep in mind</title>
+          <link>https://shafiqissani.github.io/www.shafiq.in/2010/09/18/database-integration-some-points-to-keep-in-mind/</link>
+          <pubDate>Sat, 18 Sep 2010 12:49:26 UTC</pubDate>
+          <author></author>
+          <guid>https://shafiqissani.github.io/www.shafiq.in/2010/09/18/database-integration-some-points-to-keep-in-mind/</guid>
+          <description>&lt;p&gt;&lt;strong&gt;Always Have a Single, Authoritative Source For Your Schema&lt;br /&gt;
+&lt;/strong&gt; Everyone should know where the official schema resides, and have a frictionless experience in getting a fresh database setup. One should be able to walk up to a computer, get the latest from source control, build, and run a simple tool to setup the database (in many scenarios, the build process can even setup a database if none exists, so the process is one step shorter).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Always Version Your Database&lt;br /&gt;
+&lt;/strong&gt;The common goal is to propagate changes from development, to test, and ultimately to production in a controlled and consistent manner. A second goal is to have the ability to recreate a database at any point in time. This second goal is particularly important if you are shipping software to clients. If someone finds a bug in build 20100612.1 of your application, you must be able to recreate the application as it appeared in that build - database and all.&lt;/p&gt;
+</description>
+        </item>
+      
+    
+
+  </channel>
+</rss>

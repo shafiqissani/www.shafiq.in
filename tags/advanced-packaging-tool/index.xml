@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shafiq Alibhai </title>
+    <link>https://shafiqissani.github.io/www.shafiq.in/tags/advanced-packaging-tool/</link>
+    <language>en-us</language>
+    <author></author>
+    <rights>(C) 2016</rights>
+    <updated>2011-02-07 12:14:17 &#43;0000 UTC</updated>
+
+    
+      
+        <item>
+          <title>How to Install Latest Firefox 4 and Firefox 3 in Ubuntu ?</title>
+          <link>https://shafiqissani.github.io/www.shafiq.in/2011/02/07/how-to-install-latest-firefox-4-and-firefox-3-in-ubuntu/</link>
+          <pubDate>Mon, 07 Feb 2011 12:14:17 UTC</pubDate>
+          <author></author>
+          <guid>https://shafiqissani.github.io/www.shafiq.in/2011/02/07/how-to-install-latest-firefox-4-and-firefox-3-in-ubuntu/</guid>
+          <description>&lt;p&gt;&lt;strong&gt;How to Install Latest Firefox 4 and Firefox 3 in &lt;a class=&#34;zem_slink&#34; title=&#34;Ubuntu (operating system)&#34; rel=&#34;homepage&#34; href=&#34;http://www.ubuntu.com/&#34;&gt;Ubuntu&lt;/a&gt; ?&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Do the following in Terminal to install latest &lt;a class=&#34;zem_slink&#34; title=&#34;Mozilla Firefox 4&#34; rel=&#34;homepage&#34; href=&#34;http://www.mozilla.com/en-US/firefox/beta/&#34;&gt;Firefox 4.0&lt;/a&gt; and Firefox 3 in Ubuntu.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;a class=&#34;zem_slink&#34; title=&#34;Sudo&#34; rel=&#34;homepage&#34; href=&#34;http://www.sudo.ws/&#34;&gt;sudo&lt;/a&gt; add-apt-repository ppa:ubuntu-mozilla-daily/ppa &amp;amp;&amp;amp; sudo &lt;a class=&#34;zem_slink&#34; title=&#34;Advanced Packaging Tool&#34; rel=&#34;homepage&#34; href=&#34;http://wiki.debian.org/Apt&#34;&gt;apt-get&lt;/a&gt; update
+sudo apt-get install firefox-4.0
+sudo apt-get install firefox&lt;/pre&gt;
+</description>
+        </item>
+      
+    
+
+  </channel>
+</rss>

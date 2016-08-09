@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shafiq Alibhai </title>
+    <link>https://shafiqissani.github.io/www.shafiq.in/categories/revision-control/</link>
+    <language>en-us</language>
+    <author></author>
+    <rights>(C) 2016</rights>
+    <updated>2012-01-02 23:01:13 &#43;0000 UTC</updated>
+
+    
+      
+        <item>
+          <title>Continuous Delivery : A Mini Hurdle</title>
+          <link>https://shafiqissani.github.io/www.shafiq.in/2012/01/02/continuous-delivery-a-mini-hurdle/</link>
+          <pubDate>Mon, 02 Jan 2012 23:01:13 UTC</pubDate>
+          <author></author>
+          <guid>https://shafiqissani.github.io/www.shafiq.in/2012/01/02/continuous-delivery-a-mini-hurdle/</guid>
+          <description>&lt;p&gt;The first hurdle to overcome with Continuous Delivery I think is not getting your product’s code onto the machine itself, but managing the actual machine and it’s software... and in talking to people. It is the subtle nuances between machines due to people tweaking things on the fly that lead to the worst [most annoying] bugs to troubleshoot.&lt;br /&gt;
+The end-goal of managing your machines is that no one ever logs into the machine directly.&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>Database Integration - some points to keep in mind</title>
+          <link>https://shafiqissani.github.io/www.shafiq.in/2010/09/18/database-integration-some-points-to-keep-in-mind/</link>
+          <pubDate>Sat, 18 Sep 2010 12:49:26 UTC</pubDate>
+          <author></author>
+          <guid>https://shafiqissani.github.io/www.shafiq.in/2010/09/18/database-integration-some-points-to-keep-in-mind/</guid>
+          <description>&lt;p&gt;&lt;strong&gt;Always Have a Single, Authoritative Source For Your Schema&lt;br /&gt;
+&lt;/strong&gt; Everyone should know where the official schema resides, and have a frictionless experience in getting a fresh database setup. One should be able to walk up to a computer, get the latest from source control, build, and run a simple tool to setup the database (in many scenarios, the build process can even setup a database if none exists, so the process is one step shorter).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Always Version Your Database&lt;br /&gt;
+&lt;/strong&gt;The common goal is to propagate changes from development, to test, and ultimately to production in a controlled and consistent manner. A second goal is to have the ability to recreate a database at any point in time. This second goal is particularly important if you are shipping software to clients. If someone finds a bug in build 20100612.1 of your application, you must be able to recreate the application as it appeared in that build - database and all.&lt;/p&gt;
+</description>
+        </item>
+      
+    
+      
+        <item>
+          <title>SVN - revision control - slides - pdf</title>
+          <link>https://shafiqissani.github.io/www.shafiq.in/2010/03/22/svn-revision-control-slides-pdf/</link>
+          <pubDate>Mon, 22 Mar 2010 06:54:55 UTC</pubDate>
+          <author></author>
+          <guid>https://shafiqissani.github.io/www.shafiq.in/2010/03/22/svn-revision-control-slides-pdf/</guid>
+          <description>&lt;h3&gt;SVN - revision control&lt;/h3&gt;
+&lt;pre&gt;Download pdf : &lt;a href=&#34;http://docs.issani.in/dump/svn-tuts-100217-v2.pdf&#34;&gt;&lt;span style=&#34;color:#000000;&#34;&gt;http://docs.issani.in/dump/svn-tuts-100217-v2.pdf&lt;/span&gt;&lt;/a&gt;&lt;/pre&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Coordinating projects&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;●&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Problem: How to coordinate and synchronize code&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;between multiple developers on a project?&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;– Work on the same computer, take turns coding&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Nah...&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;– Send files by e-mail or put them online. Lots of&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;manual work.&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;– Put files on a shared disk. Files get overwritten or&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;deleted. Lots of direct coordination.&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;– In short: Error prone and inefficient.&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;What is a version control system?&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;A repository of files with monitored&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;access to keep track of who and what&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;changes were made to files&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Version tracking&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Collaboration and sharing files&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Historical information&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Retrieve past versions&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Manage branches&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Why use it?&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;In code development, a version control&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;system is, at this point, almost mandatory&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;With multiple developers impossible to keep&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;track of versions with out it&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Must be able to roll back a version if a test&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;suite fails&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Must be able to tag software releases&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Coordinating projects (solution)&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Solution: A source code management (scm) tool.&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;– Repository: Code stored on a central server.&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;– Working copy: The developer checks out a copy&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;of the code in the repository to his/her computer.&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;– Revision history: Every change to every file is&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;logged in a database. Can be rollbacked.&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;– Conflict handling: What happens when two&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;developers change the same file? The same line?&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Basic Work Cycle&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Checkout a working copy&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Update a working copy&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Make changes&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Examine your changes&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Commit your changes&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Some Commands&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Subversion commands communicating with the server:&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;svn checkout ...&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;svn commit&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Offline Subversion commands:&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;svn add&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;svn delete&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;svn status     (high level compare)&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;svn diff    (low level compare)&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;svn rename&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;svn move&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;...&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;More information:&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;svn help [cmd]&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Create Repository&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Creating a repository:&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;/home/shafiqissani&amp;gt; svnadmin create assignment1&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;...results in a repository directory:&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;/home/shafiqissani/assignment1&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;What&#39;s inside the repository?&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;/conf/...&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;/dav/...&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;/db/...&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;/format&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;/hooks/...&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;/locks/...&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;/README.txt&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Basic commands&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;svn checkout &amp;lt;source&amp;gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;$ svn checkout http://url/repos/projectA&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;A projectA/file1&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;A projectA/file2&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;A projectA/file3&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Checked out revision 28.&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;$&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;svn status&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;$ svn status&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;M projectA/file1&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;?    projectA/file4&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;$&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Basic commands&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;svn add/delete/copy/move &amp;lt;filename&amp;gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;$ svn add file4&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;A file4&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;$&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;svn commit &amp;lt;message&amp;gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;$ svn commit –m “fix another bugs”&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Sending         file1&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Adding          file4&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Transmitting file data.&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Committed revision 29.&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;$&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Basic commands&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;svn log&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;$ svn log&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;--------------------------------------------------------------------------------&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;r29 | shafiq | Tue, 26 Dec 2006 18:03:46 +0900 | 1 line&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;fix another bugs&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;--------------------------------------------------------------------------------&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;r28 | shafiq | Mon, 25 Dec 2006 13:01:24 +0900 | 1 line&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Fixed some bugs.&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;--------------------------------------------------------------------------------&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;r27 | jissani | Mon, 25 Dec 2006 12:58:24 +0900 | 1 line&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Some works.&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Basic Commands&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;svn update&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;$ svn update&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;U file1&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;A file4&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Updated to revision 29&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;$ svn update –r28&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;U file1&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;D file4&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Updated to revision 28&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;$&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Trunk, Branches, Tags&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;SVN project directories are structured by convention with three top-level&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;directories:&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;trunk/&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Represents the &#39;main line&#39; of development with an entire copy of the&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;project.&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;branches/&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Contains subdirectories, each holding an entire copy of the project&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Each branch constitutes a significant enhancement to the project that&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;can be worked on independently.&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;tags/&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Contains subdirectories, each containing one snapshot of the project.&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Each snapshot represents a &#34;public release&#34; or other archival&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;configuration of the project.&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Trunk vs. Branch&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Trunk represents the stable version of the&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;system. It should always work, without errors&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;ofcourse.&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Branches represent temporary development&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;streams to implement significant new features.&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;This allows commits to repository without breaking&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;the trunk (stable) version.&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Branches may contain error/warnings etc.&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;Queries / Feedback&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;email@shafiq.in&lt;/div&gt;
+&lt;div id=&#34;_mcePaste&#34;&gt;&lt;/div&gt;
+&lt;p&gt;SVN - revision control             email@shafiq.in  Coordinating projects●   Problem: How to coordinate and synchronize code    between multiple developers on a project?   – Work on the same computer, take turns coding    Nah...     – Send files by e-mail or put them online. Lots of    manual work.    – Put files on a shared disk. Files get overwritten or    deleted. Lots of direct coordination.   – In short: Error prone and inefficient. What is a version control system?  A repository of files with monitored  access to keep track of who and what  changes were made to files     Version tracking        Collaboration and sharing files        Historical information        Retrieve past versions        Manage branches   Why use it?  In code development, a version control  system is, at this point, almost mandatory     With multiple developers impossible to keep        track of versions with out it     Must be able to roll back a version if a test        suite fails     Must be able to tag software releases    Coordinating projects (solution)  Solution: A source code management (scm) tool.     – Repository: Code stored on a central server.        – Working copy: The developer checks out a copy        of the code in the repository to his/her computer.     – Revision history: Every change to every file is        logged in a database. Can be rollbacked.     – Conflict handling: What happens when two        developers change the same file? The same line? Basic Work Cycle  Checkout a working copy  Update a working copy  Make changes  Examine your changes  Commit your changesSome Commands  Subversion commands communicating with the server:       svn checkout ...          svn commit     Offline Subversion commands:       svn add          svn delete          svn status     (high level compare)          svn diff    (low level compare)          svn rename          svn move           ...     More information:       svn help [cmd]   Create Repository  Creating a repository:     /home/shafiqissani&amp;gt; svnadmin create assignment1        ...results in a repository directory:     /home/shafiqissani/assignment1  What&#39;s inside the repository?     /conf/...        /dav/...        /db/...        /format        /hooks/...        /locks/...        /README.txt   Basic commandssvn checkout &amp;lt;source&amp;gt;       $ svn checkout http://url/repos/projectA       A projectA/file1       A projectA/file2       A projectA/file3       Checked out revision 28.       $svn status       $ svn status       M projectA/file1       ?    projectA/file4       $Basic commandssvn add/delete/copy/move &amp;lt;filename&amp;gt;      $ svn add file4      A file4      $svn commit &amp;lt;message&amp;gt;      $ svn commit –m “fix another bugs”      Sending         file1      Adding          file4      Transmitting file data.      Committed revision 29.      $Basic commandssvn log       $ svn log       --------------------------------------------------------------------------------       r29 | shafiq | Tue, 26 Dec 2006 18:03:46 +0900 | 1 line       fix another bugs       --------------------------------------------------------------------------------       r28 | shafiq | Mon, 25 Dec 2006 13:01:24 +0900 | 1 line       Fixed some bugs.       --------------------------------------------------------------------------------       r27 | jissani | Mon, 25 Dec 2006 12:58:24 +0900 | 1 line       Some works.Basic Commandssvn update      $ svn update      U file1      A file4      Updated to revision 29      $ svn update –r28      U file1      D file4      Updated to revision 28      $ Trunk, Branches, Tags  SVN project directories are structured by convention with three top-level  directories:  trunk/      Represents the &#39;main line&#39; of development with an entire copy of the          project.  branches/      Contains subdirectories, each holding an entire copy of the project          Each branch constitutes a significant enhancement to the project that          can be worked on independently.  tags/      Contains subdirectories, each containing one snapshot of the project.          Each snapshot represents a &#34;public release&#34; or other archival          configuration of the project.Trunk vs. Branch  Trunk represents the stable version of the  system. It should always work, without errors  ofcourse.  Branches represent temporary development  streams to implement significant new features.     This allows commits to repository without breaking        the trunk (stable) version.     Branches may contain error/warnings etc.   Queries / Feedback  email@shafiq.in&lt;/p&gt;
+</description>
+        </item>
+      
+    
+
+  </channel>
+</rss>

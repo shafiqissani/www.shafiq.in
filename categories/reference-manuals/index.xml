@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shafiq Alibhai </title>
+    <link>https://shafiqissani.github.io/www.shafiq.in/categories/reference-manuals/</link>
+    <language>en-us</language>
+    <author></author>
+    <rights>(C) 2016</rights>
+    <updated>2010-03-27 07:43:04 &#43;0000 UTC</updated>
+
+    
+      
+        <item>
+          <title>Typo3 Reference Manuals - A Google Chrome Extension</title>
+          <link>https://shafiqissani.github.io/www.shafiq.in/2010/03/27/typo3-reference-manuals-a-google-chrome-extension/</link>
+          <pubDate>Sat, 27 Mar 2010 07:43:04 UTC</pubDate>
+          <author></author>
+          <guid>https://shafiqissani.github.io/www.shafiq.in/2010/03/27/typo3-reference-manuals-a-google-chrome-extension/</guid>
+          <description>&lt;p&gt;Following is the link to *my first* google extension.&lt;/p&gt;
+&lt;p&gt;It&#39;s a &lt;strong&gt;collections of Typo3 reference manuals&lt;/strong&gt; taken straight from typo3.org website.&lt;/p&gt;
+&lt;p&gt;It&#39;s not nearly what I&#39;d call a cool extension, but hey it helps. :)&lt;/p&gt;
+&lt;p&gt;Anyway, this google chrome extension is for :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Those who don&#39;t have good internet connection. Link in India.&lt;/li&gt;
+&lt;li&gt;And those who don&#39;t like to go away from the browser to read or search something in the typo3 swx reference manuals.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;em&gt;Ok, so heres the link :  &lt;/em&gt;&lt;a href=&#34;http://projects.issani.in/chrome/ext/t3refmans.crx&#34;&gt;&lt;strong&gt;&lt;em&gt;http://projects.issani.in/chrome/ext/t3refmans.crx&lt;/em&gt;&lt;/strong&gt;&lt;/a&gt;&lt;/pre&gt;
+&lt;p&gt;If you&#39;re wondering why I didn&#39;t put this on Google Chrome Extension Directory, its b&#39;coz I couldn&#39;t. The &lt;strong&gt;file size is 19.86MB&lt;/strong&gt;. And Google has set the extension size limit to 10MB. But if you got any solution let me know.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tip&lt;/strong&gt;: use ctrl+F or F3 to search.&lt;/p&gt;
+</description>
+        </item>
+      
+    
+
+  </channel>
+</rss>

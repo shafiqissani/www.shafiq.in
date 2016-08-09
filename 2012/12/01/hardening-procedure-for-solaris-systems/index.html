@@ -1,0 +1,1487 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.16" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel='stylesheet' href='//fonts.googleapis.com/css?family=Noticia+Text:400,700|Marcellus+SC'>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <link rel="stylesheet" href="https://shafiqissani.github.io/www.shafiq.in/css/styles.css">
+    <link rel="stylesheet" href="https://shafiqissani.github.io/www.shafiq.in/css/custom.css">
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="https://shafiqissani.github.io/www.shafiq.in/index.xml">
+
+    
+    <title>Hardening Procedure for Solaris Systems - Shafiq Alibhai</title>
+    <meta property='og:title' content="Hardening Procedure for Solaris Systems - Shafiq Alibhai">
+    <meta property="og:type" content="article">
+    
+
+    <meta property="og:url" content="https://shafiqissani.github.io/www.shafiq.in/2012/12/01/hardening-procedure-for-solaris-systems/">
+    
+    
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage":{
+      "@type":"WebPage",
+      "@id":"https:\/\/shafiqissani.github.io\/www.shafiq.in\/"
+    },
+    "headline": "Hardening Procedure for Solaris Systems |  ",
+    "image": {
+      "@type": "ImageObject",
+      "url": "",
+      "height": 700,
+      "width": 700
+    },
+    "datePublished": "2012-12-01T21:57:52JST",
+    "dateModified": "2012-12-01T21:57:52JST",
+    "author": {
+      "@type": "Person",
+      "name": "",
+      "image": "https:\/\/shafiqissani.github.io\/www.shafiq.in\/images/logo.png"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https:\/\/shafiqissani.github.io\/www.shafiq.in\/images/logo.png",
+        "height": 60,
+        "width": 60
+      }
+    },
+    "description": ""
+  }
+</script>
+</head>
+
+<body>
+
+  <header class="l-header">
+    <div class="p-logo">
+      <a href="https://shafiqissani.github.io/www.shafiq.in/">Shafiq Alibhai</a>
+    </div>
+  </header>
+
+
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-9">
+
+      <article class="single">
+        <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+        <div class="body">
+          <h1>Hardening Procedure for Solaris Systems</h1>
+          <br />
+<h1 class="western"><a href="http://shafiqissani.wordpress.com/2012/12/01/hardening-procedure-for-solaris-systems/hardening-procedure-for-solaris-systems/" rel="attachment wp-att-1460">DOWNLOAD - Hardening Procedure for Solaris Systems</a></h1>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">
+<p>&nbsp;</p>
+<table width="590" cellspacing="0" cellpadding="7">
+<col />
+<col />
+<tbody>
+<tr valign="TOP">
+<td style="border:none;padding:0;" width="137">
+<p style="margin-top:.21cm;"><a name="ProcedureStatement"></a><span style="font-size:small;"><b>Procedure Statement</b></span></p>
+</td>
+<td style="border-top:1px solid #000000;border-bottom:1px solid #000000;border-left:none;border-right:none;padding:0;" width="425">
+<p class="western" style="margin-top:.21cm;"><span style="font-size:small;">The hardening policies are defined as follows:</span></p>
+<ul>
+<li>
+<p style="margin-bottom:.11cm;"><span style="font-size:small;">Database server hardening procedure.</span></p>
+</li>
+<li>
+<p style="margin-bottom:.11cm;"><span style="font-size:small;">Web server hardening procedure</span></p>
+</li>
+<li>
+<p style="margin-bottom:.11cm;"><span style="font-size:small;">Application server hardening procedure</span></p>
+</li>
+<li>
+<p style="margin-bottom:.11cm;"><span style="font-size:small;">Utility server hardening procedure</span></p>
+<p style="margin-bottom:.11cm;"><span style="font-size:small;">On every case, 4 security components are involved:</span></p>
+</li>
+</ul>
+<ul>
+<li>
+<p style="margin-bottom:.11cm;"><span style="font-size:small;">JASS</span></p>
+</li>
+<li>
+<p style="margin-bottom:.11cm;"><span style="font-size:small;">BSM</span></p>
+</li>
+<li>
+<p style="margin-bottom:.11cm;"><span style="font-size:small;">RSA</span></p>
+</li>
+<li>
+<p style="margin-bottom:.11cm;"><span style="font-size:small;">Tripwire</span></p>
+</li>
+</ul>
+<p><span style="font-size:small;">In those cases where Solaris Containers are implemented, the same security mechanisms are utilized with the virtualized instances of the operating system.</span></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">
+<p>&nbsp;</p>
+<table width="590" cellspacing="0" cellpadding="7">
+<col />
+<col />
+<tbody>
+<tr valign="TOP">
+<td style="border:none;padding:0;" width="137">
+<p style="margin-top:.21cm;"><a name="TOC"></a><span style="font-size:small;"><b>Table of Contents</b></span></p>
+</td>
+<td style="border-top:1px solid #000000;border-bottom:1px solid #000000;border-left:none;border-right:none;padding:0;" width="425">
+<p style="margin-top:.21cm;"><span style="font-size:medium;"><span style="color:#0000ff;"><span style="text-decoration:underline;"><a class="western" href="#ProcedureStatement"><span style="font-size:small;">Procedure Statement………………………………………………………1</span></a></span></span></span></p>
+<p class="western" style="margin-top:.21cm;"><span style="color:#0000ff;"><span style="text-decoration:underline;"><a class="western" href="#TOC"><span style="font-size:small;">Table of Contents………………………………………………………….1</span></a></span></span></p>
+<p class="western" style="margin-top:.21cm;"><span style="color:#0000ff;"><span style="text-decoration:underline;"><a class="western" href="#JASS"><span style="font-size:small;">JASS Implementation……………………………………………………..2</span></a></span></span></p>
+<p class="western" style="margin-top:.21cm;"><span style="color:#0000ff;"><span style="text-decoration:underline;"><a class="western" href="#Driver"><span style="font-size:small;">Driver……………………………………………………………………...2</span></a></span></span></p>
+<p class="western" style="margin-top:.21cm;"><span style="color:#0000ff;"><span style="text-decoration:underline;"><a class="western" href="#BSM"><span style="font-size:small;">BSM Implementation……………………………………………………...5</span></a></span></span></p>
+<p class="western" style="margin-top:.21cm;"><span style="color:#0000ff;"><span style="text-decoration:underline;"><a class="western" href="#Audit"><span style="font-size:small;">Audit Configuration……………………………………………………….5</span></a></span></span></p>
+<p class="western" style="margin-top:.21cm;"><span style="color:#0000ff;"><span style="text-decoration:underline;"><a class="western" href="#RSA"><span style="font-size:small;">RSA Implementation………………………………………………………6</span></a></span></span></p>
+<p class="western" style="margin-top:.21cm;"><span style="color:#0000ff;"><span style="text-decoration:underline;"><a class="western" href="#Tripwire"><span style="font-size:small;">Tripwire Implementation………………………………………………….6</span></a></span></span></p>
+<p class="western" style="margin-top:.21cm;"><span style="color:#0000ff;"><span style="text-decoration:underline;"><a class="western" href="#SolarisContainers"><span style="font-size:small;">Solaris Containers (Virtualization)………………………………………..7</span></a></span></span></p>
+<p class="western" style="margin-top:.21cm;"><span style="color:#0000ff;"><span style="text-decoration:underline;"><a class="western" href="#Bibliography"><span style="font-size:small;">Bibliography………………………………………………………………11</span></a></span></span></p>
+<p class="western" style="margin-top:.21cm;"><span style="color:#0000ff;"><span style="text-decoration:underline;"><a class="western" href="#Revision"><span style="font-size:small;">Revision References……………………………………………………….11</span></a></span></span></p>
+<p class="western" style="margin-top:.21cm;"><span style="color:#0000ff;"><span style="text-decoration:underline;"><a class="western" href="#Appendix"><span style="font-size:small;">Appendix A: Examples……………………………………………………12</span></a></span></span></p>
+<p class="western" style="margin-left:1.24cm;text-indent:-1.24cm;margin-top:.21cm;"><span style="color:#0000ff;"><span style="text-decoration:underline;"><a class="western" href="#Scripts"><span style="font-size:small;">Scripts..………………………………………..………………..12</span></a></span></span></p>
+<p class="western" style="margin-left:1.56cm;text-indent:-1.56cm;margin-top:.21cm;"><span style="color:#0000ff;"><span style="text-decoration:underline;"><a class="western" href="#Password"><span style="font-size:small;">Password……………………………………………………..…17</span></a></span></span></p>
+<p class="western" style="margin-left:1.56cm;text-indent:-1.56cm;margin-top:.21cm;"><span style="color:#0000ff;"><span style="text-decoration:underline;"><a class="western" href="#Audit"><span style="font-size:small;">Audit…………….…………………………………………..….21</span></a></span></span></p>
+<p class="western" style="margin-top:.21cm;">
+</td>
+</tr>
+<tr valign="TOP">
+<td style="border:none;padding:0;" width="137">
+<p style="margin-bottom:.11cm;"><a name="JASS"></a> <span style="font-size:small;"><b>JASS Implementation:</b></span></p>
+<p style="margin-top:.21cm;">
+</td>
+<td style="border-top:1px solid #000000;border-bottom:1px solid #000000;border-left:none;border-right:none;padding:0;" width="425"><span style="font-size:small;">The Solaris Security Toolkit, formerly known as the JumpStart Architecture and Security Scripts (JASS) toolkit, provides a flexible and extensible mechanism to harden and audit Solaris Operating Systems (OSs). The Solaris Security Toolkit simplifies and automates the process of securing Solaris Operating Systems and is based on proven security best practices and practical customer site experience gathered over many years. This toolkit can be used to secure SPARC-based and x86/x64-based systems.</span></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;page-break-before:always;">
+<p>&nbsp;</p>
+<table width="590" cellspacing="0" cellpadding="7">
+<col />
+<col />
+<tbody>
+<tr valign="TOP">
+<td style="border:none;padding:0;" width="137">
+<p style="margin-top:.21cm;text-decoration:none;"><a name="Driver"></a> <span style="font-size:small;"><b>Driver</b></span></p>
+</td>
+<td style="border-top:1px solid #000000;border-bottom:1px solid #000000;border-left:none;border-right:none;padding:0;" width="425">
+<p style="margin-bottom:.11cm;"><span style="font-size:small;">JASS provides a set of templates to customize the security profiles. The one utilized is <i>secure.driver</i>.</span></p>
+<p style="margin-bottom:.11cm;"><span style="font-size:small;">No scripts are customized (user.init) but some of the scripts in the hardening.driver file, are disabled or enabled to fit the requirements in the environment. </span></p>
+<p><span style="font-size:small;">Below are the template being used and a brief description of which scripts are intentionally disabled/enabled.</span></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;"><span style="font-size:xx-small;"><i>JASS_SCRIPTS="</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-ab2.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-apache.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-apache2.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-appserv.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-asppp.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-autoinst.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-automount.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-dhcpd.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-directory.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-dmi.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-dtlogin.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-face-log.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-ipv6.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-IIim.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-kdc.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-keyboard-abort.fin <b>### This script was intentionally enabled.</b></i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-keyserv-uid-nobody.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-ldap-client.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-lp.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-mipagent.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-named.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-nfs-client.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-nfs-server.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-nscd-caching.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i># disable-picld.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-ppp.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-preserve.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-power-mgmt.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-remote-root-login.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-rhosts.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-routing.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-rpc.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-samba.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-sendmail.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-slp.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-sma.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-smcwebserver.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-snmp.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-spc.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-ssh-root-login.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-syslogd-listen.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-system-accounts.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-uucp.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-vold.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-wbem.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-xfs.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>disable-xserver-listen.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>enable-account-lockout.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>enable-coreadm.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i># enable-ftpaccess.fin <b>### This script was intentionally disabled.</b></i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>enable-ftp-syslog.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>enable-inetd-syslog.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i># enable-ipfilter.fin <b>### This script was intentionally disabled.</b></i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>enable-password-history.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>enable-priv-nfs-ports.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i># enable-process-accounting.fin <b>### This script was intentionally disabled.</b></i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>enable-rfc1948.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>enable-stack-protection.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>enable-tcpwrappers.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>install-at-allow.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>install-ftpusers.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>install-loginlog.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>install-md5.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>install-nddconfig.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>install-newaliases.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>install-sadmind-options.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>install-security-mode.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>install-shells.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>install-sulog.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>print-rhosts.fin <b>### This script was intentionally enabled.</b></i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>remove-unneeded-accounts.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>set-banner-dtlogin.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>set-banner-ftpd.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>set-banner-sendmail.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>set-banner-sshd.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>set-banner-telnetd.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>set-flexible-crypt.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>set-ftpd-umask.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>set-login-retries.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>set-power-restrictions.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>set-rmmount-nosuid.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>set-root-group.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>set-strict-password-checks.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>set-sys-suspend-restrictions.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>set-system-umask.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>set-tmpfs-limit.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>set-user-password-reqs.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>set-user-umask.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>update-at-deny.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>update-cron-allow.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>update-cron-deny.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>update-cron-log-size.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>update-inetd-conf.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>enable-bsm.fin <b>### This script was intentionally enabled.</b></i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>install-fix-modes.fin</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i>install-strong-permissions.fin <b>### This script was intentionally enabled.</b></i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i># enable-bart.fin <b>### This script was intentionally disabled.</b></i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i># print-sgid-files</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i># print-suid-files</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:2.54cm;text-indent:1.27cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i># print-unowned-objects</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;"><span style="font-size:xx-small;"><i># print-world-writable-objects</i></span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;margin-bottom:0;">
+<p>&nbsp;</p>
+<table width="590" cellspacing="0" cellpadding="7">
+<col />
+<col />
+<tbody>
+<tr valign="TOP">
+<td style="border:none;padding:0;" width="137">
+<p style="margin-top:.21cm;">
+</td>
+<td style="border-top:1px solid #000000;border-bottom:1px solid #000000;border-left:none;border-right:none;padding:0;" width="425">
+<p class="western" style="margin-top:.21cm;"><span style="font-size:small;">The scripts which are commented out won’t be executed.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:2.54cm;text-indent:1.27cm;margin-top:.21cm;"><span style="font-size:small;">Brief description of some outstanding scripts:</span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;"><span style="font-size:small;"><b>enable-account-lockout.fin:</b> This is to enable lock accounting. </span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;"><span style="font-size:small;"><b>enable-coreadm.fin:</b> This enable the core environment. </span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;"><span style="font-size:small;"><b>enable-ftpaccess.fin:</b> We set the ftp access disabled, also blocked on IPFilters.</span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;"><span style="font-size:small;"><b>enable-ftp-syslog.fin:</b> Also trace ftp activity in syslog.</span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;"><span style="font-size:small;"><b>enable-inetd-syslog.fin:</b> This script configures the Internet Services Daemon (INETD) to log all incoming connections.</span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;"><span style="font-size:small;"><b>enable-ipfilter.fin:</b> This enable IPFilters environment (with no active rules by default).</span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;"><span style="font-size:small;"><b>enable-password-history.fin:</b> Enable password history. </span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;"><span style="font-size:small;"><b>enable-priv-nfs-ports.fin:</b> This is to allow NFS to accept connections from privileged ports only (below port 1024).</span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;"><span style="font-size:small;"><b>enable-process-accounting.fin:</b> We don’t enable process accounting as it is not useful in our environment. </span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;"><span style="font-size:small;"><b>enable-rfc1948.fin:</b> This script will create/modify the /etc/default/inetinit file to enable support of RFC 1948. This RFC defines unique-per-connection ID sequence number generation. For more information, refer to # http://RF.Cx/rfc1948.html.</span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;"><span style="font-size:small;"><b>enable-stack-protection.fin:</b> Enable stack and logging protection.</span></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-left:3.81cm;margin-top:.21cm;"><span style="font-size:small;"><b>enable-tcpwrappers.fin:</b> Create hosts.allow and hosts.deny files to wrap all TCP connections.</span></p>
+<p>&nbsp;</p>
+<table width="590" cellspacing="0" cellpadding="7">
+<col />
+<col />
+<tbody>
+<tr valign="TOP">
+<td style="border:none;padding:0;" width="137">
+<p style="margin-top:.21cm;">
+</td>
+<td style="border-top:1px solid #000000;border-bottom:1px solid #000000;border-left:none;border-right:none;padding:0;" width="425">
+<p class="western" style="margin-top:.21cm;">
+</td>
+</tr>
+<tr valign="TOP">
+<td style="border:none;padding:0;" width="137">
+<p style="margin-top:.21cm;text-decoration:none;"><a name="BSM"></a> <span style="font-size:small;"><b>BSM Implementation </b></span></p>
+<p style="margin-top:.21cm;">
+<p style="margin-top:.21cm;">
+<p style="margin-top:.21cm;">
+<p style="margin-top:.21cm;text-decoration:none;">
+<p style="margin-top:.21cm;text-decoration:none;">
+<p style="margin-top:.21cm;text-decoration:none;"><span style="font-size:small;"><b>Audit Configuration</b></span></p>
+</td>
+<td style="border-top:1px solid #000000;border-bottom:1px solid #000000;border-left:none;border-right:none;padding:0;" width="425">
+<p class="western" style="margin-top:.21cm;"><span style="font-size:small;">The Basic Security Module (BSM) provides two security features. The first feature is an auditing mechanism, which includes tools to assist with the analysis of the auditing data. The second feature is a device-allocation mechanism, which provides the required object-reuse characteristics for removable devices or assignable devices.</span></p>
+<p class="western" style="margin-top:.21cm;">
+<p class="western" style="margin-top:.21cm;">
+<p class="western" style="margin-top:.21cm;"><span style="font-size:small;">The auditing mechanism helps you detect potential security breaches by revealing suspicious or abnormal patterns of system usage. The auditing mechanism also provides a means to trace suspect actions back to a particular user, thus serving as a deterrent. If users know that their activities are likely to be audited, they might be less likely to attempt malicious activities.</span></p>
+<p class="western" style="margin-top:.21cm;"><span style="font-size:small;">The audit subsystem is configured to log the audit activity locally and in a remote Syslog server.</span></p>
+<p class="western" style="margin-top:.21cm;"><span style="font-size:small;">Audit Control file:</span></p>
+<p class="western" style="margin-top:.21cm;"><span style="font-size:small;"><i>dir:/var/audit</i></span></p>
+<p class="western" style="margin-top:.21cm;"><span style="font-size:small;"><i>flags:lo,ex</i></span></p>
+<p class="western" style="margin-top:.21cm;"><span style="font-size:small;"><i>minfree:20</i></span></p>
+<p class="western" style="margin-top:.21cm;"><span style="font-size:small;"><i>naflags:lo,ex</i></span></p>
+<p class="western" style="margin-top:.21cm;"><span style="font-size:small;"><i>plugin: name=audit_syslog.so;p_flags=lo,ex</i></span></p>
+<p class="western" style="margin-top:.21cm;">
+<p class="western" style="margin-top:.21cm;"><span style="font-size:small;">Audit Startup file:</span></p>
+<p class="western" style="margin-top:.21cm;"><span style="font-size:small;"><i>/usr/sbin/auditconfig -setpolicy +cnt</i></span></p>
+<p class="western" style="margin-top:.21cm;"><span style="font-size:small;"><i>/usr/sbin/auditconfig -setpolicy +zonename</i></span></p>
+<p class="western" style="margin-top:.21cm;"><span style="font-size:small;"><i>/usr/sbin/auditconfig -setpolicy +argv</i></span></p>
+<p class="western" style="margin-top:.21cm;"><span style="font-size:small;"><i>/usr/sbin/auditconfig -conf</i></span></p>
+<p class="western" style="margin-top:.21cm;"><span style="font-size:small;"><i>/usr/sbin/auditconfig -aconf</i></span></p>
+<p class="western" style="margin-top:.21cm;">
+<p class="western" style="margin-top:.21cm;"><span style="font-size:small;">Entry on the /etc/syslog.conf</span></p>
+<p class="western" style="margin-top:.21cm;"><span style="font-size:small;"><i>audit.notice;auth.debug @dc5sfsecsyslog01</i></span></p>
+<p class="western" style="margin-top:.21cm;">
+</td>
+</tr>
+<tr valign="TOP">
+<td style="border:none;padding:0;" width="137">
+<p style="margin-top:.21cm;text-decoration:none;"><a name="RSA"></a> <span style="font-size:small;"><b>RSA Implementation</b></span></p>
+</td>
+<td style="border-top:1px solid #000000;border-bottom:1px solid #000000;border-left:none;border-right:none;padding:0;" width="425">
+<p class="western" style="margin-top:.21cm;margin-bottom:0;"><span style="font-size:small;">Authentication is only provided in the Solaris box is by using RSA. Steps to be followed for implementing RSA is as following:</span></p>
+<ul>
+<li>
+<p class="western" style="margin-top:.21cm;margin-bottom:0;"><span style="font-size:small;">Get latest sdconf.rec file </span></p>
+</li>
+<li>
+<p class="western" style="margin-top:.21cm;margin-bottom:0;"><span style="font-size:small;">Download the latest RSA Agent software </span></p>
+</li>
+<li>
+<p class="western" style="margin-top:.21cm;margin-bottom:0;"><span style="font-size:small;">Copy sdconf.rec file under /var/ace </span></p>
+</li>
+<li>
+<p class="western" style="margin-top:.21cm;margin-bottom:0;"><span style="font-size:small;">Unzip RSA Agent software </span></p>
+</li>
+<li>
+<p class="western" style="margin-top:.21cm;"><span style="font-size:small;">Run the script install.sh (from the tar file) &gt; Accept &gt; Enter</span></p>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">
+<p>&nbsp;</p>
+<table width="590" cellspacing="0" cellpadding="7">
+<col />
+<col />
+<tbody>
+<tr valign="TOP">
+<td style="border:none;padding:0;" width="137">
+<p style="margin-top:.21cm;text-decoration:none;"><a name="Tripwire"></a><a name="Implementation"></a> <span style="font-size:small;"><b>Tripwire Implementation</b></span></p>
+</td>
+<td style="border-top:1px solid #000000;border-bottom:1px solid #000000;border-left:none;border-right:none;padding:0;" width="425">
+<p style="margin-bottom:.49cm;widows:2;orphans:2;"><span style="font-size:small;">Tripwire is a browser-based configuration audit and control tool which monitors file servers. It baseline’s the files using a set of rules that specify what directories, files should be monitored. The data collected as a result of running the rules becomes the benchmark against which future checks are measured.</span></p>
+<p style="margin-top:.49cm;margin-bottom:.49cm;widows:2;orphans:2;"><span style="font-size:small;">Steps to install <i>TWeagent  </i>(Tripwire Enterprise Agent   (INTEL) 7.1.0) in Solaris box are as following:</span></p>
+<ul>
+<li>
+<p style="margin-top:.49cm;margin-bottom:0;widows:2;orphans:2;"><span style="font-size:small;">Copy the files from tomcat:/backup (SPARC or x86) to the proper servers</span></p>
+</li>
+<li>
+<p style="margin-bottom:.49cm;widows:2;orphans:2;"><span style="font-size:small;">Log into the server and uncompress the file</span></p>
+</li>
+<li>
+<p style="margin-bottom:.49cm;widows:2;orphans:2;"><span style="font-size:small;">Install the package</span></p>
+</li>
+<li>
+<p style="margin-top:.49cm;widows:2;orphans:2;"><span style="font-size:small;">Start the agent</span></p>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">
+<p>&nbsp;</p>
+<table width="590" cellspacing="0" cellpadding="7">
+<col />
+<col />
+<tbody>
+<tr valign="TOP">
+<td style="border:none;padding:0;" width="109">
+<p style="margin-top:.21cm;"><a name="SolarisContainers"></a><span style="font-size:small;"><b>Solaris Containers</b></span></p>
+</td>
+<td style="border-top:1px solid #000000;border-bottom:1px solid #000000;border-left:none;border-right:none;padding:0;" width="454">
+<p class="western" style="margin-top:.21cm;widows:0;orphans:0;">A zone is a single instance of the Solaris Operating System, in which processes are isolated from the rest of the system.</p>
+<p class="western" style="margin-top:.21cm;">There are two types of zones: global zone and non-global zone. Every Solaris system contains a global zone. The global zone is the only zone from which a non-global zone can be configured, installed, managed, or uninstalled. Only the global zone is bootable from the system hardware.</p>
+<p class="western" style="margin-top:.21cm;">A non-global zone can be thought of as a box. To enforce basic process isolation, a process can see only those processes that exist in the same zone. Basic communication between zones is accomplished by giving each zone at least one logical network interface. An application running in one zone cannot observe the network traffic of another zone. This isolation is maintained even though the respective streams of packets travel through the same physical interface.</p>
+<p class="western" style="margin-top:.21cm;">Each zone is given a portion of the file system hierarchy. Because each zone is confined to its subtree of the file system hierarchy, a workload running in a particular zone cannot access the on-disk data of another workload running in a different zone.</p>
+<p class="western" style="margin-top:.21cm;">There are two types of non-global zone root file system models: sparse and whole root. The whole root zone model provides the maximum configurability. All of the required and any selected optional Solaris packages are installed into the private file systems of the zone. The sparse root zone model has only a subset of the root packages are installed</p>
+<p class="western" style="margin-top:.21cm;">
+<p class="western" style="margin-top:.21cm;">We run most applications in non-global zones except the databases. Zones are hardened to ensure high-level security. The practices are:</p>
+<p class="western" style="margin-top:.21cm;">
+<p class="western" style="margin-top:.21cm;">
+<p class="western" style="margin-top:.21cm;">
+<p class="western" style="margin-top:.21cm;">
+<p class="western" style="margin-top:.21cm;">
+<p class="western" style="margin-top:.21cm;">
+<p class="western" style="margin-top:.21cm;">
+<p class="western" style="margin-top:.21cm;">
+<p class="western" style="margin-top:.21cm;">
+<ol>
+<li>
+<p class="western" style="margin-bottom:.35cm;widows:2;orphans:2;">Whole root zones(Non-global) with shared network interface</p>
+</li>
+</ol>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;">
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;">We will apply the hardening methods to the zones accordingly</p>
+<ol>
+<li>
+<p class="western" style="margin-bottom:.35cm;widows:2;orphans:2;">JASS: global zone 0, zone1, zone2</p>
+</li>
+<li>
+<p class="western" style="margin-bottom:.35cm;widows:2;orphans:2;">RSA: global zone 0, zone1, zone2</p>
+</li>
+<li>
+<p class="western" style="margin-bottom:.35cm;widows:2;orphans:2;">BSM: global zone 0</p>
+</li>
+</ol>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;">
+<ol start="2">
+<li>
+<p class="western" style="margin-bottom:.35cm;widows:2;orphans:2;">Whole root zones(Non-global) with exclusive network interface</p>
+</li>
+</ol>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;">
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;">We will apply the hardening methods to the zones accordingly</p>
+<ol>
+<li>
+<p class="western" style="margin-bottom:.35cm;widows:2;orphans:2;">JASS: global zone 0, zone1, zone2</p>
+</li>
+<li>
+<p class="western" style="margin-bottom:.35cm;widows:2;orphans:2;">RSA: global zone 0, zone1, zone2</p>
+</li>
+<li>
+<p class="western" style="margin-bottom:.35cm;widows:2;orphans:2;">BSM: global zone 0</p>
+</li>
+</ol>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;">
+<ol start="3">
+<li>
+<p class="western" style="margin-bottom:.35cm;widows:2;orphans:2;">Sparse root zones(Non-global) with shared network interface</p>
+</li>
+</ol>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;">
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;">We will apply the hardening methods to the zones accordingly</p>
+<ol>
+<li>
+<p class="western" style="margin-bottom:.35cm;widows:2;orphans:2;">JASS: global zone 0, zone1, zone2</p>
+</li>
+<li>
+<p class="western" style="margin-bottom:.35cm;widows:2;orphans:2;">RSA: global zone 0, zone1, zone2</p>
+</li>
+<li>
+<p class="western" style="margin-bottom:.35cm;widows:2;orphans:2;">BSM: global zone 0</p>
+</li>
+</ol>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;">
+<ol start="4">
+<li>
+<p class="western" style="margin-bottom:.35cm;widows:2;orphans:2;">Sparse root zones(Non-global) with exclusive network interface</p>
+</li>
+</ol>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;">
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;">We will apply the hardening methods to the zones accordingly</p>
+<ol>
+<li>
+<p class="western" style="margin-bottom:.35cm;widows:2;orphans:2;">JASS: global zone 0, zone1, zone2</p>
+</li>
+<li>
+<p class="western" style="margin-bottom:.35cm;widows:2;orphans:2;">RSA: global zone 0, zone1, zone2</p>
+</li>
+<li>
+<p class="western" style="margin-bottom:.35cm;widows:2;orphans:2;">BSM: global zone 0</p>
+</li>
+</ol>
+<p class="western" style="margin-top:.21cm;">
+<ul>
+<li>
+<p style="margin-top:.49cm;margin-bottom:.49cm;widows:2;orphans:2;"><span style="font-size:small;">Example of a zone configuration file from a sparse zone with shared network.</span></p>
+</li>
+</ul>
+<p style="margin-bottom:0;"><span style="font-size:xx-small;"><i>&lt;?xml version="1.0" encoding="UTF-8"?&gt;</i></span></p>
+<p style="margin-bottom:0;"><span style="font-size:xx-small;"><i>&lt;!DOCTYPE zone PUBLIC "-//Sun Microsystems Inc//DTD Zones//EN" "file:///usr/share/lib/xml/dtd/zonecfg.dtd.1"&gt;</i></span></p>
+<p style="margin-bottom:0;"><span style="font-size:xx-small;"><i>&lt;!--</i></span></p>
+<p style="margin-bottom:0;"><span style="font-size:xx-small;"><i>DO NOT EDIT THIS FILE. Use zonecfg(1M) instead.</i></span></p>
+<p style="margin-bottom:0;"><span style="font-size:xx-small;"><i>--&gt;</i></span></p>
+<p style="margin-bottom:0;"><span style="font-size:xx-small;"><i>&lt;zone name="dc5sfapp01a" zonepath="/zones/dc5sfapp01a" autoboot="true"&gt;</i></span></p>
+<p style="margin-bottom:0;"><span style="font-size:xx-small;"><i>&lt;inherited-pkg-dir directory="/lib"/&gt;</i></span></p>
+<p style="margin-bottom:0;"><span style="font-size:xx-small;"><i>&lt;inherited-pkg-dir directory="/platform"/&gt;</i></span></p>
+<p style="margin-bottom:0;"><span style="font-size:xx-small;"><i>&lt;inherited-pkg-dir directory="/sbin"/&gt;</i></span></p>
+<p style="margin-bottom:0;"><span style="font-size:xx-small;"><i>&lt;inherited-pkg-dir directory="/usr"/&gt;</i></span></p>
+<p style="margin-bottom:0;"><span style="font-size:xx-small;"><i>&lt;inherited-pkg-dir directory="/usr/sfw"/&gt;</i></span></p>
+<p style="margin-bottom:0;"><span style="font-size:xx-small;"><i>&lt;inherited-pkg-dir directory="/export/home/apache-ant-1.6.1"/&gt;</i></span></p>
+<p style="margin-bottom:0;"><span style="font-size:xx-small;"><i>&lt;inherited-pkg-dir directory="/export/home/jdk1.6.0_13"/&gt;</i></span></p>
+<p style="margin-bottom:0;"><span style="font-size:xx-small;"><i>&lt;network address="10.5.30.14" physical="nge0"/&gt;</i></span></p>
+<p style="margin-bottom:0;"><span style="font-size:xx-small;"><i>&lt;/zone&gt;</i></span></p>
+<ul>
+<li>
+<p style="margin-top:.49cm;margin-bottom:.49cm;widows:2;orphans:2;"><span style="font-size:small;">Example of a zone configuration file from a root zone with shared network.</span></p>
+</li>
+</ul>
+<p style="margin-bottom:0;"><span style="font-size:xx-small;"><i>&lt;?xml version="1.0" encoding="UTF-8"?&gt;</i></span></p>
+<p style="margin-bottom:0;"><span style="font-size:xx-small;"><i>&lt;!DOCTYPE zone PUBLIC "-//Sun Microsystems Inc//DTD Zones//EN" "file:///usr/share/lib/xml/dtd/zonecfg.dtd.1"&gt;</i></span></p>
+<p style="margin-bottom:0;"><span style="font-size:xx-small;"><i>&lt;!--</i></span></p>
+<p style="margin-bottom:0;"><span style="font-size:xx-small;"><i>DO NOT EDIT THIS FILE. Use zonecfg(1M) instead.</i></span></p>
+<p style="margin-bottom:0;"><span style="font-size:xx-small;"><i>--&gt;</i></span></p>
+<p style="margin-bottom:0;"><span style="font-size:xx-small;"><i>&lt;zone name="dc5sfsmnsageapp01" zonepath="/zones/dc5sfsmnsageapp01" autoboot="true"&gt;</i></span></p>
+<p style="margin-bottom:0;"><span style="font-size:xx-small;"><i>&lt;network address="10.5.35.14" physical="nge0"/&gt;</i></span></p>
+<p style="margin-top:.49cm;margin-bottom:.49cm;widows:2;orphans:2;"><span style="font-size:xx-small;"><i>&lt;/zone&gt;</i></span></p>
+<ul>
+<li>
+<p style="margin-top:.49cm;margin-bottom:.49cm;widows:2;orphans:2;"><span style="font-size:small;">Example of a zone configuration file from a root zone with a dedicated network interface.</span></p>
+</li>
+</ul>
+<p style="margin-bottom:0;"><span style="font-size:xx-small;"><i>&lt;?xml version="1.0" encoding="UTF-8"?&gt;</i></span></p>
+<p style="margin-bottom:0;"><span style="font-size:xx-small;"><i>&lt;!DOCTYPE zone PUBLIC "-//Sun Microsystems Inc//DTD Zones//EN" "file:///usr/share/lib/xml/dtd/zonecfg.dtd.1"&gt;</i></span></p>
+<p style="margin-bottom:0;"><span style="font-size:xx-small;"><i>&lt;!--</i></span></p>
+<p style="margin-bottom:0;"><span style="font-size:xx-small;"><i>DO NOT EDIT THIS FILE. Use zonecfg(1M) instead.</i></span></p>
+<p style="margin-bottom:0;"><span style="font-size:xx-small;"><i>--&gt;</i></span></p>
+<p style="margin-bottom:0;"><span style="font-size:xx-small;"><i>&lt;zone name="dc5sfsmnsageweb01" zonepath="/zones/dc5sfsmnsageweb01" autoboot="true" ip-type="exclusive"&gt;</i></span></p>
+<p style="margin-bottom:0;"><span style="font-size:xx-small;"><i>&lt;network address="" physical="nge2"/&gt;</i></span></p>
+<p style="margin-top:.49cm;margin-bottom:.49cm;widows:2;orphans:2;"><span style="font-size:xx-small;"><i>&lt;/zone&gt;</i></span></p>
+<p style="margin-top:.49cm;margin-bottom:.49cm;widows:2;orphans:2;">
+<p style="margin-top:.49cm;margin-bottom:.49cm;widows:2;orphans:2;">
+<p style="margin-top:.49cm;widows:2;orphans:2;">
+</td>
+</tr>
+<tr valign="TOP">
+<td style="border:none;padding:0;" width="109">
+<p style="margin-top:.21cm;"><a name="Bibliography"></a><span style="font-size:small;"><b>Bibliography</b></span></p>
+</td>
+<td style="border-top:1px solid #000000;border-bottom:1px solid #000000;border-left:none;border-right:none;padding:0;" width="454">
+<p class="western" style="margin-top:.21cm;"><span style="font-size:small;">International Standard ISO/IEC 17799</span></p>
+<p class="western" style="margin-left:1.27cm;margin-top:.21cm;"><span style="font-size:small;">Information Technology – Security Techniques – Code Of Practice For Information Security Management</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;"><a name="Appendix"></a><b>Appendix A: Examples</b></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;"><a name="Scripts"></a><b>Scripts </b></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">/opt/SUNWjass/Finish # ls -lrt</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">total 834</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 697 Jul 26 2005 disable-ab2.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 892 Jul 26 2005 disable-IIim.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1103 Jul 26 2005 disable-directory.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1560 Jul 26 2005 disable-dhcpd.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 888 Jul 26 2005 disable-automount.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1023 Jul 26 2005 disable-asppp.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 566 Jul 26 2005 disable-appserv.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 532 Jul 26 2005 disable-apache2.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1159 Jul 26 2005 disable-apache.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 644 Jul 26 2005 disable-named.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1013 Jul 26 2005 disable-mipagent.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 999 Jul 26 2005 disable-ldap-client.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 2460 Jul 26 2005 disable-keyserv-uid-nobody.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1850 Jul 26 2005 disable-kdc.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 797 Jul 26 2005 disable-ipv6.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 935 Jul 26 2005 disable-face-log.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1869 Jul 26 2005 disable-routing.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1454 Jul 26 2005 disable-rhosts.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1361 Jul 26 2005 disable-preserve.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1070 Jul 26 2005 disable-ppp.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 2229 Jul 26 2005 disable-power-mgmt.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 847 Jul 26 2005 disable-picld.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1865 Jul 26 2005 disable-nscd-caching.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 984 Jul 26 2005 disable-nfs-server.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 825 Jul 26 2005 disable-spc.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 949 Jul 26 2005 disable-slp.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1854 Jul 26 2005 enable-password-history.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 2823 Jul 26 2005 enable-inetd-syslog.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1352 Jul 26 2005 enable-ftpaccess.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1124 Jul 26 2005 enable-ftp-syslog.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 2166 Jul 26 2005 enable-bart.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 2639 Jul 26 2005 enable-account-lockout.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1165 Jul 26 2005 enable-32bit-kernel.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 434 Jul 26 2005 disable-xfs.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 2253 Jul 26 2005 install-ftpusers.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 4418 Jul 26 2005 install-fix-modes.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1570 Jul 26 2005 install-at-allow.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1290 Jul 26 2005 install-Sun_ONE-WS.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 2104 Jul 26 2005 enable-tcpwrappers.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1572 Jul 26 2005 enable-priv-nfs-ports.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1374 Jul 26 2005 install-shells.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1965 Jul 26 2005 install-sadmind-options.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1959 Jul 26 2005 install-recommended-patches.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1911 Jul 26 2005 install-openssh.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1040 Jul 26 2005 install-newaliases.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 3073 Jul 26 2005 install-md5.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1330 Jul 26 2005 print-unowned-objects.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1188 Jul 26 2005 print-suid-files.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1188 Jul 26 2005 print-sgid-files.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 3942 Jul 26 2005 minimize-Sun_ONE-WS.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 570 Jul 26 2005 install-templates.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 2329 Jul 26 2005 set-banner-dtlogin.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1122 Jul 26 2005 remove-unneeded-accounts.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1564 Jul 26 2005 print-world-writable-objects.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1877 Jul 26 2005 set-term-type.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1699 Jul 26 2005 set-system-umask.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 4421 Jul 26 2005 set-strict-password-checks.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1086 Jul 26 2005 set-root-group.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 2266 Jul 26 2005 set-rmmount-nosuid.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1380 Jul 26 2005 set-login-retries.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 2087 Jul 26 2005 update-cron-deny.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1740 Jul 26 2005 update-cron-allow.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1225 Jul 26 2005 suncluster3x-set-nsswitch-conf.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 2084 Jul 26 2005 set-tmpfs-limit.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 2048 Aug 22 2008 disable-dtlogin.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1286 Aug 22 2008 disable-dmi.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1155 Aug 22 2008 disable-autoinst.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 678 Aug 22 2008 disable-serial-login.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 6428 Aug 22 2008 disable-sendmail.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1102 Aug 22 2008 disable-samba.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1636 Aug 22 2008 disable-rpc.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1174 Aug 22 2008 disable-remote-root-login.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 451 Aug 22 2008 disable-nis-client.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1369 Aug 22 2008 disable-nfs-client.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1018 Aug 22 2008 disable-mesg.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 2149 Aug 22 2008 disable-lp.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1400 Aug 22 2008 disable-keyboard-abort.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1948 Aug 22 2008 enable-ssh-root-login.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1774 Aug 22 2008 enable-sar.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1555 Aug 22 2008 enable-rfc1948.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 3804 Aug 22 2008 enable-process-accounting.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 2031 Aug 22 2008 enable-password-changes.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 690 Aug 22 2008 enable-ldmd.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 3805 Aug 22 2008 enable-ipfilter.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1122 Aug 22 2008 enable-ftp-debuglog.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1217 Aug 22 2008 enable-cronlog.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 3368 Aug 22 2008 enable-coreadm.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 6862 Aug 22 2008 enable-bsm.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 2118 Aug 22 2008 disable-xserver-listen.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 4306 Aug 22 2008 disable-xdmcp.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 997 Aug 22 2008 disable-wbem.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1461 Aug 22 2008 disable-vold.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1608 Aug 22 2008 disable-uucp.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 3851 Aug 22 2008 disable-system-accounts.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 2986 Aug 22 2008 disable-syslogd-listen.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1938 Aug 22 2008 disable-ssh-root-login.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1324 Aug 22 2008 disable-snmp.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 535 Aug 22 2008 disable-smcwebserver.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1237 Aug 22 2008 disable-sma.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1292 Aug 22 2008 install-loginlog.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 2084 Aug 22 2008 install-local-syslog.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 2563 Aug 22 2008 install-ldm.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 2904 Aug 22 2008 install-jass.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1527 Aug 22 2008 install-connlog.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1573 Aug 22 2008 install-authlog.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 3095 Aug 22 2008 enable-xscreensaver.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 3773 Aug 22 2008 enable-stack-protection.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1080 Aug 22 2008 print-rhosts.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 765 Aug 22 2008 print-package-files.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 2281 Aug 22 2008 print-jumpstart-environment.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 3758 Aug 22 2008 print-jass-environment.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1151 Aug 22 2008 install-sulog.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1384 Aug 22 2008 install-strong-permissions.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1897 Aug 22 2008 install-security-mode.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1347 Aug 22 2008 install-nddconfig.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 2089 Aug 22 2008 set-power-restrictions.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1642 Aug 22 2008 set-oem-banner.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 768 Aug 22 2008 set-lp-open.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 2774 Aug 22 2008 set-lp-localonly.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1202 Aug 22 2008 set-log-file-permissions.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 3144 Aug 22 2008 set-grub-password.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 4738 Aug 22 2008 set-greeter-warning.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 2803 Aug 22 2008 set-ftpd-umask.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 4147 Aug 22 2008 set-flexible-crypt.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 3437 Aug 22 2008 set-failed-logins.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1664 Aug 22 2008 set-dtlogin-open.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 2642 Aug 22 2008 set-dtlogin-localonly.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 961 Aug 22 2008 set-calendar-open.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1810 Aug 22 2008 set-calendar-localonly.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1307 Aug 22 2008 set-banner-telnetd.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1829 Aug 22 2008 set-banner-sshd.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 2027 Aug 22 2008 set-banner-sendmail.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 4350 Aug 22 2008 set-banner-ftpd.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 6560 Aug 22 2008 s15k-static-arp.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 3460 Aug 22 2008 s15k-sms-secure-failover.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1329 Aug 22 2008 s15k-sms-override.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 2010 Aug 22 2008 s15k-exclude-domains.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 10195 Aug 22 2008 update-inetd-conf.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 4944 Aug 22 2008 update-cron-log-size.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1909 Aug 22 2008 update-at-deny.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 663 Aug 22 2008 set-wbem-open.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1323 Aug 22 2008 set-wbem-localonly.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 3352 Aug 22 2008 set-user-umask.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 3049 Aug 22 2008 set-user-password-reqs.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 974 Aug 22 2008 set-ttdb-open.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1635 Aug 22 2008 set-ttdb-localonly.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1558 Aug 22 2008 set-sys-suspend-restrictions.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 2584 Aug 22 2008 set-ssh-config.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 672 Aug 22 2008 set-smcwebserver-open.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 910 Aug 22 2008 set-smcwebserver-localonly.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 909 Aug 22 2008 set-rpc-open.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 2060 Aug 22 2008 set-rpc-localonly.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 1673 Aug 22 2008 set-root-password.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">-r--r--r-- 1 root root 4734 Aug 22 2008 set-root-home-dir.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;"><a name="Password"></a><b>Password</b></p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">opt/SUNWjass/Finish # pwd</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">[/opt/SUNWjass/Finish # cat set-user-password-reqs.fin</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">#!/bin/sh</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">#</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;"># Copyright 2006 Sun Microsystems, Inc. All rights reserved.</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;"># Use is subject to license terms.</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">#</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;"># ident "@(#)set-user-password-reqs.fin 3.10 06/10/30 SMI"</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">#</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;"># This script installs some basic password requirements for users. Note</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;"># that this effects local password policy only.</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">logMessage "Installing user password requirements."</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">echo ""</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">PASSWD=${JASS_ROOT_DIR}etc/default/passwd</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">if [ ! -f ${PASSWD} ]; then</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">create_a_file -m 0444 -o root:sys ${PASSWD}</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">echo ""</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">fi</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">changeToBeMade="0"</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;"># Determine the values to be used. If values are</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;"># already in place, then use them. Otherwise, use the</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;"># defaults that are included below.</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">minWeeks=`nawk -F= '$1==keyword { print $2 }' keyword="MINWEEKS" ${PASSWD}`</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">if [ ! -z "${JASS_AGING_MINWEEKS}" ]; then</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">if [ "${JASS_AGING_MINWEEKS}" != "${minWeeks}" ]; then</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">changeToBeMade="1"</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">if [ -z "${minWeeks}" ]; then</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">minWeeks="NONE"</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">fi</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">logMessage 'Changing MINWEEKS setting from ${minWeeks} to ${JASS_AGING_MINWEEKS}.'</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">fi</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">minWeeks="${JASS_AGING_MINWEEKS}"</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">fi</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">maxWeeks=`nawk -F= '$1==keyword { print $2 }' keyword="MAXWEEKS" ${PASSWD}`</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">if [ ! -z "${JASS_AGING_MAXWEEKS}" ]; then</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">if [ "${JASS_AGING_MAXWEEKS}" != "${maxWeeks}" ]; then</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">changeToBeMade="1"</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">if [ -z "${maxWeeks}" ]; then</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">maxWeeks="NONE"</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">fi</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">logMessage 'Changing MAXWEEKS setting from ${maxWeeks} to ${JASS_AGING_MAXWEEKS}.'</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">fi</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">maxWeeks="${JASS_AGING_MAXWEEKS}"</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">fi</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">warnWeeks=`nawk -F= '$1==keyword { print $2 }' keyword="WARNWEEKS" ${PASSWD}`</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">if [ ! -z "${JASS_AGING_WARNWEEKS}" ]; then</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">if [ "${JASS_AGING_WARNWEEKS}" != "${warnWeeks}" ]; then</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">changeToBeMade="1"</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">if [ -z "${warnWeeks}" ]; then</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">warnWeeks="NONE"</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">fi</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">logMessage 'Changing WARNWEEKS setting from ${warnWeeks} to ${JASS_AGING_WARNWEEKS}.'</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">fi</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">warnWeeks="${JASS_AGING_WARNWEEKS}"</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">fi</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">passLength=`nawk -F= '$1==keyword { print $2 }' keyword="PASSLENGTH" ${PASSWD}`</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">if [ ! -z "${JASS_PASS_LENGTH}" ]; then</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">if [ "${JASS_PASS_LENGTH}" != "${passLength}" ]; then</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">changeToBeMade="1"</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">if [ -z "${passLength}" ]; then</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">passLength="NONE"</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">fi</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">logMessage 'Changing PASSLENGTH setting from ${passLength} to ${JASS_PASS_LENGTH}.'</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">fi</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">passLength="${JASS_PASS_LENGTH}"</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">fi</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">if [ "${changeToBeMade}" = "1" ]; then</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">echo ""</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">backup_file ${PASSWD}</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;"># Remove the old entries and insert the new ones.</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">cat ${PASSWD}.${JASS_SUFFIX} |\</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">egrep -v '^MINWEEKS=|^MAXWEEKS=|^WARNWEEKS=|^PASSLENGTH=' &gt; ${PASSWD}</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">if [ ! -z "${JASS_AGING_MINWEEKS}" ]; then</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">echo "MINWEEKS=${minWeeks}" &gt;&gt; ${PASSWD}</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">fi</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">if [ ! -z "${JASS_AGING_MAXWEEKS}" ]; then</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">echo "MAXWEEKS=${maxWeeks}" &gt;&gt; ${PASSWD}</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">fi</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">if [ ! -z "${JASS_AGING_WARNWEEKS}" ]; then</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">echo "WARNWEEKS=${warnWeeks}" &gt;&gt; ${PASSWD}</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">fi</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">if [ ! -z "${JASS_PASS_LENGTH}" ]; then</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">echo "PASSLENGTH=${passLength}" &gt;&gt; ${PASSWD}</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">fi</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">change_owner root:sys ${PASSWD}</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">change_default_perms ${PASSWD}</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">fi</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;">[ ?0 dc5sfshrapp01 root 1 !542 0 22:47:39 ]</p>
+<p>&nbsp;</p>
+<p class="western" style="margin-top:.21cm;widows:0;orphans:0;">/opt/SUNWjass/Finish #</p>
+<p>&nbsp;</p>
+<p><img alt="" src="{{ site.baseurl }}/assets/Jmd0OzwvST48L0ZPTlQ+PC9QPgoJCQk8UCBTVFlMRT0ibWFyZ2luLWJvdHRvbTogMGNtIj48Rk9OVCBTSVpFPTE+PEk+Jmx0OyFET0NUWVBFIHpvbmUKCQkJUFVCTElDICZxdW90Oy0vL1N1biBNaWNyb3N5c3RlbXMgSW5jLy9EVEQgWm9uZXMvL0VOJnF1b3Q7CgkJCSZxdW90O2ZpbGU6Ly8vdXNyL3NoYXJlL2xpYi94bWwvZHRkL3pvbmVjZmcuZHRkLjEmcXVvdDsmZ3Q7PC9JPjwvRk9OVD48L1A+CgkJCTxQIFNUWUxFPSJtYXJnaW4tYm90dG9tOiAwY20iPjxGT05UIFNJWkU9MT48ST4mbHQ7IS0tPC9JPjwvRk9OVD48L1A+CgkJCTxQIFNUWUxFPSJtYXJnaW4tYm90dG9tOiAwY20iPiAgICA8Rk9OVCBTSVpFPTE+PEk+RE8gTk9UIEVESVQgVEhJUwoJCQlGSUxFLiAgVXNlIHpvbmVjZmcoMU0pIGluc3RlYWQuPC9JPjwvRk9OVD48L1A+CgkJCTxQIFNUWUxFPSJtYXJnaW4tYm90dG9tOiAwY20iPjxGT05UIFNJWkU9MT48ST4tLSZndDs8L0k+PC9GT05UPjwvUD4KCQkJPFAgU1RZTEU9Im1hcmdpbi1ib3R0b206IDBjbSI+PEZPTlQgU0laRT0xPjxJPiZsdDt6b25lCgkJCW5hbWU9JnF1b3Q7ZGM1c2ZzbW5zYWdlYXBwMDEmcXVvdDsKCQkJem9uZXBhdGg9JnF1b3Q7L3pvbmVzL2RjNXNmc21uc2FnZWFwcDAxJnF1b3Q7IGF1dG9ib290PSZxdW90O3RydWUmcXVvdDsmZ3Q7PC9JPjwvRk9OVD48L1A+CgkJCTxQIFNUWUxFPSJtYXJnaW4tYm90dG9tOiAwY20iPiAgPEZPTlQgU0laRT0xPjxJPiZsdDtuZXR3b3JrCgkJCWFkZHJlc3M9JnF1b3Q7MTAuNS4zNS4xNCZxdW90OyBwaHlzaWNhbD0mcXVvdDtuZ2UwJnF1b3Q7LyZndDs8L0k+PC9GT05UPjwvUD4KCQkJPFAgU1RZTEU9Im1hcmdpbi10b3A6IDAuNDljbTsgbWFyZ2luLWJvdHRvbTogMC40OWNtOyB3aWRvd3M6IDI7IG9ycGhhbnM6IDIiPgoJCQk8Rk9OVCBTSVpFPTE+PEk+Jmx0Oy96b25lJmd0OzwvST48L0ZPTlQ+PC9QPgoJCQk8VUw+CgkJCQk8TEk+PFAgU1RZTEU9Im1hcmdpbi10b3A6IDAuNDljbTsgbWFyZ2luLWJvdHRvbTogMC40OWNtOyB3aWRvd3M6IDI7IG9ycGhhbnM6IDIiPgoJCQkJPEZPTlQgU0laRT0yPkV4YW1wbGUgb2YgYSB6b25lIGNvbmZpZ3VyYXRpb24gZmlsZSBmcm9tIGEgcm9vdAoJCQkJem9uZSB3aXRoIGEgZGVkaWNhdGVkIG5ldHdvcmsgaW50ZXJmYWNlLjwvRk9OVD48L1A+CgkJCTwvVUw+CgkJCTxQIFNUWUxFPSJtYXJnaW4tYm90dG9tOiAwY20iPjxGT05UIFNJWkU9MT48ST4mbHQ7P3htbAoJCQl2ZXJzaW9uPSZxdW90OzEuMCZxdW90OyBlbmNvZGluZz0mcXVvdDtVVEYtOCZxdW90Oz8mZ3Q7PC9JPjwvRk9OVD48L1A+CgkJCTxQIFNUWUxFPSJtYXJnaW4tYm90dG9tOiAwY20iPjxGT05UIFNJWkU9MT48ST4mbHQ7IURPQ1RZUEUgem9uZQoJCQlQVUJMSUMgJnF1b3Q7LS8vU3VuIE1pY3Jvc3lzdGVtcyBJbmMvL0RURCBab25lcy8vRU4mcXVvdDsKCQkJJnF1b3Q7ZmlsZTovLy91c3Ivc2hhcmUvbGliL3htbC9kdGQvem9uZWNmZy5kdGQuMSZxdW90OyZndDs8L0k+PC9GT05UPjwvUD4KCQkJPFAgU1RZTEU9Im1hcmdpbi1ib3R0b206IDBjbSI+PEZPTlQgU0laRT0xPjxJPiZsdDshLS08L0k+PC9GT05UPjwvUD4KCQkJPFAgU1RZTEU9Im1hcmdpbi1ib3R0b206IDBjbSI+ICAgIDxGT05UIFNJWkU9MT48ST5ETyBOT1QgRURJVCBUSElTCgkJCUZJTEUuICBVc2Ugem9uZWNmZygxTSkgaW5zdGVhZC48L0k+PC9GT05UPjwvUD4KCQkJPFAgU1RZTEU9Im1hcmdpbi1ib3R0b206IDBjbSI+PEZPTlQgU0laRT0xPjxJPi0tJmd0OzwvST48L0ZPTlQ+PC9QPgoJCQk8UCBTVFlMRT0ibWFyZ2luLWJvdHRvbTogMGNtIj48Rk9OVCBTSVpFPTE+PEk+Jmx0O3pvbmUKCQkJbmFtZT0mcXVvdDtkYzVzZnNtbnNhZ2V3ZWIwMSZxdW90OwoJCQl6b25lcGF0aD0mcXVvdDsvem9uZXMvZGM1c2ZzbW5zYWdld2ViMDEmcXVvdDsgYXV0b2Jvb3Q9JnF1b3Q7dHJ1ZSZxdW90OwoJCQlpcC10eXBlPSZxdW90O2V4Y2x1c2l2ZSZxdW90OyZndDs8L0k+PC9GT05UPjwvUD4KCQkJPFAgU1RZTEU9Im1hcmdpbi1ib3R0b206IDBjbSI+ICA8Rk9OVCBTSVpFPTE+PEk+Jmx0O25ldHdvcmsKCQkJYWRkcmVzcz0mcXVvdDsmcXVvdDsgcGh5c2ljYWw9JnF1b3Q7bmdlMiZxdW90Oy8mZ3Q7PC9JPjwvRk9OVD48L1A+CgkJCTxQIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjQ5Y207IG1hcmdpbi1ib3R0b206IDAuNDljbTsgd2lkb3dzOiAyOyBvcnBoYW5zOiAyIj4KCQkJPEZPTlQgU0laRT0xPjxJPiZsdDsvem9uZSZndDs8L0k+PC9GT05UPjwvUD4KCQkJPFAgU1RZTEU9Im1hcmdpbi10b3A6IDAuNDljbTsgbWFyZ2luLWJvdHRvbTogMC40OWNtOyB3aWRvd3M6IDI7IG9ycGhhbnM6IDIiPgoJCQk8QlI+PEJSPgoJCQk8L1A+CgkJCTxQIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjQ5Y207IG1hcmdpbi1ib3R0b206IDAuNDljbTsgd2lkb3dzOiAyOyBvcnBoYW5zOiAyIj4KCQkJPEJSPjxCUj4KCQkJPC9QPgoJCQk8UCBTVFlMRT0ibWFyZ2luLXRvcDogMC40OWNtOyB3aWRvd3M6IDI7IG9ycGhhbnM6IDIiPjxCUj4KCQkJPC9QPgoJCTwvVEQ+Cgk8L1RSPgoJPFRSIFZBTElHTj1UT1A+CgkJPFREIFdJRFRIPTEwOSBTVFlMRT0iYm9yZGVyOiBub25lOyBwYWRkaW5nOiAwY20iPgoJCQk8UCBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj48QSBOQU1FPSJCaWJsaW9ncmFwaHkiPjwvQT48Rk9OVCBTSVpFPTI+PEI+QmlibGlvZ3JhcGh5PC9CPjwvRk9OVD48L1A+CgkJPC9URD4KCQk8VEQgV0lEVEg9NDU0IFNUWUxFPSJib3JkZXItdG9wOiAxcHggc29saWQgIzAwMDAwMDsgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkICMwMDAwMDA7IGJvcmRlci1sZWZ0OiBub25lOyBib3JkZXItcmlnaHQ6IG5vbmU7IHBhZGRpbmc6IDBjbSI+CgkJCTxQIENMQVNTPSJ3ZXN0ZXJuIiBBTElHTj1KVVNUSUZZIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPjxGT05UIFNJWkU9Mj5JbnRlcm5hdGlvbmFsCgkJCVN0YW5kYXJkIElTTy9JRUMgMTc3OTk8L0ZPTlQ+PC9QPgoJCQk8UCBDTEFTUz0id2VzdGVybiIgQUxJR049SlVTVElGWSBTVFlMRT0ibWFyZ2luLWxlZnQ6IDEuMjdjbTsgbWFyZ2luLXRvcDogMC4yMWNtIj4KCQkJPEZPTlQgU0laRT0yPkluZm9ybWF0aW9uIFRlY2hub2xvZ3kg4oCTIFNlY3VyaXR5IFRlY2huaXF1ZXMg4oCTCgkJCUNvZGUgT2YgUHJhY3RpY2UgRm9yIEluZm9ybWF0aW9uIFNlY3VyaXR5IE1hbmFnZW1lbnQ8L0ZPTlQ+PC9QPgoJCTwvVEQ+Cgk8L1RSPgo8L1RBQkxFPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+PEJSPjxCUj4KPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+PEEgTkFNRT0iQXBwZW5kaXgiPjwvQT48Qj5BcHBlbmRpeApBOiBFeGFtcGxlczwvQj48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj48QlI+PEJSPgo8L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj48QSBOQU1FPSJTY3JpcHRzIj48L0E+PEI+U2NyaXB0cwo8L0I+CjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi9vcHQvU1VOV2phc3MvRmluaXNoICMKbHMgLWxydDwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPnRvdGFsIDgzNDwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgICA2OTcgSnVsIDI2ICAyMDA1IGRpc2FibGUtYWIyLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgICA4OTIgSnVsIDI2ICAyMDA1IGRpc2FibGUtSUlpbS5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICAxMTAzIEp1bCAyNiAgMjAwNSBkaXNhYmxlLWRpcmVjdG9yeS5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICAxNTYwIEp1bCAyNiAgMjAwNSBkaXNhYmxlLWRoY3BkLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgICA4ODggSnVsIDI2ICAyMDA1IGRpc2FibGUtYXV0b21vdW50LmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDEwMjMgSnVsIDI2ICAyMDA1IGRpc2FibGUtYXNwcHAuZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgIDU2NiBKdWwgMjYgIDIwMDUgZGlzYWJsZS1hcHBzZXJ2LmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgICA1MzIgSnVsIDI2ICAyMDA1IGRpc2FibGUtYXBhY2hlMi5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICAxMTU5IEp1bCAyNiAgMjAwNSBkaXNhYmxlLWFwYWNoZS5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICAgNjQ0IEp1bCAyNiAgMjAwNSBkaXNhYmxlLW5hbWVkLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDEwMTMgSnVsIDI2ICAyMDA1IGRpc2FibGUtbWlwYWdlbnQuZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgIDk5OSBKdWwgMjYgIDIwMDUgZGlzYWJsZS1sZGFwLWNsaWVudC5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICAyNDYwIEp1bCAyNiAgMjAwNSBkaXNhYmxlLWtleXNlcnYtdWlkLW5vYm9keS5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICAxODUwIEp1bCAyNiAgMjAwNSBkaXNhYmxlLWtkYy5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICAgNzk3IEp1bCAyNiAgMjAwNSBkaXNhYmxlLWlwdjYuZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgIDkzNSBKdWwgMjYgIDIwMDUgZGlzYWJsZS1mYWNlLWxvZy5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICAxODY5IEp1bCAyNiAgMjAwNSBkaXNhYmxlLXJvdXRpbmcuZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgMTQ1NCBKdWwgMjYgIDIwMDUgZGlzYWJsZS1yaG9zdHMuZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgMTM2MSBKdWwgMjYgIDIwMDUgZGlzYWJsZS1wcmVzZXJ2ZS5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICAxMDcwIEp1bCAyNiAgMjAwNSBkaXNhYmxlLXBwcC5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICAyMjI5IEp1bCAyNiAgMjAwNSBkaXNhYmxlLXBvd2VyLW1nbXQuZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgIDg0NyBKdWwgMjYgIDIwMDUgZGlzYWJsZS1waWNsZC5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICAxODY1IEp1bCAyNiAgMjAwNSBkaXNhYmxlLW5zY2QtY2FjaGluZy5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICAgOTg0IEp1bCAyNiAgMjAwNSBkaXNhYmxlLW5mcy1zZXJ2ZXIuZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgIDgyNSBKdWwgMjYgIDIwMDUgZGlzYWJsZS1zcGMuZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgIDk0OSBKdWwgMjYgIDIwMDUgZGlzYWJsZS1zbHAuZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgMTg1NCBKdWwgMjYgIDIwMDUgZW5hYmxlLXBhc3N3b3JkLWhpc3RvcnkuZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgMjgyMyBKdWwgMjYgIDIwMDUgZW5hYmxlLWluZXRkLXN5c2xvZy5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICAxMzUyIEp1bCAyNiAgMjAwNSBlbmFibGUtZnRwYWNjZXNzLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDExMjQgSnVsIDI2ICAyMDA1IGVuYWJsZS1mdHAtc3lzbG9nLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDIxNjYgSnVsIDI2ICAyMDA1IGVuYWJsZS1iYXJ0LmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDI2MzkgSnVsIDI2ICAyMDA1IGVuYWJsZS1hY2NvdW50LWxvY2tvdXQuZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgMTE2NSBKdWwgMjYgIDIwMDUgZW5hYmxlLTMyYml0LWtlcm5lbC5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICAgNDM0IEp1bCAyNiAgMjAwNSBkaXNhYmxlLXhmcy5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICAyMjUzIEp1bCAyNiAgMjAwNSBpbnN0YWxsLWZ0cHVzZXJzLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDQ0MTggSnVsIDI2ICAyMDA1IGluc3RhbGwtZml4LW1vZGVzLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDE1NzAgSnVsIDI2ICAyMDA1IGluc3RhbGwtYXQtYWxsb3cuZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgMTI5MCBKdWwgMjYgIDIwMDUgaW5zdGFsbC1TdW5fT05FLVdTLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDIxMDQgSnVsIDI2ICAyMDA1IGVuYWJsZS10Y3B3cmFwcGVycy5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICAxNTcyIEp1bCAyNiAgMjAwNSBlbmFibGUtcHJpdi1uZnMtcG9ydHMuZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgMTM3NCBKdWwgMjYgIDIwMDUgaW5zdGFsbC1zaGVsbHMuZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgMTk2NSBKdWwgMjYgIDIwMDUgaW5zdGFsbC1zYWRtaW5kLW9wdGlvbnMuZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgMTk1OSBKdWwgMjYgIDIwMDUgaW5zdGFsbC1yZWNvbW1lbmRlZC1wYXRjaGVzLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDE5MTEgSnVsIDI2ICAyMDA1IGluc3RhbGwtb3BlbnNzaC5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICAxMDQwIEp1bCAyNiAgMjAwNSBpbnN0YWxsLW5ld2FsaWFzZXMuZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgMzA3MyBKdWwgMjYgIDIwMDUgaW5zdGFsbC1tZDUuZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgMTMzMCBKdWwgMjYgIDIwMDUgcHJpbnQtdW5vd25lZC1vYmplY3RzLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDExODggSnVsIDI2ICAyMDA1IHByaW50LXN1aWQtZmlsZXMuZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgMTE4OCBKdWwgMjYgIDIwMDUgcHJpbnQtc2dpZC1maWxlcy5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICAzOTQyIEp1bCAyNiAgMjAwNSBtaW5pbWl6ZS1TdW5fT05FLVdTLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgICA1NzAgSnVsIDI2ICAyMDA1IGluc3RhbGwtdGVtcGxhdGVzLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDIzMjkgSnVsIDI2ICAyMDA1IHNldC1iYW5uZXItZHRsb2dpbi5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICAxMTIyIEp1bCAyNiAgMjAwNSByZW1vdmUtdW5uZWVkZWQtYWNjb3VudHMuZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgMTU2NCBKdWwgMjYgIDIwMDUgcHJpbnQtd29ybGQtd3JpdGFibGUtb2JqZWN0cy5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICAxODc3IEp1bCAyNiAgMjAwNSBzZXQtdGVybS10eXBlLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDE2OTkgSnVsIDI2ICAyMDA1IHNldC1zeXN0ZW0tdW1hc2suZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgNDQyMSBKdWwgMjYgIDIwMDUgc2V0LXN0cmljdC1wYXNzd29yZC1jaGVja3MuZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgMTA4NiBKdWwgMjYgIDIwMDUgc2V0LXJvb3QtZ3JvdXAuZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgMjI2NiBKdWwgMjYgIDIwMDUgc2V0LXJtbW91bnQtbm9zdWlkLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDEzODAgSnVsIDI2ICAyMDA1IHNldC1sb2dpbi1yZXRyaWVzLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDIwODcgSnVsIDI2ICAyMDA1IHVwZGF0ZS1jcm9uLWRlbnkuZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgMTc0MCBKdWwgMjYgIDIwMDUgdXBkYXRlLWNyb24tYWxsb3cuZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgMTIyNSBKdWwgMjYgIDIwMDUgc3VuY2x1c3RlcjN4LXNldC1uc3N3aXRjaC1jb25mLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDIwODQgSnVsIDI2ICAyMDA1IHNldC10bXBmcy1saW1pdC5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICAyMDQ4IEF1ZyAyMiAgMjAwOCBkaXNhYmxlLWR0bG9naW4uZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgMTI4NiBBdWcgMjIgIDIwMDggZGlzYWJsZS1kbWkuZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgMTE1NSBBdWcgMjIgIDIwMDggZGlzYWJsZS1hdXRvaW5zdC5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICAgNjc4IEF1ZyAyMiAgMjAwOCBkaXNhYmxlLXNlcmlhbC1sb2dpbi5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICA2NDI4IEF1ZyAyMiAgMjAwOCBkaXNhYmxlLXNlbmRtYWlsLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDExMDIgQXVnIDIyICAyMDA4IGRpc2FibGUtc2FtYmEuZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgMTYzNiBBdWcgMjIgIDIwMDggZGlzYWJsZS1ycGMuZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgMTE3NCBBdWcgMjIgIDIwMDggZGlzYWJsZS1yZW1vdGUtcm9vdC1sb2dpbi5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICAgNDUxIEF1ZyAyMiAgMjAwOCBkaXNhYmxlLW5pcy1jbGllbnQuZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgMTM2OSBBdWcgMjIgIDIwMDggZGlzYWJsZS1uZnMtY2xpZW50LmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDEwMTggQXVnIDIyICAyMDA4IGRpc2FibGUtbWVzZy5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICAyMTQ5IEF1ZyAyMiAgMjAwOCBkaXNhYmxlLWxwLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDE0MDAgQXVnIDIyICAyMDA4IGRpc2FibGUta2V5Ym9hcmQtYWJvcnQuZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgMTk0OCBBdWcgMjIgIDIwMDggZW5hYmxlLXNzaC1yb290LWxvZ2luLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDE3NzQgQXVnIDIyICAyMDA4IGVuYWJsZS1zYXIuZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgMTU1NSBBdWcgMjIgIDIwMDggZW5hYmxlLXJmYzE5NDguZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgMzgwNCBBdWcgMjIgIDIwMDggZW5hYmxlLXByb2Nlc3MtYWNjb3VudGluZy5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICAyMDMxIEF1ZyAyMiAgMjAwOCBlbmFibGUtcGFzc3dvcmQtY2hhbmdlcy5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICAgNjkwIEF1ZyAyMiAgMjAwOCBlbmFibGUtbGRtZC5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICAzODA1IEF1ZyAyMiAgMjAwOCBlbmFibGUtaXBmaWx0ZXIuZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgMTEyMiBBdWcgMjIgIDIwMDggZW5hYmxlLWZ0cC1kZWJ1Z2xvZy5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICAxMjE3IEF1ZyAyMiAgMjAwOCBlbmFibGUtY3JvbmxvZy5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICAzMzY4IEF1ZyAyMiAgMjAwOCBlbmFibGUtY29yZWFkbS5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICA2ODYyIEF1ZyAyMiAgMjAwOCBlbmFibGUtYnNtLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDIxMTggQXVnIDIyICAyMDA4IGRpc2FibGUteHNlcnZlci1saXN0ZW4uZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgNDMwNiBBdWcgMjIgIDIwMDggZGlzYWJsZS14ZG1jcC5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICAgOTk3IEF1ZyAyMiAgMjAwOCBkaXNhYmxlLXdiZW0uZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgMTQ2MSBBdWcgMjIgIDIwMDggZGlzYWJsZS12b2xkLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDE2MDggQXVnIDIyICAyMDA4IGRpc2FibGUtdXVjcC5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICAzODUxIEF1ZyAyMiAgMjAwOCBkaXNhYmxlLXN5c3RlbS1hY2NvdW50cy5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICAyOTg2IEF1ZyAyMiAgMjAwOCBkaXNhYmxlLXN5c2xvZ2QtbGlzdGVuLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDE5MzggQXVnIDIyICAyMDA4IGRpc2FibGUtc3NoLXJvb3QtbG9naW4uZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgMTMyNCBBdWcgMjIgIDIwMDggZGlzYWJsZS1zbm1wLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgICA1MzUgQXVnIDIyICAyMDA4IGRpc2FibGUtc21jd2Vic2VydmVyLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDEyMzcgQXVnIDIyICAyMDA4IGRpc2FibGUtc21hLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDEyOTIgQXVnIDIyICAyMDA4IGluc3RhbGwtbG9naW5sb2cuZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgMjA4NCBBdWcgMjIgIDIwMDggaW5zdGFsbC1sb2NhbC1zeXNsb2cuZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgMjU2MyBBdWcgMjIgIDIwMDggaW5zdGFsbC1sZG0uZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgMjkwNCBBdWcgMjIgIDIwMDggaW5zdGFsbC1qYXNzLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDE1MjcgQXVnIDIyICAyMDA4IGluc3RhbGwtY29ubmxvZy5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICAxNTczIEF1ZyAyMiAgMjAwOCBpbnN0YWxsLWF1dGhsb2cuZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgMzA5NSBBdWcgMjIgIDIwMDggZW5hYmxlLXhzY3JlZW5zYXZlci5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICAzNzczIEF1ZyAyMiAgMjAwOCBlbmFibGUtc3RhY2stcHJvdGVjdGlvbi5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICAxMDgwIEF1ZyAyMiAgMjAwOCBwcmludC1yaG9zdHMuZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgIDc2NSBBdWcgMjIgIDIwMDggcHJpbnQtcGFja2FnZS1maWxlcy5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICAyMjgxIEF1ZyAyMiAgMjAwOCBwcmludC1qdW1wc3RhcnQtZW52aXJvbm1lbnQuZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgMzc1OCBBdWcgMjIgIDIwMDggcHJpbnQtamFzcy1lbnZpcm9ubWVudC5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICAxMTUxIEF1ZyAyMiAgMjAwOCBpbnN0YWxsLXN1bG9nLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDEzODQgQXVnIDIyICAyMDA4IGluc3RhbGwtc3Ryb25nLXBlcm1pc3Npb25zLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDE4OTcgQXVnIDIyICAyMDA4IGluc3RhbGwtc2VjdXJpdHktbW9kZS5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICAxMzQ3IEF1ZyAyMiAgMjAwOCBpbnN0YWxsLW5kZGNvbmZpZy5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICAyMDg5IEF1ZyAyMiAgMjAwOCBzZXQtcG93ZXItcmVzdHJpY3Rpb25zLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDE2NDIgQXVnIDIyICAyMDA4IHNldC1vZW0tYmFubmVyLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgICA3NjggQXVnIDIyICAyMDA4IHNldC1scC1vcGVuLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDI3NzQgQXVnIDIyICAyMDA4IHNldC1scC1sb2NhbG9ubHkuZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgMTIwMiBBdWcgMjIgIDIwMDggc2V0LWxvZy1maWxlLXBlcm1pc3Npb25zLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDMxNDQgQXVnIDIyICAyMDA4IHNldC1ncnViLXBhc3N3b3JkLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDQ3MzggQXVnIDIyICAyMDA4IHNldC1ncmVldGVyLXdhcm5pbmcuZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgMjgwMyBBdWcgMjIgIDIwMDggc2V0LWZ0cGQtdW1hc2suZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgNDE0NyBBdWcgMjIgIDIwMDggc2V0LWZsZXhpYmxlLWNyeXB0LmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDM0MzcgQXVnIDIyICAyMDA4IHNldC1mYWlsZWQtbG9naW5zLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDE2NjQgQXVnIDIyICAyMDA4IHNldC1kdGxvZ2luLW9wZW4uZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgMjY0MiBBdWcgMjIgIDIwMDggc2V0LWR0bG9naW4tbG9jYWxvbmx5LmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgICA5NjEgQXVnIDIyICAyMDA4IHNldC1jYWxlbmRhci1vcGVuLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDE4MTAgQXVnIDIyICAyMDA4IHNldC1jYWxlbmRhci1sb2NhbG9ubHkuZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgMTMwNyBBdWcgMjIgIDIwMDggc2V0LWJhbm5lci10ZWxuZXRkLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDE4MjkgQXVnIDIyICAyMDA4IHNldC1iYW5uZXItc3NoZC5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICAyMDI3IEF1ZyAyMiAgMjAwOCBzZXQtYmFubmVyLXNlbmRtYWlsLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDQzNTAgQXVnIDIyICAyMDA4IHNldC1iYW5uZXItZnRwZC5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICA2NTYwIEF1ZyAyMiAgMjAwOCBzMTVrLXN0YXRpYy1hcnAuZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgMzQ2MCBBdWcgMjIgIDIwMDggczE1ay1zbXMtc2VjdXJlLWZhaWxvdmVyLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDEzMjkgQXVnIDIyICAyMDA4IHMxNWstc21zLW92ZXJyaWRlLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDIwMTAgQXVnIDIyICAyMDA4IHMxNWstZXhjbHVkZS1kb21haW5zLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgMTAxOTUgQXVnIDIyICAyMDA4IHVwZGF0ZS1pbmV0ZC1jb25mLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDQ5NDQgQXVnIDIyICAyMDA4IHVwZGF0ZS1jcm9uLWxvZy1zaXplLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDE5MDkgQXVnIDIyICAyMDA4IHVwZGF0ZS1hdC1kZW55LmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgICA2NjMgQXVnIDIyICAyMDA4IHNldC13YmVtLW9wZW4uZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgMTMyMyBBdWcgMjIgIDIwMDggc2V0LXdiZW0tbG9jYWxvbmx5LmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDMzNTIgQXVnIDIyICAyMDA4IHNldC11c2VyLXVtYXNrLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDMwNDkgQXVnIDIyICAyMDA4IHNldC11c2VyLXBhc3N3b3JkLXJlcXMuZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgIDk3NCBBdWcgMjIgIDIwMDggc2V0LXR0ZGItb3Blbi5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICAxNjM1IEF1ZyAyMiAgMjAwOCBzZXQtdHRkYi1sb2NhbG9ubHkuZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgMTU1OCBBdWcgMjIgIDIwMDggc2V0LXN5cy1zdXNwZW5kLXJlc3RyaWN0aW9ucy5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICAyNTg0IEF1ZyAyMiAgMjAwOCBzZXQtc3NoLWNvbmZpZy5maW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4tci0tci0tci0tICAgMSByb290ICAgIApyb290ICAgICAgICAgNjcyIEF1ZyAyMiAgMjAwOCBzZXQtc21jd2Vic2VydmVyLW9wZW4uZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgIDkxMCBBdWcgMjIgIDIwMDggc2V0LXNtY3dlYnNlcnZlci1sb2NhbG9ubHkuZmluPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+LXItLXItLXItLSAgIDEgcm9vdCAgICAKcm9vdCAgICAgICAgIDkwOSBBdWcgMjIgIDIwMDggc2V0LXJwYy1vcGVuLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDIwNjAgQXVnIDIyICAyMDA4IHNldC1ycGMtbG9jYWxvbmx5LmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDE2NzMgQXVnIDIyICAyMDA4IHNldC1yb290LXBhc3N3b3JkLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPi1yLS1yLS1yLS0gICAxIHJvb3QgICAgCnJvb3QgICAgICAgIDQ3MzQgQXVnIDIyICAyMDA4IHNldC1yb290LWhvbWUtZGlyLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPjxCUj48QlI+CjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPjxBIE5BTUU9IlBhc3N3b3JkIj48L0E+PEI+UGFzc3dvcmQ8L0I+PC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+b3B0L1NVTldqYXNzL0ZpbmlzaCAjCnB3ZDwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPlsvb3B0L1NVTldqYXNzL0ZpbmlzaCAjCmNhdCBzZXQtdXNlci1wYXNzd29yZC1yZXFzLmZpbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPiMhL2Jpbi9zaDwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPiM8L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4jIENvcHlyaWdodCAyMDA2IFN1bgpNaWNyb3N5c3RlbXMsIEluYy4gIEFsbCByaWdodHMgcmVzZXJ2ZWQuPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+IyBVc2UgaXMgc3ViamVjdCB0bwpsaWNlbnNlIHRlcm1zLjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPiM8L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4jIGlkZW50CiZxdW90O0AoIylzZXQtdXNlci1wYXNzd29yZC1yZXFzLmZpbiAzLjEwICAgIDA2LzEwLzMwIFNNSSZxdW90OzwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPiM8L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4jIFRoaXMgc2NyaXB0IGluc3RhbGxzCnNvbWUgYmFzaWMgcGFzc3dvcmQgcmVxdWlyZW1lbnRzIGZvciB1c2Vycy4gIE5vdGU8L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4jIHRoYXQgdGhpcyBlZmZlY3RzCmxvY2FsIHBhc3N3b3JkIHBvbGljeSBvbmx5LjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPjxCUj48QlI+CjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPmxvZ01lc3NhZ2UgJnF1b3Q7SW5zdGFsbGluZwp1c2VyIHBhc3N3b3JkIHJlcXVpcmVtZW50cy4mcXVvdDs8L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj5lY2hvICZxdW90OyZxdW90OzwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPjxCUj48QlI+CjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPlBBU1NXRD0ke0pBU1NfUk9PVF9ESVJ9ZXRjL2RlZmF1bHQvcGFzc3dkPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+PEJSPjxCUj4KPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+aWYgWyAhIC1mICR7UEFTU1dEfSBdOwp0aGVuPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+ICAgY3JlYXRlX2FfZmlsZSAtbQowNDQ0IC1vIHJvb3Q6c3lzICR7UEFTU1dEfTwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPiAgIGVjaG8gJnF1b3Q7JnF1b3Q7PC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+Zmk8L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj48QlI+PEJSPgo8L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj5jaGFuZ2VUb0JlTWFkZT0mcXVvdDswJnF1b3Q7PC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+PEJSPjxCUj4KPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+IyBEZXRlcm1pbmUgdGhlIHZhbHVlcwp0byBiZSB1c2VkLiAgSWYgdmFsdWVzIGFyZTwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPiMgYWxyZWFkeSBpbiBwbGFjZSwKdGhlbiB1c2UgdGhlbS4gIE90aGVyd2lzZSwgdXNlIHRoZTwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPiMgZGVmYXVsdHMgdGhhdCBhcmUKaW5jbHVkZWQgYmVsb3cuPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+PEJSPjxCUj4KPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+bWluV2Vla3M9YG5hd2sgLUY9CickMT09a2V5d29yZCB7IHByaW50ICQyIH0nIGtleXdvcmQ9JnF1b3Q7TUlOV0VFS1MmcXVvdDsgJHtQQVNTV0R9YDwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPjxCUj48QlI+CjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPmlmIFsgISAtegomcXVvdDske0pBU1NfQUdJTkdfTUlOV0VFS1N9JnF1b3Q7IF07IHRoZW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4gICBpZiBbCiZxdW90OyR7SkFTU19BR0lOR19NSU5XRUVLU30mcXVvdDsgIT0gJnF1b3Q7JHttaW5XZWVrc30mcXVvdDsgXTsgdGhlbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPiAgICAgCmNoYW5nZVRvQmVNYWRlPSZxdW90OzEmcXVvdDs8L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4gICAgICBpZiBbIC16CiZxdW90OyR7bWluV2Vla3N9JnF1b3Q7IF07IHRoZW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4gICAgICAgIAptaW5XZWVrcz0mcXVvdDtOT05FJnF1b3Q7PC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+ICAgICAgZmk8L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4gICAgICBsb2dNZXNzYWdlCidDaGFuZ2luZyBNSU5XRUVLUyAgIHNldHRpbmcgZnJvbSAke21pbldlZWtzfSB0bwoke0pBU1NfQUdJTkdfTUlOV0VFS1N9Lic8L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4gICBmaTwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPjxCUj48QlI+CjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPiAgCm1pbldlZWtzPSZxdW90OyR7SkFTU19BR0lOR19NSU5XRUVLU30mcXVvdDs8L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj5maTwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPjxCUj48QlI+CjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPm1heFdlZWtzPWBuYXdrIC1GPQonJDE9PWtleXdvcmQgeyBwcmludCAkMiB9JyBrZXl3b3JkPSZxdW90O01BWFdFRUtTJnF1b3Q7ICR7UEFTU1dEfWA8L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj48QlI+PEJSPgo8L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj5pZiBbICEgLXoKJnF1b3Q7JHtKQVNTX0FHSU5HX01BWFdFRUtTfSZxdW90OyBdOyB0aGVuPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+PEJSPjxCUj4KPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+ICAgaWYgWwomcXVvdDske0pBU1NfQUdJTkdfTUFYV0VFS1N9JnF1b3Q7ICE9ICZxdW90OyR7bWF4V2Vla3N9JnF1b3Q7IF07IHRoZW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4gICAgIApjaGFuZ2VUb0JlTWFkZT0mcXVvdDsxJnF1b3Q7PC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+ICAgICAgaWYgWyAtegomcXVvdDske21heFdlZWtzfSZxdW90OyBdOyB0aGVuPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+ICAgICAgICAKbWF4V2Vla3M9JnF1b3Q7Tk9ORSZxdW90OzwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPiAgICAgIGZpPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+ICAgICAgbG9nTWVzc2FnZQonQ2hhbmdpbmcgTUFYV0VFS1MgICBzZXR0aW5nIGZyb20gJHttYXhXZWVrc30gdG8KJHtKQVNTX0FHSU5HX01BWFdFRUtTfS4nPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+ICAgZmk8L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj48QlI+PEJSPgo8L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4gIAptYXhXZWVrcz0mcXVvdDske0pBU1NfQUdJTkdfTUFYV0VFS1N9JnF1b3Q7PC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+Zmk8L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj48QlI+PEJSPgo8L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj53YXJuV2Vla3M9YG5hd2sgLUY9CickMT09a2V5d29yZCB7IHByaW50ICQyIH0nIGtleXdvcmQ9JnF1b3Q7V0FSTldFRUtTJnF1b3Q7ICR7UEFTU1dEfWA8L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj48QlI+PEJSPgo8L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj5pZiBbICEgLXoKJnF1b3Q7JHtKQVNTX0FHSU5HX1dBUk5XRUVLU30mcXVvdDsgXTsgdGhlbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPjxCUj48QlI+CjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPiAgIGlmIFsKJnF1b3Q7JHtKQVNTX0FHSU5HX1dBUk5XRUVLU30mcXVvdDsgIT0gJnF1b3Q7JHt3YXJuV2Vla3N9JnF1b3Q7IF07CnRoZW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4gICAgIApjaGFuZ2VUb0JlTWFkZT0mcXVvdDsxJnF1b3Q7PC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+ICAgICAgaWYgWyAtegomcXVvdDske3dhcm5XZWVrc30mcXVvdDsgXTsgdGhlbjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPiAgICAgICAgCndhcm5XZWVrcz0mcXVvdDtOT05FJnF1b3Q7PC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+ICAgICAgZmk8L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4gICAgICBsb2dNZXNzYWdlCidDaGFuZ2luZyBXQVJOV0VFS1MgIHNldHRpbmcgZnJvbSAke3dhcm5XZWVrc30gdG8KJHtKQVNTX0FHSU5HX1dBUk5XRUVLU30uJzwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPiAgIGZpPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+PEJSPjxCUj4KPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+ICAKd2FybldlZWtzPSZxdW90OyR7SkFTU19BR0lOR19XQVJOV0VFS1N9JnF1b3Q7PC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+Zmk8L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj48QlI+PEJSPgo8L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj5wYXNzTGVuZ3RoPWBuYXdrIC1GPQonJDE9PWtleXdvcmQgeyBwcmludCAkMiB9JyBrZXl3b3JkPSZxdW90O1BBU1NMRU5HVEgmcXVvdDsgJHtQQVNTV0R9YDwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPjxCUj48QlI+CjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPmlmIFsgISAtegomcXVvdDske0pBU1NfUEFTU19MRU5HVEh9JnF1b3Q7IF07IHRoZW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj48QlI+PEJSPgo8L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4gICBpZiBbCiZxdW90OyR7SkFTU19QQVNTX0xFTkdUSH0mcXVvdDsgIT0gJnF1b3Q7JHtwYXNzTGVuZ3RofSZxdW90OyBdOyB0aGVuPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+ICAgICAKY2hhbmdlVG9CZU1hZGU9JnF1b3Q7MSZxdW90OzwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPiAgICAgIGlmIFsgLXoKJnF1b3Q7JHtwYXNzTGVuZ3RofSZxdW90OyBdOyB0aGVuPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+ICAgICAgICAKcGFzc0xlbmd0aD0mcXVvdDtOT05FJnF1b3Q7PC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+ICAgICAgZmk8L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4gICAgICBsb2dNZXNzYWdlCidDaGFuZ2luZyBQQVNTTEVOR1RIIHNldHRpbmcgZnJvbSAke3Bhc3NMZW5ndGh9IHRvCiR7SkFTU19QQVNTX0xFTkdUSH0uJzwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPiAgIGZpPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+PEJSPjxCUj4KPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+ICAKcGFzc0xlbmd0aD0mcXVvdDske0pBU1NfUEFTU19MRU5HVEh9JnF1b3Q7PC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+Zmk8L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj48QlI+PEJSPgo8L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj5pZiBbCiZxdW90OyR7Y2hhbmdlVG9CZU1hZGV9JnF1b3Q7ID0gJnF1b3Q7MSZxdW90OyBdOyB0aGVuPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+PEJSPjxCUj4KPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+ICAgZWNobyAmcXVvdDsmcXVvdDs8L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4gICBiYWNrdXBfZmlsZQoke1BBU1NXRH08L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj48QlI+PEJSPgo8L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4gICAjIFJlbW92ZSB0aGUgb2xkCmVudHJpZXMgYW5kIGluc2VydCB0aGUgbmV3IG9uZXMuPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+PEJSPjxCUj4KPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+ICAgY2F0CiR7UEFTU1dEfS4ke0pBU1NfU1VGRklYfSB8XDwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPiAgICAgIGVncmVwIC12CideTUlOV0VFS1M9fF5NQVhXRUVLUz18XldBUk5XRUVLUz18XlBBU1NMRU5HVEg9JyAmZ3Q7ICR7UEFTU1dEfTwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPjxCUj48QlI+CjwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPiAgIGlmIFsgISAtegomcXVvdDske0pBU1NfQUdJTkdfTUlOV0VFS1N9JnF1b3Q7IF07IHRoZW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4gICAgICBlY2hvCiZxdW90O01JTldFRUtTPSR7bWluV2Vla3N9JnF1b3Q7ICAgICAgJmd0OyZndDsgJHtQQVNTV0R9PC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+ICAgZmk8L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj48QlI+PEJSPgo8L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4gICBpZiBbICEgLXoKJnF1b3Q7JHtKQVNTX0FHSU5HX01BWFdFRUtTfSZxdW90OyBdOyB0aGVuPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+ICAgICAgZWNobwomcXVvdDtNQVhXRUVLUz0ke21heFdlZWtzfSZxdW90OyAgICAgICZndDsmZ3Q7ICR7UEFTU1dEfTwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPiAgIGZpPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+PEJSPjxCUj4KPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+ICAgaWYgWyAhIC16CiZxdW90OyR7SkFTU19BR0lOR19XQVJOV0VFS1N9JnF1b3Q7IF07IHRoZW48L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4gICAgICBlY2hvCiZxdW90O1dBUk5XRUVLUz0ke3dhcm5XZWVrc30mcXVvdDsgICAgJmd0OyZndDsgJHtQQVNTV0R9PC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+ICAgZmk8L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj48QlI+PEJSPgo8L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj4gICBpZiBbICEgLXoKJnF1b3Q7JHtKQVNTX1BBU1NfTEVOR1RIfSZxdW90OyBdOyB0aGVuPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+ICAgICAgZWNobwomcXVvdDtQQVNTTEVOR1RIPSR7cGFzc0xlbmd0aH0mcXVvdDsgICZndDsmZ3Q7ICR7UEFTU1dEfTwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPiAgIGZpPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+PEJSPjxCUj4KPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbSI+ICAgY2hhbmdlX293bmVyCnJvb3Q6c3lzICR7UEFTU1dEfTwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPiAgIGNoYW5nZV9kZWZhdWx0X3Blcm1zCiAke1BBU1NXRH08L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj48QlI+PEJSPgo8L1A+CjxQIENMQVNTPSJ3ZXN0ZXJuIiBTVFlMRT0ibWFyZ2luLXRvcDogMC4yMWNtIj5maTwvUD4KPFAgQ0xBU1M9Indlc3Rlcm4iIFNUWUxFPSJtYXJnaW4tdG9wOiAwLjIxY20iPiAgICBbID8wICBkYzVzZnNocmFwcDAxCiByb290ICAxICAhNTQyICAwICAyMjo0NzozOSBdPC9QPgo8UCBDTEFTUz0id2VzdGVybiIgU1RZTEU9Im1hcmdpbi10b3A6IDAuMjFjbTsgd2lkb3dzOiAwOyBvcnBoYW5zOiAwIj4vb3B0L1NVTldqYXNzL0ZpbmlzaAojPC9QPgo8L0JPRFk+CjwvSFRNTD4A" /></p>
+
+        </div>
+
+        <aside>
+          <section>
+            <div>
+              <div class="p-share">
+                <a href="http://www.facebook.com/sharer.php?src=bm&u=https%3a%2f%2fshafiqissani.github.io%2fwww.shafiq.in%2f2012%2f12%2f01%2fhardening-procedure-for-solaris-systems%2f&t=Hardening%20Procedure%20for%20Solaris%20Systems" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-facebook"></i></a>
+                <a href="http://twitter.com/intent/tweet?url=https%3a%2f%2fshafiqissani.github.io%2fwww.shafiq.in%2f2012%2f12%2f01%2fhardening-procedure-for-solaris-systems%2f&text=Hardening%20Procedure%20for%20Solaris%20Systems&tw_p=tweetbutton" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-twitter"></i></a>
+                <a href="https://plus.google.com/share?url=https%3a%2f%2fshafiqissani.github.io%2fwww.shafiq.in%2f2012%2f12%2f01%2fhardening-procedure-for-solaris-systems%2f" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-google-plus"></i></a>
+                <a href="http://getpocket.com/edit?url=https%3a%2f%2fshafiqissani.github.io%2fwww.shafiq.in%2f2012%2f12%2f01%2fhardening-procedure-for-solaris-systems%2f&title=Hardening%20Procedure%20for%20Solaris%20Systems" onclick="window.open(this.href, 'PCwindow', 'width=550, height=350, menubar=no, toolbar=no, scrollbars=yes'); return false;"><i class="fa fa-get-pocket"></i></a>
+              </div>
+            </div>
+          </section>
+
+          
+          
+          
+        </aside>
+
+      </article>
+
+    </div>
+    <div class="col-md-3">
+      <aside class="site">
+
+  
+  <section>
+    <header>Table Of Contents</header>
+    <div></div>
+  </section>
+  
+
+  
+
+  <section>
+    <header>LatestPosts</header>
+    <div>
+      
+      <article class="li">
+  <a href="https://shafiqissani.github.io/www.shafiq.in/2016/08/09/welcome-to-jekyll/" class="clearfix">
+    <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Tue, Aug 9, 2016</time>
+      </div>
+      <h2 class="title">Welcome to Jekyll!</h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://shafiqissani.github.io/www.shafiq.in/2016/03/06/2089/" class="clearfix">
+    <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Sun, Mar 6, 2016</time>
+      </div>
+      <h2 class="title"></h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://shafiqissani.github.io/www.shafiq.in/2015/07/20/archimate/" class="clearfix">
+    <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Mon, Jul 20, 2015</time>
+      </div>
+      <h2 class="title">Archimate</h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://shafiqissani.github.io/www.shafiq.in/2014/12/30/project-initiation-documentation-raci-chart/" class="clearfix">
+    <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Tue, Dec 30, 2014</time>
+      </div>
+      <h2 class="title">Project Initiation Documentation RACI Chart</h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://shafiqissani.github.io/www.shafiq.in/2014/12/28/stakeholder-raci-matrix-spreadsheet/" class="clearfix">
+    <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Sun, Dec 28, 2014</time>
+      </div>
+      <h2 class="title">Stakeholder RACI Matrix Spreadsheet</h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://shafiqissani.github.io/www.shafiq.in/2014/12/15/break-stakeholders-into-smaller-groups-according-to-roles-or-goals-doc/" class="clearfix">
+    <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Mon, Dec 15, 2014</time>
+      </div>
+      <h2 class="title">Break stakeholders into smaller groups according to roles or goals [doc]</h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://shafiqissani.github.io/www.shafiq.in/2014/12/08/stakeholder-list-document/" class="clearfix">
+    <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Mon, Dec 8, 2014</time>
+      </div>
+      <h2 class="title">Stakeholder List Document</h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://shafiqissani.github.io/www.shafiq.in/2014/12/07/a-priori-thinking/" class="clearfix">
+    <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Sun, Dec 7, 2014</time>
+      </div>
+      <h2 class="title">&#34;a priori&#34; thinking</h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://shafiqissani.github.io/www.shafiq.in/2014/12/07/some-notes-on-people-skills-and-emotional-intelligence-1/" class="clearfix">
+    <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Sun, Dec 7, 2014</time>
+      </div>
+      <h2 class="title">Some notes on people skills and emotional intelligence - 1</h2>
+    </footer>
+  </a>
+</article>
+
+      
+      <article class="li">
+  <a href="https://shafiqissani.github.io/www.shafiq.in/2014/12/06/writings-of-an-anglican-bishop/" class="clearfix">
+    <div class="image" style="background-image: url(https://shafiqissani.github.io/www.shafiq.in/images/default.jpg);"></div>
+    <footer>
+      <div class="date">
+        <time>Sat, Dec 6, 2014</time>
+      </div>
+      <h2 class="title">Writings of an Anglican bishop</h2>
+    </footer>
+  </a>
+</article>
+
+      
+    </div>
+  </section>
+
+  
+  <section>
+    <header>category</header>
+    <div>
+      <ul>
+        <li><a href="https://shafiqissani.github.io/www.shafiq.in/categories/design">design</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/categories/software-development">software-development</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/categories/project-management">project-management</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/categories/technology">technology</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/categories/documents">documents</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/categories/open-source">open-source</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/categories/linux">linux</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/categories/website-template">website-template</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/categories/business-analysis">business-analysis</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/categories/continuous-deployment">continuous-deployment</a></li>
+      </ul>
+    </div>
+  </section>
+  
+  <section>
+    <header>tag</header>
+    <div>
+      <ul>
+        <li><a href="https://shafiqissani.github.io/www.shafiq.in/tags/programming">programming</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/tags/linux">linux</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/tags/project-management">project-management</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/tags/unix">unix</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/tags/operating-system">operating-system</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/tags/perl">perl</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/tags/business">business</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/tags/business-analysis">business-analysis</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/tags/continuous-deployment">continuous-deployment</a></li><li><a href="https://shafiqissani.github.io/www.shafiq.in/tags/css">css</a></li>
+      </ul>
+    </div>
+  </section>
+  
+
+</aside>
+
+    </div>
+  </div>
+</div>
+
+
+<footer class="l-footer">
+  <p>&copy; 2016 Shafiq Alibhai</p>
+  <p>Powered by <a href="http://gohugo.io" target="_blank" rel="nofollow">Hugo</a>, Theme <a href="https://github.com/dim0627/hugo_theme_robust" target="_blank" rel="nofollow">robust</a> designed by <a href="http://yet.unresolved.xyz" target="_blank" rel="nofollow">Daisuke Tsuji</a></p>
+</footer>
+
+<script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+  </body>
+</html>
+

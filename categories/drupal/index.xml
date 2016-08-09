@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://shafiqissani.github.io/www.shafiq.in/categories/drupal/</link>
+    <link>https://www.shafiq.in/categories/drupal/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>dump the contents of the node’s field as an array</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2013/09/11/dump-the-contents-of-the-nodes-field-as-an-array/</link>
+          <link>https://www.shafiq.in/2013/09/11/dump-the-contents-of-the-nodes-field-as-an-array/</link>
           <pubDate>Wed, 11 Sep 2013 10:32:05 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2013/09/11/dump-the-contents-of-the-nodes-field-as-an-array/</guid>
+          <guid>https://www.shafiq.in/2013/09/11/dump-the-contents-of-the-nodes-field-as-an-array/</guid>
           <description>&lt;h1&gt;[DRUPAL 6] dump the contents of the node’s field as an array:&lt;/h1&gt;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;
 &lt;div&gt;&lt;strong&gt;&lt;code&gt;var_export(content_fields(&#39;field_name_of_the_field&#39;, &#39;name_of_the_content_type&#39;));&lt;/code&gt;&lt;/strong&gt;&lt;/div&gt;
@@ -26,10 +26,10 @@
       
         <item>
           <title>Drupal Solr search &amp; auto-complete as you type</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2013/09/05/drupal-solr-search-auto-complete-as-you-type/</link>
+          <link>https://www.shafiq.in/2013/09/05/drupal-solr-search-auto-complete-as-you-type/</link>
           <pubDate>Thu, 05 Sep 2013 11:51:55 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2013/09/05/drupal-solr-search-auto-complete-as-you-type/</guid>
+          <guid>https://www.shafiq.in/2013/09/05/drupal-solr-search-auto-complete-as-you-type/</guid>
           <description>&lt;p&gt;http://www.youtube.com/watch?v=7zilOofPU8c&lt;/p&gt;
 </description>
         </item>
@@ -38,10 +38,10 @@
       
         <item>
           <title>Drupal 7 theme - Mobile boilerplate</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2013/09/05/drupal-7-theme-mobile-boilerplate/</link>
+          <link>https://www.shafiq.in/2013/09/05/drupal-7-theme-mobile-boilerplate/</link>
           <pubDate>Thu, 05 Sep 2013 09:47:24 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2013/09/05/drupal-7-theme-mobile-boilerplate/</guid>
+          <guid>https://www.shafiq.in/2013/09/05/drupal-7-theme-mobile-boilerplate/</guid>
           <description>&lt;p&gt;&lt;strong&gt;Mobile Boilerplate is a professional front-end template that helps you build fast and robust mobile web applications. Spend more time developing and less time reinventing the wheel.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Features&lt;/p&gt;
 &lt;p&gt;Mobile browser optimizations.&lt;br /&gt;

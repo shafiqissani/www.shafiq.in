@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://shafiqissani.github.io/www.shafiq.in/tags/project-management-skills/</link>
+    <link>https://www.shafiq.in/tags/project-management-skills/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Why can we not allow for a process that creates detailed requirements and design information for each feature so that we can create more meaningful estimates?</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2010/07/19/why-can-we-not-allow-for-a-process-that-creates-detailed-requirements-and-design-information-for-each-feature-so-that-we-can-create-more-meaningful-estimates/</link>
+          <link>https://www.shafiq.in/2010/07/19/why-can-we-not-allow-for-a-process-that-creates-detailed-requirements-and-design-information-for-each-feature-so-that-we-can-create-more-meaningful-estimates/</link>
           <pubDate>Mon, 19 Jul 2010 14:56:59 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2010/07/19/why-can-we-not-allow-for-a-process-that-creates-detailed-requirements-and-design-information-for-each-feature-so-that-we-can-create-more-meaningful-estimates/</guid>
+          <guid>https://www.shafiq.in/2010/07/19/why-can-we-not-allow-for-a-process-that-creates-detailed-requirements-and-design-information-for-each-feature-so-that-we-can-create-more-meaningful-estimates/</guid>
           <description>&lt;p&gt;Why can we not allow for a process that creates detailed requirements and design information for each feature so that we can create more meaningful estimates? Isn&#39;t that the professional way to approach the problem? If the schedule provides time for more detailed estimating at this time, by all means do it! However, we believe that it is crucial to be able to make some quick decisions about the scope of the activity without a more detailed estimate. Why? Because to do otherwise invests resources in what will later be determined to be &#34;wasted inventory,&#34;&lt;/p&gt;
 </description>
         </item>
@@ -24,10 +24,10 @@
       
         <item>
           <title>The &#34;Yes, But&#34; Syndrome</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2010/07/14/the-yes-but-syndrome/</link>
+          <link>https://www.shafiq.in/2010/07/14/the-yes-but-syndrome/</link>
           <pubDate>Wed, 14 Jul 2010 11:43:26 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2010/07/14/the-yes-but-syndrome/</guid>
+          <guid>https://www.shafiq.in/2010/07/14/the-yes-but-syndrome/</guid>
           <description>&lt;p style=&#34;text-align:left;&#34;&gt;One of the most frustrating, pervasive, and seemingly downright sinister problems in all of application development is the &#34;Yes, But&#34; syndrome, being the observation of the users&#39; reaction to every piece of software I have ever developed.&lt;/p&gt;
 &lt;p style=&#34;text-align:left;&#34;&gt;For whatever reason, I always observe two immediate, distinct, and separate reactions when the users see the system implementation for the first time:&lt;/p&gt;
 &lt;p style=&#34;text-align:left;&#34;&gt;• &#34;Wow, this is so cool; we can really use this, what a neat job,&lt;br /&gt;

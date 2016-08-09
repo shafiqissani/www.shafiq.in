@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://shafiqissani.github.io/www.shafiq.in/tags/load-computing/</link>
+    <link>https://www.shafiq.in/tags/load-computing/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Perl - system load</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2010/09/07/perl-system-load/</link>
+          <link>https://www.shafiq.in/2010/09/07/perl-system-load/</link>
           <pubDate>Tue, 07 Sep 2010 14:15:06 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2010/09/07/perl-system-load/</guid>
+          <guid>https://www.shafiq.in/2010/09/07/perl-system-load/</guid>
           <description>&lt;p&gt;To find the system load use the following perl snippet :&lt;/p&gt;
 &lt;p&gt;1) &lt;a class=&#34;zem_slink&#34; title=&#34;Load (computing)&#34; rel=&#34;wikipedia&#34; href=&#34;http://en.wikipedia.org/wiki/Load_%28computing%29&#34;&gt;System load&lt;/a&gt; of last one minute :&lt;/p&gt;
 &lt;pre&gt;&lt;del&gt;&lt;span style=&#34;font-family:Georgia, &#39;Bitstream Charter&#39;, serif;color:#444444;&#34;&gt;my $system_load = exec(&#39;&lt;a class=&#34;zem_slink&#34; title=&#34;Uptime&#34; rel=&#34;wikipedia&#34; href=&#34;http://en.wikipedia.org/wiki/Uptime&#34;&gt;uptime&lt;/a&gt; | &lt;a class=&#34;zem_slink&#34; title=&#34;AWK&#34; rel=&#34;homepage&#34; href=&#34;http://cm.bell-labs.com/cm/cs/awkbook/index.html&#34;&gt;awk&lt;/a&gt; -F &#34;load average: &#34; 

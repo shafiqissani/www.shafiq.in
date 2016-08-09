@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://shafiqissani.github.io/www.shafiq.in/categories/reference-manuals/</link>
+    <link>https://www.shafiq.in/categories/reference-manuals/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Typo3 Reference Manuals - A Google Chrome Extension</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2010/03/27/typo3-reference-manuals-a-google-chrome-extension/</link>
+          <link>https://www.shafiq.in/2010/03/27/typo3-reference-manuals-a-google-chrome-extension/</link>
           <pubDate>Sat, 27 Mar 2010 07:43:04 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2010/03/27/typo3-reference-manuals-a-google-chrome-extension/</guid>
+          <guid>https://www.shafiq.in/2010/03/27/typo3-reference-manuals-a-google-chrome-extension/</guid>
           <description>&lt;p&gt;Following is the link to *my first* google extension.&lt;/p&gt;
 &lt;p&gt;It&#39;s a &lt;strong&gt;collections of Typo3 reference manuals&lt;/strong&gt; taken straight from typo3.org website.&lt;/p&gt;
 &lt;p&gt;It&#39;s not nearly what I&#39;d call a cool extension, but hey it helps. :)&lt;/p&gt;

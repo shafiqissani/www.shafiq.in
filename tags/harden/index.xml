@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://shafiqissani.github.io/www.shafiq.in/tags/harden/</link>
+    <link>https://www.shafiq.in/tags/harden/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Generic Hardening</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2013/01/12/generic-hardening/</link>
+          <link>https://www.shafiq.in/2013/01/12/generic-hardening/</link>
           <pubDate>Sat, 12 Jan 2013 11:38:09 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2013/01/12/generic-hardening/</guid>
+          <guid>https://www.shafiq.in/2013/01/12/generic-hardening/</guid>
           <description>&lt;h1&gt;Download document-&amp;gt; &lt;a href=&#34;http://shafiqissani.files.wordpress.com/2013/01/generic-hardening-doc.docx&#34;&gt;Generic Hardening doc&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;b&gt;Hardening: &lt;/b&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span style=&#34;font-family:Calibri, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;span style=&#34;font-family:Verdana, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;Hardening is the process of securely deploying systems with the practice of ‘least privilege’. Hardening includes:&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;

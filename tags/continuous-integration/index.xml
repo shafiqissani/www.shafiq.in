@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://shafiqissani.github.io/www.shafiq.in/tags/continuous-integration/</link>
+    <link>https://www.shafiq.in/tags/continuous-integration/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Continuous Deployment</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2010/10/19/continuous-deployment/</link>
+          <link>https://www.shafiq.in/2010/10/19/continuous-deployment/</link>
           <pubDate>Tue, 19 Oct 2010 14:37:45 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2010/10/19/continuous-deployment/</guid>
+          <guid>https://www.shafiq.in/2010/10/19/continuous-deployment/</guid>
           <description>&lt;p&gt;[slideshare id=5345889&amp;amp;doc=continuousdeployment-101003140021-phpapp01]&lt;/p&gt;
 </description>
         </item>

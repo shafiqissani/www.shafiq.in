@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://shafiqissani.github.io/www.shafiq.in/tags/languages/</link>
+    <link>https://www.shafiq.in/tags/languages/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Descriptive programming in QTP</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2011/11/11/descriptive-programming-in-qtp/</link>
+          <link>https://www.shafiq.in/2011/11/11/descriptive-programming-in-qtp/</link>
           <pubDate>Fri, 11 Nov 2011 10:30:05 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2011/11/11/descriptive-programming-in-qtp/</guid>
+          <guid>https://www.shafiq.in/2011/11/11/descriptive-programming-in-qtp/</guid>
           <description>&lt;pre&gt;Download link : &lt;a href=&#34;http://shafiqissani.files.wordpress.com/2011/11/6010dae508eb401983bcc812c77ecb17.doc&#34;&gt;6010dae508eb401983bcc812c77ecb17&lt;/a&gt;&lt;/pre&gt;
 &lt;h2&gt;&lt;span style=&#34;font-family:Times, &#39;Times New Roman&#39;, serif;&#34;&gt;&lt;span style=&#34;font-size:small;&#34;&gt;&lt;br /&gt;
 Introduction:&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
@@ -166,10 +166,10 @@ Introduction:&lt;/span&gt;&lt;/span&gt;&lt;/h2&gt;
       
         <item>
           <title>Notes on build script</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2011/05/10/notes-on-build-script/</link>
+          <link>https://www.shafiq.in/2011/05/10/notes-on-build-script/</link>
           <pubDate>Tue, 10 May 2011 00:01:40 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2011/05/10/notes-on-build-script/</guid>
+          <guid>https://www.shafiq.in/2011/05/10/notes-on-build-script/</guid>
           <description>&lt;ul&gt;
 &lt;li&gt;Choose a language that can be used in &lt;a class=&#34;zem_slink&#34; title=&#34;Cross-platform&#34; href=&#34;http://en.wikipedia.org/wiki/Cross-platform&#34; rel=&#34;wikipedia&#34;&gt;multiple platforms&lt;/a&gt; (very important for a &lt;a class=&#34;zem_slink&#34; title=&#34;Java (programming language)&#34; href=&#34;http://www.oracle.com/technetwork/java/&#34; rel=&#34;homepage&#34;&gt;Java&lt;/a&gt; project)&lt;/li&gt;
 &lt;li&gt;Ensure that as many steps are automated. Begin with a full clean up and allow full &lt;a class=&#34;zem_slink&#34; title=&#34;Software build&#34; href=&#34;http://en.wikipedia.org/wiki/Software_build&#34; rel=&#34;wikipedia&#34;&gt;build&lt;/a&gt; and deployment to the server&lt;/li&gt;

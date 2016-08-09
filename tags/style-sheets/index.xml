@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://shafiqissani.github.io/www.shafiq.in/tags/style-sheets/</link>
+    <link>https://www.shafiq.in/tags/style-sheets/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>jquery datatables hide column without removing it from DOM</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2013/04/23/jquery-datatables-hide-column-without-removing-it-from-dom/</link>
+          <link>https://www.shafiq.in/2013/04/23/jquery-datatables-hide-column-without-removing-it-from-dom/</link>
           <pubDate>Tue, 23 Apr 2013 11:11:33 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2013/04/23/jquery-datatables-hide-column-without-removing-it-from-dom/</guid>
+          <guid>https://www.shafiq.in/2013/04/23/jquery-datatables-hide-column-without-removing-it-from-dom/</guid>
           <description>&lt;pre&gt;&lt;a href=&#34;none; }  that should make that column hidden...&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;http://stackoverflow.com/questions/14372655/jquery-datatables-hide-column-without-removing-it-from-dom
 
 &lt;/strong&gt;&lt;/a&gt;

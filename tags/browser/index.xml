@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://shafiqissani.github.io/www.shafiq.in/tags/browser/</link>
+    <link>https://www.shafiq.in/tags/browser/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>How to Install Latest Firefox 4 and Firefox 3 in Ubuntu ?</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2011/02/07/how-to-install-latest-firefox-4-and-firefox-3-in-ubuntu/</link>
+          <link>https://www.shafiq.in/2011/02/07/how-to-install-latest-firefox-4-and-firefox-3-in-ubuntu/</link>
           <pubDate>Mon, 07 Feb 2011 12:14:17 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2011/02/07/how-to-install-latest-firefox-4-and-firefox-3-in-ubuntu/</guid>
+          <guid>https://www.shafiq.in/2011/02/07/how-to-install-latest-firefox-4-and-firefox-3-in-ubuntu/</guid>
           <description>&lt;p&gt;&lt;strong&gt;How to Install Latest Firefox 4 and Firefox 3 in &lt;a class=&#34;zem_slink&#34; title=&#34;Ubuntu (operating system)&#34; rel=&#34;homepage&#34; href=&#34;http://www.ubuntu.com/&#34;&gt;Ubuntu&lt;/a&gt; ?&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Do the following in Terminal to install latest &lt;a class=&#34;zem_slink&#34; title=&#34;Mozilla Firefox 4&#34; rel=&#34;homepage&#34; href=&#34;http://www.mozilla.com/en-US/firefox/beta/&#34;&gt;Firefox 4.0&lt;/a&gt; and Firefox 3 in Ubuntu.&lt;/li&gt;

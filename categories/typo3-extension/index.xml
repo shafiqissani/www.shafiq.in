@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://shafiqissani.github.io/www.shafiq.in/categories/typo3-extension/</link>
+    <link>https://www.shafiq.in/categories/typo3-extension/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Ajax Tabbed Google Search - A Typo3 Extension</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2010/04/13/ajax-tabbed-google-search-a-typo3-extension/</link>
+          <link>https://www.shafiq.in/2010/04/13/ajax-tabbed-google-search-a-typo3-extension/</link>
           <pubDate>Tue, 13 Apr 2010 16:11:54 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2010/04/13/ajax-tabbed-google-search-a-typo3-extension/</guid>
+          <guid>https://www.shafiq.in/2010/04/13/ajax-tabbed-google-search-a-typo3-extension/</guid>
           <description>&lt;p&gt;Following is the link to *my first* typo3 extension.&lt;/p&gt;
 &lt;p&gt;It’s a&lt;strong&gt; &lt;/strong&gt;front end plugin used to display a modified google search engine.  The search engine is ajax based and has tabs feature. There is absolutely no page loading.&lt;/p&gt;
 &lt;pre&gt;&lt;em&gt;&lt;strong&gt;Download Link :  &lt;/strong&gt;&lt;/em&gt;&lt;em&gt;&lt;a href=&#34;http://projects.issani.in/typo3/ajax_google_search/T3X_ajax_google_search-0_0_1-z-201004131450.t3x&#34;&gt;&lt;strong&gt;http://projects.issani.in/typo3/ajax_google_search/T3X_ajax_google_search-0_0_1-z-201004131450.t3x&lt;/strong&gt;&lt;/a&gt;&lt;/em&gt;&lt;/pre&gt;

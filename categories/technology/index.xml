@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://shafiqissani.github.io/www.shafiq.in/categories/technology/</link>
+    <link>https://www.shafiq.in/categories/technology/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Running Firefox os apps in Ubuntu linux</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2012/11/24/running-firefox-os-apps-in-ubuntu-linux/</link>
+          <link>https://www.shafiq.in/2012/11/24/running-firefox-os-apps-in-ubuntu-linux/</link>
           <pubDate>Sat, 24 Nov 2012 17:32:39 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2012/11/24/running-firefox-os-apps-in-ubuntu-linux/</guid>
+          <guid>https://www.shafiq.in/2012/11/24/running-firefox-os-apps-in-ubuntu-linux/</guid>
           <description>&lt;p&gt;&amp;nbsp;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://shafiqissani.files.wordpress.com/2012/11/2012-11-24-172842_1366x768_scrot.png&#34;&gt;&lt;img class=&#34;aligncenter size-full wp-image-1449&#34; title=&#34;2012-11-24-172842_1366x768_scrot&#34; alt=&#34;&#34; src=&#34;{{ site.baseurl }}/assets/2012-11-24-172842_1366x768_scrot.png&#34; height=&#34;339&#34; width=&#34;604&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
@@ -25,10 +25,10 @@
       
         <item>
           <title>Perl Expect bindings - Simple example</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2012/02/21/perl-expect-bindings-simple-example/</link>
+          <link>https://www.shafiq.in/2012/02/21/perl-expect-bindings-simple-example/</link>
           <pubDate>Tue, 21 Feb 2012 12:48:05 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2012/02/21/perl-expect-bindings-simple-example/</guid>
+          <guid>https://www.shafiq.in/2012/02/21/perl-expect-bindings-simple-example/</guid>
           <description>&lt;p&gt;Hello World file (hello.pl)&lt;/p&gt;
 &lt;pre&gt;#!/usr/bin/perl
 use strict;
@@ -56,10 +56,10 @@ $exp-&amp;gt;expect($timeout);
       
         <item>
           <title>Continuous Delivery : A Mini Hurdle</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2012/01/02/continuous-delivery-a-mini-hurdle/</link>
+          <link>https://www.shafiq.in/2012/01/02/continuous-delivery-a-mini-hurdle/</link>
           <pubDate>Mon, 02 Jan 2012 23:01:13 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2012/01/02/continuous-delivery-a-mini-hurdle/</guid>
+          <guid>https://www.shafiq.in/2012/01/02/continuous-delivery-a-mini-hurdle/</guid>
           <description>&lt;p&gt;The first hurdle to overcome with Continuous Delivery I think is not getting your product’s code onto the machine itself, but managing the actual machine and it’s software... and in talking to people. It is the subtle nuances between machines due to people tweaking things on the fly that lead to the worst [most annoying] bugs to troubleshoot.&lt;br /&gt;
 The end-goal of managing your machines is that no one ever logs into the machine directly.&lt;/p&gt;
 </description>
@@ -69,10 +69,10 @@ The end-goal of managing your machines is that no one ever logs into the machine
       
         <item>
           <title>Status Quo : Review Of Some Testing Practices</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2011/11/11/status-quo-review-of-some-testing-practices/</link>
+          <link>https://www.shafiq.in/2011/11/11/status-quo-review-of-some-testing-practices/</link>
           <pubDate>Fri, 11 Nov 2011 10:40:14 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2011/11/11/status-quo-review-of-some-testing-practices/</guid>
+          <guid>https://www.shafiq.in/2011/11/11/status-quo-review-of-some-testing-practices/</guid>
           <description>&lt;pre&gt;Download link : &lt;a href=&#34;http://shafiqissani.files.wordpress.com/2011/11/9status-quo-review-of-existing-testing-practices.pdf&#34;&gt;Status Quo Review of Existing Testing Practices&lt;/a&gt;
 
 Status Quo Review Of Existing &lt;a class=&#34;zem_slink&#34; title=&#34;Software testing&#34; href=&#34;http://en.wikipedia.org/wiki/Software_testing&#34; rel=&#34;wikipedia&#34;&gt;Testing&lt;/a&gt; Practices
@@ -189,10 +189,10 @@ merely implies that doing so may be somewhat more difficult.&lt;/pre&gt;
       
         <item>
           <title>How To Disable Google Analytics</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2010/09/30/how-to-disable-google-analytics/</link>
+          <link>https://www.shafiq.in/2010/09/30/how-to-disable-google-analytics/</link>
           <pubDate>Thu, 30 Sep 2010 11:57:57 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2010/09/30/how-to-disable-google-analytics/</guid>
+          <guid>https://www.shafiq.in/2010/09/30/how-to-disable-google-analytics/</guid>
           <description>&lt;h3&gt;&lt;span style=&#34;font-weight:normal;font-size:13px;&#34;&gt;You don´t like Google Analytics?&lt;/span&gt;&lt;/h3&gt;
 &lt;p&gt;Go to &lt;a href=&#34;http://tools.google.com/dlpage/gaoptout&#34; target=&#34;_blank&#34;&gt;http://tools.google.com/dlpage/gaoptout&lt;/a&gt; and install a browser plugin to disable Google Analytics.&lt;/p&gt;
 </description>
@@ -202,10 +202,10 @@ merely implies that doing so may be somewhat more difficult.&lt;/pre&gt;
       
         <item>
           <title>Ipad is a ... ?</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2010/07/10/ipad-is-a/</link>
+          <link>https://www.shafiq.in/2010/07/10/ipad-is-a/</link>
           <pubDate>Sat, 10 Jul 2010 14:26:20 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2010/07/10/ipad-is-a/</guid>
+          <guid>https://www.shafiq.in/2010/07/10/ipad-is-a/</guid>
           <description>&lt;p style=&#34;text-align:center;&#34;&gt;
 &lt;p&gt;[caption id=&#34;attachment_704&#34; align=&#34;aligncenter&#34; width=&#34;446&#34; caption=&#34;Ipad is a ... ?&#34;]&lt;a href=&#34;http://shafiqissani.files.wordpress.com/2010/07/www-google-com-screen-capture-2010-7-10-14-17-311.png&#34;&gt;&lt;img class=&#34;size-full wp-image-704   &#34; title=&#34;www.google.com screen capture 2010-7-10-14-17-31&#34; src=&#34;{{ site.baseurl }}/assets/www-google-com-screen-capture-2010-7-10-14-17-311.png&#34; alt=&#34;Ipad is a ... ?&#34; width=&#34;446&#34; height=&#34;338&#34; /&gt;&lt;/a&gt;[/caption]&lt;/p&gt;
 </description>
@@ -215,10 +215,10 @@ merely implies that doing so may be somewhat more difficult.&lt;/pre&gt;
       
         <item>
           <title>OpenSSL - Public Certificate and Private key</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2010/06/10/openssl-public-certificate-and-private-key/</link>
+          <link>https://www.shafiq.in/2010/06/10/openssl-public-certificate-and-private-key/</link>
           <pubDate>Thu, 10 Jun 2010 17:49:12 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2010/06/10/openssl-public-certificate-and-private-key/</guid>
+          <guid>https://www.shafiq.in/2010/06/10/openssl-public-certificate-and-private-key/</guid>
           <description>&lt;p&gt;privatekey -&amp;gt; openssl  genrsa [-out filename] [-passout arg] [-des] [-des3] [-idea] [-f4] [-3] [-rand file(s)] [numbits]&lt;/p&gt;
 &lt;p&gt;public certificate -&amp;gt; $ openssl req -new -x509 -nodes -sha1 -days 365 -key host.key &amp;gt; host.cert&lt;/p&gt;
 </description>
@@ -228,10 +228,10 @@ merely implies that doing so may be somewhat more difficult.&lt;/pre&gt;
       
         <item>
           <title>SVN - revision control - slides - pdf</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2010/03/22/svn-revision-control-slides-pdf/</link>
+          <link>https://www.shafiq.in/2010/03/22/svn-revision-control-slides-pdf/</link>
           <pubDate>Mon, 22 Mar 2010 06:54:55 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2010/03/22/svn-revision-control-slides-pdf/</guid>
+          <guid>https://www.shafiq.in/2010/03/22/svn-revision-control-slides-pdf/</guid>
           <description>&lt;h3&gt;SVN - revision control&lt;/h3&gt;
 &lt;pre&gt;Download pdf : &lt;a href=&#34;http://docs.issani.in/dump/svn-tuts-100217-v2.pdf&#34;&gt;&lt;span style=&#34;color:#000000;&#34;&gt;http://docs.issani.in/dump/svn-tuts-100217-v2.pdf&lt;/span&gt;&lt;/a&gt;&lt;/pre&gt;
 &lt;div id=&#34;_mcePaste&#34;&gt;Coordinating projects&lt;/div&gt;
@@ -447,10 +447,10 @@ merely implies that doing so may be somewhat more difficult.&lt;/pre&gt;
       
         <item>
           <title>Scrum Development Model  - steps</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2010/03/22/scrum-development-model-steps/</link>
+          <link>https://www.shafiq.in/2010/03/22/scrum-development-model-steps/</link>
           <pubDate>Mon, 22 Mar 2010 06:52:15 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2010/03/22/scrum-development-model-steps/</guid>
+          <guid>https://www.shafiq.in/2010/03/22/scrum-development-model-steps/</guid>
           <description>&lt;h3&gt;Scrum Development Model&lt;/h3&gt;
 &lt;pre&gt;Download pdf : &lt;a href=&#34;http://docs.issani.in/dump/scrum-tuts-100219-v2.1.pdf&#34;&gt;&lt;span style=&#34;color:#000000;&#34;&gt;http://docs.issani.in/dump/scrum-tuts-100219-v2.1.pdf&lt;/span&gt;&lt;/a&gt;&lt;/pre&gt;
 &lt;div id=&#34;_mcePaste&#34;&gt;&lt;a class=&#34;zem_slink&#34; title=&#34;Requirement&#34; href=&#34;http://en.wikipedia.org/wiki/Requirement&#34; rel=&#34;wikipedia&#34;&gt;Required&lt;/a&gt; Steps&lt;/div&gt;
@@ -519,10 +519,10 @@ merely implies that doing so may be somewhat more difficult.&lt;/pre&gt;
       
         <item>
           <title>Restarting a Project from Scratch !</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2010/03/08/restarting-a-project-from-scratch/</link>
+          <link>https://www.shafiq.in/2010/03/08/restarting-a-project-from-scratch/</link>
           <pubDate>Mon, 08 Mar 2010 05:40:13 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2010/03/08/restarting-a-project-from-scratch/</guid>
+          <guid>https://www.shafiq.in/2010/03/08/restarting-a-project-from-scratch/</guid>
           <description>&lt;p&gt;There&#39;s a subtle reason that programmers always want to throw away the code and start over. The reason is that they think the old code is a mess. And here is the interesting observation: &lt;em&gt;they are probably wrong.&lt;/em&gt; The reason that they think the old code is a mess is because of a cardinal, fundamental law of programming:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;It’s harder to read code than to write it.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;This is why code reuse is so hard. This is why everybody on your team has a different function they like to use for splitting strings into arrays of strings. They write their own function because it&#39;s easier and more fun than figuring out how the old function works.&lt;/p&gt;
@@ -533,10 +533,10 @@ merely implies that doing so may be somewhat more difficult.&lt;/pre&gt;
       
         <item>
           <title>Go Programming Language *sigh*</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2009/11/13/go-programming-language/</link>
+          <link>https://www.shafiq.in/2009/11/13/go-programming-language/</link>
           <pubDate>Fri, 13 Nov 2009 06:32:38 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2009/11/13/go-programming-language/</guid>
+          <guid>https://www.shafiq.in/2009/11/13/go-programming-language/</guid>
           <description>&lt;p&gt;Google makes ... or should I say &#34;invents&#34; a new programming language, which is super fast and god knows what ...&lt;/p&gt;
 &lt;p&gt;... yet another language to learn  *sigh*&lt;/p&gt;
 </description>
@@ -546,10 +546,10 @@ merely implies that doing so may be somewhat more difficult.&lt;/pre&gt;
       
         <item>
           <title>The launch of Mandriva Linux 2010</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2009/10/04/the-launch-of-mandriva-linux-2010/</link>
+          <link>https://www.shafiq.in/2009/10/04/the-launch-of-mandriva-linux-2010/</link>
           <pubDate>Sun, 04 Oct 2009 05:26:21 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2009/10/04/the-launch-of-mandriva-linux-2010/</guid>
+          <guid>https://www.shafiq.in/2009/10/04/the-launch-of-mandriva-linux-2010/</guid>
           <description>&lt;p&gt;Scheduled for November 3rd, 2009, the new release of Mandriva Linux 2010 offers exceptional innovations. As simple to use as usual, you will find applications such as: KDE 4.3.1, GNOME 2.28, kernel 2.6.31.1, Xorg 1.6.4 RC 1 with the last driver for Intel graphical card. Moblin 2 can be tested on the new Mandriva&#39;s distribution.&lt;/p&gt;
 </description>
         </item>
@@ -558,10 +558,10 @@ merely implies that doing so may be somewhat more difficult.&lt;/pre&gt;
       
         <item>
           <title>Final Year Project Abstract -- Test Automation in ERP Applications</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2009/08/06/final-year-project-abstract-test-automation-in-erp-applications/</link>
+          <link>https://www.shafiq.in/2009/08/06/final-year-project-abstract-test-automation-in-erp-applications/</link>
           <pubDate>Thu, 06 Aug 2009 06:09:53 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2009/08/06/final-year-project-abstract-test-automation-in-erp-applications/</guid>
+          <guid>https://www.shafiq.in/2009/08/06/final-year-project-abstract-test-automation-in-erp-applications/</guid>
           <description>&lt;p align=&#34;center&#34;&gt;&lt;strong&gt;Test Automation in ERP Applications&lt;/strong&gt;&lt;/p&gt;
 &lt;p style=&#34;text-align:center;&#34;&gt;&lt;strong&gt;Optimization and Enhancement&lt;/strong&gt;&lt;/p&gt;
 &lt;p style=&#34;text-align:center;&#34;&gt;Shafiq Issani&lt;/p&gt;
@@ -609,10 +609,10 @@ merely implies that doing so may be somewhat more difficult.&lt;/pre&gt;
       
         <item>
           <title>9 skills developers will need in the next five years</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2009/07/12/9-skills-developers-will-need-in-the-next-five-years/</link>
+          <link>https://www.shafiq.in/2009/07/12/9-skills-developers-will-need-in-the-next-five-years/</link>
           <pubDate>Sun, 12 Jul 2009 07:40:57 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2009/07/12/9-skills-developers-will-need-in-the-next-five-years/</guid>
+          <guid>https://www.shafiq.in/2009/07/12/9-skills-developers-will-need-in-the-next-five-years/</guid>
           <description>&lt;p&gt;With the recent changes in the economy, a lot of developers are focused on their short-term job prospects. At the same time, it’s important to make sure that you get the most bang for your buck when it comes to taking the time and energy to learn new skills. Here is a  list of 10 skills you should be learning right now to make sure that your resume is relevant for the next five years. The list is hardly exhaustive, and there are huge swaths of the industry it won’t cover (mainframe developers, for example). Nonetheless, for average mainstream development, you can’t go wrong learning at least seven of these skills — not only to the point where you can talk convincingly about them at a job interview, but actually use them on the job.&lt;/p&gt;
 &lt;p&gt;1: One of the “Big Three” (.NET, Java, PHP)&lt;br /&gt;
 Unless there is a radical shift in the development world, most developers will need to know at least one of the Big Three development systems — .NET (VB.NET or C#), Java, or PHP — for the near future. It’s not enough to know the core languages, either. As projects encompass more and more disparate functionality, you’ll need to know the associated frameworks and libraries more deeply.&lt;/p&gt;
@@ -639,10 +639,10 @@ The late 1990s saw Web development rise to mainstream acceptance and then begin 
       
         <item>
           <title>Flash z-order -- always on top?</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2009/07/01/flash-z-order-always-on-top/</link>
+          <link>https://www.shafiq.in/2009/07/01/flash-z-order-always-on-top/</link>
           <pubDate>Wed, 01 Jul 2009 07:41:55 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2009/07/01/flash-z-order-always-on-top/</guid>
+          <guid>https://www.shafiq.in/2009/07/01/flash-z-order-always-on-top/</guid>
           <description>&lt;p&gt;I was trying to use a javascript pull-down menu that was just above a flash movie. The pull down was always BEHIND the flash movie, no matter how I set the z-order. Here is how I fixed it:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Adding this parameter to the OBJECT tag: &amp;lt;param name=&#34;wmode&#34; value=&#34;transparent&#34;&amp;gt;&lt;/li&gt;
@@ -656,10 +656,10 @@ The late 1990s saw Web development rise to mainstream acceptance and then begin 
       
         <item>
           <title>Choose your titles wisely for better URLs</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2009/06/20/choose-your-titles-wisely-for-better-urls/</link>
+          <link>https://www.shafiq.in/2009/06/20/choose-your-titles-wisely-for-better-urls/</link>
           <pubDate>Sat, 20 Jun 2009 05:47:06 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2009/06/20/choose-your-titles-wisely-for-better-urls/</guid>
+          <guid>https://www.shafiq.in/2009/06/20/choose-your-titles-wisely-for-better-urls/</guid>
           <description>&lt;p&gt;&lt;span&gt;R&lt;/span&gt;emember to always use the hyphen character (-) in your weblinks if it contains more than one word. That way, you&#39;ll get more value from your URL keywords. Google treats hyphen (-) like a space, while it treats underscore as a non-breaking space.&lt;/p&gt;
 &lt;p&gt;The slash character / is also treated as a space, by the way. I wouldn&#39;t use that in a URL, but you are safe using it to separate two keywords in your texts.&lt;/p&gt;
 </description>
@@ -669,10 +669,10 @@ The late 1990s saw Web development rise to mainstream acceptance and then begin 
       
         <item>
           <title>CSS Browser Compatibility Improvement Tip</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2009/06/06/css-browser-compatibility-improvement-tip/</link>
+          <link>https://www.shafiq.in/2009/06/06/css-browser-compatibility-improvement-tip/</link>
           <pubDate>Sat, 06 Jun 2009 10:09:09 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2009/06/06/css-browser-compatibility-improvement-tip/</guid>
+          <guid>https://www.shafiq.in/2009/06/06/css-browser-compatibility-improvement-tip/</guid>
           <description>&lt;p&gt;Always use the following CSS code when not explicitly mentioning padding and margin.&lt;br /&gt;
 Not all browsers take zero padding and margin by default.&lt;/p&gt;
 &lt;p&gt;html {&lt;br /&gt;
@@ -690,10 +690,10 @@ margin: 0px;&lt;br /&gt;
       
         <item>
           <title>css fail</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2009/05/11/css-fail/</link>
+          <link>https://www.shafiq.in/2009/05/11/css-fail/</link>
           <pubDate>Mon, 11 May 2009 16:21:14 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2009/05/11/css-fail/</guid>
+          <guid>https://www.shafiq.in/2009/05/11/css-fail/</guid>
           <description>&lt;p&gt;never use&lt;br /&gt;
 .&lt;br /&gt;
 position:absolute;&lt;br /&gt;

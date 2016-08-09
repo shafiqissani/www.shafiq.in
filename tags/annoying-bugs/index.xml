@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://shafiqissani.github.io/www.shafiq.in/tags/annoying-bugs/</link>
+    <link>https://www.shafiq.in/tags/annoying-bugs/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Continuous Delivery : A Mini Hurdle</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2012/01/02/continuous-delivery-a-mini-hurdle/</link>
+          <link>https://www.shafiq.in/2012/01/02/continuous-delivery-a-mini-hurdle/</link>
           <pubDate>Mon, 02 Jan 2012 23:01:13 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2012/01/02/continuous-delivery-a-mini-hurdle/</guid>
+          <guid>https://www.shafiq.in/2012/01/02/continuous-delivery-a-mini-hurdle/</guid>
           <description>&lt;p&gt;The first hurdle to overcome with Continuous Delivery I think is not getting your product’s code onto the machine itself, but managing the actual machine and it’s software... and in talking to people. It is the subtle nuances between machines due to people tweaking things on the fly that lead to the worst [most annoying] bugs to troubleshoot.&lt;br /&gt;
 The end-goal of managing your machines is that no one ever logs into the machine directly.&lt;/p&gt;
 </description>

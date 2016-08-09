@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://shafiqissani.github.io/www.shafiq.in/tags/new-programming-language/</link>
+    <link>https://www.shafiq.in/tags/new-programming-language/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Go Programming Language *sigh*</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2009/11/13/go-programming-language/</link>
+          <link>https://www.shafiq.in/2009/11/13/go-programming-language/</link>
           <pubDate>Fri, 13 Nov 2009 06:32:38 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2009/11/13/go-programming-language/</guid>
+          <guid>https://www.shafiq.in/2009/11/13/go-programming-language/</guid>
           <description>&lt;p&gt;Google makes ... or should I say &#34;invents&#34; a new programming language, which is super fast and god knows what ...&lt;/p&gt;
 &lt;p&gt;... yet another language to learn  *sigh*&lt;/p&gt;
 </description>

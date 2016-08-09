@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://shafiqissani.github.io/www.shafiq.in/tags/batch-file/</link>
+    <link>https://www.shafiq.in/tags/batch-file/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Release Engineering 101 - Build Script</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2011/05/08/release-engineering-101-build-script/</link>
+          <link>https://www.shafiq.in/2011/05/08/release-engineering-101-build-script/</link>
           <pubDate>Sun, 08 May 2011 02:07:16 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2011/05/08/release-engineering-101-build-script/</guid>
+          <guid>https://www.shafiq.in/2011/05/08/release-engineering-101-build-script/</guid>
           <description>&lt;p&gt;Each &lt;a class=&#34;zem_slink&#34; title=&#34;Computing platform&#34; href=&#34;http://en.wikipedia.org/wiki/Computing_platform&#34; rel=&#34;wikipedia&#34;&gt;software platform&lt;/a&gt; will provide a way to write a script and invoke a sequence of &lt;a class=&#34;zem_slink&#34; title=&#34;Software build&#34; href=&#34;http://en.wikipedia.org/wiki/Software_build&#34; rel=&#34;wikipedia&#34;&gt;build&lt;/a&gt; steps &lt;a class=&#34;zem_slink&#34; title=&#34;Unix&#34; href=&#34;http://www.unix.org&#34; rel=&#34;homepage&#34;&gt;Unix&lt;/a&gt; &lt;a class=&#34;zem_slink&#34; title=&#34;Shell script&#34; href=&#34;http://en.wikipedia.org/wiki/Shell_script&#34; rel=&#34;wikipedia&#34;&gt;shell scripts&lt;/a&gt;, make files, windows &lt;a class=&#34;zem_slink&#34; title=&#34;Batch file&#34; href=&#34;http://en.wikipedia.org/wiki/Batch_file&#34; rel=&#34;wikipedia&#34;&gt;batch files&lt;/a&gt; etc can be used to define a build script.&lt;/p&gt;
 &lt;p&gt;A framework / tool like &lt;a class=&#34;zem_slink&#34; title=&#34;Apache Ant&#34; href=&#34;http://ant.apache.org&#34; rel=&#34;homepage&#34;&gt;ANT&lt;/a&gt;, helps in abstracting the script from a platform dependency and use simple &lt;a class=&#34;zem_slink&#34; title=&#34;XML&#34; href=&#34;http://en.wikipedia.org/wiki/XML&#34; rel=&#34;wikipedia&#34;&gt;XML&lt;/a&gt; file to define the build script.&lt;br /&gt;
 Interestingly ANT itself is only a XML notation, that defines the sequence of steps. The steps themselves rely on the code base, framework binaries, &lt;a class=&#34;zem_slink&#34; title=&#34;Software development kit&#34; href=&#34;http://en.wikipedia.org/wiki/Software_development_kit&#34; rel=&#34;wikipedia&#34;&gt;SDK&lt;/a&gt; binaries etc.&lt;br /&gt;

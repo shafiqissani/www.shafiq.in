@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://shafiqissani.github.io/www.shafiq.in/categories/backdrop/</link>
+    <link>https://www.shafiq.in/categories/backdrop/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Backdrop for Udbhav 2010</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2009/03/22/backdrop-for-udbhav-2010/</link>
+          <link>https://www.shafiq.in/2009/03/22/backdrop-for-udbhav-2010/</link>
           <pubDate>Sun, 22 Mar 2009 11:25:15 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2009/03/22/backdrop-for-udbhav-2010/</guid>
+          <guid>https://www.shafiq.in/2009/03/22/backdrop-for-udbhav-2010/</guid>
           <description>&lt;p&gt;&lt;img class=&#34;alignnone size-full wp-image-132&#34; title=&#34;udbhav2010_110030&#34; src=&#34;{{ site.baseurl }}/assets/udbhav2010_110030.jpg&#34; alt=&#34;udbhav2010_110030&#34; width=&#34;510&#34; height=&#34;359&#34; /&gt;&lt;/p&gt;
 </description>
         </item>

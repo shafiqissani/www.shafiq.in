@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://shafiqissani.github.io/www.shafiq.in/tags/database/</link>
+    <link>https://www.shafiq.in/tags/database/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Database Integration - some points to keep in mind</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2010/09/18/database-integration-some-points-to-keep-in-mind/</link>
+          <link>https://www.shafiq.in/2010/09/18/database-integration-some-points-to-keep-in-mind/</link>
           <pubDate>Sat, 18 Sep 2010 12:49:26 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2010/09/18/database-integration-some-points-to-keep-in-mind/</guid>
+          <guid>https://www.shafiq.in/2010/09/18/database-integration-some-points-to-keep-in-mind/</guid>
           <description>&lt;p&gt;&lt;strong&gt;Always Have a Single, Authoritative Source For Your Schema&lt;br /&gt;
 &lt;/strong&gt; Everyone should know where the official schema resides, and have a frictionless experience in getting a fresh database setup. One should be able to walk up to a computer, get the latest from source control, build, and run a simple tool to setup the database (in many scenarios, the build process can even setup a database if none exists, so the process is one step shorter).&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Always Version Your Database&lt;br /&gt;
@@ -27,10 +27,10 @@
       
         <item>
           <title>Never use a shared database server for development work.</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2010/09/15/never-use-a-shared-database-server-for-development-work/</link>
+          <link>https://www.shafiq.in/2010/09/15/never-use-a-shared-database-server-for-development-work/</link>
           <pubDate>Wed, 15 Sep 2010 14:09:58 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2010/09/15/never-use-a-shared-database-server-for-development-work/</guid>
+          <guid>https://www.shafiq.in/2010/09/15/never-use-a-shared-database-server-for-development-work/</guid>
           <description>&lt;p&gt;Like many conveniences in software development, a shared database is a tar pit waiting to fossilize a project. Developers overwrite each other&#39;s changes. The changes I make on the server break the code on your development machine. Remote development is slow and difficult. Avoid using a shared database at all costs, as they ultimately waste time and help produce bugs.&lt;/p&gt;
 </description>
         </item>

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://shafiqissani.github.io/www.shafiq.in/tags/erlang/</link>
+    <link>https://www.shafiq.in/tags/erlang/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>How To Get The Current Epoch Time (Unix Timestamp)</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2010/09/30/how-to-get-the-current-epoch-time-unix-timestamp/</link>
+          <link>https://www.shafiq.in/2010/09/30/how-to-get-the-current-epoch-time-unix-timestamp/</link>
           <pubDate>Thu, 30 Sep 2010 10:26:45 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2010/09/30/how-to-get-the-current-epoch-time-unix-timestamp/</guid>
+          <guid>https://www.shafiq.in/2010/09/30/how-to-get-the-current-epoch-time-unix-timestamp/</guid>
           <description>&lt;h2&gt;&lt;span style=&#34;font-weight:normal;font-size:13px;&#34;&gt; &lt;/span&gt;&lt;/h2&gt;
 &lt;table border=&#34;0&#34; cellspacing=&#34;0&#34; cellpadding=&#34;2&#34;&gt;
 &lt;tbody&gt;

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://shafiqissani.github.io/www.shafiq.in/tags/php/</link>
+    <link>https://www.shafiq.in/tags/php/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>ERROR: `phpize&#39; failed [solved]</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2011/01/17/error-phpize-failed-solved/</link>
+          <link>https://www.shafiq.in/2011/01/17/error-phpize-failed-solved/</link>
           <pubDate>Mon, 17 Jan 2011 12:21:05 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2011/01/17/error-phpize-failed-solved/</guid>
+          <guid>https://www.shafiq.in/2011/01/17/error-phpize-failed-solved/</guid>
           <description>&lt;p&gt;If you get the following error install the development files of &lt;a class=&#34;zem_slink&#34; title=&#34;PHP&#34; rel=&#34;homepage&#34; href=&#34;http://www.php.net/&#34;&gt;PHP&lt;/a&gt;.&lt;/p&gt;
 &lt;pre&gt;running: &lt;a class=&#34;zem_slink&#34; title=&#34;PHPize&#34; rel=&#34;homepage&#34; href=&#34;http://www.phpize.com&#34;&gt;phpize&lt;/a&gt;
 sh: phpize: not found
@@ -30,10 +30,10 @@ ERROR: `phpize&#39; failed&lt;/pre&gt;
       
         <item>
           <title>How To Get The Current Epoch Time (Unix Timestamp)</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2010/09/30/how-to-get-the-current-epoch-time-unix-timestamp/</link>
+          <link>https://www.shafiq.in/2010/09/30/how-to-get-the-current-epoch-time-unix-timestamp/</link>
           <pubDate>Thu, 30 Sep 2010 10:26:45 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2010/09/30/how-to-get-the-current-epoch-time-unix-timestamp/</guid>
+          <guid>https://www.shafiq.in/2010/09/30/how-to-get-the-current-epoch-time-unix-timestamp/</guid>
           <description>&lt;h2&gt;&lt;span style=&#34;font-weight:normal;font-size:13px;&#34;&gt; &lt;/span&gt;&lt;/h2&gt;
 &lt;table border=&#34;0&#34; cellspacing=&#34;0&#34; cellpadding=&#34;2&#34;&gt;
 &lt;tbody&gt;

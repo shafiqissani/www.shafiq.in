@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://shafiqissani.github.io/www.shafiq.in/tags/releng/</link>
+    <link>https://www.shafiq.in/tags/releng/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Continuous Delivery</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2012/01/02/continuous-delivery/</link>
+          <link>https://www.shafiq.in/2012/01/02/continuous-delivery/</link>
           <pubDate>Mon, 02 Jan 2012 22:53:29 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2012/01/02/continuous-delivery/</guid>
+          <guid>https://www.shafiq.in/2012/01/02/continuous-delivery/</guid>
           <description>&lt;p&gt;&lt;a href=&#34;http://www.infoq.com/resource/articles/QCon-San-Francisco-2010/en/resources/Continuous_Delivery_Notes.png&#34; target=&#34;_blank&#34;&gt;&lt;img class=&#34;alignnone&#34; src=&#34;{{ site.baseurl }}/assets/Continuous_Delivery_Notes.png&#34; alt=&#34;&#34; width=&#34;536&#34; height=&#34;240&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 </description>
         </item>

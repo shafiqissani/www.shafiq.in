@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://shafiqissani.github.io/www.shafiq.in/tags/release-management/</link>
+    <link>https://www.shafiq.in/tags/release-management/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Release Engineering 101 - Using Version Control System (Subversion)</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2011/05/11/release-engineering-101-using-version-control-system-subversion/</link>
+          <link>https://www.shafiq.in/2011/05/11/release-engineering-101-using-version-control-system-subversion/</link>
           <pubDate>Wed, 11 May 2011 22:08:57 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2011/05/11/release-engineering-101-using-version-control-system-subversion/</guid>
+          <guid>https://www.shafiq.in/2011/05/11/release-engineering-101-using-version-control-system-subversion/</guid>
           <description>&lt;p&gt;&lt;a class=&#34;zem_slink&#34; title=&#34;Apache Subversion&#34; href=&#34;http://subversion.apache.org/&#34; rel=&#34;homepage&#34;&gt;Subversion&lt;/a&gt; has a few interesting ways of managing releases. The obvious one is the &lt;a class=&#34;zem_slink&#34; title=&#34;Revision control&#34; href=&#34;http://en.wikipedia.org/wiki/Revision_control&#34; rel=&#34;wikipedia&#34;&gt;revision number&lt;/a&gt; - you committed revision 1234 to Subversion from your local workstation, then you &#34;&lt;a class=&#34;zem_slink&#34; title=&#34;Export&#34; href=&#34;http://en.wikipedia.org/wiki/Export&#34; rel=&#34;wikipedia&#34;&gt;exported&lt;/a&gt;&#34; revision 1234 to Dev, tested, signed off, and as a final step (once you&#39;re happy with your testing) you export revision 1234 to the &lt;a class=&#34;zem_slink&#34; title=&#34;Quality assurance&#34; href=&#34;http://en.wikipedia.org/wiki/Quality_assurance&#34; rel=&#34;wikipedia&#34;&gt;QA&lt;/a&gt; machine. (The process then repeats, but with different testers/QA people, and with UA -&amp;gt; Production instead of Dev -&amp;gt; UA).&lt;/p&gt;
 &lt;p&gt;A more robust approach, however, would be for you to create &#34;tags&#34; (tags are simply copies) - you committed revision 1234 to Subversion, but 1234 is a but of a mouthful. It&#39;d be nicer if there was an easier, clearer way to refer to the code you&#39;re interesting in testing. What you&#39;d do is copy your existing code tree to a new directory, e.g. from /trunk/ to /tags/tag-2010-01-11_1500. Since tags (all copies, in fact) are in Subversion you may find you create tags frequently - /tags/build-2010-01-11_1600, /tags/releases-v1.2.3. Tags can be exported to Dev, QA and Production machines just as easily (if not more easily) than revisions.&lt;/p&gt;
 </description>
@@ -25,10 +25,10 @@
       
         <item>
           <title>Release Engineering 101 - Build Script</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2011/05/08/release-engineering-101-build-script/</link>
+          <link>https://www.shafiq.in/2011/05/08/release-engineering-101-build-script/</link>
           <pubDate>Sun, 08 May 2011 02:07:16 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2011/05/08/release-engineering-101-build-script/</guid>
+          <guid>https://www.shafiq.in/2011/05/08/release-engineering-101-build-script/</guid>
           <description>&lt;p&gt;Each &lt;a class=&#34;zem_slink&#34; title=&#34;Computing platform&#34; href=&#34;http://en.wikipedia.org/wiki/Computing_platform&#34; rel=&#34;wikipedia&#34;&gt;software platform&lt;/a&gt; will provide a way to write a script and invoke a sequence of &lt;a class=&#34;zem_slink&#34; title=&#34;Software build&#34; href=&#34;http://en.wikipedia.org/wiki/Software_build&#34; rel=&#34;wikipedia&#34;&gt;build&lt;/a&gt; steps &lt;a class=&#34;zem_slink&#34; title=&#34;Unix&#34; href=&#34;http://www.unix.org&#34; rel=&#34;homepage&#34;&gt;Unix&lt;/a&gt; &lt;a class=&#34;zem_slink&#34; title=&#34;Shell script&#34; href=&#34;http://en.wikipedia.org/wiki/Shell_script&#34; rel=&#34;wikipedia&#34;&gt;shell scripts&lt;/a&gt;, make files, windows &lt;a class=&#34;zem_slink&#34; title=&#34;Batch file&#34; href=&#34;http://en.wikipedia.org/wiki/Batch_file&#34; rel=&#34;wikipedia&#34;&gt;batch files&lt;/a&gt; etc can be used to define a build script.&lt;/p&gt;
 &lt;p&gt;A framework / tool like &lt;a class=&#34;zem_slink&#34; title=&#34;Apache Ant&#34; href=&#34;http://ant.apache.org&#34; rel=&#34;homepage&#34;&gt;ANT&lt;/a&gt;, helps in abstracting the script from a platform dependency and use simple &lt;a class=&#34;zem_slink&#34; title=&#34;XML&#34; href=&#34;http://en.wikipedia.org/wiki/XML&#34; rel=&#34;wikipedia&#34;&gt;XML&lt;/a&gt; file to define the build script.&lt;br /&gt;
 Interestingly ANT itself is only a XML notation, that defines the sequence of steps. The steps themselves rely on the code base, framework binaries, &lt;a class=&#34;zem_slink&#34; title=&#34;Software development kit&#34; href=&#34;http://en.wikipedia.org/wiki/Software_development_kit&#34; rel=&#34;wikipedia&#34;&gt;SDK&lt;/a&gt; binaries etc.&lt;br /&gt;

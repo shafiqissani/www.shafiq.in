@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Shafiq Alibhai </title>
-    <link>https://shafiqissani.github.io/www.shafiq.in/tags/requirements/</link>
+    <link>https://www.shafiq.in/tags/requirements/</link>
     <language>en-us</language>
     <author></author>
     <rights>(C) 2016</rights>
@@ -12,10 +12,10 @@
       
         <item>
           <title>Completeness of the Requirements Set</title>
-          <link>https://shafiqissani.github.io/www.shafiq.in/2010/08/18/completeness-of-the-requirements-set/</link>
+          <link>https://www.shafiq.in/2010/08/18/completeness-of-the-requirements-set/</link>
           <pubDate>Wed, 18 Aug 2010 12:10:13 UTC</pubDate>
           <author></author>
-          <guid>https://shafiqissani.github.io/www.shafiq.in/2010/08/18/completeness-of-the-requirements-set/</guid>
+          <guid>https://www.shafiq.in/2010/08/18/completeness-of-the-requirements-set/</guid>
           <description>&lt;p&gt;A set of requirements is complete if and only if it describes all significant requirements of concern to the user, including requirements associated with functionality, performance, design constraints, attributes, or external interfaces.&lt;/p&gt;
 </description>
         </item>
